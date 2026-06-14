@@ -1,17 +1,17 @@
 {
   "metadata": {
-    "total_nodes": 162,
-    "total_edges": 541,
+    "total_nodes": 164,
+    "total_edges": 573,
     "nodes_by_type": {
       "artigos": 66,
       "aulas": 7,
       "cronograma": 39,
-      "conceitos": 50
+      "conceitos": 52
     },
     "edges_by_type": {
-      "artigo_conceito": 377,
-      "aula_conceito": 43,
-      "cronograma_aula": 3,
+      "artigo_conceito": 379,
+      "aula_conceito": 48,
+      "cronograma_aula": 28,
       "sequencia_temporal": 38,
       "artigo_artigo": 80
     }
@@ -28,7 +28,7 @@
       "keywords": "Teaching of Controlled Experimentation, Controlled Experimenta- tion, TAM Model, Conceptual Modeling, Concepts",
       "doi": "10.1145/3613372.3614202",
       "veiculo": "",
-      "num_paginas": "10",
+      "num_paginas": 10,
       "metodologia": "Experimento Controlado; Survey/Questionário; Estudo Empírico",
       "areas": "Experimentação",
       "metricas": "",
@@ -37,6 +37,7 @@
       "padroes": "",
       "dominio": "Indústria; Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Conceptual Model to Support Teaching of SoftwareEngineering Controlled (Quasi-)Experiments.pdf",
       "size": 5,
       "x": 51.63,
       "y": 5.78,
@@ -45,15 +46,15 @@
     {
       "id": "artigo_2",
       "type": "artigo",
-      "label": "paper_tse_icse.dvi",
-      "titulo": "paper_tse_icse.dvi",
+      "label": "Technical Report, Simula Research Laboratory, number 2011-13",
+      "titulo": "Technical Report, Simula Research Laboratory, number 2011-13",
       "autores": "",
       "ano": "2011",
       "abstract": "Randomized algorithms have been used to successfully address many different types of software engi- neering problems. This type of algorithms entail a signiﬁcant degree of randomness as part of their logic. Randomized algorithms are useful to address difﬁcult problems where a precise solution cannot be derived in a deterministic way within reasonable time. However, randomized algorithms can produce different results on every run when applied to the same problem instance. It is hence important to assess the effectiveness of randomized algorithms by collecting data from a large enough number ...",
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "29",
+      "num_paginas": 29,
       "metodologia": "Revisão Sistemática; Survey/Questionário",
       "areas": "Teste de Software",
       "metricas": "",
@@ -62,6 +63,7 @@
       "padroes": "Boehm Model",
       "dominio": "",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Hitchhiker's guide to statistical tests for assessing randomized algorithms in software engineering.pdf",
       "size": 9.666666666666666,
       "x": 141.49,
       "y": 24.47,
@@ -78,7 +80,7 @@
       "keywords": "(e.g., “fix”, “revert”), stabilization",
       "doi": "10.1145/nnnnnnn.nnnnnnn",
       "veiculo": "",
-      "num_paginas": "12",
+      "num_paginas": 12,
       "metodologia": "Estudo Empírico",
       "areas": "Manutenção de Software; Inteligência Artificial/ML",
       "metricas": "Complexidade Ciclomática",
@@ -87,6 +89,7 @@
       "padroes": "",
       "dominio": "Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Large-Scale Empirical Study of AI-Generated Code in.pdf",
       "size": 5,
       "x": 34.9,
       "y": 68.43,
@@ -103,7 +106,7 @@
       "keywords": "and Phrases: Aesthetics, Graphical User Interfaces, Software measurement, User interface evaluation, Usability engineering, Visual measures, Visual techniques",
       "doi": "10.1145/3593224",
       "veiculo": "",
-      "num_paginas": "47",
+      "num_paginas": 47,
       "metodologia": "Survey/Questionário",
       "areas": "Qualidade de Software",
       "metricas": "Cohesion/Coesão",
@@ -112,6 +115,7 @@
       "padroes": "ISO/IEC 25010 (SQuaRE); GQM",
       "dominio": "Indústria; Acadêmico; Web/Mobile",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Quality Model-based Approach for Measuring UserInterface Aesthetics with Grace.pdf",
       "size": 15.666666666666666,
       "x": 83.5,
       "y": 86.31,
@@ -128,7 +132,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "5",
+      "num_paginas": 5,
       "metodologia": "",
       "areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Processo de Software",
       "metricas": "LOC/SLOC; Complexidade Ciclomática; Function Points; Code Coverage; Halstead",
@@ -137,6 +141,7 @@
       "padroes": "",
       "dominio": "Indústria",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Review and Analysis of Software Complexity Metrics in Structural Testing.pdf",
       "size": 5,
       "x": 44.7,
       "y": 112.32,
@@ -153,7 +158,7 @@
       "keywords": "Data stream mining, In-process metrics, defect severity, Test coverage, McCabe, STREW-H, Software Quality, In-process Measurements, Testing Metrics, software complexity. I. INTRODUCTION",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "14",
+      "num_paginas": 14,
       "metodologia": "Survey/Questionário",
       "areas": "Métricas de Software; Qualidade de Software; Produtividade",
       "metricas": "LOC/SLOC; Defect Density",
@@ -162,6 +167,7 @@
       "padroes": "CMMI; Boehm Model",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Study on Software Metrics and its Impact on Software Quality.pdf",
       "size": 5,
       "x": -4.47,
       "y": 124.27,
@@ -170,15 +176,15 @@
     {
       "id": "artigo_7",
       "type": "artigo",
-      "label": "A Survey of Controlled Experiments in Software Engineering.",
-      "titulo": "A Survey of Controlled Experiments in Software Engineering.",
+      "label": "A Survey of Controlled Experiments",
+      "titulo": "A Survey of Controlled Experiments",
       "autores": "",
       "ano": "2002",
       "abstract": "The classical method for identifying cause-effect relationships is to conduct controlled experiments. This paper reports upon the present state of how controlled experiments in software engineering are conducted and the extent to which relevant information is reported. Among the 5,453 scientific articles published in 12 leading software engineering journals and conferences in the decade from 1993 to 2002, 103 articles (1.9 percent) reported controlled experiments in which individuals or teams performed one or more software engineering tasks. This survey quantitatively characterizes the topi...",
       "keywords": "Controlled experiments, survey, research methodology, empirical software engineering. \u0001",
       "doi": "",
       "veiculo": "IEEE Transactions on Software Engineering",
-      "num_paginas": "21",
+      "num_paginas": 21,
       "metodologia": "Experimento Controlado; Survey/Questionário; Estudo Empírico; Machine Learning; Replicação",
       "areas": "Métricas de Software; Manutenção de Software; Engenharia de Software Empírica; Experimentação",
       "metricas": "",
@@ -187,6 +193,7 @@
       "padroes": "SWEBOK",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Survey of Controlled Experiments in Software Engineering..pdf",
       "size": 7.0,
       "x": -13.59,
       "y": 53.78,
@@ -195,15 +202,15 @@
     {
       "id": "artigo_8",
       "type": "artigo",
-      "label": "A Systematic Review of Productivity Factors in Software Development",
-      "titulo": "A Systematic Review of Productivity Factors in Software Development",
+      "label": "arXiv:1801.06475v1  [cs.SE]  19 Jan 2018",
+      "titulo": "arXiv:1801.06475v1  [cs.SE]  19 Jan 2018",
       "autores": "",
       "ano": "2018",
       "abstract": "Analysing and improving productivity has been one of the main goals of software engineering research since its beginnings. A plethora of studies has been conducted on various factors that resulted in several models for analysis and prediction of productivity. However, productivity is still an issue in current software development and not all factors and their relationships are known. This paper reviews the large body of available literature in order to distill a list of the main factors inﬂuencing productivity investigated so far. The measure for importance here is the number of articles a ...",
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "6",
+      "num_paginas": 6,
       "metodologia": "Revisão Sistemática",
       "areas": "Produtividade",
       "metricas": "LOC/SLOC; Function Points",
@@ -212,6 +219,7 @@
       "padroes": "Boehm Model",
       "dominio": "Indústria",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Systematic Review of Productivity Factors in Software Development.pdf",
       "size": 5,
       "x": -66.62,
       "y": 108.37,
@@ -220,15 +228,15 @@
     {
       "id": "artigo_9",
       "type": "artigo",
-      "label": "A Tale of Two Cities Software Developers Working fromHome during the COVID-19 Pandemic",
-      "titulo": "A Tale of Two Cities Software Developers Working fromHome during the COVID-19 Pandemic",
+      "label": "A Tale of Two Cities: Software Developers Working from",
+      "titulo": "A Tale of Two Cities: Software Developers Working from",
       "autores": "",
       "ano": "2021",
       "abstract": "",
       "keywords": "and Phrases: COVID-19, work from home",
       "doi": "10.1145/3487567",
       "veiculo": "IST",
-      "num_paginas": "37",
+      "num_paginas": 37,
       "metodologia": "Survey/Questionário; Estudo Empírico",
       "areas": "DevOps/CI-CD",
       "metricas": "Velocity",
@@ -237,6 +245,7 @@
       "padroes": "",
       "dominio": "Open Source; Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Tale of Two Cities Software Developers Working fromHome during the COVID-19 Pandemic.pdf",
       "size": 12.333333333333334,
       "x": -112.57,
       "y": 50.22,
@@ -245,15 +254,15 @@
     {
       "id": "artigo_10",
       "type": "artigo",
-      "label": "A Taxonomy of Data Quality Challenges in Empirical Software Engineering",
-      "titulo": "A Taxonomy of Data Quality Challenges in Empirical Software Engineering",
+      "label": "Full citation: Bosu, M.F., & MacDonell, S.G. (2013) A taxonomy of data quality challenges in",
+      "titulo": "Full citation: Bosu, M.F., & MacDonell, S.G. (2013) A taxonomy of data quality challenges in",
       "autores": "ae",
       "ano": "2013",
       "abstract": "Reliable empirical models such as those used in software effort estimation or defect prediction are inherently dependent on the data from which they are built. As demands for process and product improvement continue to grow, the quality of the data used in measurement and prediction systems warrants increasingly close scrutiny. In this paper we propose a taxonomy of data quality challenges in empirical software engineering, based on an extensive review of prior research. We consider current assessment techniques for each quality issue and proposed mechanisms to address these issues, where a...",
       "keywords": "data quality; provenance; commercial sensitivity; accessibility; trustworthiness; empirical software engineering",
       "doi": "10.1109/ASWEC.2013.21",
       "veiculo": "the 22nd Australasian Software Engineering",
-      "num_paginas": "12",
+      "num_paginas": 12,
       "metodologia": "",
       "areas": "Engenharia de Software Empírica; Gerenciamento de Projetos; Processo de Software; Predição de Defeitos",
       "metricas": "",
@@ -262,6 +271,7 @@
       "padroes": "Boehm Model",
       "dominio": "Indústria; Acadêmico; Financeiro",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Taxonomy of Data Quality Challenges in Empirical Software Engineering.pdf",
       "size": 5,
       "x": -83.01,
       "y": 72.12,
@@ -278,7 +288,7 @@
       "keywords": "listed above, for each of the chosen digital libraries. 2.1",
       "doi": "10.1155/2020/8840389",
       "veiculo": "",
-      "num_paginas": "26",
+      "num_paginas": 26,
       "metodologia": "Revisão Sistemática",
       "areas": "Métricas de Software; Manutenção de Software; DevOps/CI-CD; Segurança de Software",
       "metricas": "Code Coverage",
@@ -287,6 +297,7 @@
       "padroes": "GQM",
       "dominio": "Open Source; Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A Tool-Based Perspective on Software Code Maintainability Metrics A Systematic Literature Review.pdf",
       "size": 8.666666666666666,
       "x": -33.56,
       "y": 133.81,
@@ -303,7 +314,7 @@
       "keywords": "Mining Software Repositories, Technical Debt, Empirical Software Engineering Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for proﬁt or commercial advantage and that copies b",
       "doi": "10.1145/2901739.2901742",
       "veiculo": "MSR",
-      "num_paginas": "12",
+      "num_paginas": 12,
       "metodologia": "Estudo Empírico; Replicação; Mineração de Repositórios",
       "areas": "Qualidade de Software; Manutenção de Software; Engenharia de Software Empírica; Dívida Técnica",
       "metricas": "Coupling/Acoplamento; Technical Debt",
@@ -312,6 +323,7 @@
       "padroes": "",
       "dominio": "Open Source; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A large-scale empirical study on self-admitted technical debt.pdf",
       "size": 5,
       "x": 2.2,
       "y": 154.6,
@@ -328,7 +340,7 @@
       "keywords": "Vulnerability detection Software metrics Topic modelling Machine learning Source code analysis Smart contracts",
       "doi": "10.1016/j.mlwa.2025.100759",
       "veiculo": "",
-      "num_paginas": "18",
+      "num_paginas": 18,
       "metodologia": "Estudo de Caso; Machine Learning",
       "areas": "Métricas de Software; Inteligência Artificial/ML; Segurança de Software",
       "metricas": "Complexidade Ciclomática; Coupling/Acoplamento; Cohesion/Coesão",
@@ -337,6 +349,7 @@
       "padroes": "",
       "dominio": "Acadêmico; Financeiro; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A machine learning approach to vulnerability detection combining software.pdf",
       "size": 6.0,
       "x": -45.55,
       "y": 168.81,
@@ -345,15 +358,15 @@
     {
       "id": "artigo_14",
       "type": "artigo",
-      "label": "A preliminary GQM model to evaluate web API usability",
-      "titulo": "A preliminary GQM model to evaluate web API usability",
+      "label": "A preliminary GQM model to evaluate web API",
+      "titulo": "A preliminary GQM model to evaluate web API",
       "autores": "",
       "ano": "",
       "abstract": "Web APIs allow easy access to a variety of resources and ser- vices, and it is because of that they have become essential for building modern applications. This generated a new business perspective, “the API economy”, and for that reason, usability now turns into a key char- acteristic for the acceptance of a web API. Although web API usabil- ity is a researched topic, no studies proposing a usability model for web APIs have been found. For that reason, this study presents a preliminary model to help standardize and facilitate web API usability assessment. Our model, based on the GQM approa...",
       "keywords": "Web API usability · Model · Metrics · GQM",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "13",
+      "num_paginas": 13,
       "metodologia": "Survey/Questionário; GQM",
       "areas": "Qualidade de Software",
       "metricas": "",
@@ -362,6 +375,7 @@
       "padroes": "GQM",
       "dominio": "Indústria; Web/Mobile; Microsserviços",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A preliminary GQM model to evaluate web API usability.pdf",
       "size": 5,
       "x": 38.03,
       "y": 110.74,
@@ -378,7 +392,7 @@
       "keywords": "and Phrases: Microservice, anomaly detection, incompleteness, metrics",
       "doi": "10.1145/3801729",
       "veiculo": "",
-      "num_paginas": "35",
+      "num_paginas": 35,
       "metodologia": "Machine Learning",
       "areas": "Engenharia de Software (Geral)",
       "metricas": "MTTR",
@@ -387,6 +401,7 @@
       "padroes": "",
       "dominio": "Open Source; Acadêmico; Microsserviços; Saúde/Healthcare",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/ADmM Anomaly Detection for Microservice Systems withIncomplete Metrics.pdf",
       "size": 11.666666666666666,
       "x": -112.38,
       "y": 24.86,
@@ -403,7 +418,7 @@
       "keywords": "Six Sigma; Statistics; Software Process",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "11",
+      "num_paginas": 11,
       "metodologia": "",
       "areas": "Manutenção de Software; Processo de Software",
       "metricas": "",
@@ -412,6 +427,7 @@
       "padroes": "CMMI; Six Sigma",
       "dominio": "Indústria",
       "idioma": "PT",
+      "caminho_pdf": "../data/raw/artigos/ARTIGO_Definição de um processo de medição de software baseado em Seis Sigma e CMMI.pdf",
       "size": 5,
       "x": 64.74,
       "y": 41.65,
@@ -428,7 +444,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "11",
+      "num_paginas": 11,
       "metodologia": "Survey/Questionário; Proposta de Framework",
       "areas": "Métodos Ágeis; DevOps/CI-CD",
       "metricas": "Lead Time; DORA Metrics; MTTR",
@@ -437,6 +453,7 @@
       "padroes": "DORA",
       "dominio": "Open Source; Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A_Framework_for_Automating_the_Measurement_of_DevOps_Research_and_Assessment_DORA_Metrics.pdf",
       "size": 5,
       "x": -124.99,
       "y": -68.48,
@@ -453,7 +470,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "5",
+      "num_paginas": 5,
       "metodologia": "Survey/Questionário",
       "areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Produtividade",
       "metricas": "Coupling/Acoplamento; Cohesion/Coesão",
@@ -462,6 +479,7 @@
       "padroes": "",
       "dominio": "Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/A_study_of_component_based_software_system_metrics.pdf",
       "size": 5,
       "x": 35.31,
       "y": 149.2,
@@ -478,7 +496,7 @@
       "keywords": "",
       "doi": "10.1109/ISCMI53840.2021.9654823",
       "veiculo": "",
-      "num_paginas": "10",
+      "num_paginas": 10,
       "metodologia": "Estudo de Caso; Proposta de Framework",
       "areas": "Métodos Ágeis; Gerenciamento de Projetos",
       "metricas": "",
@@ -487,6 +505,7 @@
       "padroes": "",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Adjustment_Level_Metrics_for_Requirements_in_Project_Management.pdf",
       "size": 5,
       "x": -118.48,
       "y": -66.45,
@@ -503,7 +522,7 @@
       "keywords": "cognitive complexity, source code understandability, source code comprehension, software metrics, meta-analysis",
       "doi": "10.1145/3382494.3410636",
       "veiculo": "IEEE International Symposium on Empirical Software Engineering and Measurement",
-      "num_paginas": "12",
+      "num_paginas": 12,
       "metodologia": "Meta-análise",
       "areas": "Métricas de Software; Engenharia de Software Empírica",
       "metricas": "LOC/SLOC; Complexidade Ciclomática; Complexidade Cognitiva",
@@ -512,6 +531,7 @@
       "padroes": "Boehm Model",
       "dominio": "Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/An Empirical Validation of Cognitive Complexity as a Measure.pdf",
       "size": 5,
       "x": -18.12,
       "y": 97.74,
@@ -520,15 +540,15 @@
     {
       "id": "artigo_21",
       "type": "artigo",
-      "label": "An External Replication on the Effects of Test-driven Development Using a Multi-site Blind Analysis Approach",
-      "titulo": "An External Replication on the Effects of Test-driven Development Using a Multi-site Blind Analysis Approach",
+      "label": "An External Replication on the Effects of Test-driven",
+      "titulo": "An External Replication on the Effects of Test-driven",
       "autores": "",
       "ano": "",
       "abstract": "Context: Test-driven development (TDD) is an agile prac- tice claimed to improve the quality of a software product, as well as the productivity of its developers. A previous study (i.e., baseline experiment) at the University of Oulu (Finland) compared TDD to a test-last development (TLD) approach through a randomized controlled trial. The results failed to support the claims. Goal: We want to validate the original study results by replicating it at the Univer- sity of Basilicata (Italy), using a diﬀerent design. Method: We replicated the baseline experiment, using a crossover de- sign, with 2",
       "keywords": "test-driven development, external experiment replication, blind analysis",
       "doi": "10.1145/2961111.2962592",
       "veiculo": "",
-      "num_paginas": "10",
+      "num_paginas": 10,
       "metodologia": "Revisão Sistemática; Experimento Controlado; Survey/Questionário; Meta-análise; Replicação",
       "areas": "Qualidade de Software; Teste de Software; Experimentação; Métodos Ágeis; Produtividade",
       "metricas": "",
@@ -537,6 +557,7 @@
       "padroes": "",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/An External Replication on the Effects of Test-driven Development Using a Multi-site Blind Analysis Approach.pdf",
       "size": 5,
       "x": 0.17,
       "y": 154.64,
@@ -553,7 +574,7 @@
       "keywords": "2) SEARCH REPOSITORIES We selected various databases to identify the potentials studies published in peer-reviewed journals, conference proceedings, and so on. These databases were chosen on preceding research experience, personal knowledge, preferences, and recommendations provided by Arif et al. [",
       "doi": "10.1109/ACCESS.2021.3100779",
       "veiculo": "",
-      "num_paginas": "34",
+      "num_paginas": 34,
       "metodologia": "Revisão Sistemática; Estudo de Caso; Estudo Empírico",
       "areas": "Métodos Ágeis; Gerenciamento de Projetos",
       "metricas": "",
@@ -562,6 +583,7 @@
       "padroes": "CMMI; Six Sigma; Boehm Model",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/An_Empirical_Investigation_of_Factors_Causing_Scop.pdf",
       "size": 11.333333333333334,
       "x": -101.47,
       "y": -60.88,
@@ -570,15 +592,15 @@
     {
       "id": "artigo_23",
       "type": "artigo",
-      "label": "Analise da Eficiência do Uso de Recursos de Máquina (TCC GABRIEL AUGUSTO SOUZA BORGES)",
-      "titulo": "Analise da Eficiência do Uso de Recursos de Máquina (TCC GABRIEL AUGUSTO SOUZA BORGES)",
+      "label": "An´alise da Eficiˆencia do Uso de Recursos de M´aquina na",
+      "titulo": "An´alise da Eficiˆencia do Uso de Recursos de M´aquina na",
       "autores": "",
       "ano": "",
       "abstract": "A observabilidade ´e uma pr´atica essencial para monitorar sistemas modernos, mas sua implementac¸˜ao pode gerar custos elevados em recursos de hardware, como processamento, mem´oria e armazenamento. O problema central abordado ´e a ineficiˆencia no uso desses recursos, que ocorre devido `a ausˆencia de diretrizes para equilibrar a qualidade do monitoramento e o custo computacional. Para investigar soluc¸˜oes, este trabalho seguiu uma metodologia experimental que comparou a eficiˆencia de diferentes pr´aticas de observabili- dade em um ambiente controlado com hardware limitado. Uma API foi ...",
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "17",
+      "num_paginas": 17,
       "metodologia": "",
       "areas": "Engenharia de Software (Geral)",
       "metricas": "",
@@ -587,6 +609,7 @@
       "padroes": "GQM",
       "dominio": "",
       "idioma": "PT",
+      "caminho_pdf": "../data/raw/artigos/Analise da Eficiência do Uso de Recursos de Máquina (TCC_GABRIEL_AUGUSTO_SOUZA_BORGES).pdf",
       "size": 5.666666666666667,
       "x": -53.98,
       "y": 11.89,
@@ -603,7 +626,7 @@
       "keywords": "Statistical Methods; Experimental Studies; Software Engineering; Experimental Evaluation",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "23",
+      "num_paginas": 23,
       "metodologia": "Análise Estatística",
       "areas": "Experimentação",
       "metricas": "",
@@ -612,6 +635,7 @@
       "padroes": "CMMI",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Application of Statistical Methods in Software Engineering Theory and Practice.pdf",
       "size": 7.666666666666667,
       "x": 134.99,
       "y": -25.38,
@@ -628,7 +652,7 @@
       "keywords": "change-proneness, fault-proneness, internal software metrics",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "7",
+      "num_paginas": 7,
       "metodologia": "Estudo Empírico",
       "areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Predição de Defeitos",
       "metricas": "LOC/SLOC; Coupling/Acoplamento; Cohesion/Coesão",
@@ -637,6 +661,7 @@
       "padroes": "ISO/IEC 9126",
       "dominio": "Open Source; Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Do Internal Software Metrics Have Relationship with Fault-proneness and Change-proneness.pdf",
       "size": 5,
       "x": -44.45,
       "y": 143.13,
@@ -653,7 +678,7 @@
       "keywords": "Evaluation metrics, Machine learning, Medical images, Statistical testing Due to our developed technology and access to huge amounts of digitized data, the number of different appli- cations using machine learning (ML) has increased dramatically during the past few ­decades",
       "doi": "10.1038/s41598-024-56706-x",
       "veiculo": "",
-      "num_paginas": "14",
+      "num_paginas": 14,
       "metodologia": "Machine Learning",
       "areas": "Inteligência Artificial/ML",
       "metricas": "Complexidade Ciclomática",
@@ -662,6 +687,7 @@
       "padroes": "",
       "dominio": "Indústria; Acadêmico; Saúde/Healthcare; Financeiro; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Evaluation metrics and statistical tests for machine learning.pdf",
       "size": 5,
       "x": -63.41,
       "y": -53.62,
@@ -678,7 +704,7 @@
       "keywords": "software metric, software quality, descriptive statistics, cross- sectional study, longitudinal study",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "24",
+      "num_paginas": 24,
       "metodologia": "",
       "areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Gerenciamento de Projetos; Segurança de Software",
       "metricas": "LOC/SLOC; Coupling/Acoplamento; Halstead",
@@ -687,6 +713,7 @@
       "padroes": "ISO/IEC 25010 (SQuaRE); ISO/IEC 9126; McCall Model; Boehm Model",
       "dominio": "Open Source; Acadêmico; Saúde/Healthcare; Financeiro",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Evaluation of Software Product Quality Metrics.pdf",
       "size": 8.0,
       "x": 24.29,
       "y": 127.59,
@@ -703,7 +730,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "13",
+      "num_paginas": 13,
       "metodologia": "Mineração de Repositórios",
       "areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Revisão de Código; Dívida Técnica",
       "metricas": "Code Coverage; Technical Debt",
@@ -712,6 +739,7 @@
       "padroes": "",
       "dominio": "Open Source; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Evidence_is_All_We_Need_Do_Self-Admitted_Technical_Debts_Impact_Method-Level_Maintenance.pdf",
       "size": 5,
       "x": 34.06,
       "y": 177.29,
@@ -728,7 +756,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "11",
+      "num_paginas": 11,
       "metodologia": "Experimento Controlado; Estudo Empírico; Proposta de Framework; Replicação",
       "areas": "Métricas de Software; Experimentação",
       "metricas": "Coupling/Acoplamento",
@@ -737,6 +765,7 @@
       "padroes": "McCall Model; Boehm Model",
       "dominio": "Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Experimentation in Software Engineering.pdf",
       "size": 5,
       "x": 11.45,
       "y": 141.96,
@@ -745,15 +774,15 @@
     {
       "id": "artigo_30",
       "type": "artigo",
-      "label": "FORMATO PARA ESPECIFICAÇÃO DE REQUISITOS CONJECTURAIS NO CONTEXTO DA EXPERIMENTAÇÃO CONTÍNUA EM ENGENHARIA DE SOFTWARE",
-      "titulo": "FORMATO PARA ESPECIFICAÇÃO DE REQUISITOS CONJECTURAIS NO CONTEXTO DA EXPERIMENTAÇÃO CONTÍNUA EM ENGENHARIA DE SOFTWARE",
+      "label": "FORMATO PARA ESPECIFICAÇÃO DE REQUISITOS CONJECTURAIS NO",
+      "titulo": "FORMATO PARA ESPECIFICAÇÃO DE REQUISITOS CONJECTURAIS NO",
       "autores": "Nome Completo do Autor",
       "ano": "2023",
       "abstract": "",
       "keywords": "",
       "doi": "",
       "veiculo": "IST",
-      "num_paginas": "112",
+      "num_paginas": 112,
       "metodologia": "Proposta de Framework",
       "areas": "Experimentação",
       "metricas": "",
@@ -762,6 +791,7 @@
       "padroes": "GQM",
       "dominio": "Educação",
       "idioma": "PT",
+      "caminho_pdf": "../data/raw/artigos/FORMATO PARA ESPECIFICAÇÃO DE REQUISITOS CONJECTURAIS NO CONTEXTO DA EXPERIMENTAÇÃO CONTÍNUA EM ENGENHARIA DE SOFTWARE.pdf",
       "size": 37.333333333333336,
       "x": 66.83,
       "y": 0.51,
@@ -778,7 +808,7 @@
       "keywords": "",
       "doi": "10.2533/chimia.2023.7",
       "veiculo": "",
-      "num_paginas": "10",
+      "num_paginas": 10,
       "metodologia": "Proposta de Framework; Machine Learning",
       "areas": "Experimentação; Inteligência Artificial/ML",
       "metricas": "",
@@ -787,6 +817,7 @@
       "padroes": "",
       "dominio": "Acadêmico; Financeiro; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/How to Accelerate R&D and Optimize Experiment Planning with Machine Learning and Data Science.pdf",
       "size": 5,
       "x": 161.5,
       "y": -52.14,
@@ -803,7 +834,7 @@
       "keywords": "Effort estimation, scale factor, cost driver, COCOMO, SW-CMM, CMMI",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "10",
+      "num_paginas": 10,
       "metodologia": "",
       "areas": "Gerenciamento de Projetos; Processo de Software",
       "metricas": "Cohesion/Coesão",
@@ -812,6 +843,7 @@
       "padroes": "CMMI; GQM; Boehm Model",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Impact_of_CMMI_based_software_process_maturity_on_.pdf",
       "size": 5,
       "x": -29.76,
       "y": -60.83,
@@ -828,7 +860,7 @@
       "keywords": "Software engineering, software metrics, software measurement. I. BACKGROUND I N December",
       "doi": "10.1109/TSE.2025.3533467",
       "veiculo": "TSE",
-      "num_paginas": "5",
+      "num_paginas": 5,
       "metodologia": "",
       "areas": "Métricas de Software; Teste de Software",
       "metricas": "",
@@ -837,6 +869,7 @@
       "padroes": "",
       "dominio": "Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Impact_of_Evaluating_Software_Complexity_Measures.pdf",
       "size": 5,
       "x": -72.68,
       "y": 173.4,
@@ -853,7 +886,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "65",
+      "num_paginas": 65,
       "metodologia": "Revisão Sistemática; Mapeamento Sistemático",
       "areas": "Engenharia de Software (Geral)",
       "metricas": "",
@@ -862,6 +895,7 @@
       "padroes": "Boehm Model",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Kitchenham, B. Guidelines for performing Systematic Literature Reviews in software engineering. EBSE Technical Report EBSE-2007-01.pdf",
       "size": 21.666666666666668,
       "x": -53.61,
       "y": -15.92,
@@ -870,15 +904,15 @@
     {
       "id": "artigo_35",
       "type": "artigo",
-      "label": "LLM4DS Evaluating Large Language Models for Data Science Code Generation",
-      "titulo": "LLM4DS Evaluating Large Language Models for Data Science Code Generation",
+      "label": "LLM4DS: Evaluating Large Language Models for",
+      "titulo": "LLM4DS: Evaluating Large Language Models for",
       "autores": "",
       "ano": "",
       "abstract": "The adoption of Large Language Models (LLMs) for code generation in data science offers substantial potential for en- hancing tasks such as data manipulation, statistical analysis, and visualization. However, the effectiveness of these models in the data science domain remains underexplored. This paper presents a controlled experiment that empirically assesses the performance of four leading LLM-based AI assistants—Microsoft Copilot (GPT-4 Turbo), ChatGPT (o1-preview), Claude (3.5 Sonnet), and Perplexity Labs (Llama-3.1-70b-instruct)—on a diverse set of data science coding challenges source...",
       "keywords": "",
       "doi": "",
       "veiculo": "ASE",
-      "num_paginas": "11",
+      "num_paginas": 11,
       "metodologia": "Experimento Controlado; Estudo Empírico; Proposta de Framework; Análise Estatística; GQM",
       "areas": "Experimentação; Inteligência Artificial/ML; Produtividade",
       "metricas": "",
@@ -887,6 +921,7 @@
       "padroes": "GQM",
       "dominio": "Open Source; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/LLM4DS Evaluating Large Language Models for Data Science Code Generation.pdf",
       "size": 5,
       "x": 144.1,
       "y": 21.1,
@@ -895,15 +930,15 @@
     {
       "id": "artigo_36",
       "type": "artigo",
-      "label": "Measuring the Impact of Scope Changes on Project Plan Using EVM",
-      "titulo": "Measuring the Impact of Scope Changes on Project Plan Using EVM",
+      "label": "Received August 6, 2020, accepted August 13, 2020, date of publication August 20, 2020, date of current version September 2, 2020.",
+      "titulo": "Received August 6, 2020, accepted August 13, 2020, date of publication August 20, 2020, date of current version September 2, 2020.",
       "autores": "",
       "ano": "2020",
       "abstract": "Earned Value Management (EVM) measures project performance against a baseline plan. It identiﬁes deviations in budget and schedule, aids project managers in taking earlier corrective actions against cost and schedule overruns. Although the literature highlights the signiﬁcance of scope by adopting it as a leading indicator to measure project success or failure. However, EVM does not include scope when evaluating the performance of any software project. While considering the importance of scope and its ever-changing nature, it is imperative to measure the effect of changes in scope on the pr...",
       "keywords": "",
       "doi": "10.1109/ACCESS.2020.3018169",
       "veiculo": "",
-      "num_paginas": "25",
+      "num_paginas": 25,
       "metodologia": "",
       "areas": "Gerenciamento de Projetos",
       "metricas": "",
@@ -912,6 +947,7 @@
       "padroes": "",
       "dominio": "Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Measuring_the_Impact_of_Scope_Changes_on_Project_Plan_Using_EVM.pdf",
       "size": 8.333333333333334,
       "x": -23.59,
       "y": -82.07,
@@ -920,15 +956,15 @@
     {
       "id": "artigo_37",
       "type": "artigo",
-      "label": "Medição e Análise no CMMI com Metodologia Seis Sigma eISOIECIEEE1593",
-      "titulo": "Medição e Análise no CMMI com Metodologia Seis Sigma eISOIECIEEE1593",
+      "label": "Sigmae, Alfenas, v.11, n.2, p. 21-35, 2022.",
+      "titulo": "Sigmae, Alfenas, v.11, n.2, p. 21-35, 2022.",
       "autores": "DEX",
       "ano": "2022",
       "abstract": "Based on the premise that the quality of a software product is mostly the result of the quality of the process in which it is developed, models for the improvement of the process of software have been developed. The measurement and analysis for models assume great importance, because the evaluation of the relationship between the capacity (estimated results) and the performance (observed results) of a process is important so that it can be improved. CMMI is one of the more used models, having a great experience with success in the industry. CMMI do not indicate the measurement system to wor...",
       "keywords": "CMMI; Statistics; Six Sigma; ISO/IEC/",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "15",
+      "num_paginas": 15,
       "metodologia": "Estudo de Caso",
       "areas": "Processo de Software",
       "metricas": "",
@@ -937,6 +973,7 @@
       "padroes": "ISO/IEC 15939; CMMI; Six Sigma",
       "dominio": "Indústria; Acadêmico",
       "idioma": "PT",
+      "caminho_pdf": "../data/raw/artigos/Medição e Análise no CMMI com Metodologia Seis Sigma eISOIECIEEE1593.pdf",
       "size": 5,
       "x": -2.98,
       "y": -80.51,
@@ -953,7 +990,7 @@
       "keywords": "",
       "doi": "10.1007/s42979-024-03471-3",
       "veiculo": "",
-      "num_paginas": "35",
+      "num_paginas": 35,
       "metodologia": "Revisão Sistemática; Experimento Controlado; Estudo Empírico; Proposta de Framework; GQM",
       "areas": "Manutenção de Software; Experimentação; Processo de Software; Produtividade",
       "metricas": "",
@@ -962,6 +999,7 @@
       "padroes": "GQM",
       "dominio": "Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Metrics for Evaluating and Improving Transparency in Software Engineering An Empirical Study and Improvement Model.pdf",
       "size": 11.666666666666666,
       "x": 116.43,
       "y": 78.99,
@@ -970,15 +1008,15 @@
     {
       "id": "artigo_39",
       "type": "artigo",
-      "label": "Metrics in Large-Scale Agile Software Development A Multivocal Literature Review",
-      "titulo": "Metrics in Large-Scale Agile Software Development A Multivocal Literature Review",
+      "label": "Metrics in Large-Scale Agile Software Development: A",
+      "titulo": "Metrics in Large-Scale Agile Software Development: A",
       "autores": "",
       "ano": "2021",
       "abstract": "Software development is widespread across various sectors. As large- scale projects increasingly adopt agile development practices, there arises a need for metrics to enhance team coordination, promote continuous improve- ment and monitor progress. This discussion focuses on the current state of metrics for large-scale agile software development, outlining the reasons for their adoption and showcasing the achieved results. The analysis involves a comprehensive literature review, exploring grey literature. A catalog of metrics applicable to scalable agile projects is presented, featuring exa...",
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "15",
+      "num_paginas": 15,
       "metodologia": "Revisão Multivocal",
       "areas": "Métricas de Software; Métodos Ágeis; Produtividade",
       "metricas": "LOC/SLOC; Function Points; Story Points; Velocity; Lead Time",
@@ -987,6 +1025,7 @@
       "padroes": "GQM",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Metrics in Large-Scale Agile Software Development A Multivocal Literature Review.pdf",
       "size": 5,
       "x": -29.59,
       "y": 86.37,
@@ -995,15 +1034,15 @@
     {
       "id": "artigo_40",
       "type": "artigo",
-      "label": "On Wasted Contributions Understanding the Dynamics of Contributor-Abandoned Pull Requests–A Mixed-Methods Study of 10 Large Open-Source Projects",
-      "titulo": "On Wasted Contributions Understanding the Dynamics of Contributor-Abandoned Pull Requests–A Mixed-Methods Study of 10 Large Open-Source Projects",
+      "label": "On Wasted Contributions: Understanding the Dynamics",
+      "titulo": "On Wasted Contributions: Understanding the Dynamics",
       "autores": "",
       "ano": "2023",
       "abstract": "",
       "keywords": "and Phrases: Socio-technical factors, pull-based development, modern code review, social coding platforms, open-source software, mixed-methods research",
       "doi": "10.1145/3530785",
       "veiculo": "",
-      "num_paginas": "39",
+      "num_paginas": 39,
       "metodologia": "Survey/Questionário; Estudo Empírico; Machine Learning",
       "areas": "Inteligência Artificial/ML; Revisão de Código",
       "metricas": "",
@@ -1012,6 +1051,7 @@
       "padroes": "",
       "dominio": "Open Source; Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/On Wasted Contributions Understanding the Dynamics of Contributor-Abandoned Pull Requests–A Mixed-Methods Study of 10 Large Open-Source Projects.pdf",
       "size": 13.0,
       "x": -84.15,
       "y": -105.29,
@@ -1028,7 +1068,7 @@
       "keywords": "Software effort estimation; Story Point; Agile software",
       "doi": "10.1145/3544902.3546238",
       "veiculo": "",
-      "num_paginas": "12",
+      "num_paginas": 12,
       "metodologia": "Estudo de Caso; Estudo Empírico",
       "areas": "Engenharia de Software Empírica; Métodos Ágeis; Gerenciamento de Projetos",
       "metricas": "Function Points; Story Points",
@@ -1037,6 +1077,7 @@
       "padroes": "",
       "dominio": "Open Source; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/On the Relationship Between Story Points and DevelopmentEffort in Agile Open-Source Software.pdf",
       "size": 5,
       "x": -173.25,
       "y": 32.01,
@@ -1053,7 +1094,7 @@
       "keywords": "",
       "doi": "10.1049/iet-sen.2018.5439",
       "veiculo": "",
-      "num_paginas": "10",
+      "num_paginas": 10,
       "metodologia": "Estudo Empírico",
       "areas": "Métricas de Software; Segurança de Software; Predição de Defeitos",
       "metricas": "Code Churn; Halstead; Defect Density",
@@ -1062,6 +1103,7 @@
       "padroes": "",
       "dominio": "Open Source; Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Process metrics for software defectprediction in object-oriented programs.pdf",
       "size": 5,
       "x": -1.08,
       "y": 44.36,
@@ -1078,7 +1120,7 @@
       "keywords": "",
       "doi": "10.7250/itms-2018-0008",
       "veiculo": "",
-      "num_paginas": "6",
+      "num_paginas": 6,
       "metodologia": "Estudo de Caso; GQM",
       "areas": "Métricas de Software; Métodos Ágeis; Gerenciamento de Projetos",
       "metricas": "Velocity",
@@ -1087,6 +1129,7 @@
       "padroes": "GQM",
       "dominio": "Indústria; Acadêmico; Financeiro",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Quality_metrics_in_Agile_Software_Development_Proj.pdf",
       "size": 5,
       "x": 33.98,
       "y": 84.0,
@@ -1103,7 +1146,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "6",
+      "num_paginas": 6,
       "metodologia": "Survey/Questionário; Machine Learning",
       "areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Inteligência Artificial/ML",
       "metricas": "Complexidade Ciclomática",
@@ -1112,6 +1155,7 @@
       "padroes": "Boehm Model",
       "dominio": "Indústria; Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Quality_of_AI-Generated_vs._Human-Generated_Code.pdf",
       "size": 5,
       "x": -30.68,
       "y": 112.91,
@@ -1120,15 +1164,15 @@
     {
       "id": "artigo_45",
       "type": "artigo",
-      "label": "Recommendations for analysing and meta-analysing small sample size software engineering experiments",
-      "titulo": "Recommendations for analysing and meta-analysing small sample size software engineering experiments",
+      "label": "https://doi.org/10.1007/s10664-024-10504-1",
+      "titulo": "https://doi.org/10.1007/s10664-024-10504-1",
       "autores": "",
       "ano": "2024",
       "abstract": "",
       "keywords": "Meta-analysis · Effect size · Non-parametric · Probability of superiority · Small sample sizes · Reproducible research Communicated by: Carlo A. Furia B Lech Madeyski lech.madeyski@pwr.edu.pl",
       "doi": "10.1007/s10664-024-10504-1",
       "veiculo": "Empirical Software Engineering",
-      "num_paginas": "46",
+      "num_paginas": 46,
       "metodologia": "Experimento Controlado; Meta-análise; Análise Estatística",
       "areas": "Engenharia de Software Empírica; Experimentação",
       "metricas": "",
@@ -1137,6 +1181,7 @@
       "padroes": "",
       "dominio": "Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Recommendations for analysing and meta-analysing small sample size software engineering experiments.pdf",
       "size": 15.333333333333334,
       "x": -61.46,
       "y": 5.56,
@@ -1145,15 +1190,15 @@
     {
       "id": "artigo_46",
       "type": "artigo",
-      "label": "Robust Statistical Methods for Empirical Software Engineering",
-      "titulo": "Robust Statistical Methods for Empirical Software Engineering",
+      "label": "Empir Software Eng (2017) 22:579–630",
+      "titulo": "Empir Software Eng (2017) 22:579–630",
       "autores": "",
       "ano": "2017",
       "abstract": "",
       "keywords": "Empirical software engineering · Statistical methods · Robust methods · Robust statistical methods",
       "doi": "10.1007/s10664-016-9437-5",
       "veiculo": "",
-      "num_paginas": "53",
+      "num_paginas": 53,
       "metodologia": "Revisão Sistemática; Análise Estatística",
       "areas": "Métricas de Software; Engenharia de Software Empírica",
       "metricas": "",
@@ -1162,6 +1207,7 @@
       "padroes": "Boehm Model",
       "dominio": "Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Robust Statistical Methods for Empirical Software Engineering.pdf",
       "size": 17.666666666666668,
       "x": 0.9,
       "y": 80.01,
@@ -1170,15 +1216,15 @@
     {
       "id": "artigo_47",
       "type": "artigo",
-      "label": "SOFTWARE CODE QUALITY MEASUREMENT IMPLICATIONS FROM METRIC DISRIBUTIONS",
-      "titulo": "SOFTWARE CODE QUALITY MEASUREMENT IMPLICATIONS FROM METRIC DISRIBUTIONS",
+      "label": "SOFTWARE CODE QUALITY MEASUREMENT: IMPLICATIONS FROM",
+      "titulo": "SOFTWARE CODE QUALITY MEASUREMENT: IMPLICATIONS FROM",
       "autores": "",
       "ano": "2024",
       "abstract": "Software code quality is a construct with three dimensions: maintainability, reliability, and func- tionality. Although many firms have incorporated code quality metrics in their operations, evalu- ating these metrics still lacks consistent standards. We categorized distinct metrics into two types: 1) monotonic metrics that consistently influence code quality; and 2) non-monotonic metrics that lack a consistent relationship with code quality. To consistently evaluate them, we proposed a distribution-based method to get metric scores. Our empirical analysis includes 36,460 high-quality open-...",
       "keywords": "open source software, code quality, construct measurement, non-monotonic metric",
       "doi": "",
       "veiculo": "IST",
-      "num_paginas": "12",
+      "num_paginas": 12,
       "metodologia": "Machine Learning",
       "areas": "Manutenção de Software; Inteligência Artificial/ML; Revisão de Código",
       "metricas": "",
@@ -1187,6 +1233,7 @@
       "padroes": "ISO/IEC 25010 (SQuaRE); ISO 9001",
       "dominio": "Open Source; Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/SOFTWARE CODE QUALITY MEASUREMENT IMPLICATIONS FROM METRIC DISRIBUTIONS.pdf",
       "size": 5,
       "x": 49.98,
       "y": 77.51,
@@ -1203,7 +1250,7 @@
       "keywords": "unadjusted Function Points (UFPs); simple Function Points (SFPs); effort estimation; simple functional size measures",
       "doi": "10.3390/software3040022",
       "veiculo": "",
-      "num_paginas": "31",
+      "num_paginas": 31,
       "metodologia": "Estudo Empírico",
       "areas": "Gerenciamento de Projetos",
       "metricas": "Function Points",
@@ -1212,6 +1259,7 @@
       "padroes": "Boehm Model",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Software Development and Maintenance Effort Estimation Using Function Points and Simpler Functional Measures.pdf",
       "size": 10.333333333333334,
       "x": -51.72,
       "y": -140.43,
@@ -1228,7 +1276,7 @@
       "keywords": "Process Metrics, Agile Software Development, GQM",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "16",
+      "num_paginas": 16,
       "metodologia": "Revisão Sistemática; Estudo de Caso; Estudo Empírico; GQM",
       "areas": "Métricas de Software; Métodos Ágeis; Processo de Software",
       "metricas": "Velocity",
@@ -1237,6 +1285,7 @@
       "padroes": "GQM",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Software Process Measurement and Related Challenges in Agile Software Development A Multiple Case Study.pdf",
       "size": 5.333333333333333,
       "x": 7.36,
       "y": 119.53,
@@ -1253,7 +1302,7 @@
       "keywords": ", quality assessment is applied for each paper. The quality assessment is realized based on the three questions to evaluate the completeness, consistency, and relevance of the selected study. The questions below are derived from the previous studies of Kitchenham et al. [34] and other SM studies. Q",
       "doi": "10.1109/ACCESS.2021.3054730",
       "veiculo": "",
-      "num_paginas": "24",
+      "num_paginas": 24,
       "metodologia": "Mapeamento Sistemático; Machine Learning",
       "areas": "Qualidade de Software; Inteligência Artificial/ML",
       "metricas": "",
@@ -1262,6 +1311,7 @@
       "padroes": "ISO/IEC 25010 (SQuaRE); ISO/IEC 9126; CMMI; GQM; ISO 9001; SWEBOK",
       "dominio": "Indústria; Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Software Product Quality Metrics A Systematic Mapping Study.pdf",
       "size": 8.0,
       "x": 22.17,
       "y": 104.65,
@@ -1278,7 +1328,7 @@
       "keywords": "product quality, quality of use, quality standards, software development, systematic review Received on",
       "doi": "10.4108/eetsis.3982",
       "veiculo": "",
-      "num_paginas": "7",
+      "num_paginas": 7,
       "metodologia": "Revisão Sistemática",
       "areas": "Qualidade de Software; Processo de Software",
       "metricas": "",
@@ -1287,6 +1337,7 @@
       "padroes": "ISO/IEC 25010 (SQuaRE); ISO/IEC 9126; CMMI; ISO 9001",
       "dominio": "Indústria",
       "idioma": "PT",
+      "caminho_pdf": "../data/raw/artigos/Software quality models Exploratory review.pdf",
       "size": 5,
       "x": -0.5,
       "y": 146.6,
@@ -1295,15 +1346,15 @@
     {
       "id": "artigo_52",
       "type": "artigo",
-      "label": "Software Cost and Effort Estimation Current Approaches and Future Trends",
-      "titulo": "Software Cost and Effort Estimation Current Approaches and Future Trends",
+      "label": "Received 20 August 2023, accepted 31 August 2023, date of publication 7 September 2023, date of current version 15 September 2023.",
+      "titulo": "Received 20 August 2023, accepted 31 August 2023, date of publication 7 September 2023, date of current version 15 September 2023.",
       "autores": "",
       "ano": "2023",
       "abstract": "Software cost and effort estimation is one of the most significant tasks in the area of software engineering. Research conducted in this field has been evolving with new techniques that necessitate periodic comparative analyses. Software project success largely depends on accurate software cost estimation as it gives an idea of the challenges and risks involved in the development. The great diversity of ML and Non- ML techniques has generated a comparison and progressed into the integration of these techniques. Based on varying advantages it has become imperative to work out preferred estim...",
       "keywords": "",
       "doi": "10.1109/ACCESS.2023.3312716",
       "veiculo": "IST",
-      "num_paginas": "21",
+      "num_paginas": 21,
       "metodologia": "Revisão Sistemática; Machine Learning",
       "areas": "Gerenciamento de Projetos; Inteligência Artificial/ML",
       "metricas": "Function Points",
@@ -1312,6 +1363,7 @@
       "padroes": "CMMI; Boehm Model",
       "dominio": "Indústria; Acadêmico; Financeiro; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Software_Cost_and_Effort_Estimation_Current_Approaches_and_Future_Trends.pdf",
       "size": 7.0,
       "x": -30.06,
       "y": -75.55,
@@ -1328,7 +1380,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "6",
+      "num_paginas": 6,
       "metodologia": "Proposta de Framework",
       "areas": "Métricas de Software; Métodos Ágeis; Gerenciamento de Projetos; Produtividade",
       "metricas": "Story Points",
@@ -1337,6 +1389,7 @@
       "padroes": "",
       "dominio": "Indústria; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Software_Metrics_Classification_for_Agile_Scrum_Process_A_Literature_Review.pdf",
       "size": 5,
       "x": 18.21,
       "y": 139.76,
@@ -1353,7 +1406,7 @@
       "keywords": "Software Defect Prediction, Software Metrics, Mining Software Repositories, Software Quality Accepted version of Dominik Arne Rebro, Bruno Rossi, and Stanislav Chren",
       "doi": "10.1145/3555776.3577809",
       "veiculo": "",
-      "num_paginas": "6",
+      "num_paginas": 6,
       "metodologia": "Estudo Empírico; Machine Learning; Replicação; Mineração de Repositórios",
       "areas": "Métricas de Software; Qualidade de Software; Predição de Defeitos",
       "metricas": "LOC/SLOC; Complexidade Ciclomática; Complexidade Cognitiva; Code Churn; Coupling/Acoplamento; Cohesion/Coesão; WMC; DIT; NOC; RFC; CK Metrics",
@@ -1362,6 +1415,7 @@
       "padroes": "",
       "dominio": "Open Source; Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Source Code Metrics for Software Defects Prediction.pdf",
       "size": 5,
       "x": 17.12,
       "y": 75.22,
@@ -1378,7 +1432,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "10",
+      "num_paginas": 10,
       "metodologia": "Estudo de Caso; Proposta de Framework; GQM",
       "areas": "Qualidade de Software; Processo de Software; Produtividade",
       "metricas": "LOC/SLOC; Defect Density",
@@ -1387,6 +1441,7 @@
       "padroes": "GQM; McCall Model; Boehm Model",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/THE GOAL QUESTION METRIC APPROACH.pdf",
       "size": 5,
       "x": 56.8,
       "y": 81.34,
@@ -1403,7 +1458,7 @@
       "keywords": "object-oriented metrics; software metrics; object-oriented measures; thresholds; systematic mapping; software quality",
       "doi": "10.3390/app112311377",
       "veiculo": "",
-      "num_paginas": "25",
+      "num_paginas": 25,
       "metodologia": "Mapeamento Sistemático",
       "areas": "Métricas de Software; Qualidade de Software",
       "metricas": "CK Metrics",
@@ -1412,6 +1467,7 @@
       "padroes": "",
       "dominio": "Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Techniques for Calculating Software Product Metrics Threshold Values A Systematic Mapping Study.pdf",
       "size": 8.333333333333334,
       "x": 44.68,
       "y": 125.0,
@@ -1428,7 +1484,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "7",
+      "num_paginas": 7,
       "metodologia": "",
       "areas": "Engenharia de Software (Geral)",
       "metricas": "",
@@ -1437,6 +1493,7 @@
       "padroes": "",
       "dominio": "",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/The Experimental Paradigm in Software Engeneering.pdf",
       "size": 5,
       "x": -106.92,
       "y": 24.88,
@@ -1445,15 +1502,15 @@
     {
       "id": "artigo_58",
       "type": "artigo",
-      "label": "The Space of Developer Productivity There's more to it than you think",
-      "titulo": "The Space of Developer Productivity There's more to it than you think",
+      "label": "eveloper productivity is complex and nuanced,",
+      "titulo": "eveloper productivity is complex and nuanced,",
       "autores": "",
       "ano": "2021",
       "abstract": "",
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "29",
+      "num_paginas": 29,
       "metodologia": "",
       "areas": "Revisão de Código; Produtividade",
       "metricas": "",
@@ -1462,6 +1519,7 @@
       "padroes": "DORA; SPACE Framework",
       "dominio": "Indústria; Acadêmico; Saúde/Healthcare",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/The Space of Developer Productivity There's more to it than you think.pdf",
       "size": 9.666666666666666,
       "x": 76.64,
       "y": -158.85,
@@ -1478,7 +1536,7 @@
       "keywords": "",
       "doi": "10.7717/peerj-cs.193",
       "veiculo": "",
-      "num_paginas": "25",
+      "num_paginas": 25,
       "metodologia": "Experimento Controlado; Replicação",
       "areas": "Qualidade de Software; Manutenção de Software; Experimentação; Segurança de Software; Revisão de Código",
       "metricas": "",
@@ -1487,6 +1545,7 @@
       "padroes": "",
       "dominio": "Open Source; Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/The effects of change decomposition on code review --a controlled experiment.pdf",
       "size": 8.333333333333334,
       "x": 13.91,
       "y": 94.11,
@@ -1503,7 +1562,7 @@
       "keywords": "",
       "doi": "10.1007/s00769-024-01593-y",
       "veiculo": "",
-      "num_paginas": "1",
+      "num_paginas": 1,
       "metodologia": "",
       "areas": "Engenharia de Software (Geral)",
       "metricas": "",
@@ -1512,6 +1571,7 @@
       "padroes": "",
       "dominio": "Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/The role of measurement uncertainty in the validation of a measurement procedure.pdf",
       "size": 5,
       "x": -154.25,
       "y": 8.52,
@@ -1528,7 +1588,7 @@
       "keywords": "",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "16",
+      "num_paginas": 16,
       "metodologia": "Experimento Controlado; Survey/Questionário",
       "areas": "Experimentação",
       "metricas": "",
@@ -1537,6 +1597,7 @@
       "padroes": "",
       "dominio": "Indústria; Acadêmico; Web/Mobile",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Top Challenges from the first Practical Online Controlled Experiments Summit.pdf",
       "size": 5.333333333333333,
       "x": 170.28,
       "y": 31.56,
@@ -1553,7 +1614,7 @@
       "keywords": "Experimentation Improvement; Ontology, Repositories; Recom- mender Systems; Data Management Plans; Teaching/Learning; Con- tinuous Experimentation",
       "doi": "10.1145/3474624.3477073",
       "veiculo": "",
-      "num_paginas": "6",
+      "num_paginas": 6,
       "metodologia": "Experimento Controlado; Meta-análise; Replicação",
       "areas": "Engenharia de Software Empírica; Experimentação",
       "metricas": "",
@@ -1562,6 +1623,7 @@
       "padroes": "",
       "dominio": "Indústria; Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Towards Improving Experimentation in Software Engineering.pdf",
       "size": 5,
       "x": -109.69,
       "y": 95.04,
@@ -1578,7 +1640,7 @@
       "keywords": "",
       "doi": "10.1016/j.jss.2024.112164",
       "veiculo": "",
-      "num_paginas": "14",
+      "num_paginas": 14,
       "metodologia": "Proposta de Framework",
       "areas": "Engenharia de Software (Geral)",
       "metricas": "",
@@ -1587,6 +1649,7 @@
       "padroes": "",
       "dominio": "Indústria; Acadêmico; Educação",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Unlocking inclusive education A quality assessment of software design in applications for children with autism.pdf",
       "size": 5,
       "x": -107.97,
       "y": -32.14,
@@ -1603,7 +1666,7 @@
       "keywords": "software metrics, code complexity, bug prediction Preprint submitted to Elsevier April 2, 2025 arXiv:2504.00477v1 [cs.SE]",
       "doi": "",
       "veiculo": "",
-      "num_paginas": "23",
+      "num_paginas": 23,
       "metodologia": "",
       "areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Predição de Defeitos",
       "metricas": "LOC/SLOC; Complexidade Ciclomática",
@@ -1612,6 +1675,7 @@
       "padroes": "",
       "dominio": "Open Source; Indústria; Acadêmico",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Unveiling Hybrid Cyclomatic Complexity A Comprehensive Analysis and Evaluation as an Integral Feature in Automatic Defect Prediction Models.pdf",
       "size": 7.666666666666667,
       "x": 5.89,
       "y": 143.18,
@@ -1628,7 +1692,7 @@
       "keywords": "GQM; métricas; qualidade; sistema web",
       "doi": "10.19053/01211129.v34.n72.2025.19104",
       "veiculo": "",
-      "num_paginas": "10",
+      "num_paginas": 10,
       "metodologia": "Proposta de Framework; GQM",
       "areas": "Métricas de Software; Qualidade de Software",
       "metricas": "",
@@ -1637,6 +1701,7 @@
       "padroes": "GQM",
       "dominio": "Indústria; Web/Mobile; Financeiro",
       "idioma": "PT",
+      "caminho_pdf": "../data/raw/artigos/WEB_SYSTEM_FOR_METRICS_CONTROL_APPLYING_THE_GQM_ME.pdf",
       "size": 5,
       "x": 15.83,
       "y": 78.03,
@@ -1653,7 +1718,7 @@
       "keywords": "Diff Authoring Time, DAT, Developer Productivity, Engineering Velocity, Continuous Experimentation (CE)",
       "doi": "10.1145/3786583.3786901",
       "veiculo": "ICSE",
-      "num_paginas": "12",
+      "num_paginas": 12,
       "metodologia": "Experimento Controlado; Estudo de Caso",
       "areas": "Experimentação; Produtividade",
       "metricas": "LOC/SLOC; Function Points; Velocity",
@@ -1662,6 +1727,7 @@
       "padroes": "McCall Model",
       "dominio": "Indústria",
       "idioma": "EN",
+      "caminho_pdf": "../data/raw/artigos/Whats DAT Three Case Studies of Measuring Software.pdf",
       "size": 5,
       "x": 126.81,
       "y": 37.72,
@@ -1670,14 +1736,14 @@
     {
       "id": "aula_1",
       "type": "aula",
-      "label": "Aula 1",
-      "subtitulo": "",
-      "professor": "Danilo de Quadros Maia Filho",
-      "num_slides": "27",
-      "topicos": "",
-      "titulos_slides": "Aula 1 - Introdu¸c˜ao; Sobre a Disciplina; A disciplina de Medi¸c˜ao e Experimenta¸c˜ao em Engenharia de Software ´e; Sem medir, n˜ao sabemos qu˜ao bom ou ruim ´e um processo, produto ou; A medi¸c˜ao permite aplicar melhoria cont´ınua usando ciclos como PDCA; Grandes empresas como Google, Meta, Microsoft e iFood usam; Experimenta¸c˜ao; Sobre o Professor; Projetos e experiˆencias:; Cronograma; Datas Importantes; Avalia¸c˜oes; Mini-Semin´arios; Regras e Combinados; Primeiras Defini¸c˜oes; Defini¸c˜ao alternativa de Medi¸c˜ao; Diferen¸ca v.s. Medi¸c˜ao e C´alculo: Measurement is a direct; Bibliografia B´asica; Bibliografia Complementar",
+      "label": "Aula 1 - Introdução ao Curso",
+      "subtitulo": "Introdução ao Curso",
+      "professor": "Prof. Danilo de Quadros Maia Filho",
+      "num_slides": 27,
+      "topicos": "Introdu¸c˜ao ao Curso; Sobre a Disciplina; Experimenta¸c˜ao; Sobre o Professor; Planejamento da Disciplina; Regras e Combinados; Primeiras Defini¸c˜oes",
       "conceitos": "Métricas de Software; Medição de Software; Experimentação; Lead Time; Produtividade",
       "resumo": "A disciplina de Medi¸c˜ao e Experimenta¸c˜ao em Engenharia de Software ´e fundamental em um curso de gradua¸c˜ao porque forma a base para decis˜oes t´ecnicas baseadas em dados, promove a qualidade do software e prepara os estudantes para um ambiente profissional onde evidˆencias | O processo de medi¸c˜ao est´a presente diariamente em tudo o que fazemos. Exemplos: Culin´aria, sono, academia, comunica¸c˜ao social, relacionamentos, sede, fome, uso de celular, rel´ogio, computadores, ar condicionado, dire¸c˜ao de carros e motos, cortes de cabelo. | Uma empresa decidiu trocar sua arquitetura monol´ıtica por microsservi¸cos. Sem medi¸c˜oes, n˜ao perceberam que a complexidade aumentou e o tempo de entrega triplicou. Medir m´etricas como lead time, n´umero de bugs ou | A Microsoft mede tempo m´edio de resolu¸c˜ao de bugs por equipe e, com isso, promove ajustes de pr´aticas ´ageis que aumentam eficiˆencia e | Grandes empresas como Google, Meta, Microsoft e iFood usam experimentos A/B, m´etri...",
+      "caminho_pdf": "../data/raw/aulas/Aula 1.pdf",
       "size": 12,
       "x": 35.36,
       "y": 7.65,
@@ -1688,12 +1754,12 @@
       "type": "aula",
       "label": "Aula 2 - Escopo e Normas de Medição de Software",
       "subtitulo": "Escopo e Normas de Medição de Software",
-      "professor": "Danilo de Quadros Maia Filho",
-      "num_slides": "50",
-      "topicos": "",
-      "titulos_slides": "Aula 2 - Conceitos B´asicos; Relevˆancia; Seria dif´ıcil imaginar as engenharias Civil, El´etrica ou Mecˆanica sem o; Requisitos n˜ao-funcionais: Prometemos que o sistema ser´a; Tamb´em ´e comum n˜ao avaliarmos a procedˆencia das informa¸c˜oes. De; Objetivos da Medi¸c˜ao de Software; Stakeholders:; Managers:; Developers:; Escopo das M´etricas de Software; Estimativa de custo e esfor¸co; Coleta de Dados; Modelos e medidas de qualidade; Modelos de Confiabilidade; M´etricas de Seguran¸ca; M´etricas estruturais e de complexidade; Avalia¸c˜ao de maturidade de capacidade; Gest˜ao por M´etricas; Avalia¸c˜ao de M´etodos e Ferramentas; Recomenda¸c˜oes de Medi¸c˜ao",
+      "professor": "Prof. Danilo de Quadros Maia Filho",
+      "num_slides": 50,
+      "topicos": "Medi¸c˜ao; Relevˆancia; Objetivos da Medi¸c˜ao de Software; Escopo das M´etricas de Software; Estimativa de custo e esfor¸co; Coleta de Dados; Modelos e medidas de qualidade; Modelos de Confiabilidade; M´etricas de Seguran¸ca; M´etricas estruturais e de complexidade; Avalia¸c˜ao de maturidade de capacidade; Gest˜ao por M´etricas; Avalia¸c˜ao de M´etodos e Ferramentas; Normas Internacionais; Artigos Recomendados",
       "conceitos": "Métricas de Software; Medição de Software; Experimentação; CMMI; ISO/IEC 9126; ISO/IEC 15939; Acoplamento; COCOMO; Produtividade; Confiabilidade; Manutenibilidade; Qualidade de Software",
       "resumo": "Seria dif´ıcil imaginar as engenharias Civil, El´etrica ou Mecˆanica sem o papel central da medi¸c˜ao. Seja na ciˆencia ou engenharia n˜ao seriam | Requisitos n˜ao-funcionais: Prometemos que o sistema ser´a user-friendly, confi´avel e sustent´avel sem especificar claramente e objetivamente o que isso significa. Dessa forma, n˜ao temos um | Custos: Falhamos em entender e quantificar os custos dos projetos de software. Custos de design, codifica¸c˜ao, testes. Medir | Novas ferramentas: Aceitamos inova¸c˜ao de ferramentas disruptivas apenas pela promessa, sem avaliar de forma criteriosa, sistem´atica e cient´ıfica se a nova proposta, nova t´ecnica ou nova ferramenta se prop˜oem, com algum probabilidade, a aumentar a | Tamb´em ´e comum n˜ao avaliarmos a procedˆencia das informa¸c˜oes. De onde o dado veio? Como foi o processo de medi¸c˜ao? Qual a margem de erro? Que garantias temos a respeito da qualidade, acur´acia, abrangˆencia, universo amostral? Quais as referˆencias para | Como dize...",
+      "caminho_pdf": "../data/raw/aulas/Aula 2 - Escopo e Normas de Medição de Software.pdf",
       "size": 12,
       "x": 0.0,
       "y": 14.14,
@@ -1704,12 +1770,12 @@
       "type": "aula",
       "label": "Aula 3 - Introdução à Experimentação",
       "subtitulo": "Introdução à Experimentação",
-      "professor": "Danilo de Quadros Maia Filho",
-      "num_slides": "25",
-      "topicos": "",
-      "titulos_slides": "Aula 3 - Conceitos B´asicos de Experimenta¸c˜ao; Objetivos da Aula; Defini¸c˜ao; Relevˆancia; Tipos de M´etodos; Experimento Controlado; Planejar vari´aveis: Definir as vari´aveis independentes; Executar um piloto: opcional.; Analisar os resultados: Aplicar t´ecnicas estat´ısticas apropriadas; Dicas para Relat´orios; Discuta amea¸cas `a validade: Aborde as poss´ıveis amea¸cas `a; Bibliografia B´asica; Bibliografia Complementar",
+      "professor": "Prof. Danilo de Quadros Maia Filho",
+      "num_slides": 25,
+      "topicos": "Objetivos da Aula; M´etodos Emp´ıricos; Defini¸c˜oes; Tipos de M´etodos Emp´ıricos; Experimento Controlado; Dicas para Relat´orios",
       "conceitos": "Métricas de Software; GQM (Goal-Question-Metric); Medição de Software; Experimentação; Validade Interna; Estudo de Caso",
       "resumo": "Formular hip´oteses: Criar a hip´otese nula (H) e a alternativa (H). Exemplo: H – TDD e desenvolvimento tradicional produzem a mesma quantidade de defeitos; H – TDD produz | Planejar vari´aveis: Definir as vari´aveis independentes (manipuladas), dependentes (observadas) e de controle | Selecionar participantes: Escolher sujeitos com crit´erios claros (ex: n´ıvel de experiˆencia) e dividir aleatoriamente em grupos, | Elaborar material experimental: Criar tarefas padronizadas, definir ambiente de execu¸c˜ao, recursos e orienta¸c˜oes para | Executar o experimento: Aplicar o experimento com os participantes reais, garantindo controle sobre o ambiente e coleta | Coletar e organizar os dados: Registrar dados quantitativos e qualitativos com m´etodos consistentes, seguros e rastre´aveis. | Analisar os resultados: Aplicar t´ecnicas estat´ısticas apropriadas para verificar significˆancia e tamanho de efeito; discutir amea¸cas | Interpretar os achados: Relacionar os resultados `as hip´oteses,...",
+      "caminho_pdf": "../data/raw/aulas/Aula 3 - Introdução à Experimentação.pdf",
       "size": 12,
       "x": -35.36,
       "y": 18.48,
@@ -1720,12 +1786,12 @@
       "type": "aula",
       "label": "Aula 4 - Entidades, Atributos e Objetivos de Medição",
       "subtitulo": "Entidades, Atributos e Objetivos de Medição",
-      "professor": "Danilo de Quadros Maia Filho",
-      "num_slides": "40",
-      "topicos": "C ↔◦F, standardized",
-      "titulos_slides": "Aula 4 - Entidades, Atributos e Objetivos de Medi¸c˜ao; Objetivos da Aula; O que vamos aprender hoje:; Tipos de Entidades; Processes; Resources and Products; Atributos; Uma vez que temos um modelo das entidades e atributos envolvidos, podemos definir a medida; Size of source code (measured by LOC); Programmer productivity; Exemplo; Escalas e Representa¸c˜oes; Classificamos as medi¸c˜oes em 5 principais categorias de escalas (existem outras):; Admissible Transformation; Tipo de es-; Nominal; Goal-Question-Metric; Defini¸c˜ao de GQM:; A abordagem GQM fornece um arcabou¸co composto por trˆes etapas:; GQM: Template",
+      "professor": "Prof. Danilo de Quadros Maia Filho",
+      "num_slides": 40,
+      "topicos": "Objetivos da Aula; Entidades; Tipos de Entidades; Atributos; Aspectos de Medi¸c˜ao; Escalas e Representa¸c˜oes; Goal-Question-Metric Framework; GQM: Contexto e Uso; GQM: Template",
       "conceitos": "Métricas de Software; GQM (Goal-Question-Metric); Medição de Software; Experimentação; LOC/SLOC; Produtividade",
       "resumo": "Products: Artifacts, deliverables, or documents that result from a process activity | A process is usually associated with some time scale. Process activities have duration—they occur over time, and they may be ordered or related in some way that depends on time, so that one activity must be completed before another can begin. The timing can be explicit, as when design must be complete by October 31, or implicit, as when a flow diagram shows that design must be | Examples: development process, maintenance process, the reuse process, the configuration | Resources and products are associated with a process. Each process activity uses resources and products, and produces products. Thus, the product of one activity may feed another activity. For example, a design document can be the product of the design activity, which is then used as an | Internal attributes: Attributes that can be measured purely in terms of the product, process, or resource itself. An internal attribute can be measu...",
+      "caminho_pdf": "../data/raw/aulas/Aula 4 - Entidades, Atributos e Objetivos de Medição.pdf",
       "size": 12,
       "x": -50.0,
       "y": 20.0,
@@ -1736,12 +1802,12 @@
       "type": "aula",
       "label": "Aula 5 - Medições de Produto, Processo e Recurso",
       "subtitulo": "Medições de Produto, Processo e Recurso",
-      "professor": "Danilo de Quadros Maia Filho",
-      "num_slides": "117",
-      "topicos": "",
-      "titulos_slides": "Aula 5 - Product, Process and Rescource; Objetivos da Aula; O que vamos aprender:; Cronograma; Size ´e utilizado para calcular atributos derivados. Tamb´em utilizado; Conhecer o tamanho da maioria dos produtos de desenvolvimento; Code Size; There is some general consensus that blank lines and com-; Exemplo: Code Size no projeto Linux; Exemplo: Code Size no projeto ARLA; De certo modo, informa¸c˜oes valiosas sobre o tamanho s˜ao perdidas; Code Size: Equations; LOCefetivo = LOCtotal −(LOCcoment + LOCbranco); Code Size: Executable Statements (ES); Code Size: Delivered Source Instructions (DSI); Exemplo: code size em um projeto COBOL; Exemplo: Checklist do SEI; Poss´ıveis origens para gera¸c˜ao do c´odigo:; Exemplo: Code Size em um script; Code Size - Alternativas ao LOC",
+      "professor": "Prof. Danilo de Quadros Maia Filho",
+      "num_slides": 117,
+      "topicos": "Objetivos da Aula; Size; Code Size; Design Size; Requirement Size; Functional Size; M´etricas inspiradas em Normas; ISO/IEC 25010; ISO/IEC 15939; ISO/IEC 1061; IEEE Std 982.1 (1988); ISO/IEC 12207; SPICE/ISO/IEC 15504; CMMI; M´etricas Diversas; COCOMO; McCall’s Quality Model; CK Metrics; M´etricas de Halstead; M´etricas de Fenton & Pfleeger",
       "conceitos": "Métricas de Software; Medição de Software; Experimentação; LOC/SLOC; Pontos de Função; CMMI; ISO/IEC 25010; ISO/IEC 15939; Acoplamento; Coesão; Halstead; McCabe; COCOMO; Velocity; Lead Time; DORA Metrics; Produtividade; Confiabilidade; Manutenibilidade; Qualidade de Software",
       "resumo": ". . . there is a major problem with the lines-of-code mea- sure: it is not consistent because some lines are more difficult to code than others . . . . One solution to the problem is to give more weight to lines that have more ‘stuff’ in them. | Embora uma m´etrica em si possa n˜ao ter informa¸c˜oes suficientes para tomadas de decis˜ao, n˜ao a rejeitamos. Ela vai compor um grupo de | Conhecer o tamanho da maioria dos produtos de desenvolvimento pode ser muito ´util. O tamanho de uma especifica¸c˜ao de requisitos pode prever o tamanho e a complexidade de um projeto, o que, por sua vez, pode prever o tamanho do c´odigo. Os atributos de tamanho do projeto e do c´odigo podem determinar o esfor¸co necess´ario para os testes, bem como o esfor¸co exigido para adicionar novas funcionalidades. As medidas de tamanho s˜ao comumente usadas para indicar a quantidade de reutiliza¸c˜ao em um sistema. | Devemos ter muito cuidado para esclarecer o que estamos contando e como estamos contando. Em par...",
+      "caminho_pdf": "../data/raw/aulas/Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "size": 12,
       "x": -35.36,
       "y": 18.48,
@@ -1752,12 +1818,12 @@
       "type": "aula",
       "label": "Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese",
       "subtitulo": "Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese",
-      "professor": "Danilo de Quadros Maia Filho",
-      "num_slides": "46",
+      "professor": "Prof. Danilo de Quadros Maia Filho",
+      "num_slides": 46,
       "topicos": "Variáveis Aleatórias Discretas; Variáveis Aleatórias Contínuas; Teste de Hipótese Estatística",
-      "titulos_slides": "Aula 7 - Medidas de Tendência Central, Variáveis; Média: medida de tendência central mais usada; sensível a valores; Média ponderada: faz com que alguns valores influenciem mais a; Moda: Observação que acontece com maior frequência.; Somas de quadrados (SQ): soma dos desvios ao quadrado com; Variância: média das diferenças ao quadrado entre observações e; Desvio padrão: raiz quadrada da variância. Ao contrário da; Erro padrão: se o desvio padrão da população for conhecido; Distribuição Uniforme Discreta; Distribuição de Bernoulli; Distribuição Binomial; Distribuição de Poisson; Variáveis Aleatórias Contínuas; Distribuição Uniforme; Definição: Função de distribuição acumulada; Distribuição Exponencial; Distribuição Normal; Definição: a f.d.a F(y) de uma v.a. normal X, com média µ e; Qual a relação entre Média, Mediana e Moda na distribuição Normal?; Método do Valor Crítico — Quando Usar",
       "conceitos": "Métricas de Software; Medição de Software; Experimentação; Hipótese Nula/Alternativa; Teste de Hipótese; Distribuição Normal; Desvio Padrão; Média/Mediana; População; Nível de Significância; Intervalo de Confiança",
       "resumo": "Mediana: valor que divide o conjunto de dados ordenados de tal modo que o mesmo número de observações ocorre nos dois lados. Para um valor ímpar de dados, a mediana é o valor central. Para um valor par de dados, a mediana é a média entre os dois valores | Desvio padrão: raiz quadrada da variância. Ao contrário da variância, apresenta as mesmas unidades dos dados originais. | Definição: Chama-se de experimento binomial ao experimento (a) que consiste em n ensaios de Bernoulli; (b) cujos ensaios são independentes; e (c) para o qual a probabilidade de sucesso em cada | Definição: A variável aleatória X, correspondente ao número de sucessos num experimento binomial, tem distribuição binomial b(n, p), | Definição: A probabilidade de que existam exatamente k ocorrências (k sendo um inteiro não negativo, k = 0, 1, 2, ...) é | Propriedade: A integral de uma função de densidade de probabilidade (f.d.p.) sobre todo o seu domínio é igual a 1. Isso é uma propriedade fundamental de qualquer dist...",
+      "caminho_pdf": "../data/raw/aulas/Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese.pdf",
       "size": 12,
       "x": -0.0,
       "y": 14.14,
@@ -1768,12 +1834,12 @@
       "type": "aula",
       "label": "Aula 8 - Processo de Experimentos",
       "subtitulo": "Processo de Experimentos",
-      "professor": "Danilo de Quadros Maia Filho",
-      "num_slides": "58",
-      "topicos": "Tipos de Pesquisa; Estratégias Empíricas; Experiment Process; Escopo e Objetivo; Etapas do Planejamento; Ameaças à Validade; Operação do Experimento; Analysis and Interpretation; Exemplo Experimento",
-      "titulos_slides": "Aula 8 - Planejamento de Experimentos; Tipos de Pesquisa; Categorias para uma Pesquisa:; Básica (pura); Exploratória; Qualitativa; Bibliográfica; Transversal (corte transversal); Experimental; Ideia geral; Estratégias Empíricas; Definindo-se o objetivo (Goal), defini-se o escopo.; Exemplo; Contexto; Hipóteses; Seleção de Variáveis; Seleção de Sujeitos; Design; Princípios Gerais de Design:; Design Types:",
+      "professor": "Prof. Danilo de Quadros Maia Filho",
+      "num_slides": 58,
+      "topicos": "Tipos de Pesquisa; Estratégias Empíricas; Experiment Process; Escopo e Objetivo; Etapas do Planejamento; Ameaças à Validade; Operação do Experimento; Analysis and Interpretation; Exemplo Experimento; Survey (levantamento); Questionários/entrevistas estruturadas.; Visão ampla de práticas, percepções, características.; Experimental; Manipulação de variáveis e comparação de grupos.; Ex.: comparar duas técnicas de desenvolvimento.",
       "conceitos": "Métricas de Software; Medição de Software; Experimentação; Variáveis Dependentes/Independentes; Hipótese Nula/Alternativa; Teste de Hipótese; Validade Interna; Validade Externa; Estudo de Caso; Survey; Dívida Técnica; Lead Time; Qualidade de Software; Amostragem; População; Nível de Significância",
       "resumo": "Foco em contextos específicos (empresa, produto, processo). Ex.: avaliar impacto de CI/CD no lead time de entrega. | Nem todos os tipos de estudo produzem evidência com a mesma força. Conceito inspirado na medicina baseada em evidências. | Nula: Uma hipótese nula afirma que não existem tendências ou padrões reais subjacentes no contexto do experimento; as únicas razões para as diferenças em nossas observações são coincidenciais. Essa é a hipótese que o experimentador deseja rejeitar com o maior nível de significância possível. Um exemplo de hipótese é que um novo método de inspeção encontra, em média, o mesmo número de falhas que o método antigo (=). Alternativa: é a hipótese em favor da qual a hipótese nula é rejeitada. Um exemplo seria que o novo método de inspeção encontra, em média, mais falhas do que o método antigo (<). | Dependentes -> Resultado do experimento: preferencialmente uma*, e relacionada com a hipótese. Pode ser medida direta ou indiretamente. *(menor risco de cont...",
+      "caminho_pdf": "../data/raw/aulas/Aula 8 - Processo de Experimentos.pdf",
       "size": 12,
       "x": 35.36,
       "y": 7.65,
@@ -1787,7 +1853,7 @@
       "atividade": "Apresentação do curso",
       "tipo": "Apresentação do Curso",
       "modulo": "Módulo 0 - Introdução",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 1.pdf",
       "size": 4,
       "x": 53.84,
       "y": -77,
@@ -1801,7 +1867,7 @@
       "atividade": "Nivelamento",
       "tipo": "Nivelamento",
       "modulo": "Módulo 0 - Introdução",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 1.pdf",
       "size": 4,
       "x": 34.99,
       "y": -74,
@@ -1815,7 +1881,7 @@
       "atividade": "Nivelamento",
       "tipo": "Nivelamento",
       "modulo": "Módulo 0 - Introdução",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 1.pdf",
       "size": 4,
       "x": 7.52,
       "y": -71,
@@ -1829,7 +1895,7 @@
       "atividade": "Escopo de Medição",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 1 - Fundamentos de Medição",
-      "aula_relacionada": "Aula 2 - Escopo e Normas de Medição de Software",
+      "aula_relacionada": "Aula 2 - Escopo e Normas de Medição de Software.pdf",
       "size": 4,
       "x": -22.41,
       "y": -68,
@@ -1843,7 +1909,7 @@
       "atividade": "Escopo de Medição",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 1 - Fundamentos de Medição",
-      "aula_relacionada": "Aula 2 - Escopo e Normas de Medição de Software",
+      "aula_relacionada": "Aula 2 - Escopo e Normas de Medição de Software.pdf",
       "size": 4,
       "x": -47.9,
       "y": -65,
@@ -1857,7 +1923,7 @@
       "atividade": "Conceitos Básicos de Medição",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 1 - Fundamentos de Medição",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 2 - Escopo e Normas de Medição de Software.pdf",
       "size": 4,
       "x": -62.92,
       "y": -62,
@@ -1871,7 +1937,7 @@
       "atividade": "Conceitos Básicos de Experimentação",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 3 - Experimentação",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 3 - Introdução à Experimentação.pdf",
       "size": 4,
       "x": -63.69,
       "y": -59,
@@ -1885,7 +1951,7 @@
       "atividade": "Etapas de Experimentação e Relatórios",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 3 - Experimentação",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 8 - Processo de Experimentos.pdf",
       "size": 4,
       "x": -49.7,
       "y": -56,
@@ -1899,7 +1965,7 @@
       "atividade": "Entidades, Atributos e Objetivos de Medição",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 2 - Métricas e Modelos",
-      "aula_relacionada": "Aula 4 - Entidades, Atributos e Objetivos de Medição",
+      "aula_relacionada": "Aula 4 - Entidades, Atributos e Objetivos de Medição.pdf",
       "size": 4,
       "x": -23.83,
       "y": -53,
@@ -1913,7 +1979,7 @@
       "atividade": "Métricas de Produto",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 2 - Métricas e Modelos",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "size": 4,
       "x": 8.2,
       "y": -50,
@@ -1927,7 +1993,7 @@
       "atividade": "Métricas de Processo",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 2 - Métricas e Modelos",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "size": 4,
       "x": 39.08,
       "y": -47,
@@ -1941,7 +2007,7 @@
       "atividade": "Métricas de Projeto",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 2 - Métricas e Modelos",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "size": 4,
       "x": 61.63,
       "y": -44,
@@ -1955,7 +2021,7 @@
       "atividade": "Modelos: Custo & Esforço, Produtividade Data Collection",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 2 - Métricas e Modelos",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "size": 4,
       "x": 70.4,
       "y": -41,
@@ -1969,7 +2035,7 @@
       "atividade": "Modelos: confiabilidade, qualidade",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 2 - Métricas e Modelos",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "size": 4,
       "x": 63.04,
       "y": -38,
@@ -1983,7 +2049,7 @@
       "atividade": "Pontos de Função",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 2 - Métricas e Modelos",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "size": 4,
       "x": 40.9,
       "y": -35,
@@ -1997,7 +2063,7 @@
       "atividade": "Revisão de Estatística",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 4 - Análise Estatística",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese.pdf",
       "size": 4,
       "x": 8.78,
       "y": -32,
@@ -2011,7 +2077,7 @@
       "atividade": "Estatística para Experimentos",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 4 - Análise Estatística",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese.pdf",
       "size": 4,
       "x": -26.1,
       "y": -29,
@@ -2037,7 +2103,7 @@
       "label": "24/Abr - Revisão de Prova",
       "data": "24/Abr",
       "atividade": "Revisão de Prova",
-      "tipo": "Avaliação",
+      "tipo": "Revisão de Prova",
       "modulo": "Avaliações",
       "aula_relacionada": "",
       "size": 4,
@@ -2053,7 +2119,7 @@
       "atividade": "Intrd. à Experimentação",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 3 - Experimentação",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 3 - Introdução à Experimentação.pdf",
       "size": 4,
       "x": -73.79,
       "y": -20,
@@ -2067,7 +2133,7 @@
       "atividade": "Métodos e Estratégias Empíricas",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 3 - Experimentação",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 8 - Processo de Experimentos.pdf",
       "size": 4,
       "x": -57.49,
       "y": -17,
@@ -2081,7 +2147,7 @@
       "atividade": "Variáveis em Experimentos",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 3 - Experimentação",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese.pdf",
       "size": 4,
       "x": -27.52,
       "y": -14,
@@ -2095,7 +2161,7 @@
       "atividade": "Revisão Sistemática da Literatura",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 3 - Experimentação",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 8 - Processo de Experimentos.pdf",
       "size": 4,
       "x": 9.45,
       "y": -11,
@@ -2109,7 +2175,7 @@
       "atividade": "Etapas: Escopo e Planejamento",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 1 - Fundamentos de Medição",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 8 - Processo de Experimentos.pdf",
       "size": 4,
       "x": 44.99,
       "y": -8,
@@ -2123,7 +2189,7 @@
       "atividade": "Etapas: Operação",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 3 - Experimentação",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 8 - Processo de Experimentos.pdf",
       "size": 4,
       "x": 70.84,
       "y": -5,
@@ -2137,7 +2203,7 @@
       "atividade": "Etapas: Análise e Interpretação",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 3 - Experimentação",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 8 - Processo de Experimentos.pdf",
       "size": 4,
       "x": 80.8,
       "y": -2,
@@ -2165,7 +2231,7 @@
       "atividade": "Data Analysis - Data collection and Data Validation",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 4 - Análise Estatística",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 8 - Processo de Experimentos.pdf",
       "size": 4,
       "x": 46.81,
       "y": 4,
@@ -2179,7 +2245,7 @@
       "atividade": "Tomada de Decisão em Experimentos",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 4 - Análise Estatística",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 8 - Processo de Experimentos.pdf",
       "size": 4,
       "x": 10.03,
       "y": 7,
@@ -2193,7 +2259,7 @@
       "atividade": "Relatórios e Documentação Técnica",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 5 - Prática e Encerramento",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 8 - Processo de Experimentos.pdf",
       "size": 4,
       "x": -29.79,
       "y": 10,
@@ -2207,7 +2273,7 @@
       "atividade": "Métricas modernas",
       "tipo": "Aula Expositiva",
       "modulo": "Módulo 2 - Métricas e Modelos",
-      "aula_relacionada": "",
+      "aula_relacionada": "Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "size": 4,
       "x": -63.47,
       "y": 13,
@@ -2261,7 +2327,7 @@
       "label": "22/Jun - Revisão de Prova",
       "data": "22/Jun",
       "atividade": "Revisão de Prova",
-      "tipo": "Avaliação",
+      "tipo": "Revisão de Prova",
       "modulo": "Avaliações",
       "aula_relacionada": "",
       "size": 4,
@@ -2289,7 +2355,7 @@
       "label": "29/Jun - Reavaliação",
       "data": "29/Jun",
       "atividade": "Reavaliação",
-      "tipo": "Avaliação",
+      "tipo": "Reavaliação",
       "modulo": "Avaliações",
       "aula_relacionada": "",
       "size": 4,
@@ -2303,7 +2369,7 @@
       "label": "03/Jul - Revisão de Prova",
       "data": "03/Jul",
       "atividade": "Revisão de Prova",
-      "tipo": "Avaliação",
+      "tipo": "Revisão de Prova",
       "modulo": "Avaliações",
       "aula_relacionada": "",
       "size": 4,
@@ -2326,20 +2392,20 @@
       "z": -0.0
     },
     {
-      "id": "conceito_estudo_empírico",
+      "id": "conceito_survey/questionário",
       "type": "conceito",
-      "label": "Estudo Empírico",
-      "frequencia": 16,
+      "label": "Survey/Questionário",
+      "frequencia": 13,
       "size": 15,
       "x": 79.42,
       "y": -0.36,
       "z": -74.3
     },
     {
-      "id": "conceito_survey/questionário",
+      "id": "conceito_estudo_empírico",
       "type": "conceito",
-      "label": "Survey/Questionário",
-      "frequencia": 13,
+      "label": "Estudo Empírico",
+      "frequencia": 16,
       "size": 15,
       "x": 48.71,
       "y": -24.29,
@@ -2349,8 +2415,8 @@
       "id": "conceito_experimento_controlado",
       "type": "conceito",
       "label": "Experimento Controlado",
-      "frequencia": 11,
-      "size": 14,
+      "frequencia": 12,
+      "size": 15,
       "x": -66.68,
       "y": 6.03,
       "z": 54.05
@@ -2366,11 +2432,11 @@
       "z": 32.25
     },
     {
-      "id": "conceito_teste_de_software",
+      "id": "conceito_revisão_sistemática",
       "type": "conceito",
-      "label": "Teste De Software",
-      "frequencia": 3,
-      "size": 6,
+      "label": "Revisão Sistemática",
+      "frequencia": 11,
+      "size": 14,
       "x": -6.78,
       "y": 70.81,
       "z": -52.15
@@ -2386,11 +2452,11 @@
       "z": -94.2
     },
     {
-      "id": "conceito_revisão_sistemática",
+      "id": "conceito_teste_de_software",
       "type": "conceito",
-      "label": "Revisão Sistemática",
-      "frequencia": 11,
-      "size": 14,
+      "label": "Teste De Software",
+      "frequencia": 3,
+      "size": 6,
       "x": -63.42,
       "y": -23.18,
       "z": -35.29
@@ -2406,34 +2472,24 @@
       "z": -81.15
     },
     {
-      "id": "conceito_complexidade_ciclomática",
-      "type": "conceito",
-      "label": "Complexidade Ciclomática",
-      "frequencia": 8,
-      "size": 11,
-      "x": -59.49,
-      "y": -16.15,
-      "z": -37.76
-    },
-    {
       "id": "conceito_inteligência_artificial/ml",
       "type": "conceito",
       "label": "Inteligência Artificial/Ml",
       "frequencia": 10,
       "size": 13,
+      "x": -59.49,
+      "y": -16.15,
+      "z": -37.76
+    },
+    {
+      "id": "conceito_complexidade_ciclomática",
+      "type": "conceito",
+      "label": "Complexidade Ciclomática",
+      "frequencia": 8,
+      "size": 11,
       "x": -89.87,
       "y": -52.53,
       "z": 1.48
-    },
-    {
-      "id": "conceito_qualidade_de_software",
-      "type": "conceito",
-      "label": "Qualidade De Software",
-      "frequencia": 22,
-      "size": 15,
-      "x": 20.39,
-      "y": 31.02,
-      "z": -63.09
     },
     {
       "id": "conceito_cohesion/coesão",
@@ -2441,9 +2497,9 @@
       "label": "Cohesion/Coesão",
       "frequencia": 6,
       "size": 9,
-      "x": 37.32,
-      "y": 87.49,
-      "z": -19.06
+      "x": 20.39,
+      "y": 31.02,
+      "z": -63.09
     },
     {
       "id": "conceito_iso/iec_25010_(square)",
@@ -2451,6 +2507,16 @@
       "label": "Iso/Iec 25010 (Square)",
       "frequencia": 5,
       "size": 8,
+      "x": 37.32,
+      "y": 87.49,
+      "z": -19.06
+    },
+    {
+      "id": "conceito_qualidade_de_software",
+      "type": "conceito",
+      "label": "Qualidade De Software",
+      "frequencia": 22,
+      "size": 15,
       "x": 6.13,
       "y": 65.77,
       "z": 82.4
@@ -2466,11 +2532,11 @@
       "z": -18.51
     },
     {
-      "id": "conceito_function_points",
+      "id": "conceito_loc/sloc",
       "type": "conceito",
-      "label": "Function Points",
-      "frequencia": 7,
-      "size": 10,
+      "label": "Loc/Sloc",
+      "frequencia": 13,
+      "size": 15,
       "x": -78.28,
       "y": 43.53,
       "z": -15.53
@@ -2486,34 +2552,24 @@
       "z": 63.63
     },
     {
-      "id": "conceito_loc/sloc",
-      "type": "conceito",
-      "label": "Loc/Sloc",
-      "frequencia": 13,
-      "size": 15,
-      "x": 6.65,
-      "y": 93.36,
-      "z": 24.95
-    },
-    {
       "id": "conceito_halstead",
       "type": "conceito",
       "label": "Halstead",
       "frequencia": 4,
       "size": 7,
+      "x": 6.65,
+      "y": 93.36,
+      "z": 24.95
+    },
+    {
+      "id": "conceito_function_points",
+      "type": "conceito",
+      "label": "Function Points",
+      "frequencia": 7,
+      "size": 10,
       "x": -27.93,
       "y": 85.97,
       "z": 42.95
-    },
-    {
-      "id": "conceito_code_coverage",
-      "type": "conceito",
-      "label": "Code Coverage",
-      "frequencia": 3,
-      "size": 6,
-      "x": 98.04,
-      "y": 48.06,
-      "z": 12.81
     },
     {
       "id": "conceito_processo_de_software",
@@ -2521,19 +2577,19 @@
       "label": "Processo De Software",
       "frequencia": 9,
       "size": 12,
+      "x": 98.04,
+      "y": 48.06,
+      "z": 12.81
+    },
+    {
+      "id": "conceito_code_coverage",
+      "type": "conceito",
+      "label": "Code Coverage",
+      "frequencia": 3,
+      "size": 6,
       "x": 42.26,
       "y": -1.04,
       "z": 66.17
-    },
-    {
-      "id": "conceito_cmmi",
-      "type": "conceito",
-      "label": "Cmmi",
-      "frequencia": 11,
-      "size": 14,
-      "x": -5.63,
-      "y": 58.72,
-      "z": -87.14
     },
     {
       "id": "conceito_produtividade",
@@ -2541,6 +2597,16 @@
       "label": "Produtividade",
       "frequencia": 15,
       "size": 15,
+      "x": -5.63,
+      "y": 58.72,
+      "z": -87.14
+    },
+    {
+      "id": "conceito_cmmi",
+      "type": "conceito",
+      "label": "Cmmi",
+      "frequencia": 11,
+      "size": 14,
       "x": 52.56,
       "y": -49.81,
       "z": 24.07
@@ -2556,11 +2622,11 @@
       "z": -40.86
     },
     {
-      "id": "conceito_replicação",
+      "id": "conceito_engenharia_de_software_empírica",
       "type": "conceito",
-      "label": "Replicação",
-      "frequencia": 7,
-      "size": 10,
+      "label": "Engenharia De Software Empírica",
+      "frequencia": 8,
+      "size": 11,
       "x": 66.23,
       "y": -5.32,
       "z": -23.01
@@ -2576,24 +2642,14 @@
       "z": 44.77
     },
     {
-      "id": "conceito_engenharia_de_software_empírica",
+      "id": "conceito_replicação",
       "type": "conceito",
-      "label": "Engenharia De Software Empírica",
-      "frequencia": 8,
-      "size": 11,
+      "label": "Replicação",
+      "frequencia": 7,
+      "size": 10,
       "x": 45.04,
       "y": -18.18,
       "z": 56.64
-    },
-    {
-      "id": "conceito_velocity",
-      "type": "conceito",
-      "label": "Velocity",
-      "frequencia": 6,
-      "size": 9,
-      "x": 62.95,
-      "y": 50.13,
-      "z": -8.21
     },
     {
       "id": "conceito_devops/ci-cd",
@@ -2601,19 +2657,19 @@
       "label": "Devops/Ci-Cd",
       "frequencia": 3,
       "size": 6,
+      "x": 62.95,
+      "y": 50.13,
+      "z": -8.21
+    },
+    {
+      "id": "conceito_velocity",
+      "type": "conceito",
+      "label": "Velocity",
+      "frequencia": 6,
+      "size": 9,
       "x": -54.82,
       "y": -42.43,
       "z": -36.07
-    },
-    {
-      "id": "conceito_gerenciamento_de_projetos",
-      "type": "conceito",
-      "label": "Gerenciamento De Projetos",
-      "frequencia": 11,
-      "size": 14,
-      "x": -50.33,
-      "y": -56.54,
-      "z": 47.84
     },
     {
       "id": "conceito_predição_de_defeitos",
@@ -2621,6 +2677,16 @@
       "label": "Predição De Defeitos",
       "frequencia": 5,
       "size": 8,
+      "x": -50.33,
+      "y": -56.54,
+      "z": 47.84
+    },
+    {
+      "id": "conceito_gerenciamento_de_projetos",
+      "type": "conceito",
+      "label": "Gerenciamento De Projetos",
+      "frequencia": 11,
+      "size": 14,
       "x": 43.6,
       "y": -29.49,
       "z": -51.58
@@ -2646,21 +2712,21 @@
       "z": -23.36
     },
     {
-      "id": "conceito_dívida_técnica",
-      "type": "conceito",
-      "label": "Dívida Técnica",
-      "frequencia": 3,
-      "size": 6,
-      "x": -4.77,
-      "y": -86.56,
-      "z": -8.53
-    },
-    {
       "id": "conceito_coupling/acoplamento",
       "type": "conceito",
       "label": "Coupling/Acoplamento",
       "frequencia": 7,
       "size": 10,
+      "x": -4.77,
+      "y": -86.56,
+      "z": -8.53
+    },
+    {
+      "id": "conceito_dívida_técnica",
+      "type": "conceito",
+      "label": "Dívida Técnica",
+      "frequencia": 3,
+      "size": 6,
       "x": 57.0,
       "y": 3.47,
       "z": 88.5
@@ -2696,11 +2762,11 @@
       "z": -79.58
     },
     {
-      "id": "conceito_lead_time",
+      "id": "conceito_métodos_ágeis",
       "type": "conceito",
-      "label": "Lead Time",
-      "frequencia": 5,
-      "size": 8,
+      "label": "Métodos Ágeis",
+      "frequencia": 9,
+      "size": 12,
       "x": 31.36,
       "y": -37.57,
       "z": -61.26
@@ -2716,11 +2782,11 @@
       "z": 81.39
     },
     {
-      "id": "conceito_métodos_ágeis",
+      "id": "conceito_lead_time",
       "type": "conceito",
-      "label": "Métodos Ágeis",
-      "frequencia": 9,
-      "size": 12,
+      "label": "Lead Time",
+      "frequencia": 5,
+      "size": 8,
       "x": 68.82,
       "y": -61.34,
       "z": 22.18
@@ -2816,26 +2882,46 @@
       "z": 55.23
     },
     {
+      "id": "conceito_ck_metrics",
+      "type": "conceito",
+      "label": "Ck Metrics",
+      "frequencia": 3,
+      "size": 6,
+      "x": 26.44,
+      "y": -30.24,
+      "z": -70.53
+    },
+    {
       "id": "conceito_medição_de_software",
       "type": "conceito",
       "label": "Medição De Software",
       "frequencia": 7,
       "size": 10,
-      "x": 26.44,
-      "y": -30.24,
-      "z": -70.53
+      "x": -66.68,
+      "y": -82.15,
+      "z": 27.19
+    },
+    {
+      "id": "conceito_objetivos_da_aula",
+      "type": "conceito",
+      "label": "Objetivos Da Aula",
+      "frequencia": 3,
+      "size": 6,
+      "x": -39.92,
+      "y": -9.24,
+      "z": -62.36
     }
   ],
   "edges": [
     {
       "source": "artigo_1",
-      "target": "conceito_estudo_empírico",
+      "target": "conceito_survey/questionário",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_1",
-      "target": "conceito_survey/questionário",
+      "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -2853,7 +2939,7 @@
     },
     {
       "source": "artigo_2",
-      "target": "conceito_teste_de_software",
+      "target": "conceito_revisão_sistemática",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -2865,19 +2951,25 @@
     },
     {
       "source": "artigo_2",
-      "target": "conceito_revisão_sistemática",
+      "target": "conceito_survey/questionário",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_2",
-      "target": "conceito_survey/questionário",
+      "target": "conceito_teste_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_3",
       "target": "conceito_manutenção_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_3",
+      "target": "conceito_inteligência_artificial/ml",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -2890,18 +2982,6 @@
     {
       "source": "artigo_3",
       "target": "conceito_complexidade_ciclomática",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_3",
-      "target": "conceito_inteligência_artificial/ml",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_4",
-      "target": "conceito_qualidade_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -2925,31 +3005,13 @@
     },
     {
       "source": "artigo_4",
-      "target": "conceito_gqm",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_5",
       "target": "conceito_qualidade_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_5",
-      "target": "conceito_complexidade_ciclomática",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_5",
-      "target": "conceito_function_points",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_5",
-      "target": "conceito_métricas_de_software",
+      "source": "artigo_4",
+      "target": "conceito_gqm",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -2967,13 +3029,25 @@
     },
     {
       "source": "artigo_5",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_5",
+      "target": "conceito_complexidade_ciclomática",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_5",
       "target": "conceito_halstead",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_5",
-      "target": "conceito_code_coverage",
+      "target": "conceito_function_points",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -2984,14 +3058,20 @@
       "weight": 1
     },
     {
-      "source": "artigo_6",
+      "source": "artigo_5",
       "target": "conceito_qualidade_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
+      "source": "artigo_5",
+      "target": "conceito_code_coverage",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
       "source": "artigo_6",
-      "target": "conceito_cmmi",
+      "target": "conceito_survey/questionário",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3003,19 +3083,25 @@
     },
     {
       "source": "artigo_6",
-      "target": "conceito_métricas_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_6",
       "target": "conceito_loc/sloc",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_6",
-      "target": "conceito_survey/questionário",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_6",
+      "target": "conceito_cmmi",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_6",
+      "target": "conceito_qualidade_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3033,43 +3119,7 @@
     },
     {
       "source": "artigo_7",
-      "target": "conceito_estudo_empírico",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_7",
-      "target": "conceito_experimento_controlado",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_7",
-      "target": "conceito_experimentação",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_7",
-      "target": "conceito_replicação",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_7",
-      "target": "conceito_métricas_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_7",
       "target": "conceito_manutenção_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_7",
-      "target": "conceito_machine_learning",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3081,25 +3131,43 @@
     },
     {
       "source": "artigo_7",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_7",
       "target": "conceito_engenharia_de_software_empírica",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_8",
-      "target": "conceito_function_points",
+      "source": "artigo_7",
+      "target": "conceito_machine_learning",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_8",
-      "target": "conceito_loc/sloc",
+      "source": "artigo_7",
+      "target": "conceito_experimento_controlado",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_8",
-      "target": "conceito_boehm_model",
+      "source": "artigo_7",
+      "target": "conceito_replicação",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_7",
+      "target": "conceito_estudo_empírico",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_7",
+      "target": "conceito_experimentação",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3116,14 +3184,20 @@
       "weight": 1
     },
     {
-      "source": "artigo_9",
-      "target": "conceito_velocity",
+      "source": "artigo_8",
+      "target": "conceito_boehm_model",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_9",
-      "target": "conceito_estudo_empírico",
+      "source": "artigo_8",
+      "target": "conceito_loc/sloc",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_8",
+      "target": "conceito_function_points",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3140,14 +3214,26 @@
       "weight": 1
     },
     {
-      "source": "artigo_10",
-      "target": "conceito_gerenciamento_de_projetos",
+      "source": "artigo_9",
+      "target": "conceito_estudo_empírico",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_9",
+      "target": "conceito_velocity",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_10",
       "target": "conceito_engenharia_de_software_empírica",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_10",
+      "target": "conceito_processo_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3165,13 +3251,7 @@
     },
     {
       "source": "artigo_10",
-      "target": "conceito_processo_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_11",
-      "target": "conceito_métricas_de_software",
+      "target": "conceito_gerenciamento_de_projetos",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3189,7 +3269,7 @@
     },
     {
       "source": "artigo_11",
-      "target": "conceito_code_coverage",
+      "target": "conceito_revisão_sistemática",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3201,43 +3281,19 @@
     },
     {
       "source": "artigo_11",
-      "target": "conceito_revisão_sistemática",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_11",
       "target": "conceito_gqm",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_12",
-      "target": "conceito_qualidade_de_software",
+      "source": "artigo_11",
+      "target": "conceito_métricas_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_12",
-      "target": "conceito_estudo_empírico",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_12",
-      "target": "conceito_mineração_de_repositórios",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_12",
-      "target": "conceito_dívida_técnica",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_12",
-      "target": "conceito_replicação",
+      "source": "artigo_11",
+      "target": "conceito_code_coverage",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3249,13 +3305,55 @@
     },
     {
       "source": "artigo_12",
+      "target": "conceito_mineração_de_repositórios",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_12",
       "target": "conceito_engenharia_de_software_empírica",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_12",
+      "target": "conceito_replicação",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_12",
+      "target": "conceito_qualidade_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_12",
       "target": "conceito_coupling/acoplamento",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_12",
+      "target": "conceito_estudo_empírico",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_12",
+      "target": "conceito_dívida_técnica",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_13",
+      "target": "conceito_inteligência_artificial/ml",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_13",
+      "target": "conceito_segurança_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3273,13 +3371,7 @@
     },
     {
       "source": "artigo_13",
-      "target": "conceito_complexidade_ciclomática",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_13",
-      "target": "conceito_inteligência_artificial/ml",
+      "target": "conceito_machine_learning",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3291,13 +3383,7 @@
     },
     {
       "source": "artigo_13",
-      "target": "conceito_machine_learning",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_13",
-      "target": "conceito_segurança_de_software",
+      "target": "conceito_complexidade_ciclomática",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3315,19 +3401,13 @@
     },
     {
       "source": "artigo_14",
-      "target": "conceito_gqm",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_14",
       "target": "conceito_survey/questionário",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_15",
-      "target": "conceito_machine_learning",
+      "source": "artigo_14",
+      "target": "conceito_gqm",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3338,8 +3418,20 @@
       "weight": 1
     },
     {
+      "source": "artigo_15",
+      "target": "conceito_machine_learning",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
       "source": "artigo_16",
       "target": "conceito_manutenção_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_16",
+      "target": "conceito_processo_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3356,8 +3448,20 @@
       "weight": 1
     },
     {
-      "source": "artigo_16",
-      "target": "conceito_processo_de_software",
+      "source": "artigo_17",
+      "target": "conceito_métodos_ágeis",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_17",
+      "target": "conceito_survey/questionário",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_17",
+      "target": "conceito_proposta_de_framework",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3369,37 +3473,7 @@
     },
     {
       "source": "artigo_17",
-      "target": "conceito_survey/questionário",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_17",
-      "target": "conceito_proposta_de_framework",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_17",
       "target": "conceito_devops/ci-cd",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_17",
-      "target": "conceito_métodos_ágeis",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_18",
-      "target": "conceito_métricas_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_18",
-      "target": "conceito_qualidade_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3423,25 +3497,25 @@
     },
     {
       "source": "artigo_18",
+      "target": "conceito_qualidade_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_18",
       "target": "conceito_coupling/acoplamento",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_18",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_18",
       "target": "conceito_produtividade",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_19",
-      "target": "conceito_proposta_de_framework",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_19",
-      "target": "conceito_gerenciamento_de_projetos",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3458,14 +3532,38 @@
       "weight": 1
     },
     {
+      "source": "artigo_19",
+      "target": "conceito_proposta_de_framework",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_19",
+      "target": "conceito_gerenciamento_de_projetos",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
       "source": "artigo_20",
-      "target": "conceito_métricas_de_software",
+      "target": "conceito_meta-análise",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_20",
+      "target": "conceito_boehm_model",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_20",
       "target": "conceito_loc/sloc",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_20",
+      "target": "conceito_métricas_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3482,56 +3580,14 @@
       "weight": 1
     },
     {
-      "source": "artigo_20",
-      "target": "conceito_boehm_model",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_20",
-      "target": "conceito_meta-análise",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
       "source": "artigo_21",
-      "target": "conceito_qualidade_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_21",
-      "target": "conceito_teste_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_21",
-      "target": "conceito_experimento_controlado",
+      "target": "conceito_métodos_ágeis",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_21",
       "target": "conceito_revisão_sistemática",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_21",
-      "target": "conceito_experimentação",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_21",
-      "target": "conceito_produtividade",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_21",
-      "target": "conceito_replicação",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3543,19 +3599,61 @@
     },
     {
       "source": "artigo_21",
-      "target": "conceito_métodos_ágeis",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_21",
       "target": "conceito_meta-análise",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
+      "source": "artigo_21",
+      "target": "conceito_teste_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_21",
+      "target": "conceito_produtividade",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_21",
+      "target": "conceito_experimento_controlado",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_21",
+      "target": "conceito_replicação",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_21",
+      "target": "conceito_qualidade_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_21",
+      "target": "conceito_experimentação",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
       "source": "artigo_22",
-      "target": "conceito_estudo_empírico",
+      "target": "conceito_métodos_ágeis",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_22",
+      "target": "conceito_revisão_sistemática",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_22",
+      "target": "conceito_six_sigma",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3567,25 +3665,13 @@
     },
     {
       "source": "artigo_22",
-      "target": "conceito_métodos_ágeis",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_22",
-      "target": "conceito_revisão_sistemática",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_22",
       "target": "conceito_cmmi",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_22",
-      "target": "conceito_gerenciamento_de_projetos",
+      "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3597,7 +3683,13 @@
     },
     {
       "source": "artigo_22",
-      "target": "conceito_six_sigma",
+      "target": "conceito_gerenciamento_de_projetos",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_23",
+      "target": "conceito_engenharia_de_software_(geral)",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3608,8 +3700,8 @@
       "weight": 1
     },
     {
-      "source": "artigo_23",
-      "target": "conceito_engenharia_de_software_(geral)",
+      "source": "artigo_24",
+      "target": "conceito_cmmi",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3626,8 +3718,14 @@
       "weight": 1
     },
     {
-      "source": "artigo_24",
-      "target": "conceito_cmmi",
+      "source": "artigo_25",
+      "target": "conceito_manutenção_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_25",
+      "target": "conceito_cohesion/coesão",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3639,13 +3737,19 @@
     },
     {
       "source": "artigo_25",
-      "target": "conceito_estudo_empírico",
+      "target": "conceito_iso/iec_9126",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_25",
-      "target": "conceito_cohesion/coesão",
+      "target": "conceito_loc/sloc",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_25",
+      "target": "conceito_métricas_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3657,31 +3761,19 @@
     },
     {
       "source": "artigo_25",
-      "target": "conceito_iso/iec_9126",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_25",
-      "target": "conceito_métricas_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_25",
-      "target": "conceito_manutenção_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_25",
-      "target": "conceito_loc/sloc",
+      "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_25",
       "target": "conceito_coupling/acoplamento",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_26",
+      "target": "conceito_inteligência_artificial/ml",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3693,55 +3785,13 @@
     },
     {
       "source": "artigo_26",
-      "target": "conceito_inteligência_artificial/ml",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_26",
       "target": "conceito_machine_learning",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_27",
-      "target": "conceito_qualidade_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_27",
-      "target": "conceito_boehm_model",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_27",
-      "target": "conceito_iso/iec_9126",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_27",
-      "target": "conceito_iso/iec_25010_(square)",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_27",
-      "target": "conceito_métricas_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_27",
       "target": "conceito_manutenção_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_27",
-      "target": "conceito_gerenciamento_de_projetos",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3753,7 +3803,25 @@
     },
     {
       "source": "artigo_27",
+      "target": "conceito_iso/iec_9126",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_27",
+      "target": "conceito_boehm_model",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_27",
       "target": "conceito_loc/sloc",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_27",
+      "target": "conceito_métricas_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3765,7 +3833,7 @@
     },
     {
       "source": "artigo_27",
-      "target": "conceito_coupling/acoplamento",
+      "target": "conceito_iso/iec_25010_(square)",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3776,8 +3844,38 @@
       "weight": 1
     },
     {
+      "source": "artigo_27",
+      "target": "conceito_qualidade_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_27",
+      "target": "conceito_coupling/acoplamento",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_27",
+      "target": "conceito_gerenciamento_de_projetos",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_28",
+      "target": "conceito_manutenção_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
       "source": "artigo_28",
       "target": "conceito_mineração_de_repositórios",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_28",
+      "target": "conceito_revisão_de_código",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3795,31 +3893,13 @@
     },
     {
       "source": "artigo_28",
-      "target": "conceito_manutenção_de_software",
+      "target": "conceito_dívida_técnica",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_28",
       "target": "conceito_code_coverage",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_28",
-      "target": "conceito_revisão_de_código",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_28",
-      "target": "conceito_dívida_técnica",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_29",
-      "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3831,13 +3911,19 @@
     },
     {
       "source": "artigo_29",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_29",
       "target": "conceito_experimento_controlado",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_29",
-      "target": "conceito_experimentação",
+      "target": "conceito_proposta_de_framework",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3849,13 +3935,13 @@
     },
     {
       "source": "artigo_29",
-      "target": "conceito_métricas_de_software",
+      "target": "conceito_mccall_model",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_29",
-      "target": "conceito_proposta_de_framework",
+      "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3867,13 +3953,7 @@
     },
     {
       "source": "artigo_29",
-      "target": "conceito_mccall_model",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_30",
-      "target": "conceito_proposta_de_framework",
+      "target": "conceito_experimentação",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3886,6 +3966,12 @@
     {
       "source": "artigo_30",
       "target": "conceito_experimentação",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_30",
+      "target": "conceito_proposta_de_framework",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3903,37 +3989,13 @@
     },
     {
       "source": "artigo_31",
-      "target": "conceito_proposta_de_framework",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_31",
       "target": "conceito_experimentação",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_32",
-      "target": "conceito_gerenciamento_de_projetos",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_32",
-      "target": "conceito_cohesion/coesão",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_32",
-      "target": "conceito_boehm_model",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_32",
-      "target": "conceito_gqm",
+      "source": "artigo_31",
+      "target": "conceito_proposta_de_framework",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3945,13 +4007,31 @@
     },
     {
       "source": "artigo_32",
+      "target": "conceito_cohesion/coesão",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_32",
       "target": "conceito_cmmi",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_33",
-      "target": "conceito_teste_de_software",
+      "source": "artigo_32",
+      "target": "conceito_boehm_model",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_32",
+      "target": "conceito_gqm",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_32",
+      "target": "conceito_gerenciamento_de_projetos",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3962,14 +4042,8 @@
       "weight": 1
     },
     {
-      "source": "artigo_34",
-      "target": "conceito_mapeamento_sistemático",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_34",
-      "target": "conceito_boehm_model",
+      "source": "artigo_33",
+      "target": "conceito_teste_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -3981,19 +4055,19 @@
     },
     {
       "source": "artigo_34",
+      "target": "conceito_boehm_model",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_34",
+      "target": "conceito_mapeamento_sistemático",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_34",
       "target": "conceito_engenharia_de_software_(geral)",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_35",
-      "target": "conceito_análise_estatística",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_35",
-      "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4005,7 +4079,7 @@
     },
     {
       "source": "artigo_35",
-      "target": "conceito_experimento_controlado",
+      "target": "conceito_análise_estatística",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4017,7 +4091,13 @@
     },
     {
       "source": "artigo_35",
-      "target": "conceito_experimentação",
+      "target": "conceito_experimento_controlado",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_35",
+      "target": "conceito_gqm",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4029,7 +4109,13 @@
     },
     {
       "source": "artigo_35",
-      "target": "conceito_gqm",
+      "target": "conceito_estudo_empírico",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_35",
+      "target": "conceito_experimentação",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4041,13 +4127,13 @@
     },
     {
       "source": "artigo_37",
-      "target": "conceito_estudo_de_caso",
+      "target": "conceito_six_sigma",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_37",
-      "target": "conceito_cmmi",
+      "target": "conceito_estudo_de_caso",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4059,25 +4145,19 @@
     },
     {
       "source": "artigo_37",
-      "target": "conceito_six_sigma",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_37",
       "target": "conceito_processo_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_38",
-      "target": "conceito_estudo_empírico",
+      "source": "artigo_37",
+      "target": "conceito_cmmi",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_38",
-      "target": "conceito_experimento_controlado",
+      "target": "conceito_manutenção_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4095,19 +4175,7 @@
     },
     {
       "source": "artigo_38",
-      "target": "conceito_experimentação",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_38",
-      "target": "conceito_manutenção_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_38",
-      "target": "conceito_proposta_de_framework",
+      "target": "conceito_experimento_controlado",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4119,37 +4187,43 @@
     },
     {
       "source": "artigo_38",
+      "target": "conceito_proposta_de_framework",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_38",
       "target": "conceito_processo_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_38",
+      "target": "conceito_estudo_empírico",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_38",
+      "target": "conceito_experimentação",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_39",
+      "target": "conceito_métodos_ágeis",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_39",
+      "target": "conceito_story_points",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_39",
       "target": "conceito_produtividade",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_39",
-      "target": "conceito_function_points",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_39",
-      "target": "conceito_métricas_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_39",
-      "target": "conceito_velocity",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_39",
-      "target": "conceito_lead_time",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4161,7 +4235,13 @@
     },
     {
       "source": "artigo_39",
-      "target": "conceito_story_points",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_39",
+      "target": "conceito_velocity",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4173,25 +4253,13 @@
     },
     {
       "source": "artigo_39",
-      "target": "conceito_métodos_ágeis",
+      "target": "conceito_function_points",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_40",
-      "target": "conceito_machine_learning",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_40",
-      "target": "conceito_estudo_empírico",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_40",
-      "target": "conceito_survey/questionário",
+      "source": "artigo_39",
+      "target": "conceito_lead_time",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4203,37 +4271,25 @@
     },
     {
       "source": "artigo_40",
+      "target": "conceito_survey/questionário",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_40",
       "target": "conceito_revisão_de_código",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_41",
+      "source": "artigo_40",
       "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_41",
-      "target": "conceito_estudo_de_caso",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_41",
-      "target": "conceito_function_points",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_41",
-      "target": "conceito_gerenciamento_de_projetos",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_41",
-      "target": "conceito_story_points",
+      "source": "artigo_40",
+      "target": "conceito_machine_learning",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4245,25 +4301,37 @@
     },
     {
       "source": "artigo_41",
+      "target": "conceito_story_points",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_41",
+      "target": "conceito_estudo_de_caso",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_41",
       "target": "conceito_engenharia_de_software_empírica",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_42",
-      "target": "conceito_métricas_de_software",
+      "source": "artigo_41",
+      "target": "conceito_function_points",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_42",
+      "source": "artigo_41",
       "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_42",
-      "target": "conceito_segurança_de_software",
+      "source": "artigo_41",
+      "target": "conceito_gerenciamento_de_projetos",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4275,13 +4343,43 @@
     },
     {
       "source": "artigo_42",
+      "target": "conceito_segurança_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_42",
+      "target": "conceito_estudo_empírico",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_42",
       "target": "conceito_predição_de_defeitos",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_42",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_42",
       "target": "conceito_defect_density",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_43",
+      "target": "conceito_métodos_ágeis",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_43",
+      "target": "conceito_estudo_de_caso",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4299,61 +4397,19 @@
     },
     {
       "source": "artigo_43",
-      "target": "conceito_gerenciamento_de_projetos",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_43",
-      "target": "conceito_estudo_de_caso",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_43",
       "target": "conceito_gqm",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_43",
-      "target": "conceito_métodos_ágeis",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_44",
-      "target": "conceito_métricas_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_44",
-      "target": "conceito_qualidade_de_software",
+      "target": "conceito_gerenciamento_de_projetos",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_44",
       "target": "conceito_manutenção_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_44",
-      "target": "conceito_machine_learning",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_44",
-      "target": "conceito_survey/questionário",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_44",
-      "target": "conceito_complexidade_ciclomática",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4365,25 +4421,37 @@
     },
     {
       "source": "artigo_44",
+      "target": "conceito_survey/questionário",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_44",
+      "target": "conceito_machine_learning",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_44",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_44",
+      "target": "conceito_complexidade_ciclomática",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_44",
+      "target": "conceito_qualidade_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_44",
       "target": "conceito_boehm_model",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_45",
-      "target": "conceito_análise_estatística",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_45",
-      "target": "conceito_engenharia_de_software_empírica",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_45",
-      "target": "conceito_experimento_controlado",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4395,13 +4463,31 @@
     },
     {
       "source": "artigo_45",
+      "target": "conceito_análise_estatística",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_45",
+      "target": "conceito_engenharia_de_software_empírica",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_45",
       "target": "conceito_experimentação",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
+      "source": "artigo_45",
+      "target": "conceito_experimento_controlado",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
       "source": "artigo_46",
-      "target": "conceito_métricas_de_software",
+      "target": "conceito_revisão_sistemática",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4413,37 +4499,25 @@
     },
     {
       "source": "artigo_46",
-      "target": "conceito_engenharia_de_software_empírica",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_46",
       "target": "conceito_boehm_model",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_46",
-      "target": "conceito_revisão_sistemática",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_46",
+      "target": "conceito_engenharia_de_software_empírica",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_47",
       "target": "conceito_manutenção_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_47",
-      "target": "conceito_machine_learning",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_47",
-      "target": "conceito_iso_9001",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4466,8 +4540,14 @@
       "weight": 1
     },
     {
-      "source": "artigo_48",
-      "target": "conceito_estudo_empírico",
+      "source": "artigo_47",
+      "target": "conceito_machine_learning",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_47",
+      "target": "conceito_iso_9001",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4479,7 +4559,7 @@
     },
     {
       "source": "artigo_48",
-      "target": "conceito_gerenciamento_de_projetos",
+      "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4490,20 +4570,26 @@
       "weight": 1
     },
     {
-      "source": "artigo_49",
-      "target": "conceito_estudo_empírico",
+      "source": "artigo_48",
+      "target": "conceito_gerenciamento_de_projetos",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_49",
-      "target": "conceito_estudo_de_caso",
+      "target": "conceito_métodos_ágeis",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_49",
       "target": "conceito_revisão_sistemática",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_49",
+      "target": "conceito_estudo_de_caso",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4527,19 +4613,13 @@
     },
     {
       "source": "artigo_49",
-      "target": "conceito_métodos_ágeis",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_49",
       "target": "conceito_processo_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_50",
-      "target": "conceito_qualidade_de_software",
+      "source": "artigo_49",
+      "target": "conceito_estudo_empírico",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4557,7 +4637,13 @@
     },
     {
       "source": "artigo_50",
-      "target": "conceito_iso/iec_25010_(square)",
+      "target": "conceito_machine_learning",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_50",
+      "target": "conceito_gqm",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4569,13 +4655,13 @@
     },
     {
       "source": "artigo_50",
-      "target": "conceito_machine_learning",
+      "target": "conceito_iso/iec_25010_(square)",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_50",
-      "target": "conceito_iso_9001",
+      "target": "conceito_qualidade_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4587,31 +4673,7 @@
     },
     {
       "source": "artigo_50",
-      "target": "conceito_gqm",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_51",
-      "target": "conceito_qualidade_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_51",
       "target": "conceito_iso_9001",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_51",
-      "target": "conceito_cmmi",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_51",
-      "target": "conceito_iso/iec_25010_(square)",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4629,37 +4691,31 @@
     },
     {
       "source": "artigo_51",
+      "target": "conceito_cmmi",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_51",
+      "target": "conceito_iso/iec_25010_(square)",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_51",
       "target": "conceito_iso/iec_9126",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_52",
-      "target": "conceito_function_points",
+      "source": "artigo_51",
+      "target": "conceito_qualidade_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_52",
-      "target": "conceito_machine_learning",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_52",
-      "target": "conceito_gerenciamento_de_projetos",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_52",
-      "target": "conceito_inteligência_artificial/ml",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_52",
-      "target": "conceito_boehm_model",
+      "source": "artigo_51",
+      "target": "conceito_iso_9001",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4671,31 +4727,37 @@
     },
     {
       "source": "artigo_52",
-      "target": "conceito_cmmi",
+      "target": "conceito_inteligência_artificial/ml",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_53",
-      "target": "conceito_métricas_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_53",
+      "source": "artigo_52",
       "target": "conceito_gerenciamento_de_projetos",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_53",
-      "target": "conceito_story_points",
+      "source": "artigo_52",
+      "target": "conceito_cmmi",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_53",
-      "target": "conceito_proposta_de_framework",
+      "source": "artigo_52",
+      "target": "conceito_boehm_model",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_52",
+      "target": "conceito_machine_learning",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_52",
+      "target": "conceito_function_points",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4707,7 +4769,49 @@
     },
     {
       "source": "artigo_53",
+      "target": "conceito_story_points",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_53",
       "target": "conceito_produtividade",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_53",
+      "target": "conceito_métricas_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_53",
+      "target": "conceito_proposta_de_framework",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_53",
+      "target": "conceito_gerenciamento_de_projetos",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_54",
+      "target": "conceito_cohesion/coesão",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_54",
+      "target": "conceito_machine_learning",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_54",
+      "target": "conceito_coupling/acoplamento",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4725,43 +4829,25 @@
     },
     {
       "source": "artigo_54",
-      "target": "conceito_métricas_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_54",
-      "target": "conceito_machine_learning",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_54",
       "target": "conceito_loc/sloc",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_54",
-      "target": "conceito_coupling/acoplamento",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_54",
-      "target": "conceito_qualidade_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_54",
-      "target": "conceito_cohesion/coesão",
+      "target": "conceito_métricas_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_54",
       "target": "conceito_complexidade_ciclomática",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_54",
+      "target": "conceito_ck_metrics",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4774,6 +4860,48 @@
     {
       "source": "artigo_54",
       "target": "conceito_predição_de_defeitos",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_54",
+      "target": "conceito_qualidade_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_55",
+      "target": "conceito_produtividade",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_55",
+      "target": "conceito_estudo_de_caso",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_55",
+      "target": "conceito_loc/sloc",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_55",
+      "target": "conceito_gqm",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_55",
+      "target": "conceito_proposta_de_framework",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_55",
+      "target": "conceito_processo_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4797,55 +4925,25 @@
     },
     {
       "source": "artigo_55",
-      "target": "conceito_estudo_de_caso",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_55",
-      "target": "conceito_produtividade",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_55",
-      "target": "conceito_loc/sloc",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_55",
-      "target": "conceito_proposta_de_framework",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_55",
-      "target": "conceito_gqm",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_55",
-      "target": "conceito_processo_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_55",
       "target": "conceito_defect_density",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_56",
-      "target": "conceito_qualidade_de_software",
+      "target": "conceito_métricas_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_56",
-      "target": "conceito_métricas_de_software",
+      "target": "conceito_ck_metrics",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_56",
+      "target": "conceito_qualidade_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4863,19 +4961,13 @@
     },
     {
       "source": "artigo_58",
-      "target": "conceito_revisão_de_código",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_58",
       "target": "conceito_produtividade",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_59",
-      "target": "conceito_replicação",
+      "source": "artigo_58",
+      "target": "conceito_revisão_de_código",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4887,25 +4979,31 @@
     },
     {
       "source": "artigo_59",
-      "target": "conceito_qualidade_de_software",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_59",
       "target": "conceito_segurança_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_59",
-      "target": "conceito_experimento_controlado",
+      "target": "conceito_replicação",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_59",
       "target": "conceito_revisão_de_código",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_59",
+      "target": "conceito_qualidade_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_59",
+      "target": "conceito_experimento_controlado",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4941,19 +5039,7 @@
     },
     {
       "source": "artigo_62",
-      "target": "conceito_experimento_controlado",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_62",
-      "target": "conceito_experimentação",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_62",
-      "target": "conceito_replicação",
+      "target": "conceito_meta-análise",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4965,13 +5051,19 @@
     },
     {
       "source": "artigo_62",
-      "target": "conceito_meta-análise",
+      "target": "conceito_experimento_controlado",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
-      "source": "artigo_63",
-      "target": "conceito_proposta_de_framework",
+      "source": "artigo_62",
+      "target": "conceito_replicação",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_62",
+      "target": "conceito_experimentação",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4982,8 +5074,14 @@
       "weight": 1
     },
     {
+      "source": "artigo_63",
+      "target": "conceito_proposta_de_framework",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
       "source": "artigo_64",
-      "target": "conceito_métricas_de_software",
+      "target": "conceito_manutenção_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -4995,7 +5093,13 @@
     },
     {
       "source": "artigo_64",
-      "target": "conceito_manutenção_de_software",
+      "target": "conceito_predição_de_defeitos",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_64",
+      "target": "conceito_métricas_de_software",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -5012,12 +5116,6 @@
       "weight": 1
     },
     {
-      "source": "artigo_64",
-      "target": "conceito_predição_de_defeitos",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
       "source": "artigo_65",
       "target": "conceito_métricas_de_software",
       "type": "artigo_conceito",
@@ -5025,7 +5123,7 @@
     },
     {
       "source": "artigo_65",
-      "target": "conceito_qualidade_de_software",
+      "target": "conceito_gqm",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -5037,13 +5135,31 @@
     },
     {
       "source": "artigo_65",
-      "target": "conceito_gqm",
+      "target": "conceito_qualidade_de_software",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_66",
+      "target": "conceito_produtividade",
       "type": "artigo_conceito",
       "weight": 1
     },
     {
       "source": "artigo_66",
       "target": "conceito_estudo_de_caso",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_66",
+      "target": "conceito_velocity",
+      "type": "artigo_conceito",
+      "weight": 1
+    },
+    {
+      "source": "artigo_66",
+      "target": "conceito_loc/sloc",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -5055,31 +5171,7 @@
     },
     {
       "source": "artigo_66",
-      "target": "conceito_experimentação",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_66",
       "target": "conceito_function_points",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_66",
-      "target": "conceito_velocity",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_66",
-      "target": "conceito_produtividade",
-      "type": "artigo_conceito",
-      "weight": 1
-    },
-    {
-      "source": "artigo_66",
-      "target": "conceito_loc/sloc",
       "type": "artigo_conceito",
       "weight": 1
     },
@@ -5090,14 +5182,14 @@
       "weight": 1
     },
     {
-      "source": "aula_1",
-      "target": "conceito_produtividade",
-      "type": "aula_conceito",
-      "weight": 2
+      "source": "artigo_66",
+      "target": "conceito_experimentação",
+      "type": "artigo_conceito",
+      "weight": 1
     },
     {
       "source": "aula_1",
-      "target": "conceito_experimentação",
+      "target": "conceito_produtividade",
       "type": "aula_conceito",
       "weight": 2
     },
@@ -5109,19 +5201,37 @@
     },
     {
       "source": "aula_1",
+      "target": "conceito_lead_time",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_1",
       "target": "conceito_medição_de_software",
       "type": "aula_conceito",
       "weight": 2
     },
     {
       "source": "aula_1",
-      "target": "conceito_lead_time",
+      "target": "conceito_experimentação",
       "type": "aula_conceito",
       "weight": 2
     },
     {
       "source": "aula_2",
-      "target": "conceito_qualidade_de_software",
+      "target": "conceito_produtividade",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_2",
+      "target": "conceito_cmmi",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_2",
+      "target": "conceito_experimentação",
       "type": "aula_conceito",
       "weight": 2
     },
@@ -5133,18 +5243,6 @@
     },
     {
       "source": "aula_2",
-      "target": "conceito_cmmi",
-      "type": "aula_conceito",
-      "weight": 2
-    },
-    {
-      "source": "aula_2",
-      "target": "conceito_experimentação",
-      "type": "aula_conceito",
-      "weight": 2
-    },
-    {
-      "source": "aula_2",
       "target": "conceito_métricas_de_software",
       "type": "aula_conceito",
       "weight": 2
@@ -5157,13 +5255,19 @@
     },
     {
       "source": "aula_2",
-      "target": "conceito_medição_de_software",
+      "target": "conceito_qualidade_de_software",
       "type": "aula_conceito",
       "weight": 2
     },
     {
       "source": "aula_2",
-      "target": "conceito_produtividade",
+      "target": "conceito_medição_de_software",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_3",
+      "target": "conceito_objetivos_da_aula",
       "type": "aula_conceito",
       "weight": 2
     },
@@ -5175,13 +5279,13 @@
     },
     {
       "source": "aula_3",
-      "target": "conceito_experimentação",
+      "target": "conceito_métricas_de_software",
       "type": "aula_conceito",
       "weight": 2
     },
     {
       "source": "aula_3",
-      "target": "conceito_métricas_de_software",
+      "target": "conceito_experimento_controlado",
       "type": "aula_conceito",
       "weight": 2
     },
@@ -5192,8 +5296,14 @@
       "weight": 2
     },
     {
-      "source": "aula_4",
+      "source": "aula_3",
       "target": "conceito_experimentação",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_4",
+      "target": "conceito_objetivos_da_aula",
       "type": "aula_conceito",
       "weight": 2
     },
@@ -5205,6 +5315,12 @@
     },
     {
       "source": "aula_4",
+      "target": "conceito_loc/sloc",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_4",
       "target": "conceito_métricas_de_software",
       "type": "aula_conceito",
       "weight": 2
@@ -5217,31 +5333,31 @@
     },
     {
       "source": "aula_4",
-      "target": "conceito_loc/sloc",
-      "type": "aula_conceito",
-      "weight": 2
-    },
-    {
-      "source": "aula_5",
       "target": "conceito_experimentação",
       "type": "aula_conceito",
       "weight": 2
     },
     {
       "source": "aula_5",
-      "target": "conceito_iso/iec_15939",
+      "target": "conceito_produtividade",
       "type": "aula_conceito",
       "weight": 2
     },
     {
       "source": "aula_5",
-      "target": "conceito_métricas_de_software",
+      "target": "conceito_objetivos_da_aula",
       "type": "aula_conceito",
       "weight": 2
     },
     {
       "source": "aula_5",
-      "target": "conceito_medição_de_software",
+      "target": "conceito_loc/sloc",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_5",
+      "target": "conceito_velocity",
       "type": "aula_conceito",
       "weight": 2
     },
@@ -5253,7 +5369,31 @@
     },
     {
       "source": "aula_5",
-      "target": "conceito_produtividade",
+      "target": "conceito_cmmi",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_5",
+      "target": "conceito_experimentação",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_5",
+      "target": "conceito_métricas_de_software",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_5",
+      "target": "conceito_iso/iec_15939",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_5",
+      "target": "conceito_ck_metrics",
       "type": "aula_conceito",
       "weight": 2
     },
@@ -5265,31 +5405,13 @@
     },
     {
       "source": "aula_5",
-      "target": "conceito_loc/sloc",
-      "type": "aula_conceito",
-      "weight": 2
-    },
-    {
-      "source": "aula_5",
       "target": "conceito_qualidade_de_software",
       "type": "aula_conceito",
       "weight": 2
     },
     {
       "source": "aula_5",
-      "target": "conceito_cmmi",
-      "type": "aula_conceito",
-      "weight": 2
-    },
-    {
-      "source": "aula_5",
-      "target": "conceito_velocity",
-      "type": "aula_conceito",
-      "weight": 2
-    },
-    {
-      "source": "aula_6",
-      "target": "conceito_experimentação",
+      "target": "conceito_medição_de_software",
       "type": "aula_conceito",
       "weight": 2
     },
@@ -5306,32 +5428,14 @@
       "weight": 2
     },
     {
-      "source": "aula_7",
-      "target": "conceito_dívida_técnica",
-      "type": "aula_conceito",
-      "weight": 2
-    },
-    {
-      "source": "aula_7",
+      "source": "aula_6",
       "target": "conceito_experimentação",
       "type": "aula_conceito",
       "weight": 2
     },
     {
       "source": "aula_7",
-      "target": "conceito_métricas_de_software",
-      "type": "aula_conceito",
-      "weight": 2
-    },
-    {
-      "source": "aula_7",
-      "target": "conceito_lead_time",
-      "type": "aula_conceito",
-      "weight": 2
-    },
-    {
-      "source": "aula_7",
-      "target": "conceito_qualidade_de_software",
+      "target": "conceito_experimentação",
       "type": "aula_conceito",
       "weight": 2
     },
@@ -5343,9 +5447,51 @@
     },
     {
       "source": "aula_7",
+      "target": "conceito_métricas_de_software",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_7",
+      "target": "conceito_lead_time",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_7",
       "target": "conceito_medição_de_software",
       "type": "aula_conceito",
       "weight": 2
+    },
+    {
+      "source": "aula_7",
+      "target": "conceito_qualidade_de_software",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "aula_7",
+      "target": "conceito_dívida_técnica",
+      "type": "aula_conceito",
+      "weight": 2
+    },
+    {
+      "source": "crono_1",
+      "target": "aula_1",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_2",
+      "target": "aula_1",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_3",
+      "target": "aula_1",
+      "type": "cronograma_aula",
+      "weight": 3
     },
     {
       "source": "crono_4",
@@ -5360,13 +5506,193 @@
       "weight": 3
     },
     {
+      "source": "crono_6",
+      "target": "aula_2",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_7",
+      "target": "aula_3",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_8",
+      "target": "aula_7",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
       "source": "crono_9",
       "target": "aula_4",
       "type": "cronograma_aula",
       "weight": 3
     },
     {
+      "source": "crono_10",
+      "target": "aula_5",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_11",
+      "target": "aula_5",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_12",
+      "target": "aula_5",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_13",
+      "target": "aula_5",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_14",
+      "target": "aula_5",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_15",
+      "target": "aula_5",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_16",
+      "target": "aula_6",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_17",
+      "target": "aula_6",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_20",
+      "target": "aula_3",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_21",
+      "target": "aula_7",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_22",
+      "target": "aula_6",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_23",
+      "target": "aula_7",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_24",
+      "target": "aula_7",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_25",
+      "target": "aula_7",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_26",
+      "target": "aula_7",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_28",
+      "target": "aula_7",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_29",
+      "target": "aula_7",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_30",
+      "target": "aula_7",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
+      "source": "crono_31",
+      "target": "aula_5",
+      "type": "cronograma_aula",
+      "weight": 3
+    },
+    {
       "source": "crono_1",
+      "target": "crono_2",
+      "type": "sequencia_temporal",
+      "weight": 0.5
+    },
+    {
+      "source": "crono_2",
+      "target": "crono_3",
+      "type": "sequencia_temporal",
+      "weight": 0.5
+    },
+    {
+      "source": "crono_3",
+      "target": "crono_4",
+      "type": "sequencia_temporal",
+      "weight": 0.5
+    },
+    {
+      "source": "crono_4",
+      "target": "crono_5",
+      "type": "sequencia_temporal",
+      "weight": 0.5
+    },
+    {
+      "source": "crono_5",
+      "target": "crono_6",
+      "type": "sequencia_temporal",
+      "weight": 0.5
+    },
+    {
+      "source": "crono_6",
+      "target": "crono_7",
+      "type": "sequencia_temporal",
+      "weight": 0.5
+    },
+    {
+      "source": "crono_7",
+      "target": "crono_8",
+      "type": "sequencia_temporal",
+      "weight": 0.5
+    },
+    {
+      "source": "crono_8",
+      "target": "crono_9",
+      "type": "sequencia_temporal",
+      "weight": 0.5
+    },
+    {
+      "source": "crono_9",
       "target": "crono_10",
       "type": "sequencia_temporal",
       "weight": 0.5
@@ -5427,12 +5753,6 @@
     },
     {
       "source": "crono_19",
-      "target": "crono_2",
-      "type": "sequencia_temporal",
-      "weight": 0.5
-    },
-    {
-      "source": "crono_2",
       "target": "crono_20",
       "type": "sequencia_temporal",
       "weight": 0.5
@@ -5493,12 +5813,6 @@
     },
     {
       "source": "crono_29",
-      "target": "crono_3",
-      "type": "sequencia_temporal",
-      "weight": 0.5
-    },
-    {
-      "source": "crono_3",
       "target": "crono_30",
       "type": "sequencia_temporal",
       "weight": 0.5
@@ -5554,42 +5868,6 @@
     {
       "source": "crono_38",
       "target": "crono_39",
-      "type": "sequencia_temporal",
-      "weight": 0.5
-    },
-    {
-      "source": "crono_39",
-      "target": "crono_4",
-      "type": "sequencia_temporal",
-      "weight": 0.5
-    },
-    {
-      "source": "crono_4",
-      "target": "crono_5",
-      "type": "sequencia_temporal",
-      "weight": 0.5
-    },
-    {
-      "source": "crono_5",
-      "target": "crono_6",
-      "type": "sequencia_temporal",
-      "weight": 0.5
-    },
-    {
-      "source": "crono_6",
-      "target": "crono_7",
-      "type": "sequencia_temporal",
-      "weight": 0.5
-    },
-    {
-      "source": "crono_7",
-      "target": "crono_8",
-      "type": "sequencia_temporal",
-      "weight": 0.5
-    },
-    {
-      "source": "crono_8",
-      "target": "crono_9",
       "type": "sequencia_temporal",
       "weight": 0.5
     },

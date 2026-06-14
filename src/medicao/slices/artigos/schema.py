@@ -1,0 +1,25 @@
+"""Esquema canônico do dataset de artigos."""
+
+FIELDS = [
+    "id",
+    "arquivo",
+    "titulo",
+    "autores",
+    "ano",
+    "abstract",
+    "keywords",
+    "doi",
+    "veiculo_publicacao",
+    "num_paginas",
+    "num_referencias",
+    "tamanho_amostra",
+    "metodologia",
+    "areas_pesquisa",
+    "metricas_mencionadas",
+    "metodos_estatisticos",
+    "ferramentas_tecnologias",
+    "padroes_normas",
+    "contexto_dominio",
+    "idioma",
+    "caminho_pdf",
+]
