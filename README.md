@@ -28,6 +28,18 @@ Templates prontos em `datasets/_templates/` (`artigos`, `ementa`, `aulas`,
 `manifest`). A única coluna obrigatória de `artigos.csv` é **`title`** (o
 esquema é a fusão das colunas do ACARI com os campos ricos de medição).
 
+### Fonte da disciplina (bundle `medicao`)
+
+A disciplina vive em `data/ementa/` e é a fonte de verdade:
+
+- `ementa.pdf` — plano de ensino oficial. Quando presente, é a base do
+  `ementa.txt` (texto rico usado pelo ACARI) e das "Unidades de Ensino"
+  parseadas para `data/ementa/ementa.csv` (nós do grafo).
+- `cronograma_atividades.csv` — fallback usado quando não há `ementa.pdf`.
+
+O slice de ementa sincroniza `data/ementa/ementa.csv` para `datasets/medicao/`.
+Para outros bundles, basta preencher `datasets/<bundle>/ementa.csv` pelo template.
+
 ## Arquitetura (Vertical Slice)
 
 ```
@@ -48,7 +60,8 @@ src/medicao/
 └── __main__.py    # CLI
 
 datasets/          # bundles + templates + index.json
-data/raw/          # PDFs brutos (entrada do extrator de medição)
+data/raw/          # PDFs brutos de artigos e aulas
+data/ementa/       # fonte da disciplina: ementa.pdf (oficial) + ementa.csv + cronograma
 visualizacao/      # grafo 3D data-driven (index.html)
 ```
 

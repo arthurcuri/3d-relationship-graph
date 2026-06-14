@@ -4,10 +4,10 @@
     "titulo": "Medição e Experimentação em Engenharia de Software",
     "counts": {
       "artigos": 66,
-      "ementa": 39,
+      "ementa": 19,
       "aulas": 7,
-      "nos": 112,
-      "arestas": 165
+      "nos": 92,
+      "arestas": 550
     }
   },
   "node_types": {
@@ -982,429 +982,192 @@
     {
       "id": "ementa_1",
       "type": "ementa",
-      "label": "Apresentação do curso",
+      "label": "Nivelamento e Apresentação da Disciplina",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 0 - Introdução",
-        "Topico": "Apresentação do curso",
-        "Data": "09/Fev"
+        "Modulo": "0. Nivelamento e Apresentação da Disciplina",
+        "Topico": "Nivelamento e Apresentação da Disciplina",
+        "Descricao": "02 h/a"
       }
     },
     {
       "id": "ementa_2",
       "type": "ementa",
-      "label": "Nivelamento",
+      "label": "Nivelamento e revisão de fundamentos de engenharia de software",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 0 - Introdução",
-        "Topico": "Nivelamento",
-        "Data": "13/Fev"
+        "Modulo": "1. Medição em Engenharia de Software",
+        "Topico": "Nivelamento e revisão de fundamentos de engenharia de software"
       }
     },
     {
       "id": "ementa_3",
       "type": "ementa",
-      "label": "Nivelamento",
+      "label": "Métricas de produto",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 0 - Introdução",
-        "Topico": "Nivelamento",
-        "Data": "20/Fev"
+        "Modulo": "1. Medição em Engenharia de Software",
+        "Topico": "Métricas de produto"
       }
     },
     {
       "id": "ementa_4",
       "type": "ementa",
-      "label": "Escopo de Medição",
+      "label": "Métricas de processo",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 1 - Fundamentos de Medição",
-        "Topico": "Escopo de Medição",
-        "Data": "23/Fev"
+        "Modulo": "1. Medição em Engenharia de Software",
+        "Topico": "Métricas de processo"
       }
     },
     {
       "id": "ementa_5",
       "type": "ementa",
-      "label": "Escopo de Medição",
+      "label": "Métricas de projeto",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 1 - Fundamentos de Medição",
-        "Topico": "Escopo de Medição",
-        "Data": "27/Fev"
+        "Modulo": "1. Medição em Engenharia de Software",
+        "Topico": "Métricas de projeto"
       }
     },
     {
       "id": "ementa_6",
       "type": "ementa",
-      "label": "Conceitos Básicos de Medição",
+      "label": "Processos e técnicas de medição",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 1 - Fundamentos de Medição",
-        "Topico": "Conceitos Básicos de Medição",
-        "Data": "02/Mar"
+        "Modulo": "1. Medição em Engenharia de Software",
+        "Topico": "Processos e técnicas de medição"
       }
     },
     {
       "id": "ementa_7",
       "type": "ementa",
-      "label": "Conceitos Básicos de Experimentação",
+      "label": "Identificação, organização e validação de métricas de software",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 3 - Experimentação",
-        "Topico": "Conceitos Básicos de Experimentação",
-        "Data": "06/Mar"
+        "Modulo": "1. Medição em Engenharia de Software",
+        "Topico": "Identificação, organização e validação de métricas de software"
       }
     },
     {
       "id": "ementa_8",
       "type": "ementa",
-      "label": "Etapas de Experimentação e Relatórios",
+      "label": "Prova e atividades avaliativas",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 3 - Experimentação",
-        "Topico": "Etapas de Experimentação e Relatórios",
-        "Data": "09/Mar"
+        "Modulo": "1. Medição em Engenharia de Software",
+        "Topico": "Prova e atividades avaliativas"
       }
     },
     {
       "id": "ementa_9",
       "type": "ementa",
-      "label": "Entidades, Atributos e Objetivos de Medição",
+      "label": "Distribuições de probabilidade",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 2 - Métricas e Modelos",
-        "Topico": "Entidades, Atributos e Objetivos de Medição",
-        "Data": "13/Mar"
+        "Modulo": "2. Análise de medições de software",
+        "Topico": "Distribuições de probabilidade"
       }
     },
     {
       "id": "ementa_10",
       "type": "ementa",
-      "label": "Métricas de Produto",
+      "label": "Testes de hipótese",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 2 - Métricas e Modelos",
-        "Topico": "Métricas de Produto",
-        "Data": "16/Mar"
+        "Modulo": "2. Análise de medições de software",
+        "Topico": "Testes de hipótese"
       }
     },
     {
       "id": "ementa_11",
       "type": "ementa",
-      "label": "Métricas de Processo",
+      "label": "Análise multivariada",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 2 - Métricas e Modelos",
-        "Topico": "Métricas de Processo",
-        "Data": "20/Mar"
+        "Modulo": "2. Análise de medições de software",
+        "Topico": "Análise multivariada"
       }
     },
     {
       "id": "ementa_12",
       "type": "ementa",
-      "label": "Métricas de Projeto",
+      "label": "Atividades avaliativas",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 2 - Métricas e Modelos",
-        "Topico": "Métricas de Projeto",
-        "Data": "23/Mar"
+        "Modulo": "2. Análise de medições de software",
+        "Topico": "Atividades avaliativas"
       }
     },
     {
       "id": "ementa_13",
       "type": "ementa",
-      "label": "Modelos: Custo & Esforço, Produtividade Data Collection",
+      "label": "Estratégias de experimentação",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 2 - Métricas e Modelos",
-        "Topico": "Modelos: Custo & Esforço, Produtividade Data Collection",
-        "Data": "27/Mar"
+        "Modulo": "3. Experimentação em Engenharia de Software",
+        "Topico": "Estratégias de experimentação"
       }
     },
     {
       "id": "ementa_14",
       "type": "ementa",
-      "label": "Modelos: confiabilidade, qualidade",
+      "label": "Processo de experimentação",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 2 - Métricas e Modelos",
-        "Topico": "Modelos: confiabilidade, qualidade",
-        "Data": "06/Abr"
+        "Modulo": "3. Experimentação em Engenharia de Software",
+        "Topico": "Processo de experimentação"
       }
     },
     {
       "id": "ementa_15",
       "type": "ementa",
-      "label": "Pontos de Função",
+      "label": "Planejamento de experimento",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 2 - Métricas e Modelos",
-        "Topico": "Pontos de Função",
-        "Data": "10/Abr"
+        "Modulo": "3. Experimentação em Engenharia de Software",
+        "Topico": "Planejamento de experimento"
       }
     },
     {
       "id": "ementa_16",
       "type": "ementa",
-      "label": "Revisão de Estatística",
+      "label": "Execução de experimento",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 4 - Análise Estatística",
-        "Topico": "Revisão de Estatística",
-        "Data": "13/Abr"
+        "Modulo": "3. Experimentação em Engenharia de Software",
+        "Topico": "Execução de experimento"
       }
     },
     {
       "id": "ementa_17",
       "type": "ementa",
-      "label": "Estatística para Experimentos",
+      "label": "Análise de resultados de experimentos",
       "pdf": "",
       "detail": {
-        "Modulo": "Módulo 4 - Análise Estatística",
-        "Topico": "Estatística para Experimentos",
-        "Data": "17/Abr"
+        "Modulo": "3. Experimentação em Engenharia de Software",
+        "Topico": "Análise de resultados de experimentos"
       }
     },
     {
       "id": "ementa_18",
       "type": "ementa",
-      "label": "Avaliação 1",
+      "label": "Apresentação de resultados experimentais",
       "pdf": "",
       "detail": {
-        "Modulo": "Avaliações",
-        "Topico": "Avaliação 1",
-        "Data": "20/Abr"
+        "Modulo": "3. Experimentação em Engenharia de Software",
+        "Topico": "Apresentação de resultados experimentais"
       }
     },
     {
       "id": "ementa_19",
       "type": "ementa",
-      "label": "Revisão de Prova",
+      "label": "Provas e atividades avaliativas",
       "pdf": "",
       "detail": {
-        "Modulo": "Avaliações",
-        "Topico": "Revisão de Prova",
-        "Data": "24/Abr"
-      }
-    },
-    {
-      "id": "ementa_20",
-      "type": "ementa",
-      "label": "Intrd. à Experimentação",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 3 - Experimentação",
-        "Topico": "Intrd. à Experimentação",
-        "Data": "27/Abr"
-      }
-    },
-    {
-      "id": "ementa_21",
-      "type": "ementa",
-      "label": "Métodos e Estratégias Empíricas",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 3 - Experimentação",
-        "Topico": "Métodos e Estratégias Empíricas",
-        "Data": "04/Mai"
-      }
-    },
-    {
-      "id": "ementa_22",
-      "type": "ementa",
-      "label": "Variáveis em Experimentos",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 3 - Experimentação",
-        "Topico": "Variáveis em Experimentos",
-        "Data": "08/Mai"
-      }
-    },
-    {
-      "id": "ementa_23",
-      "type": "ementa",
-      "label": "Revisão Sistemática da Literatura",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 3 - Experimentação",
-        "Topico": "Revisão Sistemática da Literatura",
-        "Data": "11/Mai"
-      }
-    },
-    {
-      "id": "ementa_24",
-      "type": "ementa",
-      "label": "Etapas: Escopo e Planejamento",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 1 - Fundamentos de Medição",
-        "Topico": "Etapas: Escopo e Planejamento",
-        "Data": "15/Mai"
-      }
-    },
-    {
-      "id": "ementa_25",
-      "type": "ementa",
-      "label": "Etapas: Operação",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 3 - Experimentação",
-        "Topico": "Etapas: Operação",
-        "Data": "18/Mai"
-      }
-    },
-    {
-      "id": "ementa_26",
-      "type": "ementa",
-      "label": "Etapas: Análise e Interpretação",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 3 - Experimentação",
-        "Topico": "Etapas: Análise e Interpretação",
-        "Data": "22/Mai"
-      }
-    },
-    {
-      "id": "ementa_27",
-      "type": "ementa",
-      "label": "Enunciado do Trabalho Final",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 5 - Prática e Encerramento",
-        "Topico": "Enunciado do Trabalho Final",
-        "Data": "25/Mai"
-      }
-    },
-    {
-      "id": "ementa_28",
-      "type": "ementa",
-      "label": "Data Analysis - Data collection and Data Validation",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 4 - Análise Estatística",
-        "Topico": "Data Analysis - Data collection and Data Validation",
-        "Data": "29/Mai"
-      }
-    },
-    {
-      "id": "ementa_29",
-      "type": "ementa",
-      "label": "Tomada de Decisão em Experimentos",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 4 - Análise Estatística",
-        "Topico": "Tomada de Decisão em Experimentos",
-        "Data": "01/Jun"
-      }
-    },
-    {
-      "id": "ementa_30",
-      "type": "ementa",
-      "label": "Relatórios e Documentação Técnica",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 5 - Prática e Encerramento",
-        "Topico": "Relatórios e Documentação Técnica",
-        "Data": "05/Jun"
-      }
-    },
-    {
-      "id": "ementa_31",
-      "type": "ementa",
-      "label": "Métricas modernas",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 2 - Métricas e Modelos",
-        "Topico": "Métricas modernas",
-        "Data": "08/Jun"
-      }
-    },
-    {
-      "id": "ementa_32",
-      "type": "ementa",
-      "label": "Apresentação do Trabalho Final",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 5 - Prática e Encerramento",
-        "Topico": "Apresentação do Trabalho Final",
-        "Data": "12/Jun"
-      }
-    },
-    {
-      "id": "ementa_33",
-      "type": "ementa",
-      "label": "Apresentação do Trabalho Final",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 5 - Prática e Encerramento",
-        "Topico": "Apresentação do Trabalho Final",
-        "Data": "15/Jun"
-      }
-    },
-    {
-      "id": "ementa_34",
-      "type": "ementa",
-      "label": "Avaliação 2",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Avaliações",
-        "Topico": "Avaliação 2",
-        "Data": "19/Jun"
-      }
-    },
-    {
-      "id": "ementa_35",
-      "type": "ementa",
-      "label": "Revisão de Prova",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Avaliações",
-        "Topico": "Revisão de Prova",
-        "Data": "22/Jun"
-      }
-    },
-    {
-      "id": "ementa_36",
-      "type": "ementa",
-      "label": "Revisão de Matéria",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Avaliações",
-        "Topico": "Revisão de Matéria",
-        "Data": "26/Jun"
-      }
-    },
-    {
-      "id": "ementa_37",
-      "type": "ementa",
-      "label": "Reavaliação",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Avaliações",
-        "Topico": "Reavaliação",
-        "Data": "29/Jun"
-      }
-    },
-    {
-      "id": "ementa_38",
-      "type": "ementa",
-      "label": "Revisão de Prova",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Avaliações",
-        "Topico": "Revisão de Prova",
-        "Data": "03/Jul"
-      }
-    },
-    {
-      "id": "ementa_39",
-      "type": "ementa",
-      "label": "",
-      "pdf": "",
-      "detail": {
-        "Modulo": "Módulo 3 - Experimentação",
-        "Data": "06/Jul"
+        "Modulo": "3. Experimentação em Engenharia de Software",
+        "Topico": "Provas e atividades avaliativas"
       }
     },
     {
@@ -1493,146 +1256,6 @@
     }
   ],
   "links": [
-    {
-      "source": "ementa_1",
-      "target": "aula_1",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_2",
-      "target": "aula_1",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_3",
-      "target": "aula_1",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_4",
-      "target": "aula_2",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_5",
-      "target": "aula_2",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_6",
-      "target": "aula_2",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_7",
-      "target": "aula_3",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_8",
-      "target": "aula_7",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_9",
-      "target": "aula_4",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_10",
-      "target": "aula_5",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_11",
-      "target": "aula_5",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_12",
-      "target": "aula_5",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_13",
-      "target": "aula_5",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_14",
-      "target": "aula_5",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_15",
-      "target": "aula_5",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_16",
-      "target": "aula_6",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_17",
-      "target": "aula_6",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_20",
-      "target": "aula_3",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_21",
-      "target": "aula_7",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_22",
-      "target": "aula_6",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_23",
-      "target": "aula_7",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_24",
-      "target": "aula_7",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_25",
-      "target": "aula_7",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_26",
-      "target": "aula_7",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_28",
-      "target": "aula_7",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_29",
-      "target": "aula_7",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_30",
-      "target": "aula_7",
-      "type": "ementa_aula"
-    },
-    {
-      "source": "ementa_31",
-      "target": "aula_5",
-      "type": "ementa_aula"
-    },
     {
       "source": "ementa_1",
       "target": "ementa_2",
@@ -1724,163 +1347,618 @@
       "type": "sequencia"
     },
     {
-      "source": "ementa_19",
-      "target": "ementa_20",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_2",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_20",
-      "target": "ementa_21",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_3",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_21",
-      "target": "ementa_22",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_4",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_22",
-      "target": "ementa_23",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_5",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_23",
-      "target": "ementa_24",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_6",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_24",
-      "target": "ementa_25",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_7",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_25",
-      "target": "ementa_26",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_8",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_26",
-      "target": "ementa_27",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_13",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_27",
-      "target": "ementa_28",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_14",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_28",
-      "target": "ementa_29",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_15",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_29",
-      "target": "ementa_30",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_16",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_30",
-      "target": "ementa_31",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_17",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_31",
-      "target": "ementa_32",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_18",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_32",
-      "target": "ementa_33",
-      "type": "sequencia"
+      "source": "aula_1",
+      "target": "ementa_19",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_33",
-      "target": "ementa_34",
-      "type": "sequencia"
+      "source": "aula_2",
+      "target": "ementa_2",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_34",
-      "target": "ementa_35",
-      "type": "sequencia"
+      "source": "aula_2",
+      "target": "ementa_3",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_35",
-      "target": "ementa_36",
-      "type": "sequencia"
+      "source": "aula_2",
+      "target": "ementa_4",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_36",
-      "target": "ementa_37",
-      "type": "sequencia"
+      "source": "aula_2",
+      "target": "ementa_5",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_37",
-      "target": "ementa_38",
-      "type": "sequencia"
+      "source": "aula_2",
+      "target": "ementa_6",
+      "type": "ementa_aula"
     },
     {
-      "source": "ementa_38",
-      "target": "ementa_39",
-      "type": "sequencia"
+      "source": "aula_2",
+      "target": "ementa_7",
+      "type": "ementa_aula"
     },
     {
-      "source": "artigo_35",
-      "target": "ementa_28",
-      "type": "artigo_ementa"
+      "source": "aula_2",
+      "target": "ementa_8",
+      "type": "ementa_aula"
     },
     {
-      "source": "artigo_20",
-      "target": "ementa_28",
-      "type": "artigo_ementa"
+      "source": "aula_2",
+      "target": "ementa_13",
+      "type": "ementa_aula"
     },
     {
-      "source": "artigo_21",
-      "target": "ementa_23",
-      "type": "artigo_ementa"
+      "source": "aula_2",
+      "target": "ementa_14",
+      "type": "ementa_aula"
     },
     {
-      "source": "artigo_24",
-      "target": "ementa_28",
-      "type": "artigo_ementa"
+      "source": "aula_2",
+      "target": "ementa_15",
+      "type": "ementa_aula"
     },
     {
-      "source": "artigo_38",
-      "target": "ementa_23",
+      "source": "aula_2",
+      "target": "ementa_16",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_2",
+      "target": "ementa_17",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_2",
+      "target": "ementa_18",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_2",
+      "target": "ementa_19",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_2",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_3",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_4",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_5",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_6",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_7",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_8",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_13",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_14",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_15",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_16",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_17",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_18",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_3",
+      "target": "ementa_19",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_2",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_3",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_4",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_5",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_6",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_7",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_8",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_13",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_14",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_15",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_16",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_17",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_18",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_4",
+      "target": "ementa_19",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_2",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_3",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_4",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_5",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_6",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_7",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_8",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_9",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_10",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_11",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_12",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_13",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_14",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_15",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_16",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_17",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_18",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_5",
+      "target": "ementa_19",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_2",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_3",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_4",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_5",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_6",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_7",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_8",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_9",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_10",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_13",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_14",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_15",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_16",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_17",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_18",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_6",
+      "target": "ementa_19",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_2",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_3",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_4",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_5",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_6",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_7",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_8",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_10",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_13",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_14",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_15",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_16",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_17",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_18",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "aula_7",
+      "target": "ementa_19",
+      "type": "ementa_aula"
+    },
+    {
+      "source": "artigo_45",
+      "target": "ementa_15",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_45",
-      "target": "ementa_28",
-      "type": "artigo_ementa"
-    },
-    {
-      "source": "artigo_46",
       "target": "ementa_16",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_6",
-      "target": "ementa_13",
+      "source": "artigo_45",
+      "target": "ementa_17",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_11",
-      "target": "ementa_23",
+      "source": "artigo_62",
+      "target": "ementa_15",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_18",
-      "target": "ementa_13",
+      "source": "artigo_62",
+      "target": "ementa_16",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_18",
+      "source": "artigo_62",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
       "target": "ementa_14",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_2",
-      "target": "ementa_23",
+      "source": "artigo_20",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_15",
       "type": "artigo_ementa"
     },
     {
@@ -1890,27 +1968,7 @@
     },
     {
       "source": "artigo_21",
-      "target": "ementa_21",
-      "type": "artigo_ementa"
-    },
-    {
-      "source": "artigo_21",
-      "target": "ementa_26",
-      "type": "artigo_ementa"
-    },
-    {
-      "source": "artigo_21",
-      "target": "ementa_28",
-      "type": "artigo_ementa"
-    },
-    {
-      "source": "artigo_22",
-      "target": "ementa_23",
-      "type": "artigo_ementa"
-    },
-    {
-      "source": "artigo_24",
-      "target": "ementa_16",
+      "target": "ementa_17",
       "type": "artigo_ementa"
     },
     {
@@ -1919,38 +1977,938 @@
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_24",
-      "target": "ementa_26",
+      "source": "artigo_29",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_38",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_38",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_38",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_45",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_45",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_45",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_45",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_49",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_5",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_59",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_59",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_61",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_61",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_66",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_66",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_10",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_11",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_11",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_11",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_11",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_11",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_12",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_13",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_13",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_13",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_13",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_15",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_16",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_16",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_18",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_18",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_18",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_18",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_9",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_10",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_11",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_12",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_20",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_9",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_10",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_11",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_12",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_21",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_22",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_23",
+      "target": "ementa_19",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_24",
-      "target": "ementa_29",
+      "target": "ementa_9",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_24",
+      "target": "ementa_10",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_24",
+      "target": "ementa_11",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_24",
+      "target": "ementa_12",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_24",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_24",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_24",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_24",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_24",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_24",
+      "target": "ementa_19",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_25",
-      "target": "ementa_14",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_25",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_25",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_25",
+      "target": "ementa_7",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_27",
-      "target": "ementa_14",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_27",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_27",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_27",
+      "target": "ementa_7",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_28",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_28",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_28",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_28",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_28",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_29",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_32",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_32",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_33",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_33",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_33",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_33",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
       "target": "ementa_14",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_34",
-      "target": "ementa_23",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_34",
+      "target": "ementa_19",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_35",
-      "target": "ementa_13",
+      "target": "ementa_15",
       "type": "artigo_ementa"
     },
     {
@@ -1964,83 +2922,363 @@
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_35",
-      "target": "ementa_26",
+      "source": "artigo_37",
+      "target": "ementa_4",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_35",
-      "target": "ementa_29",
+      "source": "artigo_37",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_38",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_38",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_38",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_38",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_38",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_38",
+      "target": "ementa_19",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_39",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_39",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_39",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_39",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_39",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_40",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
       "target": "ementa_13",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_44",
+      "source": "artigo_41",
       "target": "ementa_14",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_45",
+      "source": "artigo_41",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
       "target": "ementa_16",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_45",
+      "source": "artigo_41",
       "target": "ementa_17",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_45",
-      "target": "ementa_26",
+      "source": "artigo_41",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_41",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_42",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_42",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_42",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_42",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_43",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_43",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_43",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_43",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_44",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_44",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_44",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_44",
+      "target": "ementa_7",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_45",
-      "target": "ementa_29",
+      "target": "ementa_2",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_46",
-      "target": "ementa_17",
+      "source": "artigo_45",
+      "target": "ementa_3",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_46",
-      "target": "ementa_23",
+      "source": "artigo_45",
+      "target": "ementa_4",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_46",
-      "target": "ementa_28",
+      "source": "artigo_45",
+      "target": "ementa_5",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_46",
-      "target": "ementa_29",
+      "source": "artigo_45",
+      "target": "ementa_6",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_49",
+      "source": "artigo_45",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_45",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_45",
+      "target": "ementa_9",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_45",
+      "target": "ementa_10",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_45",
       "target": "ementa_11",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_49",
-      "target": "ementa_23",
+      "source": "artigo_45",
+      "target": "ementa_12",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_5",
+      "source": "artigo_46",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_9",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_10",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
       "target": "ementa_11",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_5",
+      "source": "artigo_46",
+      "target": "ementa_12",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
       "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_46",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_47",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_49",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_49",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_49",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_49",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_49",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_5",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_5",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_5",
+      "target": "ementa_7",
       "type": "artigo_ementa"
     },
     {
@@ -2049,68 +3287,518 @@
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_5",
-      "target": "ementa_28",
+      "source": "artigo_51",
+      "target": "ementa_2",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_51",
-      "target": "ementa_23",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_51",
+      "target": "ementa_14",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_52",
-      "target": "ementa_23",
+      "target": "ementa_2",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_53",
-      "target": "ementa_13",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_53",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_53",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_53",
+      "target": "ementa_7",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_54",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_54",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_54",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_54",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_55",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_55",
       "target": "ementa_14",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_56",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_56",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_56",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_56",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_57",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_59",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_59",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_59",
       "target": "ementa_14",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_59",
-      "target": "ementa_23",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_59",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_59",
+      "target": "ementa_19",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_6",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_6",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_6",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_6",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
       "target": "ementa_14",
       "type": "artigo_ementa"
     },
     {
-      "source": "artigo_62",
-      "target": "ementa_26",
+      "source": "artigo_60",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_60",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_61",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_61",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_61",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_61",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_61",
+      "target": "ementa_19",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_62",
-      "target": "ementa_28",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_9",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_10",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_11",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_62",
+      "target": "ementa_12",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_14",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_15",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_16",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_63",
+      "target": "ementa_19",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_64",
-      "target": "ementa_14",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_64",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_64",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_64",
+      "target": "ementa_7",
       "type": "artigo_ementa"
     },
     {
       "source": "artigo_65",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_65",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_65",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_65",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_66",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_66",
       "target": "ementa_14",
       "type": "artigo_ementa"
     },
     {
+      "source": "artigo_66",
+      "target": "ementa_17",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_66",
+      "target": "ementa_18",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_66",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_7",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
       "source": "artigo_8",
-      "target": "ementa_23",
+      "target": "ementa_2",
       "type": "artigo_ementa"
     },
     {

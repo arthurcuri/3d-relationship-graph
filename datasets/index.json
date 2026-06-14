@@ -6,10 +6,10 @@
       "graph": "medicao/graph.json",
       "counts": {
         "artigos": 66,
-        "ementa": 39,
+        "ementa": 19,
         "aulas": 7,
-        "nos": 112,
-        "arestas": 165
+        "nos": 92,
+        "arestas": 550
       }
     }
   ]

@@ -31,6 +31,13 @@ TEMPLATES_DIR = BUNDLES_DIR / "_templates"
 RAW_DIR = _dir("MEDICAO_RAW_DIR", ROOT_DIR / "data" / "raw")
 WEB_DIR = _dir("MEDICAO_WEB_DIR", ROOT_DIR / "visualizacao")
 
+# Fonte raiz da disciplina (ementa). A ementa.csv aqui e a fonte editavel,
+# sincronizada para o bundle pelo slice de ementa.
+EMENTA_DIR = _dir("MEDICAO_EMENTA_DIR", ROOT_DIR / "data" / "ementa")
+EMENTA_SRC = EMENTA_DIR / "ementa.csv"
+EMENTA_PDF = EMENTA_DIR / "ementa.pdf"
+CRONOGRAMA_CSV = EMENTA_DIR / "cronograma_atividades.csv"
+
 # Bundle default (gerado a partir dos PDFs em data/raw).
 DEFAULT_BUNDLE = os.environ.get("MEDICAO_BUNDLE", "medicao")
 

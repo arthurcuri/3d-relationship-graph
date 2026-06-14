@@ -108,16 +108,30 @@ def build(
         )
 
     # Aulas (opcional)
+    ementa_terms = {
+        f"ementa_{e['id']}": significant_terms(
+            f"{e.get('modulo', '')} {e.get('topico', '')}"
+        )
+        for e in ementa
+    }
     for a in aulas:
+        nid = f"aula_{a['id']}"
         nodes.append(
             {
-                "id": f"aula_{a['id']}",
+                "id": nid,
                 "type": "aula",
                 "label": a.get("titulo", ""),
                 "pdf": a.get("caminho_pdf", ""),
                 "detail": _detail(a, AULA_DETAIL),
             }
         )
+        # liga a aula aos itens de ementa com termos em comum (mantem conexao)
+        at = significant_terms(
+            " ".join(str(a.get(c, "")) for c in ("titulo", "topicos", "conceitos"))
+        )
+        for eid, et in ementa_terms.items():
+            if len(at & et) >= 2:
+                links.append({"source": nid, "target": eid, "type": "ementa_aula"})
 
     # Relacoes artigo <-> ementa
     for r in relacoes:

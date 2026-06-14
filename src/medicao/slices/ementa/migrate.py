@@ -1,8 +1,10 @@
-"""Migracao do cronograma de medicao para o dataset de ementa.
+"""Semeia data/ementa/ementa.csv (dataset da disciplina) a partir da fonte real.
 
-Especifico do bundle ``medicao``: le o CSV bruto de cronograma da disciplina e
-o classifica em modulos, produzindo o ``ementa.csv`` no padrao do contrato.
-Para outros bundles, o usuario preenche o template manualmente.
+Preferencia de fonte (bundle medicao):
+1. ``data/ementa/ementa.pdf`` -> parse das "Unidades de Ensino".
+2. ``data/ementa/cronograma_atividades.csv`` -> fallback (cronograma).
+
+Para outros bundles, o usuario preenche ementa.csv pelo template.
 """
 
 from __future__ import annotations
@@ -10,12 +12,11 @@ from __future__ import annotations
 import re
 
 from medicao.shared import config
-from medicao.shared.contract import EMENTA_FIELDS, Bundle
+from medicao.shared.contract import EMENTA_FIELDS
+from medicao.shared.pdf import read_pdf
 from medicao.shared.storage import read_csv, write_csv
 
-CRONOGRAMA_CSV = config.AULAS_DIR / "cronograma_atividades.csv"
-
-# Atividade do cronograma -> PDF de aula relacionada.
+# ── fallback: cronograma -> aula relacionada ────────────────────────────────
 ATIVIDADE_AULA_MAP = {
     "Apresentação do curso": "Aula 1.pdf",
     "Nivelamento": "Aula 1.pdf",
@@ -46,7 +47,7 @@ ATIVIDADE_AULA_MAP = {
 }
 
 
-def _modulo(atividade: str) -> str:
+def _modulo_cronograma(atividade: str) -> str:
     if re.search(r"[Nn]ivelamento|[Pp]resentação\s+do\s+curso", atividade):
         return "Módulo 0 - Introdução"
     if re.search(r"[Ee]scopo|[Cc]onceitos\s+[Bb]ásicos\s+de\s+[Mm]edição", atividade):
@@ -64,9 +65,8 @@ def _modulo(atividade: str) -> str:
     return "Módulo 3 - Experimentação"
 
 
-def build(bundle: str = config.DEFAULT_BUNDLE) -> list[dict]:
-    """Gera ementa.csv do bundle a partir do cronograma bruto de medicao."""
-    linhas = read_csv(CRONOGRAMA_CSV)
+def _from_cronograma() -> list[dict]:
+    linhas = read_csv(config.CRONOGRAMA_CSV)
     registros = []
     seq = 0
     for linha in linhas:
@@ -78,18 +78,98 @@ def build(bundle: str = config.DEFAULT_BUNDLE) -> list[dict]:
         registros.append(
             {
                 "id": seq,
-                "modulo": _modulo(atividade),
+                "modulo": _modulo_cronograma(atividade),
                 "topico": atividade,
                 "descricao": "",
                 "data": data,
                 "aula_relacionada": ATIVIDADE_AULA_MAP.get(atividade, ""),
             }
         )
+    return registros
 
-    b = Bundle(bundle)
-    b.dir.mkdir(parents=True, exist_ok=True)
-    write_csv(b.path("ementa"), registros, EMENTA_FIELDS)
-    print(f"[ementa.migrate] -> {b.path('ementa')} ({len(registros)} itens)")
+
+def _from_pdf() -> list[dict]:
+    """Parse das 'Unidades de Ensino' do plano de ensino (ementa.pdf)."""
+    full = read_pdf(config.EMENTA_PDF).full_text
+    lines = [l.strip() for l in full.split("\n")]
+
+    # recorta a secao de Unidades de Ensino
+    try:
+        ini = next(i for i, l in enumerate(lines) if re.match(r"^Unidades de Ensino", l, re.I))
+    except StopIteration:
+        return []
+    fim = next(
+        (i for i in range(ini + 1, len(lines)) if re.match(r"^Processo de Avalia", lines[i], re.I)),
+        len(lines),
+    )
+    secao = lines[ini + 1:fim]
+
+    mod_re = re.compile(r"^(\d+)\.\s+(.+?)(?:\s*\(([\d\s]+h/a)\))?\s*$")
+    sub_re = re.compile(r"^([a-z])\.\s+(.+)$")
+
+    registros = []
+    seq = 0
+    modulo_atual = ""
+    pend_modulo_sem_sub = None
+    for l in secao:
+        if not l:
+            continue
+        m = mod_re.match(l)
+        if m and not sub_re.match(l):
+            # fecha modulo anterior sem subitens
+            if pend_modulo_sem_sub:
+                seq += 1
+                registros.append(pend_modulo_sem_sub | {"id": seq})
+            num, titulo, ch = m.group(1), m.group(2).strip(), (m.group(3) or "").strip()
+            modulo_atual = f"{num}. {titulo}"
+            pend_modulo_sem_sub = {
+                "modulo": modulo_atual,
+                "topico": titulo,
+                "descricao": ch,
+                "data": "",
+                "aula_relacionada": "",
+            }
+            continue
+        s = sub_re.match(l)
+        if s and modulo_atual:
+            pend_modulo_sem_sub = None  # modulo tem subitens
+            seq += 1
+            registros.append(
+                {
+                    "id": seq,
+                    "modulo": modulo_atual,
+                    "topico": s.group(2).strip(),
+                    "descricao": "",
+                    "data": "",
+                    "aula_relacionada": "",
+                }
+            )
+    if pend_modulo_sem_sub:
+        seq += 1
+        registros.append(pend_modulo_sem_sub | {"id": seq})
+
+    return registros
+
+
+def build() -> list[dict]:
+    """Gera data/ementa/ementa.csv a partir do PDF (preferencial) ou cronograma."""
+    if config.EMENTA_PDF.exists():
+        registros = _from_pdf()
+        fonte = "ementa.pdf"
+        if not registros and config.CRONOGRAMA_CSV.exists():
+            registros = _from_cronograma()
+            fonte = "cronograma (fallback)"
+    elif config.CRONOGRAMA_CSV.exists():
+        registros = _from_cronograma()
+        fonte = "cronograma"
+    else:
+        raise FileNotFoundError(
+            f"Sem fonte de ementa: adicione {config.EMENTA_PDF} ou {config.CRONOGRAMA_CSV}."
+        )
+
+    config.EMENTA_DIR.mkdir(parents=True, exist_ok=True)
+    write_csv(config.EMENTA_SRC, registros, EMENTA_FIELDS)
+    print(f"[ementa.migrate] {fonte} -> {config.EMENTA_SRC} ({len(registros)} itens)")
     return registros
 
 
