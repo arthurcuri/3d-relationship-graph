@@ -1,0 +1,3 @@
+"id","modulo","topico","descricao","data","aula_relacionada"
+"1","Módulo 1 - Fundamentos","Conceitos básicos de medição","Definições, escalas e objetivos de medição de software.","",""
+"2","Módulo 2 - Métricas","Métricas de produto","LOC, complexidade ciclomática, acoplamento, coesão.","",""

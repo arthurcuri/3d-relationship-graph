@@ -1,17 +1,17 @@
-"""Pipeline do slice de artigos: PDFs -> dataset_artigos.csv."""
+"""Pipeline do slice de artigos: PDFs -> artigos.csv (schema fundido ACARI+medicao)."""
 
 from __future__ import annotations
 
 from medicao.shared import config
+from medicao.shared.contract import ARTIGOS_FIELDS, Bundle
 from medicao.shared.pdf import PdfDocument, list_pdfs, read_pdf
 from medicao.shared.storage import write_csv
 from medicao.shared.text import clean_text, most_common_year
 from medicao.slices.artigos import detectors, extraction
-from medicao.slices.artigos.schema import FIELDS
 
 
 def process(doc: PdfDocument, artigo_id: int) -> dict:
-    """Extrai todos os campos ricos de um artigo já lido."""
+    """Extrai todos os campos (nucleo ACARI + ricos de medicao) de um artigo."""
     head = doc.head_text(5)
     head3 = doc.head_text(3)
     full = doc.full_text
@@ -21,14 +21,16 @@ def process(doc: PdfDocument, artigo_id: int) -> dict:
 
     return {
         "id": artigo_id,
-        "arquivo": doc.filename,
-        "titulo": titulo,
-        "autores": clean_text(meta.get("author", "") or ""),
-        "ano": most_common_year(head),
+        "title": titulo,
+        "article_authors": clean_text(meta.get("author", "") or ""),
+        "year": most_common_year(head),
+        "doi": extraction.extract_doi(head),
         "abstract": extraction.extract_abstract(head),
         "keywords": extraction.extract_keywords(head),
-        "doi": extraction.extract_doi(head),
-        "veiculo_publicacao": extraction.extract_venue(head),
+        "venue_type": "",
+        "in_statistical_test": "True",
+        "cohort": "",
+        "arquivo": doc.filename,
         "num_paginas": doc.page_count,
         "num_referencias": extraction.count_references(full),
         "tamanho_amostra": extraction.extract_sample_size(full),
@@ -40,12 +42,14 @@ def process(doc: PdfDocument, artigo_id: int) -> dict:
         "padroes_normas": detectors.detect_standards(full),
         "contexto_dominio": detectors.detect_domains(full),
         "idioma": extraction.detect_language(head),
+        "veiculo_publicacao": extraction.extract_venue(head),
         "caminho_pdf": config.artigo_web_path(doc.filename),
     }
 
 
-def run(write: bool = True) -> list[dict]:
-    """Processa todos os PDFs de artigos e (opcionalmente) grava o CSV."""
+def run(bundle: str = config.DEFAULT_BUNDLE, write: bool = True) -> list[dict]:
+    """Processa os PDFs de artigos e grava o CSV canonico no bundle."""
+    b = Bundle(bundle)
     filenames = list_pdfs(config.ARTIGOS_DIR)
     print(f"[artigos] {len(filenames)} PDFs encontrados")
 
@@ -55,18 +59,25 @@ def run(write: bool = True) -> list[dict]:
         try:
             doc = read_pdf(filepath)
             registro = process(doc, i)
-        except Exception as exc:  # noqa: BLE001 - registra erro sem abortar lote
-            registro = {f: "" for f in FIELDS}
-            registro["id"] = i
-            registro["arquivo"] = filename
-            registro["abstract"] = f"Erro ao processar: {exc}"
-            registro["caminho_pdf"] = config.artigo_web_path(filename)
+        except Exception as exc:  # noqa: BLE001
+            registro = {f: "" for f in ARTIGOS_FIELDS}
+            registro.update(
+                {
+                    "id": i,
+                    "title": filename,
+                    "arquivo": filename,
+                    "in_statistical_test": "True",
+                    "abstract": f"Erro ao processar: {exc}",
+                    "caminho_pdf": config.artigo_web_path(filename),
+                }
+            )
         registros.append(registro)
         print(f"  [{i}/{len(filenames)}] {filename[:60]}")
 
     if write:
-        write_csv(config.DATASET_ARTIGOS, registros, FIELDS)
-        print(f"[artigos] -> {config.DATASET_ARTIGOS} ({len(registros)} registros)")
+        b.dir.mkdir(parents=True, exist_ok=True)
+        write_csv(b.path("artigos"), registros, ARTIGOS_FIELDS)
+        print(f"[artigos] -> {b.path('artigos')} ({len(registros)} registros)")
 
     return registros
 

@@ -1,25 +1,5 @@
-"""Esquema canônico do dataset de artigos."""
+"""Esquema canonico do dataset de artigos (definido no contrato)."""
 
-FIELDS = [
-    "id",
-    "arquivo",
-    "titulo",
-    "autores",
-    "ano",
-    "abstract",
-    "keywords",
-    "doi",
-    "veiculo_publicacao",
-    "num_paginas",
-    "num_referencias",
-    "tamanho_amostra",
-    "metodologia",
-    "areas_pesquisa",
-    "metricas_mencionadas",
-    "metodos_estatisticos",
-    "ferramentas_tecnologias",
-    "padroes_normas",
-    "contexto_dominio",
-    "idioma",
-    "caminho_pdf",
-]
+from medicao.shared.contract import ARTIGOS_FIELDS as FIELDS
+
+__all__ = ["FIELDS"]

@@ -1,28 +1,43 @@
-"""Pipeline do slice grafo: datasets -> graph_data.json."""
+"""Pipeline do slice grafo: bundle -> graph.json generico."""
 
 from __future__ import annotations
 
 from medicao.shared import config
-from medicao.shared.storage import read_csv, write_json
+from medicao.shared.contract import Bundle
+from medicao.shared.storage import write_json
 from medicao.slices.grafo import builder
 
 
 def run(
+    bundle: str = config.DEFAULT_BUNDLE,
     write: bool = True,
     artigos: list[dict] | None = None,
+    ementa: list[dict] | None = None,
     aulas: list[dict] | None = None,
-    cronograma: list[dict] | None = None,
+    relacoes: list[dict] | None = None,
 ) -> dict:
-    artigos = artigos if artigos is not None else read_csv(config.DATASET_ARTIGOS)
-    aulas = aulas if aulas is not None else read_csv(config.DATASET_AULAS)
-    cronograma = cronograma if cronograma is not None else read_csv(config.DATASET_CRONOGRAMA)
+    b = Bundle(bundle)
+    manifest = b.load_manifest()
 
-    grafo = builder.build(artigos, aulas, cronograma)
+    artigos = artigos if artigos is not None else b.load("artigos")
+    ementa = ementa if ementa is not None else b.load("ementa")
+    aulas = aulas if aulas is not None else b.load("aulas")
+    relacoes = relacoes if relacoes is not None else b.load("relacoes")
+
+    grafo = builder.build(
+        name=bundle,
+        titulo=manifest.get("titulo", bundle),
+        node_types=manifest.get("node_types", {}),
+        artigos=artigos,
+        ementa=ementa,
+        aulas=aulas,
+        relacoes=relacoes,
+    )
 
     if write:
-        write_json(config.WEB_GRAPH_JSON, grafo)
-        meta = grafo["metadata"]
-        print(f"[grafo] -> {config.WEB_GRAPH_JSON} ({meta['total_nodes']} nós, {meta['total_edges']} arestas)")
+        write_json(b.graph_path, grafo)
+        c = grafo["meta"]["counts"]
+        print(f"[grafo] -> {b.graph_path} ({c['nos']} nos, {c['arestas']} arestas)")
 
     return grafo
 

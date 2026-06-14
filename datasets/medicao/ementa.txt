@@ -1,0 +1,41 @@
+Ementa: Medição e Experimentação em Engenharia de Software
+
+- [Módulo 0 - Introdução] Apresentação do curso
+- [Módulo 0 - Introdução] Nivelamento
+- [Módulo 0 - Introdução] Nivelamento
+- [Módulo 1 - Fundamentos de Medição] Escopo de Medição
+- [Módulo 1 - Fundamentos de Medição] Escopo de Medição
+- [Módulo 1 - Fundamentos de Medição] Conceitos Básicos de Medição
+- [Módulo 3 - Experimentação] Conceitos Básicos de Experimentação
+- [Módulo 3 - Experimentação] Etapas de Experimentação e Relatórios
+- [Módulo 2 - Métricas e Modelos] Entidades, Atributos e Objetivos de Medição
+- [Módulo 2 - Métricas e Modelos] Métricas de Produto
+- [Módulo 2 - Métricas e Modelos] Métricas de Processo
+- [Módulo 2 - Métricas e Modelos] Métricas de Projeto
+- [Módulo 2 - Métricas e Modelos] Modelos: Custo & Esforço, Produtividade Data Collection
+- [Módulo 2 - Métricas e Modelos] Modelos: confiabilidade, qualidade
+- [Módulo 2 - Métricas e Modelos] Pontos de Função
+- [Módulo 4 - Análise Estatística] Revisão de Estatística
+- [Módulo 4 - Análise Estatística] Estatística para Experimentos
+- [Avaliações] Avaliação 1
+- [Avaliações] Revisão de Prova
+- [Módulo 3 - Experimentação] Intrd. à Experimentação
+- [Módulo 3 - Experimentação] Métodos e Estratégias Empíricas
+- [Módulo 3 - Experimentação] Variáveis em Experimentos
+- [Módulo 3 - Experimentação] Revisão Sistemática da Literatura
+- [Módulo 1 - Fundamentos de Medição] Etapas: Escopo e Planejamento
+- [Módulo 3 - Experimentação] Etapas: Operação
+- [Módulo 3 - Experimentação] Etapas: Análise e Interpretação
+- [Módulo 5 - Prática e Encerramento] Enunciado do Trabalho Final
+- [Módulo 4 - Análise Estatística] Data Analysis - Data collection and Data Validation
+- [Módulo 4 - Análise Estatística] Tomada de Decisão em Experimentos
+- [Módulo 5 - Prática e Encerramento] Relatórios e Documentação Técnica
+- [Módulo 2 - Métricas e Modelos] Métricas modernas
+- [Módulo 5 - Prática e Encerramento] Apresentação do Trabalho Final
+- [Módulo 5 - Prática e Encerramento] Apresentação do Trabalho Final
+- [Avaliações] Avaliação 2
+- [Avaliações] Revisão de Prova
+- [Avaliações] Revisão de Matéria
+- [Avaliações] Reavaliação
+- [Avaliações] Revisão de Prova
+- [Módulo 3 - Experimentação]

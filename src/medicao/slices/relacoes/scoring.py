@@ -1,48 +1,36 @@
-"""Pontuação de relevância entre artigos e aulas por temas em comum."""
+"""Pontuacao de relevancia entre artigos e itens de ementa por termos em comum.
+
+Trabalha apenas com campos textuais dos CSVs (sem reabrir PDFs), o que torna o
+calculo independente da forma como o dataset de artigos foi gerado.
+"""
 
 from __future__ import annotations
 
-# Temas buscados no texto completo de cada artigo, por aula.
-AULA_TEMAS = {
-    "Aula 1.pdf": [
-        "medição de software", "experimentação", "engenharia de software",
-        "decisões baseadas em dados", "qualidade de software",
-    ],
-    "Aula 2 - Escopo e Normas de Medição de Software.pdf": [
-        "métricas de software", "normas", "iso", "cmmi", "gqm",
-        "custo", "esforço", "confiabilidade", "complexidade",
-        "maturidade", "medição", "escopo",
-    ],
-    "Aula 3 - Introdução à Experimentação.pdf": [
-        "experimentação", "experimento controlado", "validade",
-        "variáveis", "survey", "estudo de caso", "métodos empíricos",
-    ],
-    "Aula 4 - Entidades, Atributos e Objetivos de Medição.pdf": [
-        "gqm", "entidades", "atributos", "objetivos de medição",
-        "métricas", "escala de medição", "tipos de medida",
-    ],
-    "Aula 5 - Medições de Produto, Processo e Recurso.pdf": [
-        "loc", "sloc", "complexidade ciclomática", "halstead",
-        "pontos de função", "acoplamento", "coesão", "métricas de produto",
-        "métricas de processo", "defeitos", "manutenibilidade",
-        "produtividade", "custo", "esforço", "cocomo", "dora",
-    ],
-    "Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese.pdf": [
-        "estatística", "distribuição", "teste de hipótese", "variáveis",
-        "normal", "probabilidade", "amostra", "significância",
-        "desvio padrão", "média", "mediana",
-    ],
-    "Aula 8 - Processo de Experimentos.pdf": [
-        "experimentação", "planejamento de experimentos", "escopo",
-        "operação", "análise", "interpretação", "ameaças à validade",
-        "revisão sistemática", "replicação", "relatório",
-        "variáveis dependentes", "variáveis independentes",
-    ],
-}
+from medicao.shared.text import significant_terms
 
-# Mínimo de temas que precisam casar para registrar uma relação.
-SCORE_MINIMO = 3
+SCORE_MINIMO = 2
+
+_ARTIGO_CAMPOS = (
+    "title",
+    "abstract",
+    "keywords",
+    "areas_pesquisa",
+    "metricas_mencionadas",
+    "metodologia",
+)
+
+_EMENTA_CAMPOS = ("modulo", "topico", "descricao")
 
 
-def score(artigo_text_lower: str, temas: list[str]) -> int:
-    return sum(1 for tema in temas if tema in artigo_text_lower)
+def artigo_terms(artigo: dict) -> set[str]:
+    texto = " ".join(str(artigo.get(c, "") or "") for c in _ARTIGO_CAMPOS)
+    return significant_terms(texto)
+
+
+def ementa_terms(item: dict) -> set[str]:
+    texto = " ".join(str(item.get(c, "") or "") for c in _EMENTA_CAMPOS)
+    return significant_terms(texto)
+
+
+def score(termos_artigo: set[str], termos_ementa: set[str]) -> int:
+    return len(termos_artigo & termos_ementa)

@@ -1,0 +1,16 @@
+{
+  "bundles": [
+    {
+      "name": "medicao",
+      "titulo": "Medição e Experimentação em Engenharia de Software",
+      "graph": "medicao/graph.json",
+      "counts": {
+        "artigos": 66,
+        "ementa": 39,
+        "aulas": 7,
+        "nos": 112,
+        "arestas": 165
+      }
+    }
+  ]
+}

@@ -1,82 +1,57 @@
-"""Pipeline do slice de relações: artigos + aulas -> dataset_relacoes_artigo_aula.csv.
-
-A pontuação usa o texto completo de cada artigo. Para permitir execução isolada,
-o pipeline relê os PDFs quando os textos não são injetados pelo orquestrador.
-"""
+"""Pipeline do slice de relacoes: artigos x ementa -> relacoes.csv."""
 
 from __future__ import annotations
 
 from medicao.shared import config
-from medicao.shared.pdf import read_pdf
-from medicao.shared.storage import read_csv, write_csv
+from medicao.shared.contract import RELACOES_FIELDS, Bundle
+from medicao.shared.storage import write_csv
 from medicao.slices.relacoes import scoring
-
-FIELDS = [
-    "artigo_id",
-    "artigo_titulo",
-    "artigo_arquivo",
-    "aula_arquivo",
-    "score_relevancia",
-    "total_temas_aula",
-    "percentual_match",
-]
-
-
-def _carregar_artigos() -> list[dict]:
-    return read_csv(config.DATASET_ARTIGOS)
-
-
-def _texto_artigo(arquivo: str) -> str:
-    try:
-        return read_pdf(config.ARTIGOS_DIR / arquivo).full_text.lower()
-    except Exception:  # noqa: BLE001
-        return ""
 
 
 def run(
+    bundle: str = config.DEFAULT_BUNDLE,
     write: bool = True,
     artigos: list[dict] | None = None,
-    textos: dict[str, str] | None = None,
+    ementa: list[dict] | None = None,
 ) -> list[dict]:
-    """Calcula relações artigo<->aula.
+    """Liga cada artigo aos itens de ementa com termos em comum."""
+    b = Bundle(bundle)
+    artigos = artigos if artigos is not None else b.load("artigos")
+    ementa = ementa if ementa is not None else b.load("ementa")
+    print(f"[relacoes] {len(artigos)} artigos x {len(ementa)} itens de ementa")
 
-    Args:
-        artigos: registros de artigos (default: lê o CSV processado).
-        textos: mapa ``arquivo -> texto_completo_minúsculo`` (default: relê PDFs).
-    """
-    artigos = artigos if artigos is not None else _carregar_artigos()
-    print(f"[relacoes] avaliando {len(artigos)} artigos x {len(scoring.AULA_TEMAS)} aulas")
+    termos_ementa = [(item, scoring.ementa_terms(item)) for item in ementa]
 
     relacoes = []
     for art in artigos:
-        arquivo = art["arquivo"]
-        texto = textos.get(arquivo) if textos else None
-        if texto is None:
-            texto = _texto_artigo(arquivo)
-        if not texto:
+        ta = scoring.artigo_terms(art)
+        if not ta:
             continue
-
-        for aula_arquivo, temas in scoring.AULA_TEMAS.items():
-            pontos = scoring.score(texto, temas)
+        for item, te in termos_ementa:
+            if not te:
+                continue
+            pontos = scoring.score(ta, te)
             if pontos >= scoring.SCORE_MINIMO:
                 relacoes.append(
                     {
-                        "artigo_id": int(art["id"]),
-                        "artigo_titulo": art["titulo"],
-                        "artigo_arquivo": arquivo,
-                        "aula_arquivo": aula_arquivo,
+                        "artigo_id": art.get("id", ""),
+                        "artigo_titulo": art.get("title", ""),
+                        "artigo_arquivo": art.get("arquivo", ""),
+                        "ementa_id": item.get("id", ""),
+                        "ementa_topico": item.get("topico", ""),
                         "score_relevancia": pontos,
-                        "total_temas_aula": len(temas),
-                        "percentual_match": round(pontos / len(temas) * 100, 1),
+                        "total_temas": len(te),
+                        "percentual_match": round(pontos / len(te) * 100, 1),
                     }
                 )
 
-    relacoes.sort(key=lambda r: (-r["score_relevancia"], r["artigo_id"]))
-    print(f"[relacoes] {len(relacoes)} relações (score >= {scoring.SCORE_MINIMO})")
+    relacoes.sort(key=lambda r: (-r["score_relevancia"], str(r["artigo_id"])))
+    print(f"[relacoes] {len(relacoes)} relacoes (score >= {scoring.SCORE_MINIMO})")
 
     if write:
-        write_csv(config.DATASET_RELACOES, relacoes, FIELDS)
-        print(f"[relacoes] -> {config.DATASET_RELACOES}")
+        b.dir.mkdir(parents=True, exist_ok=True)
+        write_csv(b.path("relacoes"), relacoes, RELACOES_FIELDS)
+        print(f"[relacoes] -> {b.path('relacoes')}")
 
     return relacoes
 

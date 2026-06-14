@@ -1,4 +1,4 @@
-"""Pipeline do slice de aulas: PDFs de slides -> dataset_aulas.csv."""
+"""Pipeline do slice de aulas (opcional): PDFs de slides -> aulas.csv."""
 
 from __future__ import annotations
 
@@ -6,13 +6,14 @@ import os
 import re
 
 from medicao.shared import config
+from medicao.shared.contract import Bundle
 from medicao.shared.pdf import PdfDocument, list_pdfs, read_pdf
 from medicao.shared.storage import write_csv
 from medicao.shared.text import clean_text
 from medicao.slices.aulas import extraction
 from medicao.slices.aulas.schema import DISCIPLINA, FIELDS, PROFESSOR_PADRAO
 
-# Separadores de subtítulo no nome do arquivo (hífen, en-dash, dois-pontos).
+# Separadores de subtitulo no nome do arquivo (hifen, en-dash, dois-pontos).
 _SEP_SUBTITULO = r"^Aula\s*\d+\s*[\-" + "\u2013" + r":]\s*"
 
 
@@ -65,7 +66,11 @@ def process(doc: PdfDocument, aula_id: int) -> dict:
     }
 
 
-def run(write: bool = True) -> list[dict]:
+def run(bundle: str = config.DEFAULT_BUNDLE, write: bool = True) -> list[dict]:
+    if not config.AULAS_DIR.exists():
+        print("[aulas] diretorio de aulas ausente; slice opcional pulado")
+        return []
+
     filenames = list_pdfs(config.AULAS_DIR)
     print(f"[aulas] {len(filenames)} PDFs encontrados")
 
@@ -93,8 +98,10 @@ def run(write: bool = True) -> list[dict]:
         print(f"  [{i}/{len(filenames)}] {filename[:60]}")
 
     if write:
-        write_csv(config.DATASET_AULAS, registros, FIELDS)
-        print(f"[aulas] -> {config.DATASET_AULAS} ({len(registros)} registros)")
+        b = Bundle(bundle)
+        b.dir.mkdir(parents=True, exist_ok=True)
+        write_csv(b.path("aulas"), registros, FIELDS)
+        print(f"[aulas] -> {b.path('aulas')} ({len(registros)} registros)")
 
     return registros
 

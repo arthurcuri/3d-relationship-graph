@@ -1,11 +1,14 @@
-"""Configuração central de caminhos.
+"""Configuracao central de caminhos, ciente de bundles de dataset.
 
-Tudo é resolvido a partir da raiz do repositório, eliminando os caminhos
-absolutos que existiam nos scripts originais. É possível sobrescrever os
-diretórios via variáveis de ambiente (útil para testes ou outra máquina):
+Tudo e resolvido a partir da raiz do repositorio. Um *bundle* e uma pasta em
+``datasets/<nome>/`` que reune os datasets padronizados (artigos, ementa e,
+opcionalmente, aulas) consumidos tanto pela visualizacao 3D quanto pelo ACARI.
 
-- ``MEDICAO_DATA_DIR``  -> raiz dos dados (default: ``<repo>/data``)
-- ``MEDICAO_WEB_DIR``   -> pasta da visualização (default: ``<repo>/visualizacao``)
+Variaveis de ambiente para override:
+
+- ``MEDICAO_BUNDLES_DIR`` -> raiz dos bundles (default: ``<repo>/datasets``)
+- ``MEDICAO_RAW_DIR``     -> raiz dos PDFs brutos (default: ``<repo>/data/raw``)
+- ``MEDICAO_WEB_DIR``     -> pasta da visualizacao (default: ``<repo>/visualizacao``)
 """
 
 from __future__ import annotations
@@ -13,7 +16,7 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-# src/medicao/shared/config.py -> parents[3] == raiz do repositório
+# src/medicao/shared/config.py -> parents[3] == raiz do repositorio
 ROOT_DIR = Path(__file__).resolve().parents[3]
 
 
@@ -22,28 +25,23 @@ def _dir(env_var: str, default: Path) -> Path:
     return Path(value).expanduser().resolve() if value else default
 
 
-DATA_DIR = _dir("MEDICAO_DATA_DIR", ROOT_DIR / "data")
-RAW_DIR = DATA_DIR / "raw"
-PROCESSED_DIR = DATA_DIR / "processed"
+BUNDLES_DIR = _dir("MEDICAO_BUNDLES_DIR", ROOT_DIR / "datasets")
+TEMPLATES_DIR = BUNDLES_DIR / "_templates"
 
-ARTIGOS_DIR = RAW_DIR / "artigos"
-AULAS_DIR = RAW_DIR / "aulas"
-CRONOGRAMA_CSV = AULAS_DIR / "cronograma_atividades.csv"
-
+RAW_DIR = _dir("MEDICAO_RAW_DIR", ROOT_DIR / "data" / "raw")
 WEB_DIR = _dir("MEDICAO_WEB_DIR", ROOT_DIR / "visualizacao")
 
-# Datasets processados
-DATASET_ARTIGOS = PROCESSED_DIR / "dataset_artigos.csv"
-DATASET_AULAS = PROCESSED_DIR / "dataset_aulas.csv"
-DATASET_CRONOGRAMA = PROCESSED_DIR / "dataset_cronograma.csv"
-DATASET_RELACOES = PROCESSED_DIR / "dataset_relacoes_artigo_aula.csv"
+# Bundle default (gerado a partir dos PDFs em data/raw).
+DEFAULT_BUNDLE = os.environ.get("MEDICAO_BUNDLE", "medicao")
 
-# Saídas para a visualização web
-WEB_DATA_JSON = WEB_DIR / "data.json"
-WEB_GRAPH_JSON = WEB_DIR / "graph_data.json"
+# PDFs brutos do bundle medicao (entrada do extrator de artigos/aulas).
+ARTIGOS_DIR = RAW_DIR / "artigos"
+AULAS_DIR = RAW_DIR / "aulas"
 
-# Prefixos de caminho dos PDFs RELATIVOS ao index.html (que vive em WEB_DIR).
-# index.html usa esses valores diretamente como ``src`` de um iframe.
+# Indice global de bundles (consumido pela visualizacao).
+BUNDLES_INDEX = BUNDLES_DIR / "index.json"
+
+# Prefixos de caminho dos PDFs RELATIVOS ao index.html (em WEB_DIR).
 ARTIGOS_WEB_PREFIX = "../data/raw/artigos"
 AULAS_WEB_PREFIX = "../data/raw/aulas"
 
@@ -56,7 +54,13 @@ def aula_web_path(filename: str) -> str:
     return f"{AULAS_WEB_PREFIX}/{filename}"
 
 
-def ensure_dirs() -> None:
-    """Garante que os diretórios de saída existam."""
-    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+def bundle_dir(name: str) -> Path:
+    return BUNDLES_DIR / name
+
+
+def ensure_dirs(name: str = DEFAULT_BUNDLE) -> Path:
+    """Garante que o diretorio do bundle e a pasta web existam."""
+    bdir = bundle_dir(name)
+    bdir.mkdir(parents=True, exist_ok=True)
     WEB_DIR.mkdir(parents=True, exist_ok=True)
+    return bdir

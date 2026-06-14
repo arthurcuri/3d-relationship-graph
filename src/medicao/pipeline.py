@@ -1,41 +1,57 @@
-"""Orquestrador: executa os slices na ordem correta de dependência."""
+"""Orquestrador: gera um bundle completo a partir dos PDFs/dados de medicao."""
 
 from __future__ import annotations
 
 from medicao.shared import config
-from medicao.slices import artigos, aulas, cronograma, grafo, relacoes, web
+from medicao.shared.contract import Bundle
+from medicao.slices import artigos, aulas, grafo, relacoes, web
+from medicao.slices.ementa import migrate as ementa_migrate
+from medicao.slices.ementa import run as ementa_run
+
+# Titulo amigavel por bundle (cai no nome do bundle se ausente).
+TITULOS = {
+    "medicao": "Medição e Experimentação em Engenharia de Software",
+}
 
 
-def run_all() -> None:
-    """Executa o pipeline completo, reaproveitando os dados em memória."""
-    config.ensure_dirs()
+def run_all(bundle: str = config.DEFAULT_BUNDLE) -> None:
+    """Pipeline completo do bundle: artigos + aulas + ementa + relacoes + grafo."""
+    config.ensure_dirs(bundle)
+    b = Bundle(bundle)
     print("=" * 60)
-    print("PIPELINE DE MEDIÇÃO DE SOFTWARE")
+    print(f"PIPELINE DE BUNDLE: {bundle}")
     print("=" * 60)
 
-    registros_artigos = artigos.run()
-    registros_aulas = aulas.run()
-    registros_cronograma = cronograma.run()
-    registros_relacoes = relacoes.run(artigos=registros_artigos)
+    registros_artigos = artigos.run(bundle)
+    registros_aulas = aulas.run(bundle)
 
-    web.run(
+    # ementa.csv e responsabilidade do usuario; o bundle medicao e migrado
+    # automaticamente a partir do cronograma quando ausente.
+    if not b.has("ementa") and bundle == "medicao":
+        ementa_migrate.build(bundle)
+    registros_ementa = ementa_run(bundle)
+
+    registros_relacoes = relacoes.run(
+        bundle, artigos=registros_artigos, ementa=registros_ementa
+    )
+
+    titulo = TITULOS.get(bundle, bundle)
+    b.write_manifest(titulo=titulo)
+    grafo.run(
+        bundle,
         artigos=registros_artigos,
+        ementa=registros_ementa,
         aulas=registros_aulas,
-        cronograma=registros_cronograma,
         relacoes=registros_relacoes,
     )
-    grafo.run(
-        artigos=registros_artigos,
-        aulas=registros_aulas,
-        cronograma=registros_cronograma,
-    )
+    web.run()
 
     print("=" * 60)
     print("PRONTO!")
-    print(f"  Artigos:   {len(registros_artigos)}")
-    print(f"  Aulas:     {len(registros_aulas)}")
-    print(f"  Cronograma:{len(registros_cronograma)}")
-    print(f"  Relações:  {len(registros_relacoes)}")
+    print(f"  Artigos:  {len(registros_artigos)}")
+    print(f"  Ementa:   {len(registros_ementa)}")
+    print(f"  Aulas:    {len(registros_aulas)}")
+    print(f"  Relacoes: {len(registros_relacoes)}")
     print("=" * 60)
 
 

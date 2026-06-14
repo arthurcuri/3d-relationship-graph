@@ -1,40 +1,55 @@
-# Medição de Software
+# Medição de Software + ACARI
 
-Pipeline de extração e visualização do material da disciplina de **Medição e
-Experimentação em Engenharia de Software**: artigos científicos (PDFs), slides
-de aula (PDFs) e o cronograma da disciplina. Os dados são extraídos,
-enriquecidos e relacionados, alimentando uma visualização 3D interativa.
+Plataforma de análise de corpus acadêmico que produz **duas saídas a partir do
+mesmo conjunto de dados**:
+
+1. **Grafo 3D interativo** (extensível, data-driven) — `visualizacao/`.
+2. **ACARI** — *Avaliador de Corpus Acadêmico por Relevância e Indexação*,
+   agora **portado para dentro do pacote** (`src/medicao/slices/acari/`), que
+   mede o alinhamento semântico do corpus com a disciplina.
+
+Os dois consomem o **mesmo contrato de dados** (um *bundle*): o mesmo
+`artigos.csv` alimenta o grafo e o ACARI.
+
+## Contrato de dados (bundle)
+
+Um *bundle* é uma pasta em `datasets/<nome>/` com datasets padronizados:
+
+| Dataset | Arquivo | Grafo 3D | ACARI | Obrigatório |
+|---|---|---|---|---|
+| **artigos** | `artigos.csv` | nós de artigo | corpus (o mesmo CSV) | **Sim** |
+| **ementa** | `ementa.csv` | nós de ementa | vira `ementa.txt` (disciplina) | **Sim** |
+| **aulas** | `aulas.csv` | nós de aula | — | Opcional |
+
+Saídas geradas: `relacoes.csv`, `graph.json` (visualização), `ementa.txt` e a
+pasta `acari/` (saídas do pipeline ACARI: `data/`, `figs/`, `tables/`, `logs/`).
+
+Templates prontos em `datasets/_templates/` (`artigos`, `ementa`, `aulas`,
+`manifest`). A única coluna obrigatória de `artigos.csv` é **`title`** (o
+esquema é a fusão das colunas do ACARI com os campos ricos de medição).
 
 ## Arquitetura (Vertical Slice)
 
-O código é organizado por **capacidade de domínio** (slice), não por camada
-técnica. Cada slice é autocontido (extração, regras e pipeline) e depende
-apenas de um kernel compartilhado.
-
 ```
 src/medicao/
-├── shared/                 # kernel transversal
-│   ├── config.py           # caminhos (resolvidos a partir da raiz do repo)
-│   ├── pdf.py              # leitura de PDF (PyMuPDF) + normalização NFC
-│   ├── text.py            # utilitários de texto
-│   └── storage.py         # leitura/escrita de CSV e JSON
+├── shared/        # config (bundles), contract (schemas + Bundle), pdf, text, storage
 ├── slices/
-│   ├── artigos/            # PDFs de artigos -> dataset_artigos.csv (rico)
-│   ├── aulas/              # PDFs de slides  -> dataset_aulas.csv
-│   ├── cronograma/         # CSV bruto       -> dataset_cronograma.csv
-│   ├── relacoes/           # artigos x aulas -> dataset_relacoes_artigo_aula.csv
-│   ├── grafo/              # datasets        -> visualizacao/graph_data.json
-│   └── web/                # datasets        -> visualizacao/data.json
-├── pipeline.py             # orquestrador (executa os slices em ordem)
-└── __main__.py             # CLI: python -m medicao [slice]
+│   ├── artigos/   # PDFs -> artigos.csv (schema fundido ACARI+medição)
+│   ├── ementa/    # ementa.csv -> ementa.txt (+ migração do cronograma)
+│   ├── aulas/     # PDFs de slides -> aulas.csv (opcional)
+│   ├── relacoes/  # artigos x ementa -> relacoes.csv
+│   ├── grafo/     # bundle -> graph.json genérico (auto-descritivo)
+│   ├── web/       # registro datasets/index.json
+│   └── acari/     # pipeline ACARI portado
+│       ├── pipeline.py   # orquestrador (ingest -> ... -> export_latex)
+│       └── steps/        # ingest, enrich, venue, textsim, baseline, network,
+│                         # rubric, index, stats, viz, export_latex, config
+├── pipeline.py    # orquestrador do bundle
+└── __main__.py    # CLI
 
-data/
-├── raw/                    # entradas (PDFs e cronograma)
-│   ├── artigos/
-│   └── aulas/
-└── processed/              # datasets gerados (CSV)
-
-visualizacao/               # front-end (index.html consome data.json)
+datasets/          # bundles + templates + index.json
+data/raw/          # PDFs brutos (entrada do extrator de medição)
+visualizacao/      # grafo 3D data-driven (index.html)
 ```
 
 ## Instalação
@@ -42,44 +57,60 @@ visualizacao/               # front-end (index.html consome data.json)
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r requirements.txt          # extrator/grafo (PyMuPDF)
+pip install -r requirements-acari.txt    # ACARI (embeddings, redes, figuras, ...)
 ```
 
 ## Uso
 
-Executar o pipeline completo:
+### Gerar o bundle (a partir dos PDFs)
 
 ```bash
-PYTHONPATH=src python3 -m medicao
+PYTHONPATH=src python3 -m medicao            # pipeline completo
+PYTHONPATH=src python3 -m medicao artigos    # uma etapa
+PYTHONPATH=src python3 -m medicao --bundle medicao
 ```
 
-Executar um slice específico (`artigos`, `aulas`, `cronograma`, `relacoes`,
-`web`, `grafo`):
+### Visualizar o grafo 3D
 
-```bash
-PYTHONPATH=src python3 -m medicao artigos
-```
-
-> Os slices `relacoes`, `web` e `grafo` consomem os CSVs em `data/processed/`,
-> então rode-os após os slices que os produzem (ou rode o pipeline completo).
-
-## Visualização
-
-Sirva a partir da **raiz do repositório** (para que os PDFs em `data/raw/`
-fiquem acessíveis ao front-end):
+Sirva a partir da **raiz do repositório**:
 
 ```bash
 python3 -m http.server 8000
 # abra http://localhost:8000/visualizacao/
 ```
 
-O `index.html` carrega `data.json` e renderiza o grafo de artigos, aulas e
-cronograma. Os botões "Abrir PDF" usam caminhos relativos para `data/raw/`.
+O seletor lista os bundles de `datasets/index.json`; a renderização é genérica
+(cores/filtros vêm do `manifest`), então qualquer bundle novo aparece sozinho.
+
+### Rodar o ACARI (agora interno ao pacote)
+
+```bash
+PYTHONPATH=src python3 -m medicao acari                 # prepara (gera ementa.txt) e valida
+PYTHONPATH=src python3 -m medicao acari --run-acari     # executa o pipeline completo
+PYTHONPATH=src python3 -m medicao acari --run-acari --acari-only ingest   # só uma etapa
+PYTHONPATH=src python3 -m medicao acari --run-acari --acari-from textsim  # a partir de uma etapa
+```
+
+As saídas vão para `datasets/<bundle>/acari/`. As etapas de embeddings/rede/
+enriquecimento exigem `requirements-acari.txt` e acesso à internet (OpenAlex e
+download do modelo na 1ª execução).
+
+## Criar um novo dataset (extensível)
+
+1. Crie `datasets/<seu_bundle>/`.
+2. Preencha `artigos.csv` e `ementa.csv` a partir de `datasets/_templates/`.
+3. Gere grafo e índice e (opcional) rode o ACARI:
+
+```bash
+PYTHONPATH=src python3 -m medicao grafo --bundle <seu_bundle>
+PYTHONPATH=src python3 -m medicao web
+PYTHONPATH=src python3 -m medicao acari --run-acari --bundle <seu_bundle>
+```
 
 ## Configuração
 
-Os caminhos são resolvidos a partir da raiz do repositório. É possível
-sobrescrever via variáveis de ambiente:
-
-- `MEDICAO_DATA_DIR` — raiz dos dados (default: `data/`)
-- `MEDICAO_WEB_DIR` — pasta da visualização (default: `visualizacao/`)
+- `MEDICAO_BUNDLES_DIR` — raiz dos bundles (default: `datasets/`)
+- `MEDICAO_RAW_DIR` — PDFs brutos (default: `data/raw/`)
+- `MEDICAO_WEB_DIR` — visualização (default: `visualizacao/`)
+- `MEDICAO_BUNDLE` — bundle default (default: `medicao`)

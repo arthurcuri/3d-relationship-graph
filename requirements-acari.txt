@@ -1,0 +1,21 @@
+# Dependencias do pipeline ACARI (portado para src/medicao/slices/acari).
+# As etapas pesadas (embeddings, redes, enriquecimento via API, figuras)
+# so sao necessarias para rodar o pipeline completo do ACARI.
+pandas>=2.0.0
+numpy>=1.24.0
+requests>=2.28.0
+urllib3>=1.26.0
+scikit-learn>=1.3.0
+sentence-transformers>=2.2.0
+networkx>=3.1
+python-louvain>=0.16
+scipy>=1.11.0
+statsmodels>=0.14.0
+scikit-posthocs>=0.8.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+PyMuPDF>=1.22.0
+rapidfuzz>=3.0.0
+tqdm>=4.65.0
+kaleido>=0.2.1

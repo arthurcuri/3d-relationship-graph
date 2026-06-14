@@ -1,31 +1,38 @@
-"""Pipeline do slice web: agrega os datasets em data.json para o index.html."""
+"""Pipeline do slice web: registro de bundles em datasets/index.json."""
 
 from __future__ import annotations
 
 from medicao.shared import config
-from medicao.shared.storage import read_csv, write_json
+from medicao.shared.contract import Bundle, list_bundles
+from medicao.shared.storage import read_json, write_json
 
 
-def run(
-    write: bool = True,
-    artigos: list[dict] | None = None,
-    aulas: list[dict] | None = None,
-    cronograma: list[dict] | None = None,
-    relacoes: list[dict] | None = None,
-) -> dict:
-    """Monta o JSON unificado. Usa os datasets em memória ou lê os CSVs."""
-    data = {
-        "artigos": artigos if artigos is not None else read_csv(config.DATASET_ARTIGOS),
-        "aulas": aulas if aulas is not None else read_csv(config.DATASET_AULAS),
-        "cronograma": cronograma if cronograma is not None else read_csv(config.DATASET_CRONOGRAMA),
-        "relacoes_artigo_aula": relacoes if relacoes is not None else read_csv(config.DATASET_RELACOES),
-    }
+def run(write: bool = True) -> dict:
+    """Varre os bundles disponiveis e escreve o indice consumido pela visualizacao."""
+    bundles = []
+    for name in list_bundles():
+        b = Bundle(name)
+        manifest = b.load_manifest()
+        counts = {}
+        if b.graph_path.exists():
+            try:
+                counts = read_json(b.graph_path).get("meta", {}).get("counts", {})
+            except Exception:  # noqa: BLE001
+                counts = {}
+        bundles.append(
+            {
+                "name": name,
+                "titulo": manifest.get("titulo", name),
+                "graph": f"{name}/graph.json",
+                "counts": counts,
+            }
+        )
 
+    index = {"bundles": bundles}
     if write:
-        write_json(config.WEB_DATA_JSON, data)
-        print(f"[web] -> {config.WEB_DATA_JSON}")
-
-    return data
+        write_json(config.BUNDLES_INDEX, index)
+        print(f"[web] -> {config.BUNDLES_INDEX} ({len(bundles)} bundles)")
+    return index
 
 
 if __name__ == "__main__":

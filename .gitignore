@@ -14,3 +14,7 @@ venv/
 
 # IDE
 .idea/
+.vscode/
+
+# Saidas geradas do ACARI (dentro de cada bundle)
+datasets/*/acari/

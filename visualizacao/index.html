@@ -13,181 +13,82 @@
             --text: #E8E4DC;
             --text-dim: #7A7A82;
             --text-muted: #44444C;
-            --accent-aula: #4A90D9;
-            --accent-artigo: #B85450;
-            --accent-crono: #C4A96A;
+            --accent: #B85450;
             --border: rgba(255,255,255,0.04);
             --radius: 10px;
         }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: 'Inter', sans-serif;
-            font-weight: 300;
-            overflow: hidden;
-            -webkit-font-smoothing: antialiased;
+            background: var(--bg); color: var(--text);
+            font-family: 'Inter', sans-serif; font-weight: 300;
+            overflow: hidden; -webkit-font-smoothing: antialiased;
         }
-
         #graph { width: 100vw; height: 100vh; }
 
-        /* --- Panel --- */
         #panel {
-            position: fixed; right: 0; top: 0;
-            width: 400px; height: 100vh;
-            background: var(--surface);
-            border-left: 1px solid var(--border);
-            padding: 36px 28px; overflow-y: auto;
-            transform: translateX(100%);
+            position: fixed; right: 0; top: 0; width: 400px; height: 100vh;
+            background: var(--surface); border-left: 1px solid var(--border);
+            padding: 36px 28px; overflow-y: auto; transform: translateX(100%);
             transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-            z-index: 200;
-            backdrop-filter: blur(24px);
+            z-index: 200; backdrop-filter: blur(24px);
         }
         #panel.open { transform: translateX(0); }
         #panel::-webkit-scrollbar { width: 2px; }
         #panel::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); }
-
-        #panel .node-type {
-            font-size: 11px; font-weight: 400;
-            letter-spacing: 0.3px; margin-bottom: 8px;
-            opacity: 0.5;
-        }
+        #panel .node-type { font-size: 11px; font-weight: 400; letter-spacing: 0.3px; margin-bottom: 8px; opacity: 0.5; }
         #panel h2 {
-            font-family: 'Instrument Serif', serif;
-            font-size: 22px; font-weight: 400;
-            color: var(--text); margin-bottom: 24px;
-            line-height: 1.35; border-left: 3px solid var(--accent-artigo);
-            padding-left: 14px;
+            font-family: 'Instrument Serif', serif; font-size: 22px; font-weight: 400;
+            color: var(--text); margin-bottom: 24px; line-height: 1.35;
+            border-left: 3px solid var(--accent); padding-left: 14px;
         }
-        #panel h2.aula-title { border-left-color: var(--accent-aula); }
-        #panel h2.crono-title { border-left-color: var(--accent-crono); }
-
         #panel .fld { margin-bottom: 16px; }
-        #panel .fld-l {
-            font-size: 10px; font-weight: 500;
-            color: var(--text-muted); letter-spacing: 0.4px;
-            margin-bottom: 4px;
-        }
-        #panel .fld-v {
-            font-size: 13px; color: var(--text-dim);
-            line-height: 1.65;
-        }
-        #panel .fld-v a { color: var(--accent-aula); text-decoration: none; border-bottom: 1px solid rgba(74,144,217,0.3); }
-        #panel .fld-v a:hover { border-bottom-color: var(--accent-aula); }
-
+        #panel .fld-l { font-size: 10px; font-weight: 500; color: var(--text-muted); letter-spacing: 0.4px; margin-bottom: 4px; }
+        #panel .fld-v { font-size: 13px; color: var(--text-dim); line-height: 1.65; word-break: break-word; }
+        #panel .fld-v a { color: #4A90D9; text-decoration: none; border-bottom: 1px solid rgba(74,144,217,0.3); }
         #panel .close-btn {
-            position: absolute; top: 24px; right: 24px;
-            width: 28px; height: 28px; border: none;
-            background: transparent; color: var(--text-muted);
-            cursor: pointer; font-size: 20px;
-            display: flex; align-items: center; justify-content: center;
-            transition: color 0.2s;
+            position: absolute; top: 24px; right: 24px; width: 28px; height: 28px; border: none;
+            background: transparent; color: var(--text-muted); cursor: pointer; font-size: 20px;
+            display: flex; align-items: center; justify-content: center; transition: color 0.2s;
         }
         #panel .close-btn:hover { color: var(--text); }
-
         .pdf-btn {
-            display: inline-flex; align-items: center; gap: 6px;
-            margin-top: 16px; padding: 10px 18px;
-            background: transparent;
-            border: 1px solid rgba(184,84,80,0.3);
-            border-radius: var(--radius); color: var(--accent-artigo);
-            font-size: 12px; font-weight: 400; cursor: pointer;
-            transition: all 0.2s;
+            display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; padding: 10px 18px;
+            background: transparent; border: 1px solid rgba(184,84,80,0.3); border-radius: var(--radius);
+            color: var(--accent); font-size: 12px; font-weight: 400; cursor: pointer; transition: all 0.2s;
         }
-        .pdf-btn:hover { border-color: var(--accent-artigo); background: rgba(184,84,80,0.06); }
-        .pdf-btn.aula { border-color: rgba(74,144,217,0.3); color: var(--accent-aula); }
-        .pdf-btn.aula:hover { border-color: var(--accent-aula); background: rgba(74,144,217,0.06); }
+        .pdf-btn:hover { border-color: var(--accent); background: rgba(184,84,80,0.06); }
 
-        .tag {
-            display: inline-block;
-            border: 1px solid var(--border);
-            border-radius: 4px; padding: 2px 7px;
-            margin: 2px 4px 2px 0; font-size: 10px;
-            color: var(--text-dim);
-        }
-
-        /* --- PDF Modal --- */
-        #pdf-modal {
-            position: fixed; inset: 0;
-            background: rgba(0,0,0,0.88); display: none;
-            z-index: 500; align-items: center; justify-content: center;
-            backdrop-filter: blur(4px);
-        }
+        #pdf-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.88); display: none; z-index: 500; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
         #pdf-modal.open { display: flex; }
-        #pdf-modal .wrap {
-            width: 86vw; height: 90vh;
-            background: #0c0c16; border-radius: 12px;
-            overflow: hidden; display: flex; flex-direction: column;
-            border: 1px solid var(--border);
-            box-shadow: 0 40px 120px rgba(0,0,0,0.6);
-        }
-        #pdf-modal .bar {
-            display: flex; align-items: center; justify-content: space-between;
-            padding: 12px 20px; border-bottom: 1px solid var(--border);
-        }
-        #pdf-modal .bar h3 {
-            font-family: 'Instrument Serif', serif;
-            font-size: 14px; color: var(--text-dim); font-weight: 400;
-        }
-        #pdf-modal .bar button {
-            width: 30px; height: 30px; border: none;
-            background: transparent; color: var(--text-muted);
-            cursor: pointer; font-size: 18px;
-        }
-        #pdf-modal .bar button:hover { color: var(--text); }
+        #pdf-modal .wrap { width: 86vw; height: 90vh; background: #0c0c16; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--border); box-shadow: 0 40px 120px rgba(0,0,0,0.6); }
+        #pdf-modal .bar { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; border-bottom: 1px solid var(--border); }
+        #pdf-modal .bar h3 { font-family: 'Instrument Serif', serif; font-size: 14px; color: var(--text-dim); font-weight: 400; }
+        #pdf-modal .bar button { width: 30px; height: 30px; border: none; background: transparent; color: var(--text-muted); cursor: pointer; font-size: 18px; }
         #pdf-modal iframe { flex: 1; width: 100%; border: none; }
 
-        /* --- Controls --- */
-        #ui {
-            position: fixed; left: 20px; top: 20px; z-index: 100;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius); padding: 16px 20px;
-            backdrop-filter: blur(16px); min-width: 190px;
+        #ui { position: fixed; left: 20px; top: 20px; z-index: 100; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; backdrop-filter: blur(16px); min-width: 210px; }
+        #ui h1 { font-family: 'Instrument Serif', serif; font-size: 15px; font-weight: 400; color: var(--text); margin-bottom: 12px; }
+        #ui select {
+            width: 100%; margin-bottom: 12px; padding: 7px 9px; background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border); border-radius: 6px; color: var(--text-dim);
+            font-size: 11px; outline: none; font-family: 'Inter', sans-serif;
         }
-        #ui h1 {
-            font-family: 'Instrument Serif', serif;
-            font-size: 15px; font-weight: 400; color: var(--text);
-            margin-bottom: 14px;
-        }
-        #ui label {
-            display: flex; align-items: center; gap: 8px;
-            font-size: 11px; color: var(--text-dim); cursor: pointer; padding: 4px 0;
-            transition: color 0.15s;
-        }
-        #ui label:hover { color: var(--text); }
-        #ui input[type="checkbox"] { width: 12px; height: 12px; accent-color: var(--accent-aula); }
-        .indicator {
-            width: 7px; height: 7px; border-radius: 50%; display: inline-block;
-        }
-        #ui input[type="text"] {
-            width: 100%; margin-top: 14px; padding: 8px 11px;
-            background: rgba(255,255,255,0.02);
-            border: 1px solid var(--border);
-            border-radius: 6px; color: var(--text-dim); font-size: 11px; outline: none;
-            font-family: 'Inter', sans-serif;
-        }
-        #ui input[type="text"]:focus { border-color: rgba(255,255,255,0.1); }
-        #ui input[type="text"]::placeholder { color: var(--text-muted); }
-
+        #filters label { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--text-dim); cursor: pointer; padding: 4px 0; transition: color 0.15s; }
+        #filters label:hover { color: var(--text); }
+        #filters input[type="checkbox"] { width: 12px; height: 12px; }
+        .indicator { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+        #search { width: 100%; margin-top: 12px; padding: 8px 11px; background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 6px; color: var(--text-dim); font-size: 11px; outline: none; font-family: 'Inter', sans-serif; }
         #stats { position: fixed; left: 20px; bottom: 16px; font-size: 10px; color: var(--text-muted); z-index: 100; }
-
-        @media (max-width: 768px) {
-            #panel { width: 100vw; }
-            #ui { left: 12px; top: 12px; }
-        }
+        @media (max-width: 768px) { #panel { width: 100vw; } #ui { left: 12px; top: 12px; } }
     </style>
 </head>
 <body>
     <div id="graph"></div>
 
     <div id="ui">
-        <h1>Rede de Conhecimento</h1>
-        <label><input type="checkbox" id="f-art" checked><span class="indicator" style="background:var(--accent-artigo)"></span> Artigos</label>
-        <label><input type="checkbox" id="f-aula" checked><span class="indicator" style="background:var(--accent-aula)"></span> Aulas</label>
-        <label><input type="checkbox" id="f-crono" checked><span class="indicator" style="background:var(--accent-crono)"></span> Cronograma</label>
+        <h1 id="title">Rede de Conhecimento</h1>
+        <select id="bundle-select"></select>
+        <div id="filters"></div>
         <input type="text" id="search" placeholder="Buscar...">
     </div>
 
@@ -215,119 +116,124 @@
     (function() {
         'use strict';
 
-        const COLORS = {
-            artigo: '#B85450',
-            aula: '#4A90D9',
-            cronograma: '#C4A96A',
+        const DATASETS = '../datasets/';
+        const FALLBACK_COLORS = ['#B85450', '#4A90D9', '#C4A96A', '#6AB89A', '#9A6AB8', '#B8946A'];
+        const LINK_STYLE = {
+            artigo_ementa:  { color: 'rgba(184,84,80,0.14)', width: 0.5, particles: 1 },
+            ementa_aula:    { color: 'rgba(196,169,106,0.18)', width: 0.5, particles: 0 },
+            artigo_artigo:  { color: 'rgba(122,122,130,0.05)', width: 0.3, particles: 0 },
+            sequencia:      { color: 'rgba(196,169,106,0.06)', width: 0.25, particles: 0 },
         };
 
-        let graph;
-        let allData;
+        let graph, currentData, nodeTypes = {}, activeTypes = {};
+        const el = document.getElementById('graph');
 
-        fetch('./data.json')
-            .then(r => r.json())
-            .then(raw => { allData = raw; init(raw); })
-            .catch(e => {
-                document.getElementById('graph').innerHTML =
-                    '<p style="padding:40px;color:#666">Falha ao carregar dados. Verifique se o servidor est\u00e1 rodando.</p>';
+        boot();
+
+        async function boot() {
+            let index;
+            try {
+                index = await fetchJson(DATASETS + 'index.json');
+            } catch (e) { return showError('Não foi possível carregar datasets/index.json. Sirva a partir da raiz do repositório.'); }
+
+            const sel = document.getElementById('bundle-select');
+            const bundles = index.bundles || [];
+            if (!bundles.length) return showError('Nenhum bundle encontrado em datasets/.');
+            bundles.forEach((b, i) => {
+                const o = document.createElement('option');
+                o.value = b.graph; o.textContent = b.titulo || b.name;
+                sel.appendChild(o);
             });
+            sel.onchange = () => loadGraph(sel.value);
+            loadGraph(bundles[0].graph);
+        }
 
-        function init(raw) {
-            const nodes = [];
-            const links = [];
+        async function loadGraph(graphRel) {
+            let data;
+            try { data = await fetchJson(DATASETS + graphRel); }
+            catch (e) { return showError('Falha ao carregar ' + graphRel); }
+            currentData = data;
+            nodeTypes = data.node_types || {};
+            assignColors(data);
+            document.getElementById('title').textContent = (data.meta && data.meta.titulo) || 'Rede de Conhecimento';
+            buildFilters(data);
+            render(data);
+        }
 
-            raw.aulas.forEach(a => {
-                nodes.push({ id: 'aula_' + a.id, type: 'aula', label: a.titulo, data: a, val: 40 });
+        function assignColors(data) {
+            let i = 0;
+            const present = [...new Set(data.nodes.map(n => n.type))];
+            present.forEach(t => {
+                if (!nodeTypes[t]) nodeTypes[t] = { label: t, color: FALLBACK_COLORS[i % FALLBACK_COLORS.length] };
+                if (!nodeTypes[t].color) nodeTypes[t].color = FALLBACK_COLORS[i % FALLBACK_COLORS.length];
+                activeTypes[t] = true;
+                i++;
             });
+        }
 
-            raw.artigos.forEach(a => {
-                nodes.push({ id: 'art_' + a.id, type: 'artigo', label: a.titulo, data: a, val: 5 });
+        function buildFilters(data) {
+            const box = document.getElementById('filters');
+            box.innerHTML = '';
+            const present = [...new Set(data.nodes.map(n => n.type))];
+            present.forEach(t => {
+                const lbl = document.createElement('label');
+                const cb = document.createElement('input');
+                cb.type = 'checkbox'; cb.checked = true; cb.dataset.type = t;
+                cb.onchange = () => { activeTypes[t] = cb.checked; applyFilters(); };
+                const dot = document.createElement('span');
+                dot.className = 'indicator'; dot.style.background = nodeTypes[t].color;
+                lbl.appendChild(cb); lbl.appendChild(dot);
+                lbl.appendChild(document.createTextNode(' ' + (nodeTypes[t].label || t)));
+                box.appendChild(lbl);
             });
+        }
 
-            raw.cronograma.forEach(c => {
-                nodes.push({ id: 'crono_' + c.id, type: 'cronograma', label: c.atividade, data: c, val: 3 });
-            });
+        function sizeOf(type) { return type === 'ementa' ? 28 : type === 'aula' ? 40 : 6; }
 
-            raw.relacoes_artigo_aula.forEach(rel => {
-                const target = nodes.find(n => n.type === 'aula' && n.data.arquivo === rel.aula_arquivo);
-                if (target) {
-                    links.push({ source: 'art_' + rel.artigo_id, target: target.id, type: 'art_aula' });
-                }
-            });
+        function meshOf(node) {
+            const c = new THREE.Color(nodeTypes[node.type] ? nodeTypes[node.type].color : '#888');
+            let geo;
+            if (node.type === 'aula') geo = new THREE.OctahedronGeometry(7, 0);
+            else if (node.type === 'ementa') geo = new THREE.BoxGeometry(4, 4, 4);
+            else if (node.type === 'artigo') geo = new THREE.SphereGeometry(2.4, 14, 14);
+            else geo = new THREE.TetrahedronGeometry(3, 0);
+            const mat = new THREE.MeshLambertMaterial({ color: c, emissive: c, emissiveIntensity: 0.25, transparent: true, opacity: 0.9 });
+            return new THREE.Mesh(geo, mat);
+        }
 
-            raw.cronograma.forEach(c => {
-                if (!c.aula_pdf) return;
-                const target = nodes.find(n => n.type === 'aula' && n.data.arquivo === c.aula_pdf);
-                if (target) {
-                    links.push({ source: 'crono_' + c.id, target: target.id, type: 'crono_aula' });
-                }
-            });
-
-            for (let i = 0; i < raw.cronograma.length - 1; i++) {
-                links.push({ source: 'crono_' + raw.cronograma[i].id, target: 'crono_' + raw.cronograma[i+1].id, type: 'seq' });
-            }
-
-            document.getElementById('stats').textContent = nodes.length + ' n\u00f3s \u00b7 ' + links.length + ' conex\u00f5es';
-
-            const el = document.getElementById('graph');
-
+        function render(data) {
+            document.getElementById('stats').textContent = data.nodes.length + ' nós · ' + data.links.length + ' conexões';
             graph = ForceGraph3D()(el)
-                .graphData({ nodes, links })
+                .graphData({ nodes: data.nodes.map(n => ({ ...n })), links: data.links.map(l => ({ ...l })) })
                 .backgroundColor('#04040E')
                 .showNavInfo(false)
-                .nodeLabel(n => '')
-                .nodeVal(n => n.val)
-                .nodeResolution(16)
-                .nodeThreeObject(n => {
-                    const c = new THREE.Color(COLORS[n.type]);
-                    let geo;
-                    if (n.type === 'aula') {
-                        geo = new THREE.OctahedronGeometry(7, 0);
-                    } else if (n.type === 'artigo') {
-                        geo = new THREE.SphereGeometry(2.4, 14, 14);
-                    } else {
-                        geo = new THREE.BoxGeometry(2, 2, 2);
-                    }
-                    const mat = new THREE.MeshLambertMaterial({
-                        color: c,
-                        emissive: c,
-                        emissiveIntensity: n.type === 'aula' ? 0.5 : 0.2,
-                        transparent: true,
-                        opacity: 0.88,
-                    });
-                    return new THREE.Mesh(geo, mat);
-                })
-                .linkColor(l => {
-                    if (l.type === 'art_aula') return 'rgba(184,84,80,0.12)';
-                    if (l.type === 'crono_aula') return 'rgba(196,169,106,0.15)';
-                    return 'rgba(196,169,106,0.04)';
-                })
-                .linkWidth(l => l.type === 'seq' ? 0.2 : 0.4)
+                .nodeLabel(n => esc(n.label || ''))
+                .nodeVal(n => sizeOf(n.type))
+                .nodeThreeObject(meshOf)
+                .linkColor(l => (LINK_STYLE[l.type] || {}).color || 'rgba(122,122,130,0.05)')
+                .linkWidth(l => (LINK_STYLE[l.type] || {}).width || 0.3)
                 .linkOpacity(0.5)
-                .linkDirectionalParticles(l => l.type === 'art_aula' ? 1 : 0)
+                .linkDirectionalParticles(l => (LINK_STYLE[l.type] || {}).particles || 0)
                 .linkDirectionalParticleWidth(0.8)
                 .linkDirectionalParticleSpeed(0.003)
-                .linkDirectionalParticleColor(() => '#B85450')
-                .warmupTicks(120)
-                .cooldownTicks(400)
+                .warmupTicks(80)
+                .cooldownTicks(300)
                 .onNodeClick(onNodeClick)
                 .onNodeHover(n => { el.style.cursor = n ? 'pointer' : 'default'; });
 
-            // Lighting
             setTimeout(() => {
                 try {
                     const scene = graph.scene();
-                    scene.add(new THREE.AmbientLight(0x404060, 0.6));
-                    const l1 = new THREE.PointLight(0x4A90D9, 1.2, 500);
-                    l1.position.set(100, 150, 100);
-                    scene.add(l1);
-                    const l2 = new THREE.PointLight(0xB85450, 0.8, 400);
-                    l2.position.set(-150, -80, -100);
-                    scene.add(l2);
-                } catch(e) {}
+                    scene.add(new THREE.AmbientLight(0x404060, 0.7));
+                    const l1 = new THREE.PointLight(0x4A90D9, 1.1, 600); l1.position.set(120, 160, 120); scene.add(l1);
+                    const l2 = new THREE.PointLight(0xB85450, 0.8, 500); l2.position.set(-150, -90, -110); scene.add(l2);
+                } catch (e) {}
             }, 200);
+        }
 
-            setupUI();
+        function applyFilters() {
+            if (!graph) return;
+            graph.nodeVisibility(n => activeTypes[n.type] !== false);
         }
 
         function onNodeClick(node) {
@@ -335,85 +241,48 @@
             const dist = node.type === 'aula' ? 70 : 45;
             graph.cameraPosition(
                 { x: node.x + dist, y: node.y + dist * 0.4, z: node.z + dist },
-                { x: node.x, y: node.y, z: node.z },
-                1000
+                { x: node.x, y: node.y, z: node.z }, 1000
             );
             highlight(node);
             setTimeout(() => showPanel(node), 250);
         }
 
         function highlight(node) {
-            const neighbors = new Set([node.id]);
+            const nb = new Set([node.id]);
             graph.graphData().links.forEach(l => {
-                const s = typeof l.source === 'object' ? l.source.id : l.source;
-                const t = typeof l.target === 'object' ? l.target.id : l.target;
-                if (s === node.id) neighbors.add(t);
-                if (t === node.id) neighbors.add(s);
+                const s = idOf(l.source), t = idOf(l.target);
+                if (s === node.id) nb.add(t);
+                if (t === node.id) nb.add(s);
             });
-            graph
-                .nodeOpacity(n => neighbors.has(n.id) ? 1 : 0.03)
-                .linkOpacity(l => {
-                    const s = typeof l.source === 'object' ? l.source.id : l.source;
-                    const t = typeof l.target === 'object' ? l.target.id : l.target;
-                    return (s === node.id || t === node.id) ? 0.7 : 0.005;
-                });
-        }
-
-        function resetHighlight() {
-            graph.nodeOpacity(0.88).linkOpacity(0.5);
+            graph.nodeOpacity(n => nb.has(n.id) ? 1 : 0.04)
+                 .linkOpacity(l => (idOf(l.source) === node.id || idOf(l.target) === node.id) ? 0.7 : 0.01);
         }
 
         function showPanel(node) {
-            const nd = node.data;
-            let html = '';
-
-            if (node.type === 'artigo') {
-                html += '<div class="node-type">Artigo</div>';
-                html += '<h2>' + esc(nd.titulo) + '</h2>';
-                html += fld('Autores', nd.autores);
-                html += fld('Ano', nd.ano);
-                html += fld('Abstract', nd.abstract);
-                html += fld('Keywords', nd.keywords);
-                if (nd.doi) html += fld('DOI', '<a href="https://doi.org/' + esc(nd.doi) + '" target="_blank">' + esc(nd.doi) + '</a>');
-                html += fld('P\u00e1ginas', nd.num_paginas);
-                const rels = allData.relacoes_artigo_aula.filter(r => r.artigo_id === nd.id);
-                if (rels.length) {
-                    html += fld('Aulas relacionadas', rels.map(r => '<span class="tag">' + esc(r.aula_arquivo.replace('.pdf','')) + '</span>').join(' '));
-                }
-                if (nd.caminho_pdf) {
-                    html += '<button class="pdf-btn" onclick="window._openPdf(\'' + escQ(nd.caminho_pdf) + '\',\'' + escQ(nd.titulo) + '\')">Abrir PDF</button>';
-                }
-            } else if (node.type === 'aula') {
-                html += '<div class="node-type">Aula</div>';
-                html += '<h2 class="aula-title">' + esc(nd.titulo) + '</h2>';
-                html += fld('Professor', nd.professor);
-                html += fld('Slides', nd.num_slides);
-                if (nd.topicos) {
-                    html += fld('T\u00f3picos', nd.topicos.split(';').map(t => '<span class="tag">' + esc(t.trim()) + '</span>').join(' '));
-                }
-                const rels = allData.relacoes_artigo_aula.filter(r => r.aula_arquivo === nd.arquivo);
-                if (rels.length) {
-                    html += fld('Artigos (' + rels.length + ')', rels.slice(0,15).map(r => '<span class="tag">' + esc(trunc(r.artigo_titulo,50)) + '</span>').join(' '));
-                }
-                const crons = allData.cronograma.filter(c => c.aula_pdf === nd.arquivo);
-                if (crons.length) {
-                    html += fld('Cronograma', crons.map(c => '<span class="tag">' + esc(c.data + ' \u2014 ' + c.atividade) + '</span>').join(' '));
-                }
-                if (nd.caminho_pdf) {
-                    html += '<button class="pdf-btn aula" onclick="window._openPdf(\'' + escQ(nd.caminho_pdf) + '\',\'' + escQ(nd.titulo) + '\')">Abrir slides</button>';
-                }
-            } else {
-                html += '<div class="node-type">Cronograma</div>';
-                html += '<h2 class="crono-title">' + esc(nd.atividade) + '</h2>';
-                html += fld('Data', nd.data);
-                html += fld('Tipo', nd.tipo_atividade);
-                html += fld('M\u00f3dulo', nd.modulo_tematico);
-                html += fld('Aula vinculada', nd.aula_pdf ? nd.aula_pdf.replace('.pdf','') : 'Nenhuma');
-                if (nd.caminho_pdf_aula) {
-                    html += '<button class="pdf-btn aula" onclick="window._openPdf(\'' + escQ(nd.caminho_pdf_aula) + '\',\'' + escQ(nd.atividade) + '\')">Abrir aula</button>';
-                }
+            const tdef = nodeTypes[node.type] || {};
+            let html = '<div class="node-type">' + esc(tdef.label || node.type) + '</div>';
+            html += '<h2 style="border-left-color:' + (tdef.color || '#B85450') + '">' + esc(node.label || '') + '</h2>';
+            const detail = node.detail || {};
+            Object.keys(detail).forEach(k => {
+                let v = detail[k];
+                if (k === 'DOI' && v) v = '<a href="https://doi.org/' + esc(v) + '" target="_blank">' + esc(v) + '</a>';
+                else v = esc(v);
+                html += fld(k, v);
+            });
+            // vizinhos
+            const neigh = graph.graphData().links
+                .filter(l => idOf(l.source) === node.id || idOf(l.target) === node.id)
+                .map(l => idOf(l.source) === node.id ? idOf(l.target) : idOf(l.source));
+            if (neigh.length) {
+                const labels = neigh.map(id => {
+                    const n = currentData.nodes.find(x => x.id === id);
+                    return n ? '<span class="tag" style="border-color:' + ((nodeTypes[n.type]||{}).color || '#444') + '40">' + esc(trunc(n.label, 42)) + '</span>' : '';
+                }).slice(0, 20).join(' ');
+                html += fld('Conexões (' + neigh.length + ')', labels);
             }
-
+            if (node.pdf) {
+                html += '<button class="pdf-btn" onclick="window._openPdf(\'' + escQ(node.pdf) + '\',\'' + escQ(node.label) + '\')">Abrir PDF</button>';
+            }
             document.getElementById('panel-inner').innerHTML = html;
             document.getElementById('panel').classList.add('open');
         }
@@ -424,46 +293,29 @@
             document.getElementById('pdf-modal').classList.add('open');
         };
 
-        function setupUI() {
-            document.getElementById('close-panel').onclick = () => {
-                document.getElementById('panel').classList.remove('open');
-                resetHighlight();
-            };
-            document.getElementById('close-modal').onclick = () => {
-                document.getElementById('pdf-modal').classList.remove('open');
-                document.getElementById('pdf-frame').src = '';
-            };
-            document.getElementById('pdf-modal').onclick = e => {
-                if (e.target.id === 'pdf-modal') {
-                    document.getElementById('pdf-modal').classList.remove('open');
-                    document.getElementById('pdf-frame').src = '';
-                }
-            };
-
-            ['f-art','f-aula','f-crono'].forEach(id => {
-                document.getElementById(id).onchange = applyFilters;
-            });
-
-            document.getElementById('search').oninput = e => {
-                const q = e.target.value.toLowerCase().trim();
-                if (!q) { resetHighlight(); graph.nodeVisibility(() => true); return; }
-                graph.nodeVisibility(n => JSON.stringify(n.data).toLowerCase().includes(q));
-            };
+        document.getElementById('close-panel').onclick = () => {
+            document.getElementById('panel').classList.remove('open');
+            if (graph) graph.nodeOpacity(0.9).linkOpacity(0.5);
+        };
+        document.getElementById('close-modal').onclick = closeModal;
+        document.getElementById('pdf-modal').onclick = e => { if (e.target.id === 'pdf-modal') closeModal(); };
+        function closeModal() {
+            document.getElementById('pdf-modal').classList.remove('open');
+            document.getElementById('pdf-frame').src = '';
         }
+        document.getElementById('search').oninput = e => {
+            if (!graph) return;
+            const q = e.target.value.toLowerCase().trim();
+            graph.nodeVisibility(n => activeTypes[n.type] !== false && (!q || JSON.stringify(n).toLowerCase().includes(q)));
+        };
 
-        function applyFilters() {
-            const f = {
-                artigo: document.getElementById('f-art').checked,
-                aula: document.getElementById('f-aula').checked,
-                cronograma: document.getElementById('f-crono').checked,
-            };
-            graph.nodeVisibility(n => f[n.type] !== false);
-        }
-
-        function fld(l, v) { return v ? '<div class="fld"><div class="fld-l">' + l + '</div><div class="fld-v">' + v + '</div></div>' : ''; }
-        function esc(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = String(s); return d.innerHTML; }
-        function escQ(s) { return (s||'').replace(/\\/g,'\\\\').replace(/'/g,"\\'"); }
-        function trunc(s, n) { return s && s.length > n ? s.substring(0, n) + '\u2026' : (s || ''); }
+        function fetchJson(url) { return fetch(url).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }); }
+        function idOf(x) { return typeof x === 'object' ? x.id : x; }
+        function showError(msg) { document.getElementById('graph').innerHTML = '<p style="padding:40px;color:#666">' + esc(msg) + '</p>'; }
+        function fld(l, v) { return v ? '<div class="fld"><div class="fld-l">' + esc(l) + '</div><div class="fld-v">' + v + '</div></div>' : ''; }
+        function esc(s) { if (s === null || s === undefined) return ''; const d = document.createElement('div'); d.textContent = String(s); return d.innerHTML; }
+        function escQ(s) { return (s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'"); }
+        function trunc(s, n) { s = String(s || ''); return s.length > n ? s.substring(0, n) + '…' : s; }
     })();
     </script>
 </body>

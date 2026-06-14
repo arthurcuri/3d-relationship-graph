@@ -1,0 +1,22 @@
+{
+  "name": "meu_bundle",
+  "titulo": "Minha Disciplina",
+  "datasets": {},
+  "node_types": {
+    "artigo": {
+      "label": "Artigos",
+      "color": "#B85450",
+      "label_field": "title"
+    },
+    "ementa": {
+      "label": "Ementa",
+      "color": "#4A90D9",
+      "label_field": "topico"
+    },
+    "aula": {
+      "label": "Aulas",
+      "color": "#C4A96A",
+      "label_field": "titulo"
+    }
+  }
+}

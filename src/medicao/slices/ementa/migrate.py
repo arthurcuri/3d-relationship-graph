@@ -1,10 +1,21 @@
-"""Classificação de atividades do cronograma (tipo, módulo e aula vinculada)."""
+"""Migracao do cronograma de medicao para o dataset de ementa.
+
+Especifico do bundle ``medicao``: le o CSV bruto de cronograma da disciplina e
+o classifica em modulos, produzindo o ``ementa.csv`` no padrao do contrato.
+Para outros bundles, o usuario preenche o template manualmente.
+"""
 
 from __future__ import annotations
 
 import re
 
-# Mapeamento manual: atividade do cronograma -> PDF de aula mais relevante.
+from medicao.shared import config
+from medicao.shared.contract import EMENTA_FIELDS, Bundle
+from medicao.shared.storage import read_csv, write_csv
+
+CRONOGRAMA_CSV = config.AULAS_DIR / "cronograma_atividades.csv"
+
+# Atividade do cronograma -> PDF de aula relacionada.
 ATIVIDADE_AULA_MAP = {
     "Apresentação do curso": "Aula 1.pdf",
     "Nivelamento": "Aula 1.pdf",
@@ -35,27 +46,7 @@ ATIVIDADE_AULA_MAP = {
 }
 
 
-def classify_tipo(atividade: str) -> str:
-    if re.search(r"[Aa]valiação\s*\d", atividade):
-        return "Avaliação"
-    if re.search(r"[Rr]evisão\s+de\s+[Pp]rova", atividade):
-        return "Revisão de Prova"
-    if re.search(r"[Rr]evisão\s+de\s+[Mm]atéria", atividade):
-        return "Revisão de Matéria"
-    if re.search(r"[Pp]resentação.*[Tt]rabalho", atividade):
-        return "Apresentação de Trabalho"
-    if re.search(r"[Nn]ivelamento", atividade):
-        return "Nivelamento"
-    if re.search(r"[Pp]resentação\s+do\s+curso", atividade):
-        return "Apresentação do Curso"
-    if re.search(r"[Ee]nunciado", atividade):
-        return "Orientação de Trabalho"
-    if re.search(r"[Rr]eavaliação", atividade):
-        return "Reavaliação"
-    return "Aula Expositiva"
-
-
-def classify_modulo(atividade: str) -> str:
+def _modulo(atividade: str) -> str:
     if re.search(r"[Nn]ivelamento|[Pp]resentação\s+do\s+curso", atividade):
         return "Módulo 0 - Introdução"
     if re.search(r"[Ee]scopo|[Cc]onceitos\s+[Bb]ásicos\s+de\s+[Mm]edição", atividade):
@@ -73,5 +64,34 @@ def classify_modulo(atividade: str) -> str:
     return "Módulo 3 - Experimentação"
 
 
-def aula_vinculada(atividade: str) -> str:
-    return ATIVIDADE_AULA_MAP.get(atividade, "")
+def build(bundle: str = config.DEFAULT_BUNDLE) -> list[dict]:
+    """Gera ementa.csv do bundle a partir do cronograma bruto de medicao."""
+    linhas = read_csv(CRONOGRAMA_CSV)
+    registros = []
+    seq = 0
+    for linha in linhas:
+        data = (linha.get("Dia") or "").strip()
+        atividade = (linha.get("Atividade") or "").strip()
+        if not data and not atividade:
+            continue
+        seq += 1
+        registros.append(
+            {
+                "id": seq,
+                "modulo": _modulo(atividade),
+                "topico": atividade,
+                "descricao": "",
+                "data": data,
+                "aula_relacionada": ATIVIDADE_AULA_MAP.get(atividade, ""),
+            }
+        )
+
+    b = Bundle(bundle)
+    b.dir.mkdir(parents=True, exist_ok=True)
+    write_csv(b.path("ementa"), registros, EMENTA_FIELDS)
+    print(f"[ementa.migrate] -> {b.path('ementa')} ({len(registros)} itens)")
+    return registros
+
+
+if __name__ == "__main__":
+    build()
