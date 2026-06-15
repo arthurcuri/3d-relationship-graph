@@ -23,7 +23,7 @@ RANDOM_SEED = 42
 N_PERMUTATIONS = 10_000
 BASELINE_N = 200
 BASELINE_CONCEPT_ID = "C41008148"  # OpenAlex: Software Engineering
-GROUP_COLUMN = None  # coluna de grupo p/ H2/H3 (None desativa)
+GROUP_COLUMN = "cohort"  # coluna de grupo p/ H2/H3
 EXCLUDED_VENUE_TYPES = {"book", "report", "magazine", "thesis", "chapter"}
 
 # ── caminhos (preenchidos por configure) ────────────────────────────────────

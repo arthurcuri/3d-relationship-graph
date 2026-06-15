@@ -1,0 +1,21 @@
+{
+  "bundle": "medicao",
+  "artigos_atual": 66,
+  "artigos_esperado": 73,
+  "acari_enriched": false,
+  "baseline": false,
+  "figuras_acari": 0,
+  "auditoria_status": {
+    "Compilado de todos os artigos apresentados em sala": "parcial",
+    "Caracterizacao de temas e anos": "parcial",
+    "Revista/conferencia e tipo de veiculo": "parcial",
+    "Citacoes e referencias": "ausente",
+    "Corpus supera baseline aleatoria em alinhamento": "ausente",
+    "Alinhamento difere entre turmas": "ausente",
+    "Tipos de veiculo diferem entre turmas": "ausente",
+    "Ranking ARQI estavel": "ausente",
+    "Analise critica dos artigos": "ok",
+    "Sobreposicao, continuidade e complementacao de temas": "parcial",
+    "Visualizacoes graficas dos dados coletados": "parcial"
+  }
+}

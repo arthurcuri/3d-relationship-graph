@@ -6,7 +6,7 @@ import argparse
 
 from medicao import pipeline
 from medicao.shared import config
-from medicao.slices import acari, artigos, aulas, grafo, relacoes, web
+from medicao.slices import acari, artigos, aulas, grafo, grupo2, relacoes, web
 from medicao.slices.ementa import run as ementa_run
 
 
@@ -19,7 +19,17 @@ def main() -> None:
         "comando",
         nargs="?",
         default="all",
-        choices=["all", "artigos", "aulas", "ementa", "relacoes", "grafo", "web", "acari"],
+        choices=[
+            "all",
+            "artigos",
+            "aulas",
+            "ementa",
+            "relacoes",
+            "grafo",
+            "grupo2",
+            "web",
+            "acari",
+        ],
         help="Etapa a executar (default: all).",
     )
     parser.add_argument(
@@ -49,6 +59,8 @@ def main() -> None:
         relacoes.run(args.bundle)
     elif args.comando == "grafo":
         grafo.run(args.bundle)
+    elif args.comando == "grupo2":
+        grupo2.run(args.bundle)
     elif args.comando == "web":
         web.run()
     elif args.comando == "acari":

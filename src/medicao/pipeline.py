@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from medicao.shared import config
 from medicao.shared.contract import Bundle
-from medicao.slices import artigos, aulas, grafo, relacoes, web
+from medicao.slices import artigos, aulas, grafo, grupo2, relacoes, web
 from medicao.slices.ementa import migrate as ementa_migrate
 from medicao.slices.ementa import run as ementa_run
 
@@ -35,8 +35,6 @@ def run_all(bundle: str = config.DEFAULT_BUNDLE) -> None:
         bundle, artigos=registros_artigos, ementa=registros_ementa
     )
 
-    titulo = TITULOS.get(bundle, bundle)
-    b.write_manifest(titulo=titulo)
     grafo.run(
         bundle,
         artigos=registros_artigos,
@@ -44,6 +42,10 @@ def run_all(bundle: str = config.DEFAULT_BUNDLE) -> None:
         aulas=registros_aulas,
         relacoes=registros_relacoes,
     )
+    grupo2.run(bundle)
+
+    titulo = TITULOS.get(bundle, bundle)
+    b.write_manifest(titulo=titulo)
     web.run()
 
     print("=" * 60)

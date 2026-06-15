@@ -96,6 +96,20 @@ python3 -m http.server 8000
 O seletor lista os bundles de `datasets/index.json`; a renderização é genérica
 (cores/filtros vêm do `manifest`), então qualquer bundle novo aparece sozinho.
 
+### Gerar evidências do Grupo 2
+
+```bash
+PYTHONPATH=src python3 -m medicao grupo2
+```
+
+Saídas no bundle:
+
+- `grupo2_respostas.csv` — tabela por artigo com temas, veículo, relação com a
+  ementa, proxies de qualidade e pendências.
+- `grupo2_auditoria.csv` — cobertura dos dados necessários para responder RQ01
+  a RQ05 e aos itens do enunciado.
+- `grupo2_resumo.json` — resumo rápido da cobertura.
+
 ### Rodar o ACARI (agora interno ao pacote)
 
 ```bash

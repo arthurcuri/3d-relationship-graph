@@ -97,10 +97,12 @@ DATASET_FILES = {
     "ementa": "ementa.csv",
     "aulas": "aulas.csv",
     "relacoes": "relacoes.csv",
+    "grupo2_respostas": "grupo2_respostas.csv",
+    "grupo2_auditoria": "grupo2_auditoria.csv",
 }
 
 REQUIRED_DATASETS = ("artigos", "ementa")
-OPTIONAL_DATASETS = ("aulas",)
+OPTIONAL_DATASETS = ("aulas", "relacoes", "grupo2_respostas", "grupo2_auditoria")
 
 
 # ---------------------------------------------------------------------------

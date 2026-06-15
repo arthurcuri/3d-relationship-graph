@@ -1,0 +1,97 @@
+Pontificia Universidade Catolica de Minas Gerais
+
+Plano de Ensino (1 semestre de 2026)
+
+Curso: Engenharia de Software
+Unidade Curricular: 60449 - Medicao e Experimentacao em Engenharia de Software
+Periodo / Eixo / Ciclo: 6
+Turno: Noite
+Curriculo: 37203
+Unidade Curricular Extensionista: Nao
+
+Carga Horaria
+Tipo de aula: Teorica
+CH Grade: 80 h/a, 66.66 h
+CH Externa: 80 h/a, 66.66 h
+Modalidade: Presencial
+
+Ementa
+Metricas de software: conceito. Metricas objetivas e subjetivas. Metricas para processo, projeto e produto.
+Processo e tecnicas de medicao e analise. Nocoes de confiabilidade metrologica. Controle estatistico de qualidade.
+Aplicacao de tecnicas estatisticas para analise de dados: analise fatorial, analise multivariada e testes de hipoteses.
+Estabilidade de processos. Principios e tecnicas para experimentacao em Engenharia de Software.
+Planejamento e conducao de experimentos.
+
+Objetivos
+O objetivo geral desta disciplina e desenvolver, junto aos alunos, competencias para que eles possam identificar,
+comparar e analisar metricas de software que possam ser utilizadas, principalmente, em experimentos com sustentacao cientifica.
+
+Objetivos especificos:
+1. Capacitar os alunos para contribuir com o desenvolvimento, manutencao e evolucao de software.
+2. Desenvolver competencias de planejamento e conducao de estudos empiricos da Engenharia de Software.
+3. Criar e desenvolver nos alunos um senso critico baseado em metricas de produto e processo de software.
+
+Metodos Didaticos
+- Aulas expositivas
+- Palestras e seminarios
+- Trabalhos em grupo
+- Trabalhos interdisciplinares
+- Planejamento e execucao de experimentos
+- Discussao de experimentos, estudos de casos e surveys publicados em artigos cientificos
+- Utilizacao de plataformas de software para realizacao de atividades a distancia de forma sincrona e assincrona.
+
+Unidades de Ensino
+
+0. Nivelamento e Apresentacao da Disciplina (02 h/a)
+
+1. Medicao em Engenharia de Software (38 h/a)
+a. Nivelamento e revisao de fundamentos de engenharia de software
+b. Metricas de produto
+c. Metricas de processo
+d. Metricas de projeto
+e. Processos e tecnicas de medicao
+f. Identificacao, organizacao e validacao de metricas de software
+g. Prova e atividades avaliativas
+
+2. Analise de medicoes de software (10 h/a)
+a. Distribuicoes de probabilidade
+b. Testes de hipotese
+c. Analise multivariada
+d. Atividades avaliativas
+
+3. Experimentacao em Engenharia de Software (30 h/a)
+a. Estrategias de experimentacao
+b. Processo de experimentacao
+c. Planejamento de experimento
+d. Execucao de experimento
+e. Analise de resultados de experimentos
+f. Apresentacao de resultados experimentais
+g. Provas e atividades avaliativas
+
+Processo de Avaliacao
+- Primeira Avaliacao Individual: 30 pontos
+- Segunda Avaliacao Individual: 30 pontos
+- Exercicios em Aula (Individuais): 20 pontos
+- Projeto Final: 15 pontos
+- Avaliacao de Desempenho Academico (ADA): 5 pontos
+Total: 100 pontos
+
+Observacao sobre avaliacao:
+Na segunda avaliacao, os alunos deverao responder questoes sobre artigos cientificos de periodicos e conferencias de qualidade,
+como por exemplo artigos da IEEE Transactions on Software Engineering. Os artigos serao selecionados pelo professor ou pelos alunos.
+Reavaliacao: a reavaliacao vale 30 pontos, acontecera no final do semestre e substituira a menor entre as notas obtidas na primeira
+e segunda avaliacoes.
+
+Bibliografia Basica
+- Empirical Software Engineering: an international journal. Boston: Kluwer Academic Publishers, 1996-. ISSN 1573-7616.
+- Fenton, Norman E.; Bieman, James. Software Metrics: a rigorous and practical approach. 3rd ed. Boca Raton: Auerbach, 2014.
+- Pressman, Roger S.; Maxim, Bruce R. Engenharia de software: uma abordagem profissional. 9. ed. Porto Alegre: AMGH, 2021.
+- Wohlin, Claes et al. Experimentation in Software Engineering. New York: Springer, c2012.
+
+Bibliografia Complementar
+- Hurson, A. R. Advances in Computers. Volume 123. Amsterdam, Netherlands: 2021.
+- Anderson, David; Bozheva, Teodora. Kanban Maturity Model. 1st edition. 2021.
+- Jones, Capers. Applied Software Measurement, 3rd Edition. 2008.
+- Juristo, Natalia. Basics of Software Engineering Experimentation. 1st ed. 2001.
+- Laird, Linda M.; Brennan, M. Carol. Software Measurement and Estimation: a practical approach. Wiley-Interscience, 2006.
+- Sommerville, Ian. Engenharia de software. 10. ed. Sao Paulo: Pearson Education do Brasil, c2019.

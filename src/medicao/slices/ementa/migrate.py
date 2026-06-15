@@ -91,18 +91,22 @@ def _from_cronograma() -> list[dict]:
 def _from_pdf() -> list[dict]:
     """Parse das 'Unidades de Ensino' do plano de ensino (ementa.pdf)."""
     full = read_pdf(config.EMENTA_PDF).full_text
-    lines = [l.strip() for l in full.split("\n")]
-
-    # recorta a secao de Unidades de Ensino
-    try:
-        ini = next(i for i, l in enumerate(lines) if re.match(r"^Unidades de Ensino", l, re.I))
-    except StopIteration:
-        return []
-    fim = next(
-        (i for i in range(ini + 1, len(lines)) if re.match(r"^Processo de Avalia", lines[i], re.I)),
-        len(lines),
+    section = re.search(
+        r"Unidades de Ensino\s*(.+?)(?:Processo de Avalia|Processo de Avalia..o)",
+        full,
+        re.I | re.S,
     )
-    secao = lines[ini + 1:fim]
+    if not section:
+        return []
+
+    # PyMuPDF costuma preservar as quebras; pypdf pode colar tudo em uma linha.
+    # Reinsere quebras antes de marcadores "1." e "a." para manter o parser unico.
+    section_text = re.sub(
+        r"(?<!^)(?=(?:\d+|[a-z])\.\s*)",
+        "\n",
+        section.group(1),
+    )
+    secao = [l.strip() for l in section_text.split("\n")]
 
     mod_re = re.compile(r"^(\d+)\.\s+(.+?)(?:\s*\(([\d\s]+h/a)\))?\s*$")
     sub_re = re.compile(r"^([a-z])\.\s+(.+)$")

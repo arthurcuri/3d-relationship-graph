@@ -1,7 +1,7 @@
-"""Leitura de PDFs via PyMuPDF, isolada num unico ponto.
+"""Leitura de PDFs, isolada num unico ponto.
 
-Centraliza a dependencia ``fitz`` para que os slices nao precisem conhece-la
-diretamente e o comportamento de extracao de texto seja consistente.
+Usa PyMuPDF quando disponivel e cai para pypdf quando a instalacao local nao
+tem ``fitz``. Assim o pipeline continua reprodutivel em ambientes mais leves.
 """
 
 from __future__ import annotations
@@ -10,7 +10,15 @@ import os
 import unicodedata
 from dataclasses import dataclass, field
 
-import fitz  # PyMuPDF
+try:  # PyMuPDF
+    import fitz
+except ImportError:  # pragma: no cover - depende do ambiente local
+    fitz = None
+
+try:
+    from pypdf import PdfReader
+except ImportError:  # pragma: no cover - depende do ambiente local
+    PdfReader = None
 
 
 def _nfc(name: str) -> str:
@@ -45,17 +53,37 @@ class PdfDocument:
 def read_pdf(filepath: str | os.PathLike) -> PdfDocument:
     """Abre um PDF e retorna seu conteudo ja extraido por pagina."""
     filename = _nfc(os.path.basename(os.fspath(filepath)))
-    doc = fitz.open(filepath)
-    try:
-        pages = [page.get_text() for page in doc]
+
+    if fitz is not None:
+        doc = fitz.open(filepath)
+        try:
+            pages = [page.get_text() for page in doc]
+            return PdfDocument(
+                filename=filename,
+                page_count=doc.page_count,
+                metadata=doc.metadata or {},
+                pages=pages,
+            )
+        finally:
+            doc.close()
+
+    if PdfReader is not None:
+        reader = PdfReader(os.fspath(filepath))
+        pages = [page.extract_text() or "" for page in reader.pages]
+        raw_meta = reader.metadata or {}
+        metadata = {
+            str(k).lstrip("/").lower(): str(v)
+            for k, v in raw_meta.items()
+            if v is not None
+        }
         return PdfDocument(
             filename=filename,
-            page_count=doc.page_count,
-            metadata=doc.metadata or {},
+            page_count=len(reader.pages),
+            metadata=metadata,
             pages=pages,
         )
-    finally:
-        doc.close()
+
+    raise ImportError("Instale PyMuPDF ou pypdf para ler PDFs.")
 
 
 def list_pdfs(directory: str | os.PathLike) -> list[str]:

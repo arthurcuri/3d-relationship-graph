@@ -71,6 +71,34 @@ def extract_venue(text: str) -> str:
     return ""
 
 
+def extract_venue_type(text: str) -> str:
+    """Classifica localmente o tipo de veiculo quando a API externa nao rodou."""
+    zone = text[:5000].lower()
+    if re.search(r"\b(arxiv|preprint)\b", zone):
+        return "preprint"
+    if re.search(r"\b(thesis|dissertation|monografia|tcc)\b", zone):
+        return "thesis"
+    if re.search(r"\btechnical\s+report\b|relat[oó]rio\s+t[eé]cnico", zone):
+        return "report"
+    if re.search(r"\b(acm\s+queue|magazine|potentials)\b", zone):
+        return "magazine"
+    if re.search(
+        r"\b(proceedings|conference|symposium|workshop|congress|icse|esem|ease|"
+        r"fse|ase|msr|icsme|saner|sbes|sbqs|sac|chi)\b",
+        zone,
+    ):
+        return "conference"
+    if re.search(
+        r"\b(journal|transactions|empirical software engineering|information and software technology|"
+        r"journal of systems and software|software quality journal|tosem|tse)\b",
+        zone,
+    ):
+        return "journal"
+    if re.search(r"\b(book|monograph|isbn)\b", zone):
+        return "book"
+    return ""
+
+
 def count_references(text: str) -> int:
     section = re.search(
         r"(?:REFERENCES|References|Referências|REFERÊNCIAS|BIBLIOGRAPHY)\s*\n(.+)",

@@ -16,6 +16,21 @@
       "file": "aulas.csv",
       "required": false,
       "present": true
+    },
+    "relacoes": {
+      "file": "relacoes.csv",
+      "required": false,
+      "present": true
+    },
+    "grupo2_respostas": {
+      "file": "grupo2_respostas.csv",
+      "required": false,
+      "present": true
+    },
+    "grupo2_auditoria": {
+      "file": "grupo2_auditoria.csv",
+      "required": false,
+      "present": true
     }
   },
   "node_types": {

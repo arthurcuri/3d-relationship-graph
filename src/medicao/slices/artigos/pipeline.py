@@ -19,6 +19,8 @@ def process(doc: PdfDocument, artigo_id: int) -> dict:
 
     titulo = extraction.resolve_title(meta.get("title", "") or "", head3, doc.filename)
 
+    venue_text = f"{head}\n{doc.filename}"
+
     return {
         "id": artigo_id,
         "title": titulo,
@@ -27,7 +29,7 @@ def process(doc: PdfDocument, artigo_id: int) -> dict:
         "doi": extraction.extract_doi(head),
         "abstract": extraction.extract_abstract(head),
         "keywords": extraction.extract_keywords(head),
-        "venue_type": "",
+        "venue_type": extraction.extract_venue_type(venue_text),
         "in_statistical_test": "True",
         "cohort": "",
         "arquivo": doc.filename,

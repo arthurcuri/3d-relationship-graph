@@ -33,9 +33,10 @@ except ImportError:
 
 import numpy as np
 import pandas as pd
-import fitz  # PyMuPDF
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
+
+from medicao.shared.pdf import read_pdf
 
 from .config import ENRICHED_CSV, COURSE_TXT, PDFS, EMBEDDING_MODEL
 
@@ -57,9 +58,7 @@ def _pdf_text(pdf_name: str, pages: int = 3) -> str:
         p = PDFS / str(pdf_name)
         if not p.exists():
             return ""
-        doc = fitz.open(str(p))
-        n = min(pages, len(doc))
-        return " ".join(doc[i].get_text() for i in range(n))
+        return read_pdf(p).head_text(pages)
     except Exception:
         return ""
 

@@ -26,10 +26,11 @@ import unicodedata
 from collections import Counter
 from pathlib import Path
 
-import fitz  # PyMuPDF
 import pandas as pd
 from rapidfuzz import fuzz
 from rapidfuzz import process as rfprocess
+
+from medicao.shared.pdf import read_pdf
 
 from .config import (
     ARTIGOS_SRC, PLANO_PDF, SEED_SRC,
@@ -108,9 +109,7 @@ def _norm(s: str) -> str:
 
 def _pdf_text(path: Path, pages: int = 2) -> str:
     try:
-        doc = fitz.open(str(path))
-        n = min(pages, len(doc))
-        return " ".join(doc[i].get_text() for i in range(n))
+        return read_pdf(path).head_text(pages)
     except Exception:
         return ""
 
@@ -145,10 +144,10 @@ def extract_course_text() -> None:
         COURSE_TXT.write_text(text, encoding="utf-8")
         print(f"  [ok] course_text.txt  ({len(text):,} chars, from .txt)")
     else:
-        doc = fitz.open(str(PLANO_PDF))
-        text = "\n".join(doc[i].get_text() for i in range(len(doc)))
+        doc = read_pdf(PLANO_PDF)
+        text = doc.full_text
         COURSE_TXT.write_text(text, encoding="utf-8")
-        print(f"  [ok] course_text.txt  ({len(text):,} chars, {len(doc)} pages)")
+        print(f"  [ok] course_text.txt  ({len(text):,} chars, {doc.page_count} pages)")
 
 
 # ── Step 2: copy PDFs ─────────────────────────────────────────────────────────

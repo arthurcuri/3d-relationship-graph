@@ -51,15 +51,33 @@ def perm_mwu(a: np.ndarray, b: np.ndarray,
     obs_u, _ = stats.mannwhitneyu(a, b, alternative="two-sided")
     combined = np.concatenate([a, b])
     na = len(a)
+    nb = len(b)
+    center = na * nb / 2
+    obs = abs(obs_u - center)
     count = sum(
         1 for _ in range(n_perm)
-        if stats.mannwhitneyu(
-            rng.permutation(combined)[:na],
-            rng.permutation(combined)[na:],
-            alternative="two-sided",
-        )[0] >= obs_u
+        if abs(
+            stats.mannwhitneyu(
+                (perm := rng.permutation(combined))[:na],
+                perm[na:],
+                alternative="two-sided",
+            )[0]
+            - center
+        )
+        >= obs
     )
     return count / n_perm
+
+
+def _to_bool(value) -> bool | None:
+    if isinstance(value, bool):
+        return value
+    text = str(value).strip().lower()
+    if text in {"true", "1", "yes", "sim"}:
+        return True
+    if text in {"false", "0", "no", "nao", "não"}:
+        return False
+    return None
 
 
 def main() -> None:
@@ -69,9 +87,7 @@ def main() -> None:
     # ── load corpus ───────────────────────────────────────────────────────
     df = pd.read_csv(ENRICHED_CSV, dtype=str, keep_default_na=False).replace("", pd.NA)
     df["alignment_score"] = pd.to_numeric(df["alignment_score"], errors="coerce")
-    df["in_statistical_test"] = df["in_statistical_test"].map(
-        {"True": True, "False": False, "true": True, "false": False}
-    )
+    df["in_statistical_test"] = df["in_statistical_test"].apply(_to_bool)
     corpus_df = df[df["in_statistical_test"] == True].copy()
     corpus    = corpus_df["alignment_score"].dropna().values
     print(f"\n  Corpus (in_stat_test=True, alignment_score present): n={len(corpus)}")
