@@ -28,6 +28,11 @@ Templates prontos em `datasets/_templates/` (`artigos`, `ementa`, `aulas`,
 `manifest`). A única coluna obrigatória de `artigos.csv` é **`title`** (o
 esquema é a fusão das colunas do ACARI com os campos ricos de medição).
 
+**Campo opcional importante**: `cohort` — identifica a turma/grupo de cada
+artigo (ex: `"Turma A 2025/1"`). Quando preenchido, habilita análises
+comparativas entre turmas (hipóteses H2/H3, figuras por turma). Quando vazio,
+essas análises são puladas graciosamente.
+
 ### Dados brutos (PDFs e fonte da ementa)
 
 A pasta `data/` é organizada **por bundle**:

@@ -328,10 +328,9 @@ def main() -> None:
     print("\n[2] Copying PDFs to data/pdfs/ ...")
     pdf_map = copy_pdfs()
 
-    # 3. load seed
-    print("\n[3] Loading corpus_seed.csv ...")
-    src = SEED_SRC if not SEED_CSV.exists() else SEED_CSV
-    df = pd.read_csv(src, dtype=str, keep_default_na=False)
+    # 3. load seed — always read from the bundle's artigos.csv (source of truth)
+    print("\n[3] Loading corpus from bundle ...")
+    df = pd.read_csv(SEED_SRC, dtype=str, keep_default_na=False)
     df = df.replace("", pd.NA)
     print(f"  [ok] {len(df)} articles, {len(df.columns)} columns")
 
