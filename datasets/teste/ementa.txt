@@ -1,0 +1,238 @@
+Plano de Ensino (1º semestre de 2026)
+Curso: Engenharia de Software
+Unidade Curricular: 60448 - TESTE DE SOFTWARE
+Período / Eixo / Ciclo: 6
+Currículo: 37203
+Unidade Curricular Extensionista: Não
+Turno: NOITE
+Carga Horária
+Tipo de Aula
+CH Grade
+CH Externa
+CH UDA
+Modalidade
+TEÓRICA
+80 h/a
+80 h/a
+-
+-
+Presencial
+66.66 h
+66.66 h
+-
+-
+-
+Ementa
+Fundamentos de testes. Níveis de testes. Tipos de testes. Técnicas de projeto de testes. Ferramentas de
+suporte a testes. Automatização de testes. Projeto de casos de teste. Planos de testes. Gerenciamento do
+processo de testes. Registro e acompanhamento de problemas. Técnicas de verificação e validação de
+sistemas.
+Objetivos
+- Estabelecer em conjunto com os alunos a fundamentação da área de testes de software e como ela se insere
+no processo de desenvolvimento de software.
+- Descrever e debater metodologias de definição de planos de testes, bem como técnicas de verificação e
+validação de sistemas.
+- Desenvolver, em atividades práticas, a capacidade de utilizar ferramentas de suporte a testes, incluindo
+automatização de testes e rastreamento de defeitos e problemas.
+- Capacitar o aluno a construir sistemas robustos, considerando as atividades de teste manuais e
+automatizados e as técnicas de verificação e validação de sistemas.
+- Desenvolver no aluno a habilidade de construir sistemas que possam sofrer evolução e manutenção de forma
+organizada, planejada e contínua.
+Métodos Didáticos
+- Aulas expositivas e dialogadas com uso de projetor multimídia.
+- Atividades em sala de aula objetivando a discussão da teoria estudada e a troca de experiências pessoais e
+profissionais no assunto da disciplina.
+- Aulas eventuais em laboratório para realização de atividades práticas.
+- Exercícios e trabalhos teóricos e práticos.
+- Provas escritas teóricas.
+Unidades de Ensino
+1
+
+Apresentação da disciplina: (2 horas/aula)
+Unidade 1 - Revisão e nivelamento (4 horas/aula)
+1.1 - Processo de desenvolvimento de software
+1.2 - Qualidade de software
+Unidade 2 - Fundamentos de teste de software (16 horas/aula)
+2.1 - Motivação
+2.2 - Testes e o processo de desenvolvimento de software
+2.3 - Conceitos básicos e tipos de teste
+2.4 - Verificação e validação
+2.5 - Níveis de teste
+Unidade 3 - Técnicas de teste de software (16 horas/aula)
+3.1 - Introdução
+3.2 - Fundamentos
+3.3 - Critérios de cobertura
+3.4 - Tipos de teste: unidade, integração, regressão
+3.5 - Rastreamento de defeitos
+Unidade 4 - Gerenciamento do processo de testes (6 horas/aula)
+4.1 - Medições e indicadores
+4.2 - Estimativas
+4.3 - Casos de testes
+4.4 - Planos de testes
+Unidade 5 - Refatoração (12 horas/aula)
+5.1 - Conceito e motivação.
+5.2 - Catálogo de refatorações
+Unidade 6 - Desenvolvimento dirigido por testes (8 horas/aula)
+6.1 - Fundamentos, práticas
+6.2 - Desenvolvimento dirigido por testes através de exemplos
+Aplicação de atividades, provas, apresentações de trabalhos e discussão
+de artigos científicos: (16 horas/aula)
+Processo de Avaliação
+- Prova 1: 25 Pontos
+- Prova 2: 25 Pontos
+- Trabalhos e atividades em grupo: 15 Pontos
+- Exercícios Práticos: 30 Pontos
+- Avaliação de Desempenho Acadêmico (ADA): 5 Pontos
+Reavaliação:
+Caso o aluno não obtenha, ao final do semestre, os 60 pontos necessários para aprovação, terá direito a
+realizar uma reavaliação. Esta constará de uma prova individual, no valor de 25 pontos, que substituirá a menor
+nota das provas individuais da disciplina.
+Consulta a periódicos científicos para realização de atividades da disciplina, a definir.
+Observações
+Caso a carga horária da disciplina não seja integralizada, serão realizadas uma ou mais atividade(s)
+extra-classe para complementação de carga horária.
+Bibliografia Básica
+BECK, Kent. TDD: desenvolvimento guiado por teste. Porto Alegre, RS: Bookman, 2010. xiii, 240 p. ISBN
+2
+
+9788577807246, Nº de Exemplares: 7. Consta no acervo da PUC Minas.
+Considerado um dos marcos fundamentais no campo de testes automatizados, o livro de Kent Beck introduz o
+conceito de Test-Driven Development (TDD). A obra é essencial para compreender a prática de desenvolvimento
+orientado a testes e sua influência direta na qualidade e manutenção do software.
+DELAMARO, Márcio; MALDONADO, José Carlos; JINO, Mário (org.). Introdução ao teste de software. 2. ed.
+Rio de Janeiro: Elsevier, 2016. E-book. ISBN 9788595155732. Livro Eletrônico.
+Obra de referência nacional que aborda os conceitos fundamentais, técnicas e critérios de teste de software. É
+indispensável por oferecer uma visão ampla e didática, adaptada ao contexto acadêmico brasileiro, servindo
+como ponto de partida para estudantes de graduação e pós-graduação.
+PRESSMAN, Roger S.; MAXIM, Bruce R. Engenharia de software: uma abordagem profissional. 9. ed. Porto
+Alegre: AMGH, 2021. E-book. ISBN 9786558040118. Livro Eletrônico.
+Referência clássica e consolidada mundialmente em Engenharia de Software, o livro de Pressman e Maxim
+fornece a base teórica e prática para o desenvolvimento profissional da área. Sua relevância está em articular o
+ciclo de vida de software com práticas de teste e qualidade, sendo indispensável para qualquer curso que trate
+de testes e validação.
+SOFTWARE TESTING, VERIFICATION & RELIABILITY. Chichester: John Wiley & Sons, 1992-. Trimestral.
+ISSN 1099-1689 versão on-line. Disponível em:
+https://onlinelibrary-wiley-com.ez93.periodicos.capes.gov.br/loi/10991689
+. Acesso em: 2 jul. 2018. Periódico On-line.
+Periódico científico internacional de alto impacto na área de testes de software, verificação e confiabilidade.
+Permite que os estudantes e pesquisadores tenham acesso a estudos recentes e aprofundados, mantendo
+contato com o estado da arte e com práticas reconhecidas mundialmente.
+Bibliografia Complementar
+ANICHE, Maurício. Testes automatizados de software: um guia prático. São Paulo (SP): Casa do Código,
+[2017]. 166 p. ISBN 9788555190285., Nº de Exemplares: 2. Consta no acervo da PUC Minas.
+Guia prático e acessível sobre automação de testes, amplamente utilizado por profissionais e estudantes.
+Complementa obras teóricas com exemplos aplicados, facilitando a compreensão de frameworks e ferramentas
+atuais.
+FREEMAN, Steve; PRYCE, Nat. Desenvolvimento de software orientado a objetos, guiado por testes. Rio de
+Janeiro, RJ: Alta Books, 2012. xxv, 356 p. ISBN 9788576087687., Nº de Exemplares: 8. Consta no acervo da
+PUC Minas.
+Obra que amplia a visão do TDD, aplicando-a no contexto de desenvolvimento orientado a objetos. É importante
+para demonstrar como práticas de teste se integram ao design e à arquitetura de software, fortalecendo boas
+práticas de programação.
+INTERNATIONAL JOURNAL OF RELIABILITY, QUALITY, AND SAFETY ENGINEERING. Singapura: World
+Scientific Publishing, 2001-. Trimestral (de 3 em 3 meses). ISSN 1793-6446 versão on-line. Disponível em:
+https://www-worldscientific-com.ez93.periodicos.capes.gov.br/loi/ijrqse
+. Acesso em: 14 ago. 2018. Periódico On-line.
+Periódico especializado em confiabilidade, qualidade e segurança de sistemas. Sua inclusão garante acesso a
+pesquisas avançadas e multidisciplinares, relacionadas diretamente à área de validação e testes.
+MOLINARI, Leonardo. Inovação e automação de testes de software. São Paulo, SP: Érica, 2010. 140 p. ISBN
+9788536502694., Nº de Exemplares: 2. Consta no acervo da PUC Minas.
+Discute práticas de automação de testes, destacando ferramentas e processos que otimizam a produtividade.
+É relevante por apresentar uma abordagem prática e aplicada ao contexto empresarial.
+POLO, Rodrigo Cantú. Validação e teste de software. Curitiba: Contentus, 2020. E-book. ISBN
+9786557458907. Livro Eletrônico.
+Explora os processos de validação e verificação de software, destacando a importância de assegurar que os
+sistemas atendam aos requisitos estabelecidos. Complementa os fundamentos teóricos com práticas
+aplicadas em cenários reais.
+TANG, Hsin-Hao. Practical front-end testing: strategies and best practices for developers. [First edition]. New
+York, NY: [2025]. 1 online resource (366 pages). ISBN 9798868814518. Livro Eletrônico.
+Obra atual e inovadora que aborda especificamente o front-end testing, área em crescente relevância devido à
+expansão de sistemas baseados em interfaces ricas. Fornece estratégias modernas e melhores práticas,
+3
+
+contribuindo para a atualização da bibliografia com foco em desenvolvimento web.
+Bibliografia Básica
+Descrição da Bibliografia
+BECK, Kent.
+TDD:
+desenvolvimento guiado por teste.
+Porto Alegre, RS: Bookman, 2010.
+xiii, 240 p.
+ISBN 9788577807246 Nº de Exemplares: 7.
+CONSTA NO ACERVO DA PUCMINAS
+Descrição da Bibliografia
+DELAMARO, Márcio; MALDONADO, José Carlos; JINO, Mário (org.).
+Introdução ao teste de software.
+2.
+ed.
+Rio de Janeiro: Elsevier,
+2016.
+E-book. ISBN 9788595155732.
+LIVRO ELETRÔNICO
+Descrição da Bibliografia
+PRESSMAN, Roger S.; MAXIM, Bruce R..
+Engenharia de software:
+uma abordagem profissional. 9. ed.
+Porto Alegre: AMGH,
+2021.
+E-book. ISBN 9786558040118.
+LIVRO ELETRÔNICO
+Descrição da Bibliografia
+SOFTWARE TESTING, VERIFICATION & RELIABILITY..
+Chichester: John Wiley & Sons ,1992-. Trimestral.
+ISSN 1099-1689 versão on-line. Disponível em:
+https://onlinelibrary-wiley-com.ez93.periodicos.capes.gov.br/loi/10991689. Acesso em: 2 jul. 2018.
+PERIÓDICO ON-LINE
+Bibliografia Complementar
+Descrição da Bibliografia
+ANICHE, Maurício.
+Testes automatizados de software:
+um guia prático.
+São Paulo (SP): Casa do Código,
+[2017].
+166 p. ISBN 9788555190285. Nº de Exemplares: 2.
+CONSTA NO ACERVO DA PUCMINAS
+Descrição da Bibliografia
+FREEMAN, Steve; PRYCE, Nat.
+Desenvolvimento de software orientado a objetos, guiado por testes.
+Rio
+de Janeiro, RJ: Alta Books, 2012.
+xxv, 356 p. ISBN 9788576087687. Nº de Exemplares: 8.
+CONSTA NO ACERVO DA PUCMINAS
+Descrição da Bibliografia
+INTERNATIONAL JOURNAL OF RELIABILITY, QUALITY, AND SAFETY ENGINEERING.
+Singapura: World
+Scientific Publishing ,2001-. Trimestral (de 3 em 3 meses).
+ISSN 1793-6446 versão on-line. Disponível em:
+https://www-worldscientific-com.ez93.periodicos.capes.gov.br/loi/ijrqse. Acesso em: 14 ago. 2018.
+PERIÓDICO ON-LINE
+Descrição da Bibliografia
+MOLINARI, Leonardo.
+Inovação e automação de testes de software.
+São Paulo, SP: Érica, 2010.
+140 p.
+ISBN 9788536502694. Nº de Exemplares: 2.
+CONSTA NO ACERVO DA PUCMINAS
+4
+
+Descrição da Bibliografia
+POLO, Rodrigo Cantú.
+Validação e teste de software.
+Curitiba: Contentus,
+2020.
+E-book. ISBN
+9786557458907.
+LIVRO ELETRÔNICO
+Descrição da Bibliografia
+TANG, Hsin-Hao.
+Practical front-end testing: strategies and best practices for developers. [First edition]. New
+York, NY: [2025].
+1 online resource (366 pages). ISBN 9798868814518.
+LIVRO ELETRÔNICO
+Plano de Ensino emitido através do Sistema de Gestão Acadêmica
+Data: 14/06/2026 20:01:06
+Para verificar a autenticidade do documento, acesse: http://www.pucminas.br/autenticardocumentos
+Código de Autenticação: 9FD4AF7C-EEE3-46E0-A304-AFD7CCA1AB9D
+Soraia Lúcia da Silva
+5
+

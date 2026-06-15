@@ -7,7 +7,7 @@
       "ementa": 19,
       "aulas": 7,
       "nos": 92,
-      "arestas": 551
+      "arestas": 550
     }
   },
   "node_types": {
@@ -40,7 +40,7 @@
         "DOI": "10.1145/3613372.3614202",
         "Areas": "Experimentação",
         "Metodologia": "Experimento Controlado; Survey/Questionário; Estudo Empírico",
-        "Paginas": 10
+        "Paginas": "10"
       }
     },
     {
@@ -50,10 +50,10 @@
       "pdf": "../data/raw/artigos/A Hitchhiker's guide to statistical tests for assessing randomized algorithms in software engineering.pdf",
       "detail": {
         "Ano": "2011",
-        "Abstract": "Randomized algorithms have been used to successfully addre ss many different types of software engi- neering problems. This type of algorithms entail a signiﬁca nt degree of randomness as part of their logic. Randomized algorithms are useful to address difﬁcult problems where a precise solution cannot be derived in a deterministic way within reasonable time. However, randomized algorithms can produce different results on every run when applied to the same problem instance. It is h ence important to assess the effectiveness of randomized algorithms by collecting data from a large eno ugh num...",
+        "Abstract": "Randomized algorithms have been used to successfully address many different types of software engi- neering problems. This type of algorithms entail a signiﬁcant degree of randomness as part of their logic. Randomized algorithms are useful to address difﬁcult problems where a precise solution cannot be derived in a deterministic way within reasonable time. However, randomized algorithms can produce different results on every run when applied to the same problem instance. It is hence important to assess the effectiveness of randomized algorithms by collecting data from a large enough number ...",
         "Areas": "Teste de Software",
         "Metodologia": "Revisão Sistemática; Survey/Questionário",
-        "Paginas": 29
+        "Paginas": "29"
       }
     },
     {
@@ -65,11 +65,12 @@
         "Autores": "Tianhao Mao; Dongfang Zhao; Haixu Tang; Xiaofeng Wang; Hang Zhang",
         "Ano": "2026",
         "Abstract": "Large language models (LLMs) are increasingly used in software development, generating code that ranges from short snippets to substantial project components. As AI-generated code becomes more common in real-world repositories, it is important to under- stand how it differs from human-written code and how AI assistance may influence development practices. However, existing studies have largely relied on small-scale or controlled settings, leaving a limited understanding of AI-generated code in the wild. In this work, we present a large-scale empirical study of AI- generated code collected f...",
+        "Keywords": "(e.g., “fix”, “revert”), stabilization",
         "DOI": "10.1145/nnnnnnn.nnnnnnn",
         "Areas": "Manutenção de Software; Inteligência Artificial/ML",
         "Metricas": "Complexidade Ciclomática",
         "Metodologia": "Estudo Empírico",
-        "Paginas": 12
+        "Paginas": "12"
       }
     },
     {
@@ -80,13 +81,12 @@
       "detail": {
         "Autores": "Mathieu Zen",
         "Ano": "2023",
-        "Abstract": "Charac-teristicsSub-char-acteristicsISO 25010 “Square” Software quality model17 Measures: Global balance, vertical balance, horizontal balance, equilibrium, density, central alignment, external alignment, concentricity, simplicity, proportion, symmetry, saliency-based balance, border-based balance, border-based density, color-based density, colorfulness, and compression complexity𝑄ீ௥௔௖௘: ∅ → [0,1]ଵ଻: ∅ → 𝑞ீ௥௔௖௘𝑞ீ௥௔௖௘: ℝ௟→ [0,1]ଵ଻: screenshot→(scoreீ௥௔௖௘)ଵ଻= (global balance, … , complexity)",
         "Keywords": "and Phrases: Aesthetics, Graphical User Interfaces, Software measurement, User interface evaluation, Usability engineering, Visual measures, Visual techniques",
         "DOI": "10.1145/3593224",
         "Areas": "Qualidade de Software",
         "Metricas": "Cohesion/Coesão",
         "Metodologia": "Survey/Questionário",
-        "Paginas": 47
+        "Paginas": "47"
       }
     },
     {
@@ -95,11 +95,10 @@
       "label": "A Review and Analysis of Software Complexity Metrics in Structural Testing",
       "pdf": "../data/raw/artigos/A Review and Analysis of Software Complexity Metrics in Structural Testing.pdf",
       "detail": {
-        "Abstract": "Software metrics is developed and used by the various software organizations for evaluating and assuring software code quality, operati on, and maintenance. Software metrics measure various types of software complexity like size metrics, control flow metrics and data flow metrics. These software complexities must be continuously calculated, followed, and controlled. One of the main objectives of software metrics is that applies to a process and product metrics. It is always considered that high degree of complexity in a module is bad in comparison to a low degree of complexity in a module. ...",
-        "Keywords": "Software metrics, lines of code , Control flow metrics, NPATH complexity , Structural Testing. I. I NTRODUCTION",
+        "Abstract": "Software metrics is developed and used by the various software organizations for evaluating and assuring software code quality, operation, and maintenance. Software metrics measure various types of software complexity like size metrics, control flow metrics and data flow metrics. These software complexities must be continuously calculated, followed, and controlled. One of the main objectives of software metrics is that applies to a process and product metrics. It is always considered that high degree of complexity in a module is bad in comparison to a low degree of complexity in a module. S...",
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Processo de Software",
         "Metricas": "LOC/SLOC; Complexidade Ciclomática; Function Points; Code Coverage; Halstead",
-        "Paginas": 5
+        "Paginas": "5"
       }
     },
     {
@@ -110,10 +109,11 @@
       "detail": {
         "Autores": "khalil",
         "Abstract": "Software metrics offer a quantitative basis for predicting the software development process. In this way, software quality can be improved very easily. Software quality should be achieved to satisfy the customer with decreasing the software cost and improve there liability of the software product. In this research, we have discussed how the software metrics affect the quality of the software and which stages of its development software metrics have applied. We discussed the different software metrics and how these metrics have an impact on software quality and reliability. These techniques ...",
+        "Keywords": "Data stream mining, In-process metrics, defect severity, Test coverage, McCabe, STREW-H, Software Quality, In-process Measurements, Testing Metrics, software complexity. I. INTRODUCTION",
         "Areas": "Métricas de Software; Qualidade de Software; Produtividade",
         "Metricas": "LOC/SLOC; Defect Density",
         "Metodologia": "Survey/Questionário",
-        "Paginas": 14
+        "Paginas": "14"
       }
     },
     {
@@ -124,9 +124,10 @@
       "detail": {
         "Ano": "2002",
         "Abstract": "The classical method for identifying cause-effect relationships is to conduct controlled experiments. This paper reports upon the present state of how controlled experiments in software engineering are conducted and the extent to which relevant information is reported. Among the 5,453 scientific articles published in 12 leading software engineering journals and conferences in the decade from 1993 to 2002, 103 articles (1.9 percent) reported controlled experiments in which individuals or teams performed one or more software engineering tasks. This survey quantitatively characterizes the topi...",
+        "Keywords": "Controlled experiments, survey, research methodology, empirical software engineering. \u0001",
         "Areas": "Métricas de Software; Manutenção de Software; Engenharia de Software Empírica; Experimentação",
         "Metodologia": "Experimento Controlado; Survey/Questionário; Estudo Empírico; Machine Learning; Replicação",
-        "Paginas": 21
+        "Paginas": "21"
       }
     },
     {
@@ -136,11 +137,11 @@
       "pdf": "../data/raw/artigos/A Systematic Review of Productivity Factors in Software Development.pdf",
       "detail": {
         "Ano": "2018",
-        "Abstract": "Analysing and improving productivity has been one of the main goals of software engineering research since its beginnings. A plethora of studies has been conducted on various factors that resulted in several models for analysi s and prediction of productivity. However , productivity is still an issue in current software development and not all factors and their relationships are known. This paper reviews the large body of available literature in order to distill a list of the main factors inﬂuencing productivity investigated so far . The measure for importance here is the number of articles...",
+        "Abstract": "Analysing and improving productivity has been one of the main goals of software engineering research since its beginnings. A plethora of studies has been conducted on various factors that resulted in several models for analysis and prediction of productivity. However, productivity is still an issue in current software development and not all factors and their relationships are known. This paper reviews the large body of available literature in order to distill a list of the main factors inﬂuencing productivity investigated so far. The measure for importance here is the number of articles a ...",
         "Areas": "Produtividade",
         "Metricas": "LOC/SLOC; Function Points",
         "Metodologia": "Revisão Sistemática",
-        "Paginas": 6
+        "Paginas": "6"
       }
     },
     {
@@ -155,7 +156,7 @@
         "Areas": "DevOps/CI-CD",
         "Metricas": "Velocity",
         "Metodologia": "Survey/Questionário; Estudo Empírico",
-        "Paginas": 37
+        "Paginas": "37"
       }
     },
     {
@@ -170,7 +171,7 @@
         "Keywords": "data quality; provenance; commercial sensitivity; accessibility; trustworthiness; empirical software engineering",
         "DOI": "10.1109/ASWEC.2013.21",
         "Areas": "Engenharia de Software Empírica; Gerenciamento de Projetos; Processo de Software; Predição de Defeitos",
-        "Paginas": 12
+        "Paginas": "12"
       }
     },
     {
@@ -180,12 +181,12 @@
       "pdf": "../data/raw/artigos/A Tool-Based Perspective on Software Code Maintainability Metrics A Systematic Literature Review.pdf",
       "detail": {
         "Ano": "2020",
-        "Keywords": "listedabove,foreachofthechosen digitallibraries. 2.1",
+        "Keywords": "listed above, for each of the chosen digital libraries. 2.1",
         "DOI": "10.1155/2020/8840389",
         "Areas": "Métricas de Software; Manutenção de Software; DevOps/CI-CD; Segurança de Software",
         "Metricas": "Code Coverage",
         "Metodologia": "Revisão Sistemática",
-        "Paginas": 26
+        "Paginas": "26"
       }
     },
     {
@@ -196,13 +197,13 @@
       "detail": {
         "Autores": "Gabriele Bavota, Barbara Russo",
         "Ano": "2016",
-        "Abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior speciﬁc permission and/or a fee. Request permissions from permissions@acm.org. MSR’16, May 14-15, 2016, Austin, TX, USA c⃝ 2016 ACM. ISBN 978-1-4503-4186-8/16/05. . . $15.00 DOI: http://dx.doi.org/10.1145/2901739.2901742 1. INTRODUCTION Ward Cunningham coined the technical debt metaphor back in 1993 [14] to explain the unavoidable interests ( i.e., maintenance and evolution costs) developers pay while work- ing on not-quite-right code, possibly written in a rush to m...",
+        "Abstract": "ing with credit is permitted. To copy otherwise, or republish, to post on servers or to redistribute to lists, requires prior speciﬁc permission and/or a fee. Request permissions from permissions@acm.org. MSR’16, May 14-15, 2016, Austin, TX, USA c⃝2016 ACM. ISBN 978-1-4503-4186-8/16/05...$15.00 DOI: http://dx.doi.org/10.1145/2901739.2901742 1. INTRODUCTION Ward Cunningham coined the technical debt metaphor back in 1993 [14] to explain the unavoidable interests (i.e., maintenance and evolution costs) developers pay while work- ing on not-quite-right code, possibly written in a rush to meet a...",
         "Keywords": "Mining Software Repositories, Technical Debt, Empirical Software Engineering Permission to make digital or hard copies of all or part of this work for personal or classroom use is granted without fee provided that copies are not made or distributed for proﬁt or commercial advantage and that copies b",
         "DOI": "10.1145/2901739.2901742",
         "Areas": "Qualidade de Software; Manutenção de Software; Engenharia de Software Empírica; Dívida Técnica",
         "Metricas": "Coupling/Acoplamento; Technical Debt",
         "Metodologia": "Estudo Empírico; Replicação; Mineração de Repositórios",
-        "Paginas": 12
+        "Paginas": "12"
       }
     },
     {
@@ -213,11 +214,12 @@
       "detail": {
         "Autores": "Giacomo Ibba",
         "Ano": "2014",
+        "Keywords": "Vulnerability detection Software metrics Topic modelling Machine learning Source code analysis Smart contracts",
         "DOI": "10.1016/j.mlwa.2025.100759",
         "Areas": "Métricas de Software; Inteligência Artificial/ML; Segurança de Software",
         "Metricas": "Complexidade Ciclomática; Coupling/Acoplamento; Cohesion/Coesão",
         "Metodologia": "Estudo de Caso; Machine Learning",
-        "Paginas": 18
+        "Paginas": "18"
       }
     },
     {
@@ -230,7 +232,7 @@
         "Keywords": "Web API usability · Model · Metrics · GQM",
         "Areas": "Qualidade de Software",
         "Metodologia": "Survey/Questionário; GQM",
-        "Paginas": 13
+        "Paginas": "13"
       }
     },
     {
@@ -246,7 +248,7 @@
         "Areas": "Engenharia de Software (Geral)",
         "Metricas": "MTTR",
         "Metodologia": "Machine Learning",
-        "Paginas": 35
+        "Paginas": "35"
       }
     },
     {
@@ -257,10 +259,10 @@
       "detail": {
         "Autores": "eric.ferreira",
         "Ano": "2002",
-        "Abstract": "Statistical tools are usually used in the continuous process improvement. P articularly in the software process, the way the data are stored sometimes makes t hese analyses tricky. In this context, CMMI (Capability Maturity Model Integration) is used for defi ning software processes, the Six Sigma methodology is used for defining measurement processes and the Pract ical Software and Systems Measurement Insight (PSM Insight) tool is used for data organization. This work presents a proposal of measurement process based on CMMI, Six Sigma and PSM. The conside red process reveals an existing co...",
+        "Abstract": "Statistical tools are usually used in the continuous process improvement. Particularly in the software process, the way the data are stored sometimes makes these analyses tricky. In this context, CMMI (Capability Maturity Model Integration) is used for defining software processes, the Six Sigma methodology is used for defining measurement processes and the Practical Software and Systems Measurement Insight (PSM Insight) tool is used for data organization. This work presents a proposal of measurement process based on CMMI, Six Sigma and PSM. The considered process reveals an existing corresp...",
         "Keywords": "Six Sigma; Statistics; Software Process",
         "Areas": "Manutenção de Software; Processo de Software",
-        "Paginas": 11
+        "Paginas": "11"
       }
     },
     {
@@ -273,7 +275,7 @@
         "Areas": "Métodos Ágeis; DevOps/CI-CD",
         "Metricas": "Lead Time; DORA Metrics; MTTR",
         "Metodologia": "Survey/Questionário; Proposta de Framework",
-        "Paginas": 11
+        "Paginas": "11"
       }
     },
     {
@@ -287,7 +289,7 @@
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Produtividade",
         "Metricas": "Coupling/Acoplamento; Cohesion/Coesão",
         "Metodologia": "Survey/Questionário",
-        "Paginas": 5
+        "Paginas": "5"
       }
     },
     {
@@ -301,7 +303,7 @@
         "DOI": "10.1109/ISCMI53840.2021.9654823",
         "Areas": "Métodos Ágeis; Gerenciamento de Projetos",
         "Metodologia": "Estudo de Caso; Proposta de Framework",
-        "Paginas": 10
+        "Paginas": "10"
       }
     },
     {
@@ -312,13 +314,13 @@
       "detail": {
         "Autores": "Marvin Muñoz Barón, Marvin Wyrich, and Stefan Wagner",
         "Ano": "2020",
-        "Abstract": "Background: Developers spend a lot of their time on understand- ing source code. Static code analysis tools can draw attention to code that is difficult for developers to understand. However, most of the findings are based on non-validated metrics, which can lead to confusion and code, that is hard to understand, not being identified. Aims: In this work, we validate a metric calledCognitive Complexity which was explicitly designed to measure code understandability and which is already widely used due to its integration in well- known static code analysis tools. Method: We conducted a system...",
+        "Abstract": "Background: Developers spend a lot of their time on understand- ing source code. Static code analysis tools can draw attention to code that is difficult for developers to understand. However, most of the findings are based on non-validated metrics, which can lead to confusion and code, that is hard to understand, not being identified. Aims: In this work, we validate a metric called Cognitive Complexity which was explicitly designed to measure code understandability and which is already widely used due to its integration in well- known static code analysis tools. Method: We conducted a syste...",
         "Keywords": "cognitive complexity, source code understandability, source code comprehension, software metrics, meta-analysis",
         "DOI": "10.1145/3382494.3410636",
         "Areas": "Métricas de Software; Engenharia de Software Empírica",
         "Metricas": "LOC/SLOC; Complexidade Ciclomática; Complexidade Cognitiva",
         "Metodologia": "Meta-análise",
-        "Paginas": 12
+        "Paginas": "12"
       }
     },
     {
@@ -332,7 +334,7 @@
         "DOI": "10.1145/2961111.2962592",
         "Areas": "Qualidade de Software; Teste de Software; Experimentação; Métodos Ágeis; Produtividade",
         "Metodologia": "Revisão Sistemática; Experimento Controlado; Survey/Questionário; Meta-análise; Replicação",
-        "Paginas": 10
+        "Paginas": "10"
       }
     },
     {
@@ -343,11 +345,11 @@
       "detail": {
         "Ano": "2021",
         "Abstract": "This article has been accepted for publication in a future issue of this journal, but has not been fully edited. Content may change prior to final publication. Citation information: DOI",
-        "Keywords": "2) SEARCH REPOSITORIES We selected various databases to identify the potentials studies published in peer -reviewed journals, conference proceedings, and so on . These da tabases w ere chosen on preceding research experience, personal knowledge, preferences, and recommendations provided by Arif et a",
+        "Keywords": "2) SEARCH REPOSITORIES We selected various databases to identify the potentials studies published in peer-reviewed journals, conference proceedings, and so on. These databases were chosen on preceding research experience, personal knowledge, preferences, and recommendations provided by Arif et al. [",
         "DOI": "10.1109/ACCESS.2021.3100779",
         "Areas": "Métodos Ágeis; Gerenciamento de Projetos",
         "Metodologia": "Revisão Sistemática; Estudo de Caso; Estudo Empírico",
-        "Paginas": 34
+        "Paginas": "34"
       }
     },
     {
@@ -356,9 +358,9 @@
       "label": "An´alise da Eficiˆencia do Uso de Recursos de M´aquina na",
       "pdf": "../data/raw/artigos/Analise da Eficiência do Uso de Recursos de Máquina (TCC_GABRIEL_AUGUSTO_SOUZA_BORGES).pdf",
       "detail": {
-        "Abstract": "A observabilidade ´e uma pr ´atica essencial para monitorar sistemas modernos, mas sua implementac ¸˜ao pode gerar custos elevados em recursos de hardware, como processamento, mem ´oria e armazenamento. O problema central abordado ´e a ineficiˆencia no uso desses recursos, que ocorre devido `a ausˆencia de diretrizes para equilibrar a qualidade do monitoramento e o custo computacional. Para investigar soluc ¸˜oes, este trabalho seguiu uma metodologia experimental que comparou a efici ˆencia de diferentes pr ´aticas de observabili- dade em um ambiente controlado com hardware limitado. Uma AP...",
+        "Abstract": "A observabilidade ´e uma pr´atica essencial para monitorar sistemas modernos, mas sua implementac¸˜ao pode gerar custos elevados em recursos de hardware, como processamento, mem´oria e armazenamento. O problema central abordado ´e a ineficiˆencia no uso desses recursos, que ocorre devido `a ausˆencia de diretrizes para equilibrar a qualidade do monitoramento e o custo computacional. Para investigar soluc¸˜oes, este trabalho seguiu uma metodologia experimental que comparou a eficiˆencia de diferentes pr´aticas de observabili- dade em um ambiente controlado com hardware limitado. Uma API foi ...",
         "Areas": "Engenharia de Software (Geral)",
-        "Paginas": 17
+        "Paginas": "17"
       }
     },
     {
@@ -372,7 +374,7 @@
         "Keywords": "Statistical Methods; Experimental Studies; Software Engineering; Experimental Evaluation",
         "Areas": "Experimentação",
         "Metodologia": "Análise Estatística",
-        "Paginas": 23
+        "Paginas": "23"
       }
     },
     {
@@ -382,12 +384,12 @@
       "pdf": "../data/raw/artigos/Do Internal Software Metrics Have Relationship with Fault-proneness and Change-proneness.pdf",
       "detail": {
         "Ano": "2024",
-        "Abstract": "Fault-proneness is a measure that indicates the possibilit y of pro- gramming errors occurring within a software system. On the other hand, change-proneness refers to the potential for modiﬁca tions to be made to the software. Both of these measures are crucial indicators of software maintainability, as they inﬂuence i nternal software metrics such as size, inheritance, and coupling, p articu- larly when numerous changes are made to the system. In the lit er- ature, research has predicted change- and fault-proneness using internal software metrics that is almost a decade old. Howev er, give...",
-        "Keywords": "change-proneness, fault-proneness, internal software me trics",
+        "Abstract": "Fault-proneness is a measure that indicates the possibility of pro- gramming errors occurring within a software system. On the other hand, change-proneness refers to the potential for modiﬁcations to be made to the software. Both of these measures are crucial indicators of software maintainability, as they inﬂuence internal software metrics such as size, inheritance, and coupling, particu- larly when numerous changes are made to the system. In the liter- ature, research has predicted change- and fault-proneness using internal software metrics that is almost a decade old. However, given the ...",
+        "Keywords": "change-proneness, fault-proneness, internal software metrics",
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Predição de Defeitos",
         "Metricas": "LOC/SLOC; Coupling/Acoplamento; Cohesion/Coesão",
         "Metodologia": "Estudo Empírico",
-        "Paginas": 7
+        "Paginas": "7"
       }
     },
     {
@@ -398,12 +400,12 @@
       "detail": {
         "Autores": "Oona Rainio",
         "Ano": "2024",
-        "Keywords": "Evaluation metrics, Machine learning, Medical images, Statistical testing Due to our developed technology and access to huge amounts of digitized data, the number of different appli - cations using machine learning (ML) has increased dramatically during the past few decades",
+        "Keywords": "Evaluation metrics, Machine learning, Medical images, Statistical testing Due to our developed technology and access to huge amounts of digitized data, the number of different appli- cations using machine learning (ML) has increased dramatically during the past few ­decades",
         "DOI": "10.1038/s41598-024-56706-x",
         "Areas": "Inteligência Artificial/ML",
         "Metricas": "Complexidade Ciclomática",
         "Metodologia": "Machine Learning",
-        "Paginas": 14
+        "Paginas": "14"
       }
     },
     {
@@ -417,7 +419,7 @@
         "Keywords": "software metric, software quality, descriptive statistics, cross- sectional study, longitudinal study",
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Gerenciamento de Projetos; Segurança de Software",
         "Metricas": "LOC/SLOC; Coupling/Acoplamento; Halstead",
-        "Paginas": 24
+        "Paginas": "24"
       }
     },
     {
@@ -430,7 +432,7 @@
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Revisão de Código; Dívida Técnica",
         "Metricas": "Code Coverage; Technical Debt",
         "Metodologia": "Mineração de Repositórios",
-        "Paginas": 13
+        "Paginas": "13"
       }
     },
     {
@@ -439,11 +441,11 @@
       "label": "Experimentation in Software Engineering",
       "pdf": "../data/raw/artigos/Experimentation in Software Engineering.pdf",
       "detail": {
-        "Abstract": "Experimentation in software engineering supports the ad­ vancement of the field through an iterative learning process. In this paper we present a framework for analyzing most of the experimental work performed in software engineering over the past several years. We describe a variety of experiments in the framework and discuss their contribution to the software engineering discipline. Some useful recommendations for the application of the experimental process in software engineering are included.",
+        "Abstract": "Experimentation in software engineering supports the ad- vancement of the field through an iterative learning process. In this paper we present a framework for analyzing most of the experimental work performed in software engineering over the past several years. We describe a variety of experiments in the framework and discuss their contribution to the software engineering discipline. Some useful recommendations for the application of the experimental process in software engineering are included.",
         "Areas": "Métricas de Software; Experimentação",
         "Metricas": "Coupling/Acoplamento",
         "Metodologia": "Experimento Controlado; Estudo Empírico; Proposta de Framework; Replicação",
-        "Paginas": 11
+        "Paginas": "11"
       }
     },
     {
@@ -456,7 +458,7 @@
         "Ano": "2023",
         "Areas": "Experimentação",
         "Metodologia": "Proposta de Framework",
-        "Paginas": 112
+        "Paginas": "112"
       }
     },
     {
@@ -470,7 +472,7 @@
         "DOI": "10.2533/chimia.2023.7",
         "Areas": "Experimentação; Inteligência Artificial/ML",
         "Metodologia": "Proposta de Framework; Machine Learning",
-        "Paginas": 10
+        "Paginas": "10"
       }
     },
     {
@@ -481,11 +483,11 @@
       "detail": {
         "Autores": "faten",
         "Ano": "2008",
-        "Abstract": "The software capability maturity model has become a popular model for enhancing software development processes with the goal of developing highjquality software within budget and schedule. The software cost estimation model, constructive cost model, in its last update (constructive cost model II) has a set of seventeen cost drivers and a set of five scale factors. Process maturity is one of the five scale factors and its ratings are based on software capability maturity model. This paper examines the effect of process maturity on software development effort by deriving a new set of construc...",
-        "Keywords": "Effort estimation, scale factor, cost driver, COCOMO, SWjCMM, CMMI",
+        "Abstract": "The software capability maturity model has become a popular model for enhancing software development processes with the goal of developing high-quality software within budget and schedule. The software cost estimation model, constructive cost model, in its last update (constructive cost model II) has a set of seventeen cost drivers and a set of five scale factors. Process maturity is one of the five scale factors and its ratings are based on software capability maturity model. This paper examines the effect of process maturity on software development effort by deriving a new set of construc...",
+        "Keywords": "Effort estimation, scale factor, cost driver, COCOMO, SW-CMM, CMMI",
         "Areas": "Gerenciamento de Projetos; Processo de Software",
         "Metricas": "Cohesion/Coesão",
-        "Paginas": 10
+        "Paginas": "10"
       }
     },
     {
@@ -495,11 +497,11 @@
       "pdf": "../data/raw/artigos/Impact_of_Evaluating_Software_Complexity_Measures.pdf",
       "detail": {
         "Ano": "2025",
-        "Abstract": "We investigate the impact that the paper “Evaluat- ing Software Complexity Measures” has had over the thirty-six year period since it was ﬁrst published in 1988. We look both at how the frequency of citation increased, and the ways that the research has been used. We describe how citations evolved from the initial obvious intent of assessing newly proposed complexity measures to assessing qualities o ther than complexity, to using them to assess complexity in entities other than software code, or restricted types of programming paradigms, to the adoption of our approach or properties in ﬁel...",
-        "Keywords": "Software engineering, software metrics, software measurement. I. B ACKGROUND I N December",
+        "Abstract": "We investigate the impact that the paper “Evaluat- ing Software Complexity Measures” has had over the thirty-six year period since it was ﬁrst published in 1988. We look both at how the frequency of citation increased, and the ways that the research has been used. We describe how citations evolved from the initial obvious intent of assessing newly proposed complexity measures to assessing qualities other than complexity, to using them to assess complexity in entities other than software code, or restricted types of programming paradigms, to the adoption of our approach or properties in ﬁeld...",
+        "Keywords": "Software engineering, software metrics, software measurement. I. BACKGROUND I N December",
         "DOI": "10.1109/TSE.2025.3533467",
         "Areas": "Métricas de Software; Teste de Software",
-        "Paginas": 5
+        "Paginas": "5"
       }
     },
     {
@@ -512,7 +514,7 @@
         "Ano": "2007",
         "Areas": "Engenharia de Software (Geral)",
         "Metodologia": "Revisão Sistemática; Mapeamento Sistemático",
-        "Paginas": 65
+        "Paginas": "65"
       }
     },
     {
@@ -524,7 +526,7 @@
         "Abstract": "The adoption of Large Language Models (LLMs) for code generation in data science offers substantial potential for en- hancing tasks such as data manipulation, statistical analysis, and visualization. However, the effectiveness of these models in the data science domain remains underexplored. This paper presents a controlled experiment that empirically assesses the performance of four leading LLM-based AI assistants—Microsoft Copilot (GPT-4 Turbo), ChatGPT (o1-preview), Claude (3.5 Sonnet), and Perplexity Labs (Llama-3.1-70b-instruct)—on a diverse set of data science coding challenges source...",
         "Areas": "Experimentação; Inteligência Artificial/ML; Produtividade",
         "Metodologia": "Experimento Controlado; Estudo Empírico; Proposta de Framework; Análise Estatística; GQM",
-        "Paginas": 11
+        "Paginas": "11"
       }
     },
     {
@@ -534,9 +536,10 @@
       "pdf": "../data/raw/artigos/Measuring_the_Impact_of_Scope_Changes_on_Project_Plan_Using_EVM.pdf",
       "detail": {
         "Ano": "2020",
-        "Abstract": "Earned V alue Management (EVM) measures project performance against a baseline plan. It identiﬁes deviations in budget and schedule, aids project managers in taking earlier corrective actions against cost and schedule overruns. Although the literature highlights the signiﬁcance of scope by adopting it as a leading indicator to measure project success or failure. However, EVM does not include scope when evaluating the performance of any software project. While considering the importance of scope and its ever-changing nature, it is imperative to measure the effect of changes in scope on the p...",
+        "Abstract": "Earned Value Management (EVM) measures project performance against a baseline plan. It identiﬁes deviations in budget and schedule, aids project managers in taking earlier corrective actions against cost and schedule overruns. Although the literature highlights the signiﬁcance of scope by adopting it as a leading indicator to measure project success or failure. However, EVM does not include scope when evaluating the performance of any software project. While considering the importance of scope and its ever-changing nature, it is imperative to measure the effect of changes in scope on the pr...",
+        "DOI": "10.1109/ACCESS.2020.3018169",
         "Areas": "Gerenciamento de Projetos",
-        "Paginas": 25
+        "Paginas": "25"
       }
     },
     {
@@ -547,11 +550,11 @@
       "detail": {
         "Autores": "DEX",
         "Ano": "2022",
-        "Abstract": "Based on the premise that the quality of a software product is mostly the result of the quality of the process in which it is developed, models for the improvement of the process of software have been developed. The measurement and analysis for models assume great importance, because the evaluation of the relationship between the capacity (estimated results) and the performance (observed results) of a process is important so that it can be improved . CMMI is one of the mo re used models, having a great experien ce with success in the industry. CMMI do not indicate the measurement system to ...",
+        "Abstract": "Based on the premise that the quality of a software product is mostly the result of the quality of the process in which it is developed, models for the improvement of the process of software have been developed. The measurement and analysis for models assume great importance, because the evaluation of the relationship between the capacity (estimated results) and the performance (observed results) of a process is important so that it can be improved. CMMI is one of the more used models, having a great experience with success in the industry. CMMI do not indicate the measurement system to wor...",
         "Keywords": "CMMI; Statistics; Six Sigma; ISO/IEC/",
         "Areas": "Processo de Software",
         "Metodologia": "Estudo de Caso",
-        "Paginas": 15
+        "Paginas": "15"
       }
     },
     {
@@ -562,11 +565,11 @@
       "detail": {
         "Autores": "Paulinus Ofem",
         "Ano": "2024",
-        "Abstract": "Transparency remains an emerging non-functional requirement that stakeholders in the software engineering process (SEP) must consider. Existing studies provide evidence of the usefulness of transparency and offer hindsight on how transparency may be evaluated in different contexts. Considering communication, software maintainability, and stakeholders’ productivity, SEP has not thoroughly explored the benefits of transparency. Currently, there is no appropriate measurement of transpar - ency in SEP, and the consequence of this is that theoretically and empirically, the factors that character...",
+        "Abstract": "Transparency remains an emerging non-functional requirement that stakeholders in the software engineering process (SEP) must consider. Existing studies provide evidence of the usefulness of transparency and offer hindsight on how transparency may be evaluated in different contexts. Considering communication, software maintainability, and stakeholders’ productivity, SEP has not thoroughly explored the benefits of transparency. Currently, there is no appropriate measurement of transpar- ency in SEP, and the consequence of this is that theoretically and empirically, the factors that characteri...",
         "DOI": "10.1007/s42979-024-03471-3",
         "Areas": "Manutenção de Software; Experimentação; Processo de Software; Produtividade",
         "Metodologia": "Revisão Sistemática; Experimento Controlado; Estudo Empírico; Proposta de Framework; GQM",
-        "Paginas": 35
+        "Paginas": "35"
       }
     },
     {
@@ -580,7 +583,7 @@
         "Areas": "Métricas de Software; Métodos Ágeis; Produtividade",
         "Metricas": "LOC/SLOC; Function Points; Story Points; Velocity; Lead Time",
         "Metodologia": "Revisão Multivocal",
-        "Paginas": 15
+        "Paginas": "15"
       }
     },
     {
@@ -594,7 +597,7 @@
         "DOI": "10.1145/3530785",
         "Areas": "Inteligência Artificial/ML; Revisão de Código",
         "Metodologia": "Survey/Questionário; Estudo Empírico; Machine Learning",
-        "Paginas": 39
+        "Paginas": "39"
       }
     },
     {
@@ -609,7 +612,7 @@
         "Areas": "Engenharia de Software Empírica; Métodos Ágeis; Gerenciamento de Projetos",
         "Metricas": "Function Points; Story Points",
         "Metodologia": "Estudo de Caso; Estudo Empírico",
-        "Paginas": 12
+        "Paginas": "12"
       }
     },
     {
@@ -624,7 +627,7 @@
         "Areas": "Métricas de Software; Segurança de Software; Predição de Defeitos",
         "Metricas": "Code Churn; Halstead; Defect Density",
         "Metodologia": "Estudo Empírico",
-        "Paginas": 10
+        "Paginas": "10"
       }
     },
     {
@@ -635,12 +638,12 @@
       "detail": {
         "Autores": "Kristīne Kārkliņa, Rūta Pirta",
         "Ano": "2018",
-        "Abstract": "– Nowadays, IT projects are becoming more complex and larger in scale. Stakeholders often experience difficulties assessing project quality attributes , such as progress, budget . Specifically adapted project metrics based on their descriptive features are beneficial tools for acquiring important information . The paper discusses metrics as an important project quality assessment method. It proposes using GQM method for selecting the most appropriate A gile project quality metrics . For metrics monitoring it explores popular cloud-based project management systems. An illustration of the app...",
+        "Abstract": "– Nowadays, IT projects are becoming more complex and larger in scale. Stakeholders often experience difficulties assessing project quality attributes, such as progress, budget. Specifically adapted project metrics based on their descriptive features are beneficial tools for acquiring important information. The paper discusses metrics as an important project quality assessment method. It proposes using GQM method for selecting the most appropriate Agile project quality metrics. For metrics monitoring it explores popular cloud-based project management systems. An illustration of the approach...",
         "DOI": "10.7250/itms-2018-0008",
-        "Areas": "Métodos Ágeis; Gerenciamento de Projetos",
+        "Areas": "Métricas de Software; Métodos Ágeis; Gerenciamento de Projetos",
         "Metricas": "Velocity",
         "Metodologia": "Estudo de Caso; GQM",
-        "Paginas": 6
+        "Paginas": "6"
       }
     },
     {
@@ -653,7 +656,7 @@
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Inteligência Artificial/ML",
         "Metricas": "Complexidade Ciclomática",
         "Metodologia": "Survey/Questionário; Machine Learning",
-        "Paginas": 6
+        "Paginas": "6"
       }
     },
     {
@@ -667,7 +670,7 @@
         "DOI": "10.1007/s10664-024-10504-1",
         "Areas": "Engenharia de Software Empírica; Experimentação",
         "Metodologia": "Experimento Controlado; Meta-análise; Análise Estatística",
-        "Paginas": 46
+        "Paginas": "46"
       }
     },
     {
@@ -681,13 +684,13 @@
         "DOI": "10.1007/s10664-016-9437-5",
         "Areas": "Métricas de Software; Engenharia de Software Empírica",
         "Metodologia": "Revisão Sistemática; Análise Estatística",
-        "Paginas": 53
+        "Paginas": "53"
       }
     },
     {
       "id": "artigo_47",
       "type": "artigo",
-      "label": "SOFTWARE CODE QUALITY MEASUREMENT : I MPLICATIONS FROM",
+      "label": "SOFTWARE CODE QUALITY MEASUREMENT: IMPLICATIONS FROM",
       "pdf": "../data/raw/artigos/SOFTWARE CODE QUALITY MEASUREMENT IMPLICATIONS FROM METRIC DISRIBUTIONS.pdf",
       "detail": {
         "Ano": "2024",
@@ -695,7 +698,7 @@
         "Keywords": "open source software, code quality, construct measurement, non-monotonic metric",
         "Areas": "Manutenção de Software; Inteligência Artificial/ML; Revisão de Código",
         "Metodologia": "Machine Learning",
-        "Paginas": 12
+        "Paginas": "12"
       }
     },
     {
@@ -712,7 +715,7 @@
         "Areas": "Gerenciamento de Projetos",
         "Metricas": "Function Points",
         "Metodologia": "Estudo Empírico",
-        "Paginas": 31
+        "Paginas": "31"
       }
     },
     {
@@ -728,7 +731,7 @@
         "Areas": "Métricas de Software; Métodos Ágeis; Processo de Software",
         "Metricas": "Velocity",
         "Metodologia": "Revisão Sistemática; Estudo de Caso; Estudo Empírico; GQM",
-        "Paginas": 16
+        "Paginas": "16"
       }
     },
     {
@@ -740,9 +743,10 @@
         "Ano": "2021",
         "Abstract": "The result is presented through graphics, explanations, and the mind mapping method. The outputs include the trend map between the years 2009 and 2019, knowledge about this area and measurement tools, issues determined to be open to development in this area, and conformity between conference papers, articles and internationally valid quality models. This study may serve as a foundation for future studies that aim to contribute to the development in this crucial ﬁeld. Future SM studies might focus on this subject for measuring the quality of network performance and new technologies such as A...",
         "Keywords": ", quality assessment is applied for each paper. The quality assessment is realized based on the three questions to evaluate the completeness, consistency, and relevance of the selected study. The questions below are derived from the previous studies of Kitchenham et al. [34] and other SM studies. Q",
+        "DOI": "10.1109/ACCESS.2021.3054730",
         "Areas": "Qualidade de Software; Inteligência Artificial/ML",
         "Metodologia": "Mapeamento Sistemático; Machine Learning",
-        "Paginas": 24
+        "Paginas": "24"
       }
     },
     {
@@ -758,7 +762,7 @@
         "DOI": "10.4108/eetsis.3982",
         "Areas": "Qualidade de Software; Processo de Software",
         "Metodologia": "Revisão Sistemática",
-        "Paginas": 7
+        "Paginas": "7"
       }
     },
     {
@@ -769,10 +773,11 @@
       "detail": {
         "Ano": "2023",
         "Abstract": "Software cost and effort estimation is one of the most significant tasks in the area of software engineering. Research conducted in this field has been evolving with new techniques that necessitate periodic comparative analyses. Software project success largely depends on accurate software cost estimation as it gives an idea of the challenges and risks involved in the development. The great diversity of ML and Non- ML techniques has generated a comparison and progressed into the integration of these techniques. Based on varying advantages it has become imperative to work out preferred estim...",
+        "DOI": "10.1109/ACCESS.2023.3312716",
         "Areas": "Gerenciamento de Projetos; Inteligência Artificial/ML",
         "Metricas": "Function Points",
         "Metodologia": "Revisão Sistemática; Machine Learning",
-        "Paginas": 21
+        "Paginas": "21"
       }
     },
     {
@@ -785,7 +790,7 @@
         "Areas": "Métricas de Software; Métodos Ágeis; Gerenciamento de Projetos; Produtividade",
         "Metricas": "Story Points",
         "Metodologia": "Proposta de Framework",
-        "Paginas": 6
+        "Paginas": "6"
       }
     },
     {
@@ -802,7 +807,7 @@
         "Areas": "Métricas de Software; Qualidade de Software; Predição de Defeitos",
         "Metricas": "LOC/SLOC; Complexidade Ciclomática; Complexidade Cognitiva; Code Churn; Coupling/Acoplamento; Cohesion/Coesão; WMC; DIT; NOC; RFC; CK Metrics",
         "Metodologia": "Estudo Empírico; Machine Learning; Replicação; Mineração de Repositórios",
-        "Paginas": 6
+        "Paginas": "6"
       }
     },
     {
@@ -814,7 +819,7 @@
         "Areas": "Qualidade de Software; Processo de Software; Produtividade",
         "Metricas": "LOC/SLOC; Defect Density",
         "Metodologia": "Estudo de Caso; Proposta de Framework; GQM",
-        "Paginas": 10
+        "Paginas": "10"
       }
     },
     {
@@ -831,7 +836,7 @@
         "Areas": "Métricas de Software; Qualidade de Software",
         "Metricas": "CK Metrics",
         "Metodologia": "Mapeamento Sistemático",
-        "Paginas": 25
+        "Paginas": "25"
       }
     },
     {
@@ -841,7 +846,7 @@
       "pdf": "../data/raw/artigos/The Experimental Paradigm in Software Engeneering.pdf",
       "detail": {
         "Areas": "Engenharia de Software (Geral)",
-        "Paginas": 7
+        "Paginas": "7"
       }
     },
     {
@@ -852,7 +857,7 @@
       "detail": {
         "Ano": "2021",
         "Areas": "Revisão de Código; Produtividade",
-        "Paginas": 29
+        "Paginas": "29"
       }
     },
     {
@@ -867,7 +872,7 @@
         "DOI": "10.7717/peerj-cs.193",
         "Areas": "Qualidade de Software; Manutenção de Software; Experimentação; Segurança de Software; Revisão de Código",
         "Metodologia": "Experimento Controlado; Replicação",
-        "Paginas": 25
+        "Paginas": "25"
       }
     },
     {
@@ -880,7 +885,7 @@
         "Ano": "2024",
         "DOI": "10.1007/s00769-024-01593-y",
         "Areas": "Engenharia de Software (Geral)",
-        "Paginas": 1
+        "Paginas": "1"
       }
     },
     {
@@ -891,10 +896,10 @@
       "detail": {
         "Autores": "End User Computing Services",
         "Ano": "2019",
-        "Abstract": "Online controlled experiments (OCEs), also known as A/B tests , have become ubiquitous in evaluating the impact of changes made to software products and service s. While the concept of online controlled experiments is simple, there are many practical challenges in running OCEs at scale and encourage further academic and industrial exploration . To understand the top practical challenges in running OCEs at scale, representatives with experience in large-scale experimentation from thirteen different organizations (Airbnb, Amazon, Booking.com, Facebook, Google, LinkedIn, Lyft, Microsoft, Netfl...",
+        "Abstract": "Online controlled experiments (OCEs), also known as A/B tests, have become ubiquitous in evaluating the impact of changes made to software products and services. While the concept of online controlled experiments is simple, there are many practical challenges in running OCEs at scale and encourage further academic and industrial exploration. To understand the top practical challenges in running OCEs at scale, representatives with experience in large-scale experimentation from thirteen different organizations (Airbnb, Amazon, Booking.com, Facebook, Google, LinkedIn, Lyft, Microsoft, Netflix,...",
         "Areas": "Experimentação",
         "Metodologia": "Experimento Controlado; Survey/Questionário",
-        "Paginas": 16
+        "Paginas": "16"
       }
     },
     {
@@ -910,7 +915,7 @@
         "DOI": "10.1145/3474624.3477073",
         "Areas": "Engenharia de Software Empírica; Experimentação",
         "Metodologia": "Experimento Controlado; Meta-análise; Replicação",
-        "Paginas": 6
+        "Paginas": "6"
       }
     },
     {
@@ -924,7 +929,7 @@
         "DOI": "10.1016/j.jss.2024.112164",
         "Areas": "Engenharia de Software (Geral)",
         "Metodologia": "Proposta de Framework",
-        "Paginas": 14
+        "Paginas": "14"
       }
     },
     {
@@ -935,11 +940,11 @@
       "detail": {
         "Autores": "Laura Diana Cernău; Laura Dioșan; Camelia Șerban;",
         "Ano": "2025",
-        "Abstract": "Thecomplexsoftwaresystemsdevelopednowadaysrequireassessingtheirqualityand proneness to errors. Reducing code complexity is a never-ending problem, especially in today’s fast pace of software systems development. Therefore, the industry needs to find a method to determine the qualities of a software system, the degree of difficulty in developing new functionalities, or the system’s proneness to errors. One way of measuring and predicting the quality attributes of a software system is to analyse the software metrics values for it and the relationships between them. More precisely, we should s...",
+        "Abstract": "The complex software systems developed nowadays require assessing their quality and proneness to errors. Reducing code complexity is a never-ending problem, especially in today’s fast pace of software systems development. Therefore, the industry needs to find a method to determine the qualities of a software system, the degree of difficulty in developing new functionalities, or the system’s proneness to errors. One way of measuring and predicting the quality attributes of a software system is to analyse the software metrics values for it and the relationships between them. More precisely, w...",
         "Keywords": "software metrics, code complexity, bug prediction Preprint submitted to Elsevier April 2, 2025 arXiv:2504.00477v1 [cs.SE]",
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Predição de Defeitos",
         "Metricas": "LOC/SLOC; Complexidade Ciclomática",
-        "Paginas": 23
+        "Paginas": "23"
       }
     },
     {
@@ -954,7 +959,7 @@
         "DOI": "10.19053/01211129.v34.n72.2025.19104",
         "Areas": "Métricas de Software; Qualidade de Software",
         "Metodologia": "Proposta de Framework; GQM",
-        "Paginas": 10
+        "Paginas": "10"
       }
     },
     {
@@ -971,7 +976,7 @@
         "Areas": "Experimentação; Produtividade",
         "Metricas": "LOC/SLOC; Function Points; Velocity",
         "Metodologia": "Experimento Controlado; Estudo de Caso",
-        "Paginas": 12
+        "Paginas": "12"
       }
     },
     {
@@ -1172,8 +1177,8 @@
       "pdf": "../data/raw/aulas/Aula 1.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
-        "Slides": 27,
-        "Topicos": "Introdu¸ c˜ ao ao Curso; Sobre a Disciplina; Experimenta¸ c˜ ao; Sobre o Professor; Planejamento da Disciplina; Regras e Combinados; Primeiras Defini¸ c˜ oes",
+        "Slides": "27",
+        "Topicos": "Introdu¸c˜ao ao Curso; Sobre a Disciplina; Experimenta¸c˜ao; Sobre o Professor; Planejamento da Disciplina; Regras e Combinados; Primeiras Defini¸c˜oes",
         "Conceitos": "Métricas de Software; Medição de Software; Experimentação; Lead Time; Produtividade"
       }
     },
@@ -1184,8 +1189,8 @@
       "pdf": "../data/raw/aulas/Aula 2 - Escopo e Normas de Medição de Software.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
-        "Slides": 50,
-        "Topicos": "Medi¸ c˜ ao; Relevˆ ancia; Objetivos da Medi¸ c˜ ao de Software; Escopo das M´ etricas de Software; Estimativa de custo e esfor¸ co; Coleta de Dados; Modelos e medidas de qualidade; Modelos de Confiabilidade; M´ etricas de Seguran¸ ca; M´ etricas estruturais e de complexidade; Avalia¸ c˜ ao de maturidade de capacidade; Gest˜ ao por M´ etricas; Avalia¸ c˜ ao de M´ etodos e Ferramentas; Normas Internacionais; Artigos Recomendados",
+        "Slides": "50",
+        "Topicos": "Medi¸c˜ao; Relevˆancia; Objetivos da Medi¸c˜ao de Software; Escopo das M´etricas de Software; Estimativa de custo e esfor¸co; Coleta de Dados; Modelos e medidas de qualidade; Modelos de Confiabilidade; M´etricas de Seguran¸ca; M´etricas estruturais e de complexidade; Avalia¸c˜ao de maturidade de capacidade; Gest˜ao por M´etricas; Avalia¸c˜ao de M´etodos e Ferramentas; Normas Internacionais; Artigos Recomendados",
         "Conceitos": "Métricas de Software; Medição de Software; Experimentação; CMMI; ISO/IEC 9126; ISO/IEC 15939; Acoplamento; COCOMO; Produtividade; Confiabilidade; Manutenibilidade; Qualidade de Software"
       }
     },
@@ -1196,8 +1201,8 @@
       "pdf": "../data/raw/aulas/Aula 3 - Introdução à Experimentação.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
-        "Slides": 25,
-        "Topicos": "Objetivos da Aula; M´ etodos Emp ´ ıricos; Defini¸ c˜ oes; Tipos de M´ etodos Emp ´ ıricos; Experimento Controlado; Dicas para Relat´ orios",
+        "Slides": "25",
+        "Topicos": "Objetivos da Aula; M´etodos Emp´ıricos; Defini¸c˜oes; Tipos de M´etodos Emp´ıricos; Experimento Controlado; Dicas para Relat´orios",
         "Conceitos": "Métricas de Software; GQM (Goal-Question-Metric); Medição de Software; Experimentação; Validade Interna; Estudo de Caso"
       }
     },
@@ -1208,8 +1213,8 @@
       "pdf": "../data/raw/aulas/Aula 4 - Entidades, Atributos e Objetivos de Medição.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
-        "Slides": 40,
-        "Topicos": "Objetivos da Aula; Entidades; Tipos de Entidades; Atributos; Aspectos de Medi¸ c˜ ao; Escalas e Representa¸ c˜ oes; Goal-Question-Metric Framework; GQM: Contexto e Uso; GQM: Template",
+        "Slides": "40",
+        "Topicos": "Objetivos da Aula; Entidades; Tipos de Entidades; Atributos; Aspectos de Medi¸c˜ao; Escalas e Representa¸c˜oes; Goal-Question-Metric Framework; GQM: Contexto e Uso; GQM: Template",
         "Conceitos": "Métricas de Software; GQM (Goal-Question-Metric); Medição de Software; Experimentação; LOC/SLOC; Produtividade"
       }
     },
@@ -1220,8 +1225,8 @@
       "pdf": "../data/raw/aulas/Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
-        "Slides": 117,
-        "Topicos": "Objetivos da Aula; Size; Code Size; Design Size; Requirement Size; Functional Size; M´ etricas inspiradas em Normas; ISO/IEC 25010; ISO/IEC 15939; ISO/IEC 1061; IEEE Std 982.1 (1988); ISO/IEC 12207; SPICE/ISO/IEC 15504; CMMI; M´ etricas Diversas; COCOMO; McCall’s Quality Model; CK Metrics; M´ etricas de Halstead; M´ etricas de Fenton & Pfleeger",
+        "Slides": "117",
+        "Topicos": "Objetivos da Aula; Size; Code Size; Design Size; Requirement Size; Functional Size; M´etricas inspiradas em Normas; ISO/IEC 25010; ISO/IEC 15939; ISO/IEC 1061; IEEE Std 982.1 (1988); ISO/IEC 12207; SPICE/ISO/IEC 15504; CMMI; M´etricas Diversas; COCOMO; McCall’s Quality Model; CK Metrics; M´etricas de Halstead; M´etricas de Fenton & Pfleeger",
         "Conceitos": "Métricas de Software; Medição de Software; Experimentação; LOC/SLOC; Pontos de Função; CMMI; ISO/IEC 25010; ISO/IEC 15939; Acoplamento; Coesão; Halstead; McCabe; COCOMO; Velocity; Lead Time; DORA Metrics; Produtividade; Confiabilidade; Manutenibilidade; Qualidade de Software"
       }
     },
@@ -1232,8 +1237,8 @@
       "pdf": "../data/raw/aulas/Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
-        "Slides": 46,
-        "Topicos": "Medidas de Tendência Central; Medidas de Dispersão; Variáveis Aleatórias Discretas; Variáveis Aleatórias Contínuas; Teste de Hipótese Estatística",
+        "Slides": "46",
+        "Topicos": "Variáveis Aleatórias Discretas; Variáveis Aleatórias Contínuas; Teste de Hipótese Estatística",
         "Conceitos": "Métricas de Software; Medição de Software; Experimentação; Hipótese Nula/Alternativa; Teste de Hipótese; Distribuição Normal; Desvio Padrão; Média/Mediana; População; Nível de Significância; Intervalo de Confiança"
       }
     },
@@ -1244,7 +1249,7 @@
       "pdf": "../data/raw/aulas/Aula 8 - Processo de Experimentos.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
-        "Slides": 58,
+        "Slides": "58",
         "Topicos": "Tipos de Pesquisa; Estratégias Empíricas; Experiment Process; Escopo e Objetivo; Etapas do Planejamento; Ameaças à Validade; Operação do Experimento; Analysis and Interpretation; Exemplo Experimento; Survey (levantamento); Questionários/entrevistas estruturadas.; Visão ampla de práticas, percepções, características.; Experimental; Manipulação de variáveis e comparação de grupos.; Ex.: comparar duas técnicas de desenvolvimento.",
         "Conceitos": "Métricas de Software; Medição de Software; Experimentação; Variáveis Dependentes/Independentes; Hipótese Nula/Alternativa; Teste de Hipótese; Validade Interna; Validade Externa; Estudo de Caso; Survey; Dívida Técnica; Lead Time; Qualidade de Software; Amostragem; População; Nível de Significância"
       }
@@ -3077,6 +3082,26 @@
       "type": "artigo_ementa"
     },
     {
+      "source": "artigo_43",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_43",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_43",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_43",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
       "source": "artigo_44",
       "target": "ementa_3",
       "type": "artigo_ementa"
@@ -3778,47 +3803,22 @@
     },
     {
       "source": "artigo_3",
-      "target": "artigo_13",
+      "target": "artigo_44",
       "type": "artigo_artigo"
     },
     {
-      "source": "artigo_3",
+      "source": "artigo_5",
+      "target": "artigo_28",
+      "type": "artigo_artigo"
+    },
+    {
+      "source": "artigo_5",
       "target": "artigo_44",
       "type": "artigo_artigo"
     },
     {
       "source": "artigo_5",
       "target": "artigo_64",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_6",
-      "target": "artigo_18",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_6",
-      "target": "artigo_42",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_6",
-      "target": "artigo_55",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_6",
-      "target": "artigo_65",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_7",
-      "target": "artigo_29",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_7",
-      "target": "artigo_38",
       "type": "artigo_artigo"
     },
     {
@@ -3829,21 +3829,6 @@
     {
       "source": "artigo_8",
       "target": "artigo_39",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_13",
-      "target": "artigo_18",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_13",
-      "target": "artigo_29",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_13",
-      "target": "artigo_44",
       "type": "artigo_artigo"
     },
     {
@@ -3912,6 +3897,11 @@
       "type": "artigo_artigo"
     },
     {
+      "source": "artigo_25",
+      "target": "artigo_54",
+      "type": "artigo_artigo"
+    },
+    {
       "source": "artigo_28",
       "target": "artigo_59",
       "type": "artigo_artigo"
@@ -3953,11 +3943,6 @@
     },
     {
       "source": "artigo_36",
-      "target": "artigo_43",
-      "type": "artigo_artigo"
-    },
-    {
-      "source": "artigo_36",
       "target": "artigo_52",
       "type": "artigo_artigo"
     },
@@ -3973,12 +3958,27 @@
     },
     {
       "source": "artigo_39",
+      "target": "artigo_43",
+      "type": "artigo_artigo"
+    },
+    {
+      "source": "artigo_39",
       "target": "artigo_53",
       "type": "artigo_artigo"
     },
     {
       "source": "artigo_41",
+      "target": "artigo_43",
+      "type": "artigo_artigo"
+    },
+    {
+      "source": "artigo_41",
       "target": "artigo_53",
+      "type": "artigo_artigo"
+    },
+    {
+      "source": "artigo_43",
+      "target": "artigo_49",
       "type": "artigo_artigo"
     },
     {

@@ -46,11 +46,12 @@
         #panel .fld-v { font-size: 13px; color: var(--text-dim); line-height: 1.65; word-break: break-word; }
         #panel .fld-v a { color: #4A90D9; text-decoration: none; border-bottom: 1px solid rgba(74,144,217,0.3); }
         #panel .close-btn {
-            position: absolute; top: 24px; right: 24px; width: 28px; height: 28px; border: none;
-            background: transparent; color: var(--text-muted); cursor: pointer; font-size: 20px;
-            display: flex; align-items: center; justify-content: center; transition: color 0.2s;
+            position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; border: none;
+            background: transparent; color: var(--text-muted); cursor: pointer; font-size: 22px;
+            display: flex; align-items: center; justify-content: center; transition: color 0.2s, background 0.2s;
+            border-radius: 6px;
         }
-        #panel .close-btn:hover { color: var(--text); }
+        #panel .close-btn:hover { color: var(--text); background: rgba(255,255,255,0.06); }
         .pdf-btn {
             display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; padding: 10px 18px;
             background: transparent; border: 1px solid rgba(184,84,80,0.3); border-radius: var(--radius);
@@ -63,7 +64,8 @@
         #pdf-modal .wrap { width: 86vw; height: 90vh; background: #0c0c16; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--border); box-shadow: 0 40px 120px rgba(0,0,0,0.6); }
         #pdf-modal .bar { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; border-bottom: 1px solid var(--border); }
         #pdf-modal .bar h3 { font-family: 'Instrument Serif', serif; font-size: 14px; color: var(--text-dim); font-weight: 400; }
-        #pdf-modal .bar button { width: 30px; height: 30px; border: none; background: transparent; color: var(--text-muted); cursor: pointer; font-size: 18px; }
+        #pdf-modal .bar button { width: 40px; height: 40px; border: none; background: transparent; color: var(--text-muted); cursor: pointer; font-size: 24px; display: flex; align-items: center; justify-content: center; border-radius: 6px; transition: background 0.2s, color 0.2s; }
+        #pdf-modal .bar button:hover { background: rgba(255,255,255,0.08); color: var(--text); }
         #pdf-modal iframe { flex: 1; width: 100%; border: none; }
 
         #ui { position: fixed; left: 20px; top: 20px; z-index: 100; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; backdrop-filter: blur(16px); min-width: 210px; }
@@ -121,11 +123,11 @@
         const LINK_STYLE = {
             artigo_ementa:  { color: 'rgba(184,84,80,0.14)', width: 0.5, particles: 1 },
             ementa_aula:    { color: 'rgba(196,169,106,0.18)', width: 0.5, particles: 0 },
-            artigo_artigo:  { color: 'rgba(122,122,130,0.05)', width: 0.3, particles: 0 },
-            sequencia:      { color: 'rgba(196,169,106,0.06)', width: 0.25, particles: 0 },
+            artigo_artigo:  { color: 'rgba(200,200,210,0.25)', width: 0.3, particles: 0 },
+            sequencia:      { color: 'rgba(200,200,210,0.25)', width: 0.25, particles: 0 },
         };
 
-        let graph, currentData, nodeTypes = {}, activeTypes = {};
+        let graph, currentData, nodeTypes = {}, activeTypes = {}, nodeTypeById = {};
         const el = document.getElementById('graph');
 
         boot();
@@ -169,6 +171,8 @@
                 activeTypes[t] = true;
                 i++;
             });
+            nodeTypeById = {};
+            data.nodes.forEach(n => { nodeTypeById[n.id] = n.type; });
         }
 
         function buildFilters(data) {
@@ -188,20 +192,21 @@
             });
         }
 
-        function sizeOf(type) { return type === 'ementa' ? 28 : type === 'aula' ? 40 : 6; }
+        function sizeOf(type) { return 12; }
 
         function meshOf(node) {
             const c = new THREE.Color(nodeTypes[node.type] ? nodeTypes[node.type].color : '#888');
             let geo;
-            if (node.type === 'aula') geo = new THREE.OctahedronGeometry(7, 0);
+            if (node.type === 'aula') geo = new THREE.OctahedronGeometry(3.5, 0);
             else if (node.type === 'ementa') geo = new THREE.BoxGeometry(4, 4, 4);
-            else if (node.type === 'artigo') geo = new THREE.SphereGeometry(2.4, 14, 14);
+            else if (node.type === 'artigo') geo = new THREE.SphereGeometry(3, 14, 14);
             else geo = new THREE.TetrahedronGeometry(3, 0);
             const mat = new THREE.MeshLambertMaterial({ color: c, emissive: c, emissiveIntensity: 0.25, transparent: true, opacity: 0.9 });
             return new THREE.Mesh(geo, mat);
         }
 
         function render(data) {
+            if (graph) { graph._destructor && graph._destructor(); graph = null; el.innerHTML = ''; }
             document.getElementById('stats').textContent = data.nodes.length + ' nós · ' + data.links.length + ' conexões';
             graph = ForceGraph3D()(el)
                 .graphData({ nodes: data.nodes.map(n => ({ ...n })), links: data.links.map(l => ({ ...l })) })
@@ -231,9 +236,16 @@
             }, 200);
         }
 
+        function _nodeId(x) { return typeof x === 'object' && x !== null ? x.id : x; }
+
         function applyFilters() {
             if (!graph) return;
             graph.nodeVisibility(n => activeTypes[n.type] !== false);
+            graph.linkVisibility(l => {
+                const st = nodeTypeById[_nodeId(l.source)];
+                const tt = nodeTypeById[_nodeId(l.target)];
+                return activeTypes[st] !== false && activeTypes[tt] !== false;
+            });
         }
 
         function onNodeClick(node) {
@@ -295,7 +307,10 @@
 
         document.getElementById('close-panel').onclick = () => {
             document.getElementById('panel').classList.remove('open');
-            if (graph) graph.nodeOpacity(0.9).linkOpacity(0.5);
+            if (graph) {
+                graph.nodeOpacity(0.9).linkOpacity(0.5);
+                applyFilters();
+            }
         };
         document.getElementById('close-modal').onclick = closeModal;
         document.getElementById('pdf-modal').onclick = e => { if (e.target.id === 'pdf-modal') closeModal(); };
@@ -306,7 +321,16 @@
         document.getElementById('search').oninput = e => {
             if (!graph) return;
             const q = e.target.value.toLowerCase().trim();
-            graph.nodeVisibility(n => activeTypes[n.type] !== false && (!q || JSON.stringify(n).toLowerCase().includes(q)));
+            const visibleNodes = new Set();
+            currentData.nodes.forEach(n => {
+                if (activeTypes[n.type] !== false && (!q || JSON.stringify(n).toLowerCase().includes(q))) {
+                    visibleNodes.add(n.id);
+                }
+            });
+            graph.nodeVisibility(n => visibleNodes.has(n.id));
+            graph.linkVisibility(l => {
+                return visibleNodes.has(_nodeId(l.source)) && visibleNodes.has(_nodeId(l.target));
+            });
         };
 
         function fetchJson(url) { return fetch(url).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); }); }
@@ -314,7 +338,7 @@
         function showError(msg) { document.getElementById('graph').innerHTML = '<p style="padding:40px;color:#666">' + esc(msg) + '</p>'; }
         function fld(l, v) { return v ? '<div class="fld"><div class="fld-l">' + esc(l) + '</div><div class="fld-v">' + v + '</div></div>' : ''; }
         function esc(s) { if (s === null || s === undefined) return ''; const d = document.createElement('div'); d.textContent = String(s); return d.innerHTML; }
-        function escQ(s) { return (s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'"); }
+        function escQ(s) { return (s || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\n/g, ' ').replace(/\r/g, ''); }
         function trunc(s, n) { s = String(s || ''); return s.length > n ? s.substring(0, n) + '…' : s; }
     })();
     </script>

@@ -8,7 +8,7 @@ Tasks
 3. Match each corpus entry to a PDF via fuzzy title matching + manual overrides
 4. Validate title/year by extracting text from the matched PDF
 5. Add columns: pdf_path, venue_type (known cases), in_statistical_test
-6. Create rubric_template.csv (empty, 73 rows × 6 rubric columns)
+6. Create rubric_template.csv (empty, N rows × 6 rubric columns)
 
 Outputs
 -------

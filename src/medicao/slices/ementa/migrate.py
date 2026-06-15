@@ -1,10 +1,10 @@
-"""Semeia data/ementa/ementa.csv (dataset da disciplina) a partir da fonte real.
+"""Semeia data/<bundle>/ementa/ementa.csv (dataset da disciplina) a partir da fonte real.
 
-Preferencia de fonte (bundle medicao):
-1. ``data/ementa/ementa.pdf`` -> parse das "Unidades de Ensino".
-2. ``data/ementa/cronograma_atividades.csv`` -> fallback (cronograma).
+Preferencia de fonte (por bundle):
+1. ``data/<bundle>/ementa/ementa.pdf`` -> parse das "Unidades de Ensino".
+2. ``data/<bundle>/ementa/cronograma_atividades.csv`` -> fallback (cronograma).
 
-Para outros bundles, o usuario preenche ementa.csv pelo template.
+Para bundles sem PDF, o usuario preenche ementa.csv pelo template.
 """
 
 from __future__ import annotations
@@ -65,8 +65,8 @@ def _modulo_cronograma(atividade: str) -> str:
     return "Módulo 3 - Experimentação"
 
 
-def _from_cronograma() -> list[dict]:
-    linhas = read_csv(config.CRONOGRAMA_CSV)
+def _from_cronograma(bundle: str = config.DEFAULT_BUNDLE) -> list[dict]:
+    linhas = read_csv(config.cronograma_csv(bundle))
     registros = []
     seq = 0
     for linha in linhas:
@@ -88,9 +88,9 @@ def _from_cronograma() -> list[dict]:
     return registros
 
 
-def _from_pdf() -> list[dict]:
+def _from_pdf(bundle: str = config.DEFAULT_BUNDLE) -> list[dict]:
     """Parse das 'Unidades de Ensino' do plano de ensino (ementa.pdf)."""
-    full = read_pdf(config.EMENTA_PDF).full_text
+    full = read_pdf(config.ementa_pdf(bundle)).full_text
     section = re.search(
         r"Unidades de Ensino\s*(.+?)(?:Processo de Avalia|Processo de Avalia..o)",
         full,
@@ -155,25 +155,29 @@ def _from_pdf() -> list[dict]:
     return registros
 
 
-def build() -> list[dict]:
-    """Gera data/ementa/ementa.csv a partir do PDF (preferencial) ou cronograma."""
-    if config.EMENTA_PDF.exists():
-        registros = _from_pdf()
+def build(bundle: str = config.DEFAULT_BUNDLE) -> list[dict]:
+    """Gera data/<bundle>/ementa/ementa.csv a partir do PDF (preferencial) ou cronograma."""
+    pdf = config.ementa_pdf(bundle)
+    cronograma = config.cronograma_csv(bundle)
+    ementa_csv = config.ementa_src(bundle)
+
+    if pdf.exists():
+        registros = _from_pdf(bundle)
         fonte = "ementa.pdf"
-        if not registros and config.CRONOGRAMA_CSV.exists():
-            registros = _from_cronograma()
+        if not registros and cronograma.exists():
+            registros = _from_cronograma(bundle)
             fonte = "cronograma (fallback)"
-    elif config.CRONOGRAMA_CSV.exists():
-        registros = _from_cronograma()
+    elif cronograma.exists():
+        registros = _from_cronograma(bundle)
         fonte = "cronograma"
     else:
         raise FileNotFoundError(
-            f"Sem fonte de ementa: adicione {config.EMENTA_PDF} ou {config.CRONOGRAMA_CSV}."
+            f"Sem fonte de ementa: adicione {pdf} ou {cronograma}."
         )
 
-    config.EMENTA_DIR.mkdir(parents=True, exist_ok=True)
-    write_csv(config.EMENTA_SRC, registros, EMENTA_FIELDS)
-    print(f"[ementa.migrate] {fonte} -> {config.EMENTA_SRC} ({len(registros)} itens)")
+    config.ementa_dir(bundle).mkdir(parents=True, exist_ok=True)
+    write_csv(ementa_csv, registros, EMENTA_FIELDS)
+    print(f"[ementa.migrate] {fonte} -> {ementa_csv} ({len(registros)} itens)")
     return registros
 
 

@@ -10,7 +10,7 @@ from medicao.shared.text import clean_text, most_common_year
 from medicao.slices.artigos import detectors, extraction
 
 
-def process(doc: PdfDocument, artigo_id: int) -> dict:
+def process(doc: PdfDocument, artigo_id: int, bundle: str = config.DEFAULT_BUNDLE) -> dict:
     """Extrai todos os campos (nucleo ACARI + ricos de medicao) de um artigo."""
     head = doc.head_text(5)
     head3 = doc.head_text(3)
@@ -45,22 +45,27 @@ def process(doc: PdfDocument, artigo_id: int) -> dict:
         "contexto_dominio": detectors.detect_domains(full),
         "idioma": extraction.detect_language(head),
         "veiculo_publicacao": extraction.extract_venue(head),
-        "caminho_pdf": config.artigo_web_path(doc.filename),
+        "caminho_pdf": config.artigo_web_path(doc.filename, bundle),
     }
 
 
 def run(bundle: str = config.DEFAULT_BUNDLE, write: bool = True) -> list[dict]:
     """Processa os PDFs de artigos e grava o CSV canonico no bundle."""
     b = Bundle(bundle)
-    filenames = list_pdfs(config.ARTIGOS_DIR)
-    print(f"[artigos] {len(filenames)} PDFs encontrados")
+    pdfs_dir = config.artigos_dir(bundle)
+    if not pdfs_dir.exists():
+        print(f"[artigos] diretorio {pdfs_dir} ausente; nenhum artigo processado")
+        return []
+
+    filenames = list_pdfs(pdfs_dir)
+    print(f"[artigos] {len(filenames)} PDFs encontrados em {pdfs_dir}")
 
     registros = []
     for i, filename in enumerate(filenames, 1):
-        filepath = config.ARTIGOS_DIR / filename
+        filepath = pdfs_dir / filename
         try:
             doc = read_pdf(filepath)
-            registro = process(doc, i)
+            registro = process(doc, i, bundle)
         except Exception as exc:  # noqa: BLE001
             registro = {f: "" for f in ARTIGOS_FIELDS}
             registro.update(
@@ -70,7 +75,7 @@ def run(bundle: str = config.DEFAULT_BUNDLE, write: bool = True) -> list[dict]:
                     "arquivo": filename,
                     "in_statistical_test": "True",
                     "abstract": f"Erro ao processar: {exc}",
-                    "caminho_pdf": config.artigo_web_path(filename),
+                    "caminho_pdf": config.artigo_web_path(filename, bundle),
                 }
             )
         registros.append(registro)

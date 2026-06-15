@@ -1,0 +1,53 @@
+{
+  "name": "teste",
+  "titulo": "Testes de Software",
+  "datasets": {
+    "artigos": {
+      "file": "artigos.csv",
+      "required": true,
+      "present": true
+    },
+    "ementa": {
+      "file": "ementa.csv",
+      "required": true,
+      "present": true
+    },
+    "aulas": {
+      "file": "aulas.csv",
+      "required": false,
+      "present": false
+    },
+    "relacoes": {
+      "file": "relacoes.csv",
+      "required": false,
+      "present": true
+    },
+    "grupo2_respostas": {
+      "file": "grupo2_respostas.csv",
+      "required": false,
+      "present": true
+    },
+    "grupo2_auditoria": {
+      "file": "grupo2_auditoria.csv",
+      "required": false,
+      "present": true
+    }
+  },
+  "node_types": {
+    "artigo": {
+      "label": "Artigos",
+      "color": "#B85450",
+      "label_field": "title"
+    },
+    "ementa": {
+      "label": "Ementa",
+      "color": "#4A90D9",
+      "label_field": "topico"
+    },
+    "aula": {
+      "label": "Aulas",
+      "color": "#C4A96A",
+      "label_field": "titulo"
+    }
+  }
+}

@@ -272,7 +272,7 @@ def fig_network(df: pd.DataFrame) -> None:
               title="Comunidade Louvain", title_fontsize=8,
               framealpha=0.8)
     ax.set_title(
-        f"Rede de Acoplamento Bibliográfico (n=73 artigos, {G.number_of_edges()} arestas)\n"
+        f"Rede de Acoplamento Bibliográfico (n={n} artigos, {G.number_of_edges()} arestas)\n"
         "Tamanho ∝ PageRank · Cor = comunidade Louvain · Labels: top-10 PageRank"
     )
     ax.axis("off")
@@ -520,13 +520,26 @@ def fig_theme_distribution(df: pd.DataFrame) -> None:
 
     # pivot: theme × turma
     sub["turma"] = sub[GROUP_COLUMN].map(_COHORT_LABELS).fillna(sub[GROUP_COLUMN])
+    # if all turmas are NA/empty, skip
+    if sub["turma"].isna().all() or (sub["turma"].astype(str).str.strip() == "").all():
+        print(f"  [SKIP] all '{GROUP_COLUMN}' values empty — skipping theme_distribution")
+        return
+    sub = sub[sub["turma"].notna() & (sub["turma"].astype(str).str.strip() != "")]
+    if sub.empty:
+        print(f"  [SKIP] no rows with valid '{GROUP_COLUMN}' — skipping theme_distribution")
+        return
     pivot = (
         sub.groupby(["turma", "theme"])
         .size()
         .unstack(fill_value=0)
     )
-    pivot = pivot.reindex([_COHORT_LABELS.get(c, c) for c in _COHORT_ORDER
-                           if _COHORT_LABELS.get(c, c) in pivot.index])
+    reindex_order = [_COHORT_LABELS.get(c, c) for c in _COHORT_ORDER
+                     if _COHORT_LABELS.get(c, c) in pivot.index]
+    if reindex_order:
+        pivot = pivot.reindex(reindex_order)
+    if pivot.empty:
+        print("  [SKIP] pivot empty after reindex — skipping theme_distribution")
+        return
     # proportional
     pivot_pct = pivot.div(pivot.sum(axis=1), axis=0) * 100
 
@@ -580,7 +593,7 @@ def fig_venue_type_dist(df: pd.DataFrame) -> None:
     ax.set_xticks(range(len(counts)))
     ax.set_xticklabels(counts.index, rotation=20, ha="right", fontsize=9)
     ax.set_ylabel("N artigos")
-    ax.set_title("Distribuição de venue_type no corpus (n=73)")
+    ax.set_title(f"Distribuição de venue_type no corpus (n={len(df)})")
     ax.legend(fontsize=9)
     ax.text(0.99, 0.97,
             "H3: sem drift de tipo entre turmas\n(χ²=4.10, dof=6, p=0.663)",

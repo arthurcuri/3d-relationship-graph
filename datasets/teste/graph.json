@@ -1,0 +1,547 @@
+{
+  "meta": {
+    "name": "teste",
+    "titulo": "teste",
+    "counts": {
+      "artigos": 5,
+      "ementa": 20,
+      "aulas": 0,
+      "nos": 25,
+      "arestas": 44
+    }
+  },
+  "node_types": {
+    "artigo": {
+      "label": "Artigos",
+      "color": "#B85450",
+      "label_field": "title"
+    },
+    "ementa": {
+      "label": "Ementa",
+      "color": "#4A90D9",
+      "label_field": "topico"
+    },
+    "aula": {
+      "label": "Aulas",
+      "color": "#C4A96A",
+      "label_field": "titulo"
+    }
+  },
+  "nodes": [
+    {
+      "id": "artigo_1",
+      "type": "artigo",
+      "label": "A Review and Analysis of Software Complexity Metrics in Structural Testing",
+      "pdf": "../data/teste/raw/artigos/A Review and Analysis of Software Complexity Metrics in Structural Testing.pdf",
+      "detail": {
+        "Abstract": "Software metrics is developed and used by the various software organizations for evaluating and assuring software code quality, operation, and maintenance. Software metrics measure various types of software complexity like size metrics, control flow metrics and data flow metrics. These software complexities must be continuously calculated, followed, and controlled. One of the main objectives of software metrics is that applies to a process and product metrics. It is always considered that high degree of complexity in a module is bad in comparison to a low degree of complexity in a module. S...",
+        "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Processo de Software",
+        "Metricas": "LOC/SLOC; Complexidade Ciclomática; Function Points; Code Coverage; Halstead",
+        "Paginas": 5
+      }
+    },
+    {
+      "id": "artigo_2",
+      "type": "artigo",
+      "label": "An External Replication on the Effects of Test-driven",
+      "pdf": "../data/teste/raw/artigos/An External Replication on the Effects of Test-driven Development Using a Multi-site Blind Analysis Approach.pdf",
+      "detail": {
+        "Abstract": "Context: Test-driven development (TDD) is an agile prac- tice claimed to improve the quality of a software product, as well as the productivity of its developers. A previous study (i.e., baseline experiment) at the University of Oulu (Finland) compared TDD to a test-last development (TLD) approach through a randomized controlled trial. The results failed to support the claims. Goal: We want to validate the original study results by replicating it at the Univer- sity of Basilicata (Italy), using a diﬀerent design. Method: We replicated the baseline experiment, using a crossover de- sign, with 2",
+        "Keywords": "test-driven development, external experiment replication, blind analysis",
+        "DOI": "10.1145/2961111.2962592",
+        "Areas": "Qualidade de Software; Teste de Software; Experimentação; Métodos Ágeis; Produtividade",
+        "Metodologia": "Revisão Sistemática; Experimento Controlado; Survey/Questionário; Meta-análise; Replicação",
+        "Paginas": 10
+      }
+    },
+    {
+      "id": "artigo_3",
+      "type": "artigo",
+      "label": "Process metrics for software defect prediction in object‐oriented programs",
+      "pdf": "../data/teste/raw/artigos/Process metrics for software defectprediction in object-oriented programs.pdf",
+      "detail": {
+        "Ano": "2018",
+        "Abstract": "Software evolution is an important activity in the life cycle of a modern software system. In the process of software evolution, the repair of historical defects and the increasing demands may introduce new defects. Therefore, evolution-oriented defect prediction has attracted much attention of researchers in recent years. At present, some researchers have proposed the process metrics to describe the characteristics of software evolution. However, compared with the traditional software defect prediction methods, the research on evolution-oriented defect prediction is still inadequate. Based...",
+        "DOI": "10.1049/iet-sen.2018.5439",
+        "Areas": "Métricas de Software; Segurança de Software; Predição de Defeitos",
+        "Metricas": "Code Churn; Halstead; Defect Density",
+        "Metodologia": "Estudo Empírico",
+        "Paginas": 10
+      }
+    },
+    {
+      "id": "artigo_4",
+      "type": "artigo",
+      "label": "Source Code Metrics for Software Defects Prediction",
+      "pdf": "../data/teste/raw/artigos/Source Code Metrics for Software Defects Prediction.pdf",
+      "detail": {
+        "Autores": "Dominik Arne Rebro, Bruno Rossi, and Stanislav Chren",
+        "Ano": "2023",
+        "Abstract": "In current research, there are contrasting results about the ap- plicability of software source code metrics as features for defect prediction models. The goal of the paper is to evaluate the adop- tion of software metrics in models for software defect prediction, identifying the impact of individual source code metrics. With an empirical study on 275 release versions of 39 Java projects mined from GitHub, we compute 12 software metrics and collect software defect information. We train and compare three defect classifica- tion models. The results across all projects indicate that Decision T...",
+        "Keywords": "Software Defect Prediction, Software Metrics, Mining Software Repositories, Software Quality Accepted version of Dominik Arne Rebro, Bruno Rossi, and Stanislav Chren",
+        "DOI": "10.1145/3555776.3577809",
+        "Areas": "Métricas de Software; Qualidade de Software; Predição de Defeitos",
+        "Metricas": "LOC/SLOC; Complexidade Ciclomática; Complexidade Cognitiva; Code Churn; Coupling/Acoplamento; Cohesion/Coesão; WMC; DIT; NOC; RFC; CK Metrics",
+        "Metodologia": "Estudo Empírico; Machine Learning; Replicação; Mineração de Repositórios",
+        "Paginas": 6
+      }
+    },
+    {
+      "id": "artigo_5",
+      "type": "artigo",
+      "label": "Unveiling Hybrid Cyclomatic Complexity: A Comprehensive Analysis and Evaluation as an Integral Feature in Automatic Defect Prediction Models",
+      "pdf": "../data/teste/raw/artigos/Unveiling Hybrid Cyclomatic Complexity A Comprehensive Analysis and Evaluation as an Integral Feature in Automatic Defect Prediction Models.pdf",
+      "detail": {
+        "Autores": "Laura Diana Cernău; Laura Dioșan; Camelia Șerban;",
+        "Ano": "2025",
+        "Abstract": "The complex software systems developed nowadays require assessing their quality and proneness to errors. Reducing code complexity is a never-ending problem, especially in today’s fast pace of software systems development. Therefore, the industry needs to find a method to determine the qualities of a software system, the degree of difficulty in developing new functionalities, or the system’s proneness to errors. One way of measuring and predicting the quality attributes of a software system is to analyse the software metrics values for it and the relationships between them. More precisely, w...",
+        "Keywords": "software metrics, code complexity, bug prediction Preprint submitted to Elsevier April 2, 2025 arXiv:2504.00477v1 [cs.SE]",
+        "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Predição de Defeitos",
+        "Metricas": "LOC/SLOC; Complexidade Ciclomática",
+        "Paginas": 23
+      }
+    },
+    {
+      "id": "ementa_1",
+      "type": "ementa",
+      "label": "Processo de desenvolvimento de software",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 1 - Revisão e nivelamento",
+        "Topico": "Processo de desenvolvimento de software",
+        "Descricao": "Revisão e nivelamento sobre o processo de desenvolvimento."
+      }
+    },
+    {
+      "id": "ementa_2",
+      "type": "ementa",
+      "label": "Qualidade de software",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 1 - Revisão e nivelamento",
+        "Topico": "Qualidade de software",
+        "Descricao": "Conceitos de qualidade de software."
+      }
+    },
+    {
+      "id": "ementa_3",
+      "type": "ementa",
+      "label": "Motivação",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 2 - Fundamentos de teste de software",
+        "Topico": "Motivação",
+        "Descricao": "Por que testar software."
+      }
+    },
+    {
+      "id": "ementa_4",
+      "type": "ementa",
+      "label": "Testes e o processo de desenvolvimento de software",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 2 - Fundamentos de teste de software",
+        "Topico": "Testes e o processo de desenvolvimento de software",
+        "Descricao": "Relação entre testes e o ciclo de vida."
+      }
+    },
+    {
+      "id": "ementa_5",
+      "type": "ementa",
+      "label": "Conceitos básicos e tipos de teste",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 2 - Fundamentos de teste de software",
+        "Topico": "Conceitos básicos e tipos de teste",
+        "Descricao": "Definições fundamentais e classificação de testes."
+      }
+    },
+    {
+      "id": "ementa_6",
+      "type": "ementa",
+      "label": "Verificação e validação",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 2 - Fundamentos de teste de software",
+        "Topico": "Verificação e validação",
+        "Descricao": "Diferenças e aplicações de V&V."
+      }
+    },
+    {
+      "id": "ementa_7",
+      "type": "ementa",
+      "label": "Níveis de teste",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 2 - Fundamentos de teste de software",
+        "Topico": "Níveis de teste",
+        "Descricao": "Teste unitário, integração, sistema, aceitação."
+      }
+    },
+    {
+      "id": "ementa_8",
+      "type": "ementa",
+      "label": "Introdução a técnicas de teste",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 3 - Técnicas de teste de software",
+        "Topico": "Introdução a técnicas de teste",
+        "Descricao": "Visão geral das técnicas."
+      }
+    },
+    {
+      "id": "ementa_9",
+      "type": "ementa",
+      "label": "Fundamentos de técnicas de teste",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 3 - Técnicas de teste de software",
+        "Topico": "Fundamentos de técnicas de teste",
+        "Descricao": "Bases teóricas das técnicas."
+      }
+    },
+    {
+      "id": "ementa_10",
+      "type": "ementa",
+      "label": "Critérios de cobertura",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 3 - Técnicas de teste de software",
+        "Topico": "Critérios de cobertura",
+        "Descricao": "Cobertura de código, decisão, condição."
+      }
+    },
+    {
+      "id": "ementa_11",
+      "type": "ementa",
+      "label": "Tipos de teste: unidade, integração, regressão",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 3 - Técnicas de teste de software",
+        "Topico": "Tipos de teste: unidade, integração, regressão",
+        "Descricao": "Aplicação prática dos tipos de teste."
+      }
+    },
+    {
+      "id": "ementa_12",
+      "type": "ementa",
+      "label": "Rastreamento de defeitos",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 3 - Técnicas de teste de software",
+        "Topico": "Rastreamento de defeitos",
+        "Descricao": "Ferramentas e processos de bug tracking."
+      }
+    },
+    {
+      "id": "ementa_13",
+      "type": "ementa",
+      "label": "Medições e indicadores",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 4 - Gerenciamento do processo de testes",
+        "Topico": "Medições e indicadores",
+        "Descricao": "Métricas de qualidade e progresso de testes."
+      }
+    },
+    {
+      "id": "ementa_14",
+      "type": "ementa",
+      "label": "Estimativas",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 4 - Gerenciamento do processo de testes",
+        "Topico": "Estimativas",
+        "Descricao": "Estimativa de esforço de teste."
+      }
+    },
+    {
+      "id": "ementa_15",
+      "type": "ementa",
+      "label": "Casos de testes",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 4 - Gerenciamento do processo de testes",
+        "Topico": "Casos de testes",
+        "Descricao": "Elaboração e documentação de casos de teste."
+      }
+    },
+    {
+      "id": "ementa_16",
+      "type": "ementa",
+      "label": "Planos de testes",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 4 - Gerenciamento do processo de testes",
+        "Topico": "Planos de testes",
+        "Descricao": "Estruturação de planos de teste."
+      }
+    },
+    {
+      "id": "ementa_17",
+      "type": "ementa",
+      "label": "Conceito e motivação de refatoração",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 5 - Refatoração",
+        "Topico": "Conceito e motivação de refatoração",
+        "Descricao": "O que é refatoração e por que aplicar."
+      }
+    },
+    {
+      "id": "ementa_18",
+      "type": "ementa",
+      "label": "Catálogo de refatorações",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 5 - Refatoração",
+        "Topico": "Catálogo de refatorações",
+        "Descricao": "Refatorações comuns e padrões."
+      }
+    },
+    {
+      "id": "ementa_19",
+      "type": "ementa",
+      "label": "Fundamentos e práticas de TDD",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 6 - Desenvolvimento dirigido por testes",
+        "Topico": "Fundamentos e práticas de TDD",
+        "Descricao": "Test-Driven Development: ciclo red-green-refactor."
+      }
+    },
+    {
+      "id": "ementa_20",
+      "type": "ementa",
+      "label": "TDD através de exemplos",
+      "pdf": "",
+      "detail": {
+        "Modulo": "Unidade 6 - Desenvolvimento dirigido por testes",
+        "Topico": "TDD através de exemplos",
+        "Descricao": "Aplicação prática de TDD."
+      }
+    }
+  ],
+  "links": [
+    {
+      "source": "ementa_1",
+      "target": "ementa_2",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_2",
+      "target": "ementa_3",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_3",
+      "target": "ementa_4",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_4",
+      "target": "ementa_5",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_5",
+      "target": "ementa_6",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_6",
+      "target": "ementa_7",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_7",
+      "target": "ementa_8",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_8",
+      "target": "ementa_9",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_9",
+      "target": "ementa_10",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_10",
+      "target": "ementa_11",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_11",
+      "target": "ementa_12",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_12",
+      "target": "ementa_13",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_13",
+      "target": "ementa_14",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_14",
+      "target": "ementa_15",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_15",
+      "target": "ementa_16",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_16",
+      "target": "ementa_17",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_17",
+      "target": "ementa_18",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_18",
+      "target": "ementa_19",
+      "type": "sequencia"
+    },
+    {
+      "source": "ementa_19",
+      "target": "ementa_20",
+      "type": "sequencia"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_19",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_1",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_1",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_3",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_4",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_5",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_6",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_7",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_8",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_9",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_10",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_11",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_2",
+      "target": "ementa_12",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_3",
+      "target": "ementa_12",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_4",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_4",
+      "target": "ementa_12",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_4",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_5",
+      "target": "ementa_2",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_5",
+      "target": "ementa_12",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_5",
+      "target": "ementa_13",
+      "type": "artigo_ementa"
+    },
+    {
+      "source": "artigo_1",
+      "target": "artigo_5",
+      "type": "artigo_artigo"
+    }
+  ]
+}

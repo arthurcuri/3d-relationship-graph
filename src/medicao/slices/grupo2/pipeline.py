@@ -20,7 +20,7 @@ from medicao.shared.pdf import read_pdf
 from medicao.shared.storage import read_csv, write_csv, write_json
 from medicao.shared.text import clean_text, significant_terms
 
-EXPECTED_CORPUS_SIZE = int(os.environ.get("MEDICAO_EXPECTED_CORPUS_SIZE", "73"))
+EXPECTED_CORPUS_SIZE = int(os.environ.get("MEDICAO_EXPECTED_CORPUS_SIZE", "66"))
 
 RESPOSTAS_FIELDS = [
     "id",
@@ -123,11 +123,11 @@ def _merge_extra(artigo: dict, rows_by_id: dict[str, dict], rows_by_title: dict[
     return rows_by_title.get(_norm_key(str(artigo.get("title", ""))), {})
 
 
-def _article_text(artigo: dict) -> str:
+def _article_text(artigo: dict, bundle: str = config.DEFAULT_BUNDLE) -> str:
     filename = str(artigo.get("arquivo", "")).strip()
     if not filename:
         return ""
-    path = config.ARTIGOS_DIR / filename
+    path = config.artigos_dir(bundle) / filename
     if not path.exists():
         return ""
     try:
@@ -478,7 +478,7 @@ def run(bundle: str = config.DEFAULT_BUNDLE, write: bool = True) -> list[dict]:
         artigo_id = str(artigo.get("id", ""))
         extra = _merge_extra(artigo, enriched_by_id, enriched_by_title)
         rubric = _merge_extra(artigo, rubric_by_id, rubric_by_title)
-        texto = _article_text(artigo)
+        texto = _article_text(artigo, bundle)
         temas, qtd_temas, max_score, max_pct = _relation_summary(rel_por_artigo.get(artigo_id, []))
         alignment = extra.get("alignment_score", "")
         alignment_nivel = _alignment_nivel(alignment, max_score)

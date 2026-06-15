@@ -155,6 +155,11 @@ def tab_stats_proxy(df: pd.DataFrame, bdf: pd.DataFrame | None) -> None:
     corpus   = df[df["in_statistical_test"] == True]["alignment_score"].dropna().values
     baseline = bdf["alignment_score"].dropna().values
 
+    if len(corpus) < 2 or len(baseline) < 2:
+        _save("% tab_stats_proxy skipped: insufficient data (corpus or baseline < 2 samples)", "tab_stats_proxy")
+        print(f"  [SKIP] tab_stats_proxy — corpus={len(corpus)}, baseline={len(baseline)} (min 2)")
+        return
+
     u_stat, mwu_p = stats.mannwhitneyu(corpus, baseline, alternative="greater")
     cd_mat = np.sign(corpus[:, None] - baseline[None, :])
     cd = float(cd_mat.mean())
@@ -208,6 +213,11 @@ def tab_stats_cohort(df: pd.DataFrame) -> None:
         arr = grp.dropna().values
         if len(arr) >= 3:
             groups[name] = arr
+
+    if len(groups) < 2:
+        _save("% tab_stats_cohort skipped: need at least 2 cohort groups with >= 3 samples", "tab_stats_cohort")
+        print(f"  [SKIP] tab_stats_cohort — apenas {len(groups)} grupo(s) com dados suficientes")
+        return
 
     kw_h, kw_p = stats.kruskal(*groups.values())
 

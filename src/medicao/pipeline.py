@@ -25,10 +25,14 @@ def run_all(bundle: str = config.DEFAULT_BUNDLE) -> None:
     registros_artigos = artigos.run(bundle)
     registros_aulas = aulas.run(bundle)
 
-    # ementa.csv e responsabilidade do usuario; o bundle medicao tem sua fonte
-    # editavel em data/ementa/ementa.csv, semeada do cronograma quando ausente.
-    if bundle == "medicao" and (config.EMENTA_PDF.exists() or not config.EMENTA_SRC.exists()):
-        ementa_migrate.build()
+    # ementa.csv e responsabilidade do usuario; so regeneramos a partir do PDF/cronograma
+    # quando ementa.csv NAO existe ainda em data/<bundle>/ementa/.
+    ementa_src = config.ementa_src(bundle)
+    if not ementa_src.exists():
+        ementa_pdf = config.ementa_pdf(bundle)
+        cronograma = config.cronograma_csv(bundle)
+        if ementa_pdf.exists() or cronograma.exists():
+            ementa_migrate.build(bundle)
     registros_ementa = ementa_run(bundle)
 
     registros_relacoes = relacoes.run(

@@ -28,17 +28,24 @@ Templates prontos em `datasets/_templates/` (`artigos`, `ementa`, `aulas`,
 `manifest`). A única coluna obrigatória de `artigos.csv` é **`title`** (o
 esquema é a fusão das colunas do ACARI com os campos ricos de medição).
 
-### Fonte da disciplina (bundle `medicao`)
+### Dados brutos (PDFs e fonte da ementa)
 
-A disciplina vive em `data/ementa/` e é a fonte de verdade:
+A pasta `data/` é organizada **por bundle**:
 
-- `ementa.pdf` — plano de ensino oficial. Quando presente, é a base do
-  `ementa.txt` (texto rico usado pelo ACARI) e das "Unidades de Ensino"
-  parseadas para `data/ementa/ementa.csv` (nós do grafo).
-- `cronograma_atividades.csv` — fallback usado quando não há `ementa.pdf`.
+```
+data/
+├── medicao/               # bundle "medicao"
+│   ├── raw/artigos/       # PDFs de artigos
+│   ├── raw/aulas/         # PDFs de aulas (opcional)
+│   └── ementa/            # ementa.pdf, ementa.csv, cronograma
+├── <outro_bundle>/        # outro bundle
+│   ├── raw/artigos/
+│   ├── raw/aulas/
+│   └── ementa/
+```
 
-O slice de ementa sincroniza `data/ementa/ementa.csv` para `datasets/medicao/`.
-Para outros bundles, basta preencher `datasets/<bundle>/ementa.csv` pelo template.
+Cada bundle tem seus próprios PDFs e sua própria ementa. O pipeline lê de
+`data/<bundle>/` e grava as saídas em `datasets/<bundle>/`.
 
 ## Arquitetura (Vertical Slice)
 

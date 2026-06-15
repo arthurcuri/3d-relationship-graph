@@ -9,7 +9,19 @@
         "ementa": 19,
         "aulas": 7,
         "nos": 92,
-        "arestas": 551
+        "arestas": 550
+      }
+    },
+    {
+      "name": "teste",
+      "titulo": "Testes de Software",
+      "graph": "teste/graph.json",
+      "counts": {
+        "artigos": 5,
+        "ementa": 20,
+        "aulas": 0,
+        "nos": 25,
+        "arestas": 44
       }
     }
   ]

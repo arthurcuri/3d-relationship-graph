@@ -37,7 +37,7 @@ def _professor(first_page: str) -> str:
     return PROFESSOR_PADRAO
 
 
-def process(doc: PdfDocument, aula_id: int) -> dict:
+def process(doc: PdfDocument, aula_id: int, bundle: str = config.DEFAULT_BUNDLE) -> dict:
     full = doc.full_text
     first_page = doc.pages[0] if doc.pages else ""
 
@@ -62,24 +62,25 @@ def process(doc: PdfDocument, aula_id: int) -> dict:
         "referencias": "; ".join(referencias[:10]),
         "objetivos": "; ".join(objetivos[:5]),
         "resumo": extraction.extract_summary(full),
-        "caminho_pdf": config.aula_web_path(doc.filename),
+        "caminho_pdf": config.aula_web_path(doc.filename, bundle),
     }
 
 
 def run(bundle: str = config.DEFAULT_BUNDLE, write: bool = True) -> list[dict]:
-    if not config.AULAS_DIR.exists():
-        print("[aulas] diretorio de aulas ausente; slice opcional pulado")
+    pdfs_dir = config.aulas_dir(bundle)
+    if not pdfs_dir.exists():
+        print(f"[aulas] diretorio {pdfs_dir} ausente; slice opcional pulado")
         return []
 
-    filenames = list_pdfs(config.AULAS_DIR)
-    print(f"[aulas] {len(filenames)} PDFs encontrados")
+    filenames = list_pdfs(pdfs_dir)
+    print(f"[aulas] {len(filenames)} PDFs encontrados em {pdfs_dir}")
 
     registros = []
     for i, filename in enumerate(filenames, 1):
-        filepath = config.AULAS_DIR / filename
+        filepath = pdfs_dir / filename
         try:
             doc = read_pdf(filepath)
-            registro = process(doc, i)
+            registro = process(doc, i, bundle)
         except Exception as exc:  # noqa: BLE001
             registro = {f: "" for f in FIELDS}
             registro.update(
@@ -91,7 +92,7 @@ def run(bundle: str = config.DEFAULT_BUNDLE, write: bool = True) -> list[dict]:
                     "professor": PROFESSOR_PADRAO,
                     "disciplina": DISCIPLINA,
                     "resumo": f"Erro: {exc}",
-                    "caminho_pdf": config.aula_web_path(filename),
+                    "caminho_pdf": config.aula_web_path(filename, bundle),
                 }
             )
         registros.append(registro)
