@@ -84,7 +84,12 @@ def configure(bundle_name: str) -> None:
     BASELINE_CSV = DATA / "baseline.csv"
     INGEST_LOG = LOGS / "ingest_log.csv"
 
-    for _d in (DATA, PDFS, LOGS, FIGS, TABLES):
+    # pdfs/ so faz sentido quando ha um diretorio de PDFs para copiar; com o
+    # corpus ja em CSV (ARTIGOS_SRC=None) ela ficaria sempre vazia.
+    _dirs = [DATA, LOGS, FIGS, TABLES]
+    if ARTIGOS_SRC is not None:
+        _dirs.append(PDFS)
+    for _d in _dirs:
         _d.mkdir(parents=True, exist_ok=True)
 
 

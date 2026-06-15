@@ -86,12 +86,18 @@ def main() -> None:
 
     rubric["rubric_score"] = rubric.apply(_compute_score, axis=1)
 
-    # Merge into enriched.csv by presenter
+    # Merge into enriched.csv by a stable key (id, falling back to presenter/title)
     df = pd.read_csv(ENRICHED_CSV, dtype=str, keep_default_na=False).replace("", pd.NA)
-    score_map = rubric.set_index("presenter")["rubric_score"].to_dict()
-    df["rubric_score"] = pd.to_numeric(
-        df["presenter"].map(score_map), errors="coerce"
+    key = next(
+        (c for c in ("id", "presenter", "title") if c in df.columns and c in rubric.columns),
+        None,
     )
+    if key is None:
+        print("  [WARN] sem coluna de juncao (id/presenter/title) — rubric_score = NA")
+        df["rubric_score"] = pd.NA
+    else:
+        score_map = rubric.dropna(subset=[key]).set_index(key)["rubric_score"].to_dict()
+        df["rubric_score"] = pd.to_numeric(df[key].map(score_map), errors="coerce")
     df.to_csv(ENRICHED_CSV, index=False)
 
     n_score = df["rubric_score"].notna().sum()

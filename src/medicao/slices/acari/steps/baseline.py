@@ -13,12 +13,19 @@ import os
 import time
 
 os.environ.setdefault("HF_HUB_DISABLE_SSL_VERIFICATION", "1")
-import httpx as _httpx
-_orig_httpx_init = _httpx.Client.__init__
-def _httpx_no_ssl(self, *a, **kw):
-    kw.setdefault("verify", False)
-    _orig_httpx_init(self, *a, **kw)
-_httpx.Client.__init__ = _httpx_no_ssl
+# patch de SSL via httpx e best-effort (httpx e dependencia opcional)
+try:
+    import httpx as _httpx
+
+    _orig_httpx_init = _httpx.Client.__init__
+
+    def _httpx_no_ssl(self, *a, **kw):
+        kw.setdefault("verify", False)
+        _orig_httpx_init(self, *a, **kw)
+
+    _httpx.Client.__init__ = _httpx_no_ssl
+except ImportError:
+    pass
 
 import numpy as np
 import pandas as pd

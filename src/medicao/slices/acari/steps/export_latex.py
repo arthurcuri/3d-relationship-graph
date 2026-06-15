@@ -87,7 +87,9 @@ def tab_corpus_summary(df: pd.DataFrame) -> None:
     sub = sub.dropna(subset=["arqi_equal"]).sort_values("arqi_equal", ascending=False)
 
     def _year(row):
-        y = row.get("year_api") or row.get("year")
+        y = row.get("year_api")
+        if pd.isna(y) or str(y) in ("", "nan"):
+            y = row.get("year")
         return str(int(float(y))) if pd.notna(y) and str(y) not in ("", "nan") else "NA"
 
     def _venue_abbr(v):

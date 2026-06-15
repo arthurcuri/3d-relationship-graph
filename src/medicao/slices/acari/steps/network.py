@@ -146,7 +146,11 @@ def main() -> None:
     print(f"  Edges:  {n_edges}  (bib coupling, shared refs ≥1)")
     print(f"  Components: {n_comp}")
     pr_s = df["pagerank_centrality"].astype(float)
-    top5 = df.nlargest(5, "pagerank_centrality")[["presenter","pagerank_centrality"]]
+    label_col = next(
+        (c for c in ("presenter", "article_authors", "title") if c in df.columns), None
+    )
+    cols = [c for c in (label_col, "pagerank_centrality") if c]
+    top5 = df.nlargest(5, "pagerank_centrality")[cols]
     print(f"  Top-5 PageRank:\n{top5.to_string(index=False)}")
     print("─" * 55)
 

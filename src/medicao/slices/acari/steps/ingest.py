@@ -304,7 +304,7 @@ def add_known_venue_types(df: pd.DataFrame) -> pd.DataFrame:
 # ── Step 6: rubric template ───────────────────────────────────────────────────
 
 def make_rubric_template(df: pd.DataFrame) -> None:
-    cols = [c for c in ["cohort", "presenter", "title"] if c in df.columns]
+    cols = [c for c in ["id", "cohort", "presenter", "title"] if c in df.columns]
     tmpl = df[cols].copy()
     tmpl["replicavel"]        = pd.NA   # 0 | 1 | 2
     tmpl["pratico_teorico"]   = pd.NA   # pratico | teorico | misto

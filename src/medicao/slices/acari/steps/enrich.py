@@ -448,6 +448,19 @@ def main() -> None:
     _checkpoint(df)
 
 
+def _label(row: pd.Series) -> str:
+    """Rotulo legivel de uma linha, tolerante ao esquema do bundle.
+
+    O esquema fundido (artigos.csv) nao tem ``presenter``; cai para
+    ``article_authors`` e, por fim, para o titulo.
+    """
+    for col in ("presenter", "article_authors"):
+        val = row.get(col)
+        if pd.notna(val) and str(val).strip():
+            return str(val)
+    return str(row.get("title", ""))[:40]
+
+
 def _checkpoint(df: pd.DataFrame) -> None:
     print("\n" + "=" * 60)
     print("CHECKPOINT: ENRICH RESULTS")
@@ -484,20 +497,19 @@ def _checkpoint(df: pd.DataFrame) -> None:
         print(f"  {str(vt):<18} {cnt:>3}  in_stat_test={in_test}")
 
     # Articles with NA citations
-    no_cite = df[df["citations"].isna()][["cohort", "presenter", "title", "enrichment_source", "venue_type"]]
+    no_cite = df[df["citations"].isna()]
     if not no_cite.empty:
         print(f"\nNA citations ({len(no_cite)} articles):")
         for _, r in no_cite.iterrows():
-            print(f"  [{r['cohort']}] {r['presenter']}: {str(r['title'])[:50]}"
-                  f"  [src={r['enrichment_source']} vt={r['venue_type']}]")
+            print(f"  [{r.get('cohort', '')}] {_label(r)}: {str(r.get('title', ''))[:50]}"
+                  f"  [src={r.get('enrichment_source', '')} vt={r.get('venue_type', '')}]")
 
     # Articles with NA venue
-    no_venue = df[df["venue"].isna() | df["venue"].astype(str).isin(["", "nan", "None"])][
-        ["cohort", "presenter", "title", "enrichment_source"]]
+    no_venue = df[df["venue"].isna() | df["venue"].astype(str).isin(["", "nan", "None"])]
     if not no_venue.empty:
         print(f"\nNA venue ({len(no_venue)} articles):")
         for _, r in no_venue.iterrows():
-            print(f"  [{r['cohort']}] {r['presenter']}: {str(r['title'])[:50]}")
+            print(f"  [{r.get('cohort', '')}] {_label(r)}: {str(r.get('title', ''))[:50]}")
 
     print("=" * 60)
 
