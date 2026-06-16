@@ -32,7 +32,7 @@
       "id": "artigo_1",
       "type": "artigo",
       "label": "A Conceptual Model to Support Teaching of Software Engineering Controlled (Quasi-)Experiments",
-      "pdf": "../data/raw/artigos/A Conceptual Model to Support Teaching of SoftwareEngineering Controlled (Quasi-)Experiments.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Conceptual Model to Support Teaching of SoftwareEngineering Controlled (Quasi-)Experiments.pdf",
       "detail": {
         "Ano": "2023",
         "Abstract": "Throughout controlled experimentation, it is possible to provide evidence of the software being developed. In the academic envi- ronment, Experimentation in Software Engineering (ESE) is essen- tial to understanding cause-effect relations, enabling a vision of the development process, and taking action on actual events in the software industry. As much as the experimentation processes have been used in industry and academia, there is a lack of for- malization of the principles of ESE teaching and artifacts that can be useful to support it in higher education. One of the means to contribute ...",
@@ -47,7 +47,7 @@
       "id": "artigo_2",
       "type": "artigo",
       "label": "Technical Report, Simula Research Laboratory, number 2011-13",
-      "pdf": "../data/raw/artigos/A Hitchhiker's guide to statistical tests for assessing randomized algorithms in software engineering.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Hitchhiker's guide to statistical tests for assessing randomized algorithms in software engineering.pdf",
       "detail": {
         "Ano": "2011",
         "Abstract": "Randomized algorithms have been used to successfully address many different types of software engi- neering problems. This type of algorithms entail a signiﬁcant degree of randomness as part of their logic. Randomized algorithms are useful to address difﬁcult problems where a precise solution cannot be derived in a deterministic way within reasonable time. However, randomized algorithms can produce different results on every run when applied to the same problem instance. It is hence important to assess the effectiveness of randomized algorithms by collecting data from a large enough number ...",
@@ -60,7 +60,7 @@
       "id": "artigo_3",
       "type": "artigo",
       "label": "A Large-Scale Empirical Study of AI-Generated Code in Real-World Repositories",
-      "pdf": "../data/raw/artigos/A Large-Scale Empirical Study of AI-Generated Code in.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Large-Scale Empirical Study of AI-Generated Code in.pdf",
       "detail": {
         "Autores": "Tianhao Mao; Dongfang Zhao; Haixu Tang; Xiaofeng Wang; Hang Zhang",
         "Ano": "2026",
@@ -77,7 +77,7 @@
       "id": "artigo_4",
       "type": "artigo",
       "label": "A Quality Model-based Approach for Measuring User Interface Aesthetics with Grace",
-      "pdf": "../data/raw/artigos/A Quality Model-based Approach for Measuring UserInterface Aesthetics with Grace.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Quality Model-based Approach for Measuring UserInterface Aesthetics with Grace.pdf",
       "detail": {
         "Autores": "Mathieu Zen",
         "Ano": "2023",
@@ -93,7 +93,7 @@
       "id": "artigo_5",
       "type": "artigo",
       "label": "A Review and Analysis of Software Complexity Metrics in Structural Testing",
-      "pdf": "../data/raw/artigos/A Review and Analysis of Software Complexity Metrics in Structural Testing.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Review and Analysis of Software Complexity Metrics in Structural Testing.pdf",
       "detail": {
         "Abstract": "Software metrics is developed and used by the various software organizations for evaluating and assuring software code quality, operation, and maintenance. Software metrics measure various types of software complexity like size metrics, control flow metrics and data flow metrics. These software complexities must be continuously calculated, followed, and controlled. One of the main objectives of software metrics is that applies to a process and product metrics. It is always considered that high degree of complexity in a module is bad in comparison to a low degree of complexity in a module. S...",
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Processo de Software",
@@ -105,7 +105,7 @@
       "id": "artigo_6",
       "type": "artigo",
       "label": "2-815-A Study on Software Metrics and its Impact on Software Quality.cdr",
-      "pdf": "../data/raw/artigos/A Study on Software Metrics and its Impact on Software Quality.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Study on Software Metrics and its Impact on Software Quality.pdf",
       "detail": {
         "Autores": "khalil",
         "Abstract": "Software metrics offer a quantitative basis for predicting the software development process. In this way, software quality can be improved very easily. Software quality should be achieved to satisfy the customer with decreasing the software cost and improve there liability of the software product. In this research, we have discussed how the software metrics affect the quality of the software and which stages of its development software metrics have applied. We discussed the different software metrics and how these metrics have an impact on software quality and reliability. These techniques ...",
@@ -120,7 +120,7 @@
       "id": "artigo_7",
       "type": "artigo",
       "label": "A Survey of Controlled Experiments",
-      "pdf": "../data/raw/artigos/A Survey of Controlled Experiments in Software Engineering..pdf",
+      "pdf": "../data/medicao/raw/artigos/A Survey of Controlled Experiments in Software Engineering..pdf",
       "detail": {
         "Ano": "2002",
         "Abstract": "The classical method for identifying cause-effect relationships is to conduct controlled experiments. This paper reports upon the present state of how controlled experiments in software engineering are conducted and the extent to which relevant information is reported. Among the 5,453 scientific articles published in 12 leading software engineering journals and conferences in the decade from 1993 to 2002, 103 articles (1.9 percent) reported controlled experiments in which individuals or teams performed one or more software engineering tasks. This survey quantitatively characterizes the topi...",
@@ -134,7 +134,7 @@
       "id": "artigo_8",
       "type": "artigo",
       "label": "arXiv:1801.06475v1  [cs.SE]  19 Jan 2018",
-      "pdf": "../data/raw/artigos/A Systematic Review of Productivity Factors in Software Development.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Systematic Review of Productivity Factors in Software Development.pdf",
       "detail": {
         "Ano": "2018",
         "Abstract": "Analysing and improving productivity has been one of the main goals of software engineering research since its beginnings. A plethora of studies has been conducted on various factors that resulted in several models for analysis and prediction of productivity. However, productivity is still an issue in current software development and not all factors and their relationships are known. This paper reviews the large body of available literature in order to distill a list of the main factors inﬂuencing productivity investigated so far. The measure for importance here is the number of articles a ...",
@@ -148,7 +148,7 @@
       "id": "artigo_9",
       "type": "artigo",
       "label": "A Tale of Two Cities: Software Developers Working from",
-      "pdf": "../data/raw/artigos/A Tale of Two Cities Software Developers Working fromHome during the COVID-19 Pandemic.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Tale of Two Cities Software Developers Working fromHome during the COVID-19 Pandemic.pdf",
       "detail": {
         "Ano": "2021",
         "Keywords": "and Phrases: COVID-19, work from home",
@@ -163,7 +163,7 @@
       "id": "artigo_10",
       "type": "artigo",
       "label": "Full citation: Bosu, M.F., & MacDonell, S.G. (2013) A taxonomy of data quality challenges in",
-      "pdf": "../data/raw/artigos/A Taxonomy of Data Quality Challenges in Empirical Software Engineering.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Taxonomy of Data Quality Challenges in Empirical Software Engineering.pdf",
       "detail": {
         "Autores": "ae",
         "Ano": "2013",
@@ -178,7 +178,7 @@
       "id": "artigo_11",
       "type": "artigo",
       "label": "A Tool‐Based Perspective on Software Code Maintainability Metrics: A Systematic Literature Review",
-      "pdf": "../data/raw/artigos/A Tool-Based Perspective on Software Code Maintainability Metrics A Systematic Literature Review.pdf",
+      "pdf": "../data/medicao/raw/artigos/A Tool-Based Perspective on Software Code Maintainability Metrics A Systematic Literature Review.pdf",
       "detail": {
         "Ano": "2020",
         "Keywords": "listed above, for each of the chosen digital libraries. 2.1",
@@ -193,7 +193,7 @@
       "id": "artigo_12",
       "type": "artigo",
       "label": "A Large-Scale Empirical Study on Self-Admitted Technical Debt",
-      "pdf": "../data/raw/artigos/A large-scale empirical study on self-admitted technical debt.pdf",
+      "pdf": "../data/medicao/raw/artigos/A large-scale empirical study on self-admitted technical debt.pdf",
       "detail": {
         "Autores": "Gabriele Bavota, Barbara Russo",
         "Ano": "2016",
@@ -210,7 +210,7 @@
       "id": "artigo_13",
       "type": "artigo",
       "label": "A machine learning approach to vulnerability detection combining software metrics and topic modelling: Evidence from smart contracts",
-      "pdf": "../data/raw/artigos/A machine learning approach to vulnerability detection combining software.pdf",
+      "pdf": "../data/medicao/raw/artigos/A machine learning approach to vulnerability detection combining software.pdf",
       "detail": {
         "Autores": "Giacomo Ibba",
         "Ano": "2014",
@@ -226,7 +226,7 @@
       "id": "artigo_14",
       "type": "artigo",
       "label": "A preliminary GQM model to evaluate web API",
-      "pdf": "../data/raw/artigos/A preliminary GQM model to evaluate web API usability.pdf",
+      "pdf": "../data/medicao/raw/artigos/A preliminary GQM model to evaluate web API usability.pdf",
       "detail": {
         "Abstract": "Web APIs allow easy access to a variety of resources and ser- vices, and it is because of that they have become essential for building modern applications. This generated a new business perspective, “the API economy”, and for that reason, usability now turns into a key char- acteristic for the acceptance of a web API. Although web API usabil- ity is a researched topic, no studies proposing a usability model for web APIs have been found. For that reason, this study presents a preliminary model to help standardize and facilitate web API usability assessment. Our model, based on the GQM approa...",
         "Keywords": "Web API usability · Model · Metrics · GQM",
@@ -239,7 +239,7 @@
       "id": "artigo_15",
       "type": "artigo",
       "label": "ADmM: Anomaly Detection for Microservice Systems with Incomplete Metrics",
-      "pdf": "../data/raw/artigos/ADmM Anomaly Detection for Microservice Systems withIncomplete Metrics.pdf",
+      "pdf": "../data/medicao/raw/artigos/ADmM Anomaly Detection for Microservice Systems withIncomplete Metrics.pdf",
       "detail": {
         "Autores": "Zekun Zhang, Jian Wang, Bing Li, Liuxiaoxiao Zhang, Yu Liu, Patrick Hung",
         "Ano": "2026",
@@ -255,7 +255,7 @@
       "id": "artigo_16",
       "type": "artigo",
       "label": "Microsoft Word - FinalPrint07.doc",
-      "pdf": "../data/raw/artigos/ARTIGO_Definição de um processo de medição de software baseado em Seis Sigma e CMMI.pdf",
+      "pdf": "../data/medicao/raw/artigos/ARTIGO_Definição de um processo de medição de software baseado em Seis Sigma e CMMI.pdf",
       "detail": {
         "Autores": "eric.ferreira",
         "Ano": "2002",
@@ -269,7 +269,7 @@
       "id": "artigo_17",
       "type": "artigo",
       "label": "A Framework for Automating the Measurement of DevOps Research and Assessment (DORA) Metrics",
-      "pdf": "../data/raw/artigos/A_Framework_for_Automating_the_Measurement_of_DevOps_Research_and_Assessment_DORA_Metrics.pdf",
+      "pdf": "../data/medicao/raw/artigos/A_Framework_for_Automating_the_Measurement_of_DevOps_Research_and_Assessment_DORA_Metrics.pdf",
       "detail": {
         "Abstract": "The DevOps Research and Assessment (DORA) metrics have been widely accepted by the software industry as a powerful method to quantify DevOps performance, leading to signiﬁcant interest in their measurement. Existing proprietary solutions are highly customised, and require speciﬁc types of cloud infrastructure, limiting their suitability for projects such as libraries, frameworks, and open source projects. To address this gap, we present a framework which operationalizes the DORA metrics independently of a project’s software development life-cycle or type of deployment. We demonstrate the ge...",
         "Areas": "Métodos Ágeis; DevOps/CI-CD",
@@ -282,7 +282,7 @@
       "id": "artigo_18",
       "type": "artigo",
       "label": "A study of component based software system metrics",
-      "pdf": "../data/raw/artigos/A_study_of_component_based_software_system_metrics.pdf",
+      "pdf": "../data/medicao/raw/artigos/A_study_of_component_based_software_system_metrics.pdf",
       "detail": {
         "Ano": "2016",
         "Abstract": "The term metrics is basically a quantitative measure of extent to which given attributes influenced by a system, component or a process. Metrics are required to measure software quality, improve software quality and to predict software quality. There are various approaches available to develop a software metrics like object oriented approach, component based approach, distributed approach. Component based software engineering is a latest approach in developing software. The main function of component based metrics is to provide reusability and decrease cost and development time. These metri...",
@@ -296,7 +296,7 @@
       "id": "artigo_19",
       "type": "artigo",
       "label": "Adjustment Level Metrics for Requirements in Project Management",
-      "pdf": "../data/raw/artigos/Adjustment_Level_Metrics_for_Requirements_in_Project_Management.pdf",
+      "pdf": "../data/medicao/raw/artigos/Adjustment_Level_Metrics_for_Requirements_in_Project_Management.pdf",
       "detail": {
         "Ano": "2021",
         "Abstract": "The correct and complete definition of the requirements that are part of the scope of a project is crucial for its successful management. They are usually expressed through a set of raw data and originate from different documents. This article presents a proposal of metrics to determine the degree of completeness of the requirements. Such metrics are based on the combination of simple mathematical models with natural language processing techniques to analyze the degree of completeness and estimation of activities, and the degree of estimation of costs and human resources. This paper describ...",
@@ -310,7 +310,7 @@
       "id": "artigo_20",
       "type": "artigo",
       "label": "An Empirical Validation of Cognitive Complexity as a Measure of Source Code Understandability",
-      "pdf": "../data/raw/artigos/An Empirical Validation of Cognitive Complexity as a Measure.pdf",
+      "pdf": "../data/medicao/raw/artigos/An Empirical Validation of Cognitive Complexity as a Measure.pdf",
       "detail": {
         "Autores": "Marvin Muñoz Barón, Marvin Wyrich, and Stefan Wagner",
         "Ano": "2020",
@@ -327,7 +327,7 @@
       "id": "artigo_21",
       "type": "artigo",
       "label": "An External Replication on the Effects of Test-driven",
-      "pdf": "../data/raw/artigos/An External Replication on the Effects of Test-driven Development Using a Multi-site Blind Analysis Approach.pdf",
+      "pdf": "../data/medicao/raw/artigos/An External Replication on the Effects of Test-driven Development Using a Multi-site Blind Analysis Approach.pdf",
       "detail": {
         "Abstract": "Context: Test-driven development (TDD) is an agile prac- tice claimed to improve the quality of a software product, as well as the productivity of its developers. A previous study (i.e., baseline experiment) at the University of Oulu (Finland) compared TDD to a test-last development (TLD) approach through a randomized controlled trial. The results failed to support the claims. Goal: We want to validate the original study results by replicating it at the Univer- sity of Basilicata (Italy), using a diﬀerent design. Method: We replicated the baseline experiment, using a crossover de- sign, with 2",
         "Keywords": "test-driven development, external experiment replication, blind analysis",
@@ -341,7 +341,7 @@
       "id": "artigo_22",
       "type": "artigo",
       "label": "An Empirical Investigation of Factors Causing Scope Creep in Agile Global Software Development Context: A Conceptual Model for Project Managers",
-      "pdf": "../data/raw/artigos/An_Empirical_Investigation_of_Factors_Causing_Scop.pdf",
+      "pdf": "../data/medicao/raw/artigos/An_Empirical_Investigation_of_Factors_Causing_Scop.pdf",
       "detail": {
         "Ano": "2021",
         "Abstract": "This article has been accepted for publication in a future issue of this journal, but has not been fully edited. Content may change prior to final publication. Citation information: DOI",
@@ -356,7 +356,7 @@
       "id": "artigo_23",
       "type": "artigo",
       "label": "An´alise da Eficiˆencia do Uso de Recursos de M´aquina na",
-      "pdf": "../data/raw/artigos/Analise da Eficiência do Uso de Recursos de Máquina (TCC_GABRIEL_AUGUSTO_SOUZA_BORGES).pdf",
+      "pdf": "../data/medicao/raw/artigos/Analise da Eficiência do Uso de Recursos de Máquina (TCC_GABRIEL_AUGUSTO_SOUZA_BORGES).pdf",
       "detail": {
         "Abstract": "A observabilidade ´e uma pr´atica essencial para monitorar sistemas modernos, mas sua implementac¸˜ao pode gerar custos elevados em recursos de hardware, como processamento, mem´oria e armazenamento. O problema central abordado ´e a ineficiˆencia no uso desses recursos, que ocorre devido `a ausˆencia de diretrizes para equilibrar a qualidade do monitoramento e o custo computacional. Para investigar soluc¸˜oes, este trabalho seguiu uma metodologia experimental que comparou a eficiˆencia de diferentes pr´aticas de observabili- dade em um ambiente controlado com hardware limitado. Uma API foi ...",
         "Areas": "Engenharia de Software (Geral)",
@@ -367,7 +367,7 @@
       "id": "artigo_24",
       "type": "artigo",
       "label": "Application of Statistical Methods in Software Engineering: Theory and Practice",
-      "pdf": "../data/raw/artigos/Application of Statistical Methods in Software Engineering Theory and Practice.pdf",
+      "pdf": "../data/medicao/raw/artigos/Application of Statistical Methods in Software Engineering Theory and Practice.pdf",
       "detail": {
         "Autores": "Tassio Sirqueira, Marcos Miguel, Humberto Dalpra, Marco Antônio Araújo, José Maria David",
         "Abstract": "The experimental evaluation of the methods and concepts covered in software engineering has been increasingly valued. This value indicates the constant search for new forms of assessment and validation of the results obtained in Software Engineering research. Results are validated in studies through evaluations, which in turn become increasingly stringent. As an alternative to aid in the veriﬁcation of the results, that is, whether they are positive or negative, we suggest the use of statistical methods. This article presents some of the main statistical techniques available, as well as the...",
@@ -381,7 +381,7 @@
       "id": "artigo_25",
       "type": "artigo",
       "label": "arXiv:2310.03673v2 [cs.SE] 7 Jun 2024",
-      "pdf": "../data/raw/artigos/Do Internal Software Metrics Have Relationship with Fault-proneness and Change-proneness.pdf",
+      "pdf": "../data/medicao/raw/artigos/Do Internal Software Metrics Have Relationship with Fault-proneness and Change-proneness.pdf",
       "detail": {
         "Ano": "2024",
         "Abstract": "Fault-proneness is a measure that indicates the possibility of pro- gramming errors occurring within a software system. On the other hand, change-proneness refers to the potential for modiﬁcations to be made to the software. Both of these measures are crucial indicators of software maintainability, as they inﬂuence internal software metrics such as size, inheritance, and coupling, particu- larly when numerous changes are made to the system. In the liter- ature, research has predicted change- and fault-proneness using internal software metrics that is almost a decade old. However, given the ...",
@@ -396,7 +396,7 @@
       "id": "artigo_26",
       "type": "artigo",
       "label": "Evaluation metrics and statistical tests for machine learning",
-      "pdf": "../data/raw/artigos/Evaluation metrics and statistical tests for machine learning.pdf",
+      "pdf": "../data/medicao/raw/artigos/Evaluation metrics and statistical tests for machine learning.pdf",
       "detail": {
         "Autores": "Oona Rainio",
         "Ano": "2024",
@@ -412,7 +412,7 @@
       "id": "artigo_27",
       "type": "artigo",
       "label": "Evaluation of Software Product Quality Metrics",
-      "pdf": "../data/raw/artigos/Evaluation of Software Product Quality Metrics.pdf",
+      "pdf": "../data/medicao/raw/artigos/Evaluation of Software Product Quality Metrics.pdf",
       "detail": {
         "Ano": "2009",
         "Abstract": "Computing devices and associated software govern everyday life, and form the backbone of safety critical systems in banking, health- care, automotive and other ﬁelds. Increasing system complexity, quickly evolving technologies and paradigm shifts have kept software quality re- search at the forefront. Standards such as ISO’s 25010 express it in terms of sub-characteristics such as maintainability, reliability and security. A signiﬁcant body of literature attempts to link these subcharacteristics with software metric values, with the end goal of creating a metric- based model of software pro...",
@@ -426,7 +426,7 @@
       "id": "artigo_28",
       "type": "artigo",
       "label": "Evidence is All We Need: Do Self-Admitted Technical Debts Impact Method-Level Maintenance?",
-      "pdf": "../data/raw/artigos/Evidence_is_All_We_Need_Do_Self-Admitted_Technical_Debts_Impact_Method-Level_Maintenance.pdf",
+      "pdf": "../data/medicao/raw/artigos/Evidence_is_All_We_Need_Do_Self-Admitted_Technical_Debts_Impact_Method-Level_Maintenance.pdf",
       "detail": {
         "Abstract": "Self-Admitted Technical Debt (SATD) refers to the phenomenon where developers explicitly acknowledge technical debt through comments in the source code. While considerable research has focused on detecting and addressing SATD, its true impact on software maintenance remains underexplored. The few studies that have examined this critical aspect have not provided concrete evidence linking SATD to negative effects on software maintenance. These studies, however, focused only on file- or class-level code granularity. This paper aims to empirically investigate the influence of SATD on various fa...",
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Revisão de Código; Dívida Técnica",
@@ -439,7 +439,7 @@
       "id": "artigo_29",
       "type": "artigo",
       "label": "Experimentation in Software Engineering",
-      "pdf": "../data/raw/artigos/Experimentation in Software Engineering.pdf",
+      "pdf": "../data/medicao/raw/artigos/Experimentation in Software Engineering.pdf",
       "detail": {
         "Abstract": "Experimentation in software engineering supports the ad- vancement of the field through an iterative learning process. In this paper we present a framework for analyzing most of the experimental work performed in software engineering over the past several years. We describe a variety of experiments in the framework and discuss their contribution to the software engineering discipline. Some useful recommendations for the application of the experimental process in software engineering are included.",
         "Areas": "Métricas de Software; Experimentação",
@@ -452,7 +452,7 @@
       "id": "artigo_30",
       "type": "artigo",
       "label": "FORMATO PARA ESPECIFICAÇÃO DE REQUISITOS CONJECTURAIS NO",
-      "pdf": "../data/raw/artigos/FORMATO PARA ESPECIFICAÇÃO DE REQUISITOS CONJECTURAIS NO CONTEXTO DA EXPERIMENTAÇÃO CONTÍNUA EM ENGENHARIA DE SOFTWARE.pdf",
+      "pdf": "../data/medicao/raw/artigos/FORMATO PARA ESPECIFICAÇÃO DE REQUISITOS CONJECTURAIS NO CONTEXTO DA EXPERIMENTAÇÃO CONTÍNUA EM ENGENHARIA DE SOFTWARE.pdf",
       "detail": {
         "Autores": "Nome Completo do Autor",
         "Ano": "2023",
@@ -465,7 +465,7 @@
       "id": "artigo_31",
       "type": "artigo",
       "label": "05_Roche_01_43122.indd",
-      "pdf": "../data/raw/artigos/How to Accelerate R&D and Optimize Experiment Planning with Machine Learning and Data Science.pdf",
+      "pdf": "../data/medicao/raw/artigos/How to Accelerate R&D and Optimize Experiment Planning with Machine Learning and Data Science.pdf",
       "detail": {
         "Ano": "2023",
         "Abstract": "Accelerating R&D is essential to address some of the challenges humanity is currently facing, such as achieving global sustainability goals. Today’s Edisonian approach of trial-and-error still prevalent in R&D labs takes up to two decades of fundamental and applied research for new materials to reach the market. Turning around this situation calls for strategies to upgrade R&D and expedite innovation. By conducting smart experi- ment planning that is data-driven and guided by AI/ML, researchers can more efficiently search through the com- plex – often constrained – space of possible experim...",
@@ -479,7 +479,7 @@
       "id": "artigo_32",
       "type": "artigo",
       "label": "Microsoft Word - 725final",
-      "pdf": "../data/raw/artigos/Impact_of_CMMI_based_software_process_maturity_on_.pdf",
+      "pdf": "../data/medicao/raw/artigos/Impact_of_CMMI_based_software_process_maturity_on_.pdf",
       "detail": {
         "Autores": "faten",
         "Ano": "2008",
@@ -494,7 +494,7 @@
       "id": "artigo_33",
       "type": "artigo",
       "label": "Impact of &#x201C;Evaluating Software Complexity Measures&#x201D;",
-      "pdf": "../data/raw/artigos/Impact_of_Evaluating_Software_Complexity_Measures.pdf",
+      "pdf": "../data/medicao/raw/artigos/Impact_of_Evaluating_Software_Complexity_Measures.pdf",
       "detail": {
         "Ano": "2025",
         "Abstract": "We investigate the impact that the paper “Evaluat- ing Software Complexity Measures” has had over the thirty-six year period since it was ﬁrst published in 1988. We look both at how the frequency of citation increased, and the ways that the research has been used. We describe how citations evolved from the initial obvious intent of assessing newly proposed complexity measures to assessing qualities other than complexity, to using them to assess complexity in entities other than software code, or restricted types of programming paradigms, to the adoption of our approach or properties in ﬁeld...",
@@ -508,7 +508,7 @@
       "id": "artigo_34",
       "type": "artigo",
       "label": "Undertaking systematic reviews",
-      "pdf": "../data/raw/artigos/Kitchenham, B. Guidelines for performing Systematic Literature Reviews in software engineering. EBSE Technical Report EBSE-2007-01.pdf",
+      "pdf": "../data/medicao/raw/artigos/Kitchenham, B. Guidelines for performing Systematic Literature Reviews in software engineering. EBSE Technical Report EBSE-2007-01.pdf",
       "detail": {
         "Autores": "A satisfied Microsoft Office User",
         "Ano": "2007",
@@ -521,7 +521,7 @@
       "id": "artigo_35",
       "type": "artigo",
       "label": "LLM4DS: Evaluating Large Language Models for",
-      "pdf": "../data/raw/artigos/LLM4DS Evaluating Large Language Models for Data Science Code Generation.pdf",
+      "pdf": "../data/medicao/raw/artigos/LLM4DS Evaluating Large Language Models for Data Science Code Generation.pdf",
       "detail": {
         "Abstract": "The adoption of Large Language Models (LLMs) for code generation in data science offers substantial potential for en- hancing tasks such as data manipulation, statistical analysis, and visualization. However, the effectiveness of these models in the data science domain remains underexplored. This paper presents a controlled experiment that empirically assesses the performance of four leading LLM-based AI assistants—Microsoft Copilot (GPT-4 Turbo), ChatGPT (o1-preview), Claude (3.5 Sonnet), and Perplexity Labs (Llama-3.1-70b-instruct)—on a diverse set of data science coding challenges source...",
         "Areas": "Experimentação; Inteligência Artificial/ML; Produtividade",
@@ -533,7 +533,7 @@
       "id": "artigo_36",
       "type": "artigo",
       "label": "Received August 6, 2020, accepted August 13, 2020, date of publication August 20, 2020, date of current version September 2, 2020.",
-      "pdf": "../data/raw/artigos/Measuring_the_Impact_of_Scope_Changes_on_Project_Plan_Using_EVM.pdf",
+      "pdf": "../data/medicao/raw/artigos/Measuring_the_Impact_of_Scope_Changes_on_Project_Plan_Using_EVM.pdf",
       "detail": {
         "Ano": "2020",
         "Abstract": "Earned Value Management (EVM) measures project performance against a baseline plan. It identiﬁes deviations in budget and schedule, aids project managers in taking earlier corrective actions against cost and schedule overruns. Although the literature highlights the signiﬁcance of scope by adopting it as a leading indicator to measure project success or failure. However, EVM does not include scope when evaluating the performance of any software project. While considering the importance of scope and its ever-changing nature, it is imperative to measure the effect of changes in scope on the pr...",
@@ -546,7 +546,7 @@
       "id": "artigo_37",
       "type": "artigo",
       "label": "Sigmae, Alfenas, v.11, n.2, p. 21-35, 2022.",
-      "pdf": "../data/raw/artigos/Medição e Análise no CMMI com Metodologia Seis Sigma eISOIECIEEE1593.pdf",
+      "pdf": "../data/medicao/raw/artigos/Medição e Análise no CMMI com Metodologia Seis Sigma eISOIECIEEE1593.pdf",
       "detail": {
         "Autores": "DEX",
         "Ano": "2022",
@@ -561,7 +561,7 @@
       "id": "artigo_38",
       "type": "artigo",
       "label": "Metrics for Evaluating and Improving Transparency in Software Engineering: An Empirical Study and Improvement Model",
-      "pdf": "../data/raw/artigos/Metrics for Evaluating and Improving Transparency in Software Engineering An Empirical Study and Improvement Model.pdf",
+      "pdf": "../data/medicao/raw/artigos/Metrics for Evaluating and Improving Transparency in Software Engineering An Empirical Study and Improvement Model.pdf",
       "detail": {
         "Autores": "Paulinus Ofem",
         "Ano": "2024",
@@ -576,7 +576,7 @@
       "id": "artigo_39",
       "type": "artigo",
       "label": "Metrics in Large-Scale Agile Software Development: A",
-      "pdf": "../data/raw/artigos/Metrics in Large-Scale Agile Software Development A Multivocal Literature Review.pdf",
+      "pdf": "../data/medicao/raw/artigos/Metrics in Large-Scale Agile Software Development A Multivocal Literature Review.pdf",
       "detail": {
         "Ano": "2021",
         "Abstract": "Software development is widespread across various sectors. As large- scale projects increasingly adopt agile development practices, there arises a need for metrics to enhance team coordination, promote continuous improve- ment and monitor progress. This discussion focuses on the current state of metrics for large-scale agile software development, outlining the reasons for their adoption and showcasing the achieved results. The analysis involves a comprehensive literature review, exploring grey literature. A catalog of metrics applicable to scalable agile projects is presented, featuring exa...",
@@ -590,7 +590,7 @@
       "id": "artigo_40",
       "type": "artigo",
       "label": "On Wasted Contributions: Understanding the Dynamics",
-      "pdf": "../data/raw/artigos/On Wasted Contributions Understanding the Dynamics of Contributor-Abandoned Pull Requests–A Mixed-Methods Study of 10 Large Open-Source Projects.pdf",
+      "pdf": "../data/medicao/raw/artigos/On Wasted Contributions Understanding the Dynamics of Contributor-Abandoned Pull Requests–A Mixed-Methods Study of 10 Large Open-Source Projects.pdf",
       "detail": {
         "Ano": "2023",
         "Keywords": "and Phrases: Socio-technical factors, pull-based development, modern code review, social coding platforms, open-source software, mixed-methods research",
@@ -604,7 +604,7 @@
       "id": "artigo_41",
       "type": "artigo",
       "label": "On the Relationship Between Story Points and Development Effort in Agile Open-Source Software",
-      "pdf": "../data/raw/artigos/On the Relationship Between Story Points and DevelopmentEffort in Agile Open-Source Software.pdf",
+      "pdf": "../data/medicao/raw/artigos/On the Relationship Between Story Points and DevelopmentEffort in Agile Open-Source Software.pdf",
       "detail": {
         "Autores": "Vali Tawosi, Rebecca Moussa, Federica Sarro",
         "Keywords": "Software effort estimation; Story Point; Agile software",
@@ -619,7 +619,7 @@
       "id": "artigo_42",
       "type": "artigo",
       "label": "Process metrics for software defect prediction in object‐oriented programs",
-      "pdf": "../data/raw/artigos/Process metrics for software defectprediction in object-oriented programs.pdf",
+      "pdf": "../data/medicao/raw/artigos/Process metrics for software defectprediction in object-oriented programs.pdf",
       "detail": {
         "Ano": "2018",
         "Abstract": "Software evolution is an important activity in the life cycle of a modern software system. In the process of software evolution, the repair of historical defects and the increasing demands may introduce new defects. Therefore, evolution-oriented defect prediction has attracted much attention of researchers in recent years. At present, some researchers have proposed the process metrics to describe the characteristics of software evolution. However, compared with the traditional software defect prediction methods, the research on evolution-oriented defect prediction is still inadequate. Based...",
@@ -634,7 +634,7 @@
       "id": "artigo_43",
       "type": "artigo",
       "label": "Quality Metrics in Agile Software Development Projects",
-      "pdf": "../data/raw/artigos/Quality_metrics_in_Agile_Software_Development_Proj.pdf",
+      "pdf": "../data/medicao/raw/artigos/Quality_metrics_in_Agile_Software_Development_Proj.pdf",
       "detail": {
         "Autores": "Kristīne Kārkliņa, Rūta Pirta",
         "Ano": "2018",
@@ -650,7 +650,7 @@
       "id": "artigo_44",
       "type": "artigo",
       "label": "Quality of AI-Generated vs. Human-Generated Code",
-      "pdf": "../data/raw/artigos/Quality_of_AI-Generated_vs._Human-Generated_Code.pdf",
+      "pdf": "../data/medicao/raw/artigos/Quality_of_AI-Generated_vs._Human-Generated_Code.pdf",
       "detail": {
         "Abstract": "This study examines the quality differences between AI-generated and human-generated code through an evaluation of multiple software quality metrics, including maintainability, complexity, and documentation. Using a dataset of 5,312 code samples—2,700 human-generated and 2,612 AI-generated—we applied machine learning techniques to classify and analyze the code based on these metrics. The results revealed that AI-generated code tends to excel in maintainability and doc- umentation, demonstrating higher maintainability index scores and a higher ratio of comments. Additionally, AI-generated co...",
         "Areas": "Métricas de Software; Qualidade de Software; Manutenção de Software; Inteligência Artificial/ML",
@@ -663,7 +663,7 @@
       "id": "artigo_45",
       "type": "artigo",
       "label": "https://doi.org/10.1007/s10664-024-10504-1",
-      "pdf": "../data/raw/artigos/Recommendations for analysing and meta-analysing small sample size software engineering experiments.pdf",
+      "pdf": "../data/medicao/raw/artigos/Recommendations for analysing and meta-analysing small sample size software engineering experiments.pdf",
       "detail": {
         "Ano": "2024",
         "Keywords": "Meta-analysis · Effect size · Non-parametric · Probability of superiority · Small sample sizes · Reproducible research Communicated by: Carlo A. Furia B Lech Madeyski lech.madeyski@pwr.edu.pl",
@@ -677,7 +677,7 @@
       "id": "artigo_46",
       "type": "artigo",
       "label": "Empir Software Eng (2017) 22:579–630",
-      "pdf": "../data/raw/artigos/Robust Statistical Methods for Empirical Software Engineering.pdf",
+      "pdf": "../data/medicao/raw/artigos/Robust Statistical Methods for Empirical Software Engineering.pdf",
       "detail": {
         "Ano": "2017",
         "Keywords": "Empirical software engineering · Statistical methods · Robust methods · Robust statistical methods",
@@ -691,7 +691,7 @@
       "id": "artigo_47",
       "type": "artigo",
       "label": "SOFTWARE CODE QUALITY MEASUREMENT: IMPLICATIONS FROM",
-      "pdf": "../data/raw/artigos/SOFTWARE CODE QUALITY MEASUREMENT IMPLICATIONS FROM METRIC DISRIBUTIONS.pdf",
+      "pdf": "../data/medicao/raw/artigos/SOFTWARE CODE QUALITY MEASUREMENT IMPLICATIONS FROM METRIC DISRIBUTIONS.pdf",
       "detail": {
         "Ano": "2024",
         "Abstract": "Software code quality is a construct with three dimensions: maintainability, reliability, and func- tionality. Although many firms have incorporated code quality metrics in their operations, evalu- ating these metrics still lacks consistent standards. We categorized distinct metrics into two types: 1) monotonic metrics that consistently influence code quality; and 2) non-monotonic metrics that lack a consistent relationship with code quality. To consistently evaluate them, we proposed a distribution-based method to get metric scores. Our empirical analysis includes 36,460 high-quality open-...",
@@ -705,7 +705,7 @@
       "id": "artigo_48",
       "type": "artigo",
       "label": "Software Development and Maintenance Effort Estimation Using Function Points and Simpler Functional Measures",
-      "pdf": "../data/raw/artigos/Software Development and Maintenance Effort Estimation Using Function Points and Simpler Functional Measures.pdf",
+      "pdf": "../data/medicao/raw/artigos/Software Development and Maintenance Effort Estimation Using Function Points and Simpler Functional Measures.pdf",
       "detail": {
         "Autores": "Luigi Lavazza, Angela Locoro and Roberto Meli",
         "Ano": "2024",
@@ -722,7 +722,7 @@
       "id": "artigo_49",
       "type": "artigo",
       "label": "Microsoft Word - Software Process Measurement and Related Challenges in Agile Software Developmen - A Multiple Case Study (Latest)",
-      "pdf": "../data/raw/artigos/Software Process Measurement and Related Challenges in Agile Software Development A Multiple Case Study.pdf",
+      "pdf": "../data/medicao/raw/artigos/Software Process Measurement and Related Challenges in Agile Software Development A Multiple Case Study.pdf",
       "detail": {
         "Autores": "pram",
         "Ano": "2020",
@@ -738,7 +738,7 @@
       "id": "artigo_50",
       "type": "artigo",
       "label": "Software Product Quality Metrics: A Systematic Mapping Study",
-      "pdf": "../data/raw/artigos/Software Product Quality Metrics A Systematic Mapping Study.pdf",
+      "pdf": "../data/medicao/raw/artigos/Software Product Quality Metrics A Systematic Mapping Study.pdf",
       "detail": {
         "Ano": "2021",
         "Abstract": "The result is presented through graphics, explanations, and the mind mapping method. The outputs include the trend map between the years 2009 and 2019, knowledge about this area and measurement tools, issues determined to be open to development in this area, and conformity between conference papers, articles and internationally valid quality models. This study may serve as a foundation for future studies that aim to contribute to the development in this crucial ﬁeld. Future SM studies might focus on this subject for measuring the quality of network performance and new technologies such as A...",
@@ -753,7 +753,7 @@
       "id": "artigo_51",
       "type": "artigo",
       "label": "This is a title",
-      "pdf": "../data/raw/artigos/Software quality models Exploratory review.pdf",
+      "pdf": "../data/medicao/raw/artigos/Software quality models Exploratory review.pdf",
       "detail": {
         "Autores": "erika",
         "Ano": "2023",
@@ -769,7 +769,7 @@
       "id": "artigo_52",
       "type": "artigo",
       "label": "Received 20 August 2023, accepted 31 August 2023, date of publication 7 September 2023, date of current version 15 September 2023.",
-      "pdf": "../data/raw/artigos/Software_Cost_and_Effort_Estimation_Current_Approaches_and_Future_Trends.pdf",
+      "pdf": "../data/medicao/raw/artigos/Software_Cost_and_Effort_Estimation_Current_Approaches_and_Future_Trends.pdf",
       "detail": {
         "Ano": "2023",
         "Abstract": "Software cost and effort estimation is one of the most significant tasks in the area of software engineering. Research conducted in this field has been evolving with new techniques that necessitate periodic comparative analyses. Software project success largely depends on accurate software cost estimation as it gives an idea of the challenges and risks involved in the development. The great diversity of ML and Non- ML techniques has generated a comparison and progressed into the integration of these techniques. Based on varying advantages it has become imperative to work out preferred estim...",
@@ -784,7 +784,7 @@
       "id": "artigo_53",
       "type": "artigo",
       "label": "Software Metrics Classification for Agile Scrum Process: A Literature Review",
-      "pdf": "../data/raw/artigos/Software_Metrics_Classification_for_Agile_Scrum_Process_A_Literature_Review.pdf",
+      "pdf": "../data/medicao/raw/artigos/Software_Metrics_Classification_for_Agile_Scrum_Process_A_Literature_Review.pdf",
       "detail": {
         "Abstract": "Software metrics play an important role to measure every attributes and project success in software development context. In the scrum process, there are several events performed on each sprint in order to monitor team performance. Conducting an objective performance measurement in the agile process meet some challenges due to the differences in team preferences and project complexity. This paper discusses the software measurement metrics and their fundamental role in scrum software development life cycle. We review software metrics on scrum context based on 13 selected literatures. Software...",
         "Areas": "Métricas de Software; Métodos Ágeis; Gerenciamento de Projetos; Produtividade",
@@ -797,7 +797,7 @@
       "id": "artigo_54",
       "type": "artigo",
       "label": "Source Code Metrics for Software Defects Prediction",
-      "pdf": "../data/raw/artigos/Source Code Metrics for Software Defects Prediction.pdf",
+      "pdf": "../data/medicao/raw/artigos/Source Code Metrics for Software Defects Prediction.pdf",
       "detail": {
         "Autores": "Dominik Arne Rebro, Bruno Rossi, and Stanislav Chren",
         "Ano": "2023",
@@ -814,7 +814,7 @@
       "id": "artigo_55",
       "type": "artigo",
       "label": "THE GOAL QUESTION METRIC APPROACH",
-      "pdf": "../data/raw/artigos/THE GOAL QUESTION METRIC APPROACH.pdf",
+      "pdf": "../data/medicao/raw/artigos/THE GOAL QUESTION METRIC APPROACH.pdf",
       "detail": {
         "Areas": "Qualidade de Software; Processo de Software; Produtividade",
         "Metricas": "LOC/SLOC; Defect Density",
@@ -826,7 +826,7 @@
       "id": "artigo_56",
       "type": "artigo",
       "label": "Techniques for Calculating Software Product Metrics Threshold Values: A Systematic Mapping Study",
-      "pdf": "../data/raw/artigos/Techniques for Calculating Software Product Metrics Threshold Values A Systematic Mapping Study.pdf",
+      "pdf": "../data/medicao/raw/artigos/Techniques for Calculating Software Product Metrics Threshold Values A Systematic Mapping Study.pdf",
       "detail": {
         "Autores": "Alok Mishra, Raed Shatnawi, Cagatay Catal and Akhan Akbulut",
         "Ano": "2021",
@@ -843,7 +843,7 @@
       "id": "artigo_57",
       "type": "artigo",
       "label": "The Experimental Paradigm in Software Engeneering",
-      "pdf": "../data/raw/artigos/The Experimental Paradigm in Software Engeneering.pdf",
+      "pdf": "../data/medicao/raw/artigos/The Experimental Paradigm in Software Engeneering.pdf",
       "detail": {
         "Areas": "Engenharia de Software (Geral)",
         "Paginas": "7"
@@ -853,7 +853,7 @@
       "id": "artigo_58",
       "type": "artigo",
       "label": "eveloper productivity is complex and nuanced,",
-      "pdf": "../data/raw/artigos/The Space of Developer Productivity There's more to it than you think.pdf",
+      "pdf": "../data/medicao/raw/artigos/The Space of Developer Productivity There's more to it than you think.pdf",
       "detail": {
         "Ano": "2021",
         "Areas": "Revisão de Código; Produtividade",
@@ -864,7 +864,7 @@
       "id": "artigo_59",
       "type": "artigo",
       "label": "The effects of change decomposition on code review-a controlled experiment",
-      "pdf": "../data/raw/artigos/The effects of change decomposition on code review --a controlled experiment.pdf",
+      "pdf": "../data/medicao/raw/artigos/The effects of change decomposition on code review --a controlled experiment.pdf",
       "detail": {
         "Autores": "Marco di Biase",
         "Ano": "2019",
@@ -879,7 +879,7 @@
       "id": "artigo_60",
       "type": "artigo",
       "label": "The role of measurement uncertainty in the validation of a measurement procedure",
-      "pdf": "../data/raw/artigos/The role of measurement uncertainty in the validation of a measurement procedure.pdf",
+      "pdf": "../data/medicao/raw/artigos/The role of measurement uncertainty in the validation of a measurement procedure.pdf",
       "detail": {
         "Autores": "Fernando C. Raposo",
         "Ano": "2024",
@@ -892,7 +892,7 @@
       "id": "artigo_61",
       "type": "artigo",
       "label": "Proceedings Template - WORD",
-      "pdf": "../data/raw/artigos/Top Challenges from the first Practical Online Controlled Experiments Summit.pdf",
+      "pdf": "../data/medicao/raw/artigos/Top Challenges from the first Practical Online Controlled Experiments Summit.pdf",
       "detail": {
         "Autores": "End User Computing Services",
         "Ano": "2019",
@@ -906,7 +906,7 @@
       "id": "artigo_62",
       "type": "artigo",
       "label": "Towards Improving Experimentation in Software Engineering",
-      "pdf": "../data/raw/artigos/Towards Improving Experimentation in Software Engineering.pdf",
+      "pdf": "../data/medicao/raw/artigos/Towards Improving Experimentation in Software Engineering.pdf",
       "detail": {
         "Autores": "Edson OliveiraJr, Viviane Furtado, Henrique Vignando, Carlos Luz, André Cordeiro, Igor Steinmacher, Avelino Zorzo",
         "Ano": "2021",
@@ -922,7 +922,7 @@
       "id": "artigo_63",
       "type": "artigo",
       "label": "Unlocking inclusive education: A quality assessment of software design in applications for children with autism",
-      "pdf": "../data/raw/artigos/Unlocking inclusive education A quality assessment of software design in applications for children with autism.pdf",
+      "pdf": "../data/medicao/raw/artigos/Unlocking inclusive education A quality assessment of software design in applications for children with autism.pdf",
       "detail": {
         "Autores": "Yussy Chinchay",
         "Ano": "2019",
@@ -936,7 +936,7 @@
       "id": "artigo_64",
       "type": "artigo",
       "label": "Unveiling Hybrid Cyclomatic Complexity: A Comprehensive Analysis and Evaluation as an Integral Feature in Automatic Defect Prediction Models",
-      "pdf": "../data/raw/artigos/Unveiling Hybrid Cyclomatic Complexity A Comprehensive Analysis and Evaluation as an Integral Feature in Automatic Defect Prediction Models.pdf",
+      "pdf": "../data/medicao/raw/artigos/Unveiling Hybrid Cyclomatic Complexity A Comprehensive Analysis and Evaluation as an Integral Feature in Automatic Defect Prediction Models.pdf",
       "detail": {
         "Autores": "Laura Diana Cernău; Laura Dioșan; Camelia Șerban;",
         "Ano": "2025",
@@ -951,7 +951,7 @@
       "id": "artigo_65",
       "type": "artigo",
       "label": "Web System for Metrics Control applying the GQM Method in a Software Development Center",
-      "pdf": "../data/raw/artigos/WEB_SYSTEM_FOR_METRICS_CONTROL_APPLYING_THE_GQM_ME.pdf",
+      "pdf": "../data/medicao/raw/artigos/WEB_SYSTEM_FOR_METRICS_CONTROL_APPLYING_THE_GQM_ME.pdf",
       "detail": {
         "Autores": "Jesús Minero-Guardado",
         "Ano": "2025",
@@ -966,7 +966,7 @@
       "id": "artigo_66",
       "type": "artigo",
       "label": "What's DAT? Three Case Studies of Measuring Software Development Productivity at Meta With Diff Authoring Time",
-      "pdf": "../data/raw/artigos/Whats DAT Three Case Studies of Measuring Software.pdf",
+      "pdf": "../data/medicao/raw/artigos/Whats DAT Three Case Studies of Measuring Software.pdf",
       "detail": {
         "Autores": "Moritz Beller; Amanda Park; Karim Nakad; Akshay Patel; Sarita Mohanty; Ford Garberson; Ian G. Malone; Vaishali Garg; Henri Verroken; Andrew Kennedy; Pavel Avgustinov",
         "Ano": "2026",
@@ -1174,7 +1174,7 @@
       "id": "aula_1",
       "type": "aula",
       "label": "Aula 1 - Introdução ao Curso",
-      "pdf": "../data/raw/aulas/Aula 1.pdf",
+      "pdf": "../data/medicao/raw/aulas/Aula 1.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
         "Slides": "27",
@@ -1186,7 +1186,7 @@
       "id": "aula_2",
       "type": "aula",
       "label": "Aula 2 - Escopo e Normas de Medição de Software",
-      "pdf": "../data/raw/aulas/Aula 2 - Escopo e Normas de Medição de Software.pdf",
+      "pdf": "../data/medicao/raw/aulas/Aula 2 - Escopo e Normas de Medição de Software.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
         "Slides": "50",
@@ -1198,7 +1198,7 @@
       "id": "aula_3",
       "type": "aula",
       "label": "Aula 3 - Introdução à Experimentação",
-      "pdf": "../data/raw/aulas/Aula 3 - Introdução à Experimentação.pdf",
+      "pdf": "../data/medicao/raw/aulas/Aula 3 - Introdução à Experimentação.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
         "Slides": "25",
@@ -1210,7 +1210,7 @@
       "id": "aula_4",
       "type": "aula",
       "label": "Aula 4 - Entidades, Atributos e Objetivos de Medição",
-      "pdf": "../data/raw/aulas/Aula 4 - Entidades, Atributos e Objetivos de Medição.pdf",
+      "pdf": "../data/medicao/raw/aulas/Aula 4 - Entidades, Atributos e Objetivos de Medição.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
         "Slides": "40",
@@ -1222,7 +1222,7 @@
       "id": "aula_5",
       "type": "aula",
       "label": "Aula 5 - Medições de Produto, Processo e Recurso",
-      "pdf": "../data/raw/aulas/Aula 5 - Medições de Produto, Processo e Recurso.pdf",
+      "pdf": "../data/medicao/raw/aulas/Aula 5 - Medições de Produto, Processo e Recurso.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
         "Slides": "117",
@@ -1234,7 +1234,7 @@
       "id": "aula_6",
       "type": "aula",
       "label": "Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese",
-      "pdf": "../data/raw/aulas/Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese.pdf",
+      "pdf": "../data/medicao/raw/aulas/Aula 7 - Variáveis aleatórias, Distribuição de Probabilidade e Testes de Hipótese.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
         "Slides": "46",
@@ -1246,7 +1246,7 @@
       "id": "aula_7",
       "type": "aula",
       "label": "Aula 8 - Processo de Experimentos",
-      "pdf": "../data/raw/aulas/Aula 8 - Processo de Experimentos.pdf",
+      "pdf": "../data/medicao/raw/aulas/Aula 8 - Processo de Experimentos.pdf",
       "detail": {
         "Professor": "Prof. Danilo de Quadros Maia Filho",
         "Slides": "58",
